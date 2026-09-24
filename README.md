@@ -10,7 +10,7 @@
 [![Stack](https://img.shields.io/badge/Stack-Julia%20%7C%20R%20%7C%20SQL-purple.svg)]()
 [![Consiliencia](https://img.shields.io/badge/Epistemolog%C3%ADa-Consiliencia%20de%20E.%20O.%20Wilson-success.svg)]()
 
-**Portal:** [danielgccr.github.io/nuevasomosaguas](https://danielgccr.github.io/nuevasomosaguas/)
+**Portal:** [nuevasomosaguas.github.io/website](https://nuevasomosaguas.github.io/website/)
 
 ---
 
@@ -103,7 +103,7 @@ La IA no se prohíbe ni se padece: se gobierna. Cuatro principios, desarrollados
 ## Compilación local
 
 ```bash
-git clone https://github.com/danielgccr/nuevasomosaguas.git
+git clone https://github.com/nuevasomosaguas/website.git
 cd nuevasomosaguas
 quarto render     # compila el sitio en _site/
 quarto preview    # servidor local con recarga automática

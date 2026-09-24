@@ -237,4 +237,4 @@ println("IC 95% bootstrap: [", round(ic_inferior, digits = 2), ", ",
 
 Los scripts de esta página forman parte del libro de laboratorios del grado, junto con los cuadernos de cada asignatura y los esquemas de base de datos:
 
-**[github.com/danielgccr/nuevasomosaguas](https://github.com/danielgccr/nuevasomosaguas)**
+**[github.com/nuevasomosaguas/website](https://github.com/nuevasomosaguas/website)**
