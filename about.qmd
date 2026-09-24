@@ -50,7 +50,7 @@ Quien entiende que la fiscalización democrática no se ejerce con manifiestos, 
 
 No se pide adhesión doctrinaria ni fe en el plan de estudios. Se exige lo que exige cualquier disciplina científica: que todo argumento declare sus supuestos, formalice el espacio de estados y someta sus conjeturas al compilador y al dato. Donde un modelo colapsa ante la evidencia se descarta; donde un teorema se sostiene, se integra.
 
-Eso vale también para este sitio. Las correcciones, refutaciones y erratas metodológicas se agradecen en el [repositorio del proyecto](https://github.com/nuevasomosaguas/website), y se agradecen especialmente cuando duelen.
+Eso vale también para este sitio. Las correcciones, refutaciones y erratas metodológicas se agradecen en el [repositorio del proyecto](https://github.com/nuevasomosaguas/nuevasomosaguas.github.io), y se agradecen especialmente cuando duelen.
 
 ::: {.lead}
 *Una sociología que sustituye el arbitrio discursivo por las matemáticas y el contraste empírico de la biología.*

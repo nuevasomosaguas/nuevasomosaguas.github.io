@@ -20,8 +20,8 @@ language:
 
 website:
   title: "Nueva Somosaguas"
-  site-url: "https://nuevasomosaguas.github.io/website"
-  repo-url: "https://github.com/nuevasomosaguas/website"
+  site-url: "https://nuevasomosaguas.github.io"
+  repo-url: "https://github.com/nuevasomosaguas/nuevasomosaguas.github.io"
   # Link previews in Telegram, WhatsApp, X, Mastodon... Each page supplies its
   # own `description`; this one covers any page that does not.
   description: "Facultad libre y de código abierto de ciencias sociales analíticas y cuantitativas."
