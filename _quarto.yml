@@ -25,10 +25,16 @@ website:
   # Link previews in Telegram, WhatsApp, X, Mastodon... Each page supplies its
   # own `description`; this one covers any page that does not.
   description: "Facultad libre y de código abierto de ciencias sociales analíticas y cuantitativas."
+  # El sello de la Nueva Somosaguas (images/logo/): la marca del DAG en la pestaña,
+  # que a 16 px sí se lee, y el sello en la barra y en las vistas previas.
+  favicon: images/logo/favicon.svg
+  image: images/logo/vista-previa.png
   open-graph:
     locale: es_ES
   twitter-card: true
   navbar:
+    logo: images/logo/logo-barra.png
+    logo-alt: "Sello de la Nueva Somosaguas"
     background: "#1a1a1a"
     foreground: "#f8f9fa"
     search: true
@@ -75,3 +81,8 @@ format:
     code-fold: show
     highlight-style: github
     html-math-method: mathjax
+    # Para los navegadores sin favicon en SVG y para la pantalla de inicio del iPhone.
+    include-in-header:
+      text: |
+        <link rel="icon" href="/images/logo/favicon.ico" sizes="48x48">
+        <link rel="apple-touch-icon" href="/images/logo/apple-touch-icon.png">
