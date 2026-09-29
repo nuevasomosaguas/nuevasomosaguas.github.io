@@ -120,7 +120,7 @@ Un informe formal o una figura científica no puede parecer un producto improvis
 1. **Destierro del fondo gris y de las rejillas pesadas.** Se prohíbe el fondo gris que `ggplot2` aplica por defecto (`theme_grey()`) y cualquier malla que compita con los datos. El fondo es blanco (`#ffffff`) o del tono exacto del papel.
 2. **Una sola tipografía.** Los ejes, leyendas y anotaciones de los gráficos en `ggplot2` (R) o `Makie.jl` (Julia) usan la misma tipografía que el documento: *EB Garamond* o *Linux Libertine*.
 3. **Etiquetado directo.** Se eliminan las grandes cajas de leyenda a la derecha, que obligan al ojo a ir y volver; las etiquetas se colocan sobre las propias series o, si no caben, en una leyenda mínima encima del gráfico.
-4. **Plantillas unificadas.** Los informes se compilan con la plantilla oficial en **Typst** ([`somosaguas-typst-template`](https://github.com/nuevasomosaguas/somosaguas-typst-template)) o en **Quarto** ([`somosaguas-quarto-theme`](https://github.com/nuevasomosaguas/somosaguas-quarto-theme)).
+4. **Plantillas unificadas.** Los informes se compilan con la plantilla oficial en **Typst** ([`somosaguas-typst-template`](https://github.com/nuevasomosaguas/somosaguas-typst-template)) o en **Quarto** ([`somosaguas-quarto-theme`](https://github.com/nuevasomosaguas/somosaguas-quarto-theme)), y los gráficos con el tema [`somosaguas-ggplot2`](https://github.com/nuevasomosaguas/somosaguas-ggplot2) en R o [`somosaguas-makie`](https://github.com/nuevasomosaguas/somosaguas-makie) en Julia.
 
 ### Las plantillas de documentos
 
@@ -158,6 +158,43 @@ Los mismos contenidos, compilados con cada plantilla y cada maqueta:
 | :--- | :--- | :--- |
 | Typst | [<i class="bi bi-file-earmark-pdf"></i> PDF](ejemplos/typst-una-columna.pdf) | [<i class="bi bi-file-earmark-pdf"></i> PDF](ejemplos/typst-dos-columnas.pdf) |
 | Quarto | [<i class="bi bi-file-earmark-pdf"></i> PDF](ejemplos/quarto-una-columna.pdf) | [<i class="bi bi-file-earmark-pdf"></i> PDF](ejemplos/quarto-dos-columnas.pdf) |
+
+### El tema de ggplot2
+
+El paquete de R [`somosaguas-ggplot2`](https://github.com/nuevasomosaguas/somosaguas-ggplot2) aplica estas reglas a `ggplot2`. `theme_somosaguas()` pone el fondo de papel, quita las rejillas verticales y menores, y usa *EB Garamond* (incluida) en ejes, títulos y etiquetas. `scale_colour_somosaguas()` y `scale_fill_somosaguas()` asignan cinco colores en orden fijo, validados para daltonismo; con un sexto nivel la escala falla a propósito, porque el remedio es agrupar o separar en facetas, no inventar un color.
+
+```r
+remotes::install_github("nuevasomosaguas/somosaguas-ggplot2")
+
+library(ggplot2)
+library(somosaguas)
+
+ggplot(datos, aes(edad, tasa, colour = grupo)) +
+  geom_line() +
+  scale_colour_somosaguas(guide = "none") +
+  theme_somosaguas()
+
+ggsave("grafico.png", device = ragg::agg_png)
+```
+
+![Tasas de mortalidad por edad con `theme_somosaguas()`: cuatro series etiquetadas directamente al final de cada línea, sin caja de leyenda. El código está en `ejemplo.R` del repositorio.](images/tema-ggplot2.png){#fig-tema-ggplot2 fig-alt="Gráfico de líneas en tipografía Garamond sobre fondo crema: las defunciones por cada mil habitantes en Virginia en 1940 crecen con la edad, de 50–54 a 70–74 años, en cuatro series (hombres y mujeres, en la ciudad y en el campo) etiquetadas al final de cada línea."}
+
+### El tema de Makie
+
+El paquete de Julia [`somosaguas-makie`](https://github.com/nuevasomosaguas/somosaguas-makie) aplica las mismas reglas, con la misma paleta, a `Makie.jl`. Depende solo de `Makie`, así que sirve con `CairoMakie` para PNG, SVG y PDF, y con `GLMakie` o `WGLMakie` para gráficos interactivos. La *EB Garamond* incluida queda incrustada también en los PDF.
+
+```julia
+using Pkg
+Pkg.add(url = "https://github.com/nuevasomosaguas/somosaguas-makie")
+
+using CairoMakie, Somosaguas
+set_theme!(tema_somosaguas())
+
+fig, ax, _ = lines(1:10, cumsum(randn(10)); axis = (; title = "Título"))
+save("grafico.pdf", fig)
+```
+
+![El mismo gráfico compilado con `tema_somosaguas()` en Makie: la tipografía, la paleta y el etiquetado directo coinciden con los de R. El código está en `ejemplo/ejemplo.jl` del repositorio.](images/tema-makie.png){#fig-tema-makie fig-alt="Gráfico de líneas idéntico al anterior, hecho con Makie en Julia: tipografía Garamond sobre fondo crema y cuatro series de mortalidad por edad etiquetadas al final de cada línea."}
 
 ---
 
