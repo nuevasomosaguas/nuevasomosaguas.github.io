@@ -120,7 +120,44 @@ Un informe formal o una figura científica no puede parecer un producto improvis
 1. **Destierro del fondo gris y de las rejillas pesadas.** Se prohíbe el fondo gris que `ggplot2` aplica por defecto (`theme_grey()`) y cualquier malla que compita con los datos. El fondo es blanco (`#ffffff`) o del tono exacto del papel.
 2. **Una sola tipografía.** Los ejes, leyendas y anotaciones de los gráficos en `ggplot2` (R) o `Makie.jl` (Julia) usan la misma tipografía que el documento: *EB Garamond* o *Linux Libertine*.
 3. **Etiquetado directo.** Se eliminan las grandes cajas de leyenda a la derecha, que obligan al ojo a ir y volver; las etiquetas se colocan sobre las propias series o, si no caben, en una leyenda mínima encima del gráfico.
-4. **Plantillas unificadas.** Los informes se compilan con la plantilla oficial en **Typst** (`somosaguas-report`) o en **Quarto** (`somosaguas-theme`) (TODO).
+4. **Plantillas unificadas.** Los informes se compilan con la plantilla oficial en **Typst** ([`somosaguas-typst-template`](https://github.com/nuevasomosaguas/somosaguas-typst-template)) o en **Quarto** ([`somosaguas-quarto-theme`](https://github.com/nuevasomosaguas/somosaguas-quarto-theme)).
+
+### Las plantillas de documentos
+
+Las dos plantillas producen el mismo PDF: *EB Garamond* para el texto, *Fira Code* para el código, y el granate y el papel crema de este sitio. Ofrecen dos maquetas. A **una columna**, un margen ancho recoge las notas al estilo de Tufte; a **dos columnas**, las notas pasan al pie de página. Las tipografías vienen incluidas (licencia OFL), así que no hay nada que instalar.
+
+**Typst.** Se clona el repositorio, se importa `template.typ` y se compila indicando la carpeta de tipografías:
+
+```typst
+#import "template.typ": somosaguas, nota
+
+#show: somosaguas.with(titulo: [Título del informe], columnas: 2)
+
+Texto con una nota.#nota[A una columna aparece en el margen.]
+```
+
+```bash
+typst compile --font-path fonts informe.typ
+```
+
+**Quarto.** Se instala la extensión en el proyecto y se elige el formato `somosaguas-typst`. Las notas al pie de Markdown (`^[...]`) pasan al margen en la maqueta a una columna:
+
+```bash
+quarto install extension nuevasomosaguas/somosaguas-quarto-theme
+```
+
+```yaml
+format:
+  somosaguas-typst:
+    columnas: 2
+```
+
+Los mismos contenidos, compilados con cada plantilla y cada maqueta:
+
+| Plantilla | Una columna | Dos columnas |
+| :--- | :--- | :--- |
+| Typst | [<i class="bi bi-file-earmark-pdf"></i> PDF](ejemplos/typst-una-columna.pdf) | [<i class="bi bi-file-earmark-pdf"></i> PDF](ejemplos/typst-dos-columnas.pdf) |
+| Quarto | [<i class="bi bi-file-earmark-pdf"></i> PDF](ejemplos/quarto-una-columna.pdf) | [<i class="bi bi-file-earmark-pdf"></i> PDF](ejemplos/quarto-dos-columnas.pdf) |
 
 ---
 
