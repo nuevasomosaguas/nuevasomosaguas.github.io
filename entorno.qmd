@@ -65,9 +65,9 @@ Para que todos los alumnos trabajen sobre exactamente la misma base, sea cual se
 
 %%{init: {"flowchart": {"nodeSpacing": 26, "rankSpacing": 42, "padding": 28, "wrappingWidth": 460, "useMaxWidth": true}}}%%
 flowchart TB
-    N1["Nivel 1 · Navegador<br/>GitHub Codespaces: probar sin instalar nada"]
-    N2["Nivel 2 · Contenedor<br/>Devcontainer sobre Debian estable, integrado en VS Code"]
-    N3["Nivel 3 · Instalación nativa<br/>USB arrancable o Debian cifrado con LUKS"]
+    N1["Nivel 1 · Navegador<br/>GitHub Codespaces, con escritorio XFCE: probar sin instalar nada"]
+    N2["Nivel 2 · Contenedor<br/>Devcontainer sobre Debian 13, integrado en VS Code"]
+    N3["Nivel 3 · Instalación nativa<br/>USB en vivo o Debian instalado, cifrado con LUKS"]
 
     N1 --> N2 --> N3
 
@@ -75,9 +75,9 @@ flowchart TB
     class N1,N2,N3 nivel
 ```
 
-1. **Probar en el navegador (TODO).** Con GitHub Codespaces, el estudiante dispone del entorno completo en unos minutos, sin instalar nada en su máquina.
-2. **Devcontainer (TODO).** Una imagen ligera sobre Debian estable que VS Code abre como si fuera local, aislada del resto del sistema.
-3. **USB arrancable e instalación nativa.** Una imagen ISO con todo el software del pensum, para probarla en vivo o instalarla (TODO). En la facultad presencial, los portátiles asignados llevan Debian con **cifrado de disco completo (LUKS) por omisión**: si un equipo se pierde, los microdatos censales que contiene —anonimizados, pero sensibles— siguen protegidos, como exige el RGPD.
+1. **Probar en el navegador.** Con [GitHub Codespaces](https://codespaces.new/nuevasomosaguas/entorno), el estudiante dispone del entorno completo en unos minutos, sin instalar nada en su máquina: VS Code, RStudio y un escritorio XFCE con Zotero, JabRef, Obsidian y Zathura, todo en el navegador.
+2. **Devcontainer.** La misma imagen, sin el escritorio, que VS Code abre en local como si fuera una carpeta más, aislada del resto del sistema. Basta Docker y la extensión *Dev Containers*; las instrucciones están en el [repositorio del entorno](https://github.com/nuevasomosaguas/entorno).
+3. **USB arrancable e instalación nativa.** Una imagen ISO de Debian 13 con todo el software del pensum, construida desde la imagen del escritorio: se prueba en vivo desde un USB y, si convence, el instalador del escritorio la copia al disco, con cifrado si se marca. Se publicará con la versión 2026.2 (TODO). En la facultad presencial, los portátiles asignados llevan Debian con **cifrado de disco completo (LUKS) por omisión**: si un equipo se pierde, los microdatos censales que contiene —anonimizados, pero sensibles— siguen protegidos, como exige el RGPD.
 
 ---
 
@@ -85,7 +85,7 @@ flowchart TB
 
 ### Entornos de desarrollo
 
-* **VS Code con sus extensiones oficiales.** Configurado de fábrica para **Julia**, **R**, **Quarto** y **Typst**, con formateo automático de código e integración con Git.
+* **VS Code con sus extensiones oficiales.** Configurado de fábrica para **Julia**, **R**, **Python**, **SQL**, **Quarto** y **Typst** (con Tinymist, que muestra la vista previa mientras se escribe y exporta el PDF al guardar), con formateo automático de código al guardar, *Fira Code* en el editor e integración con Git.
 * **Pluto.jl, cuadernos reactivos.** En Jupyter, ejecutar las celdas en desorden deja estados ocultos: el cuaderno muestra resultados que su propio código ya no produce. Pluto.jl lo impide: cambiar un parámetro en una celda vuelve a ejecutar automáticamente todas las que dependen de ella, según el grafo de dependencias entre celdas, de modo que lo que se ve coincide siempre con lo que el código calcula. Además, cada cuaderno guarda dentro de sí las versiones exactas de sus paquetes. Es el entorno natural para experimentar con autómatas celulares como el modelo de segregación de Schelling.
 
 ### Control riguroso de dependencias
@@ -107,7 +107,7 @@ DataFrames = "1.8"
 
 `Manifest.toml`, que Julia genera solo, fija la versión exacta de cada paquete y de cada dependencia indirecta. Es el que **congela** el entorno: ambos se versionan en Git, y `Pkg.instantiate()` reconstruye en cualquier máquina el mismo árbol de paquetes, versión por versión.
 
-Las imágenes de contenedor se etiquetan por versión de calendario (`2026.1`, `2026.2`), y **GitHub Actions** ejecuta de principio a fin todos los cuadernos de laboratorio antes de publicar cada nueva imagen (TODO).
+Las imágenes de contenedor se etiquetan por versión de calendario: una por semestre (`2026.2`, `2027.1`) y un tercer número para los arreglos entre medias (`2026.2.1`). Las etiquetas publicadas no se borran nunca. **GitHub Actions** construye cada imagen y comprueba cada herramienta antes de publicarla: si algo falta, no se publica nada. Ejecutar además de principio a fin todos los cuadernos de laboratorio queda pendiente (TODO).
 
 ---
 
@@ -201,6 +201,8 @@ save("grafico.pdf", fig)
 ## Verificación del entorno
 
 Cualquier estudiante o autodidacta puede comprobar su sistema guardando este script como `check_env.sh` y ejecutando `bash check_env.sh`. Termina con error si falta alguna herramienta, así que sirve también como primer paso de una integración continua.
+
+Dentro del entorno, `./verificar_entorno.sh` va un paso más allá: no mira si las herramientas existen, sino si calculan. Compila en Typst un grafo causal, reproduce en Julia una actualización bayesiana y resuelve en SQLite una consulta con funciones de ventana, y termina con «Entorno calibrado. Comience a calcular.».
 
 ```bash
 #!/usr/bin/env bash
