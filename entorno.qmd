@@ -57,7 +57,7 @@ Cuatro programas, una línea y ningún archivo intermedio. El `awk -F','` ingenu
 
 ## Módulo II: entornos reproducibles y distribución
 
-Para que todos los alumnos trabajen sobre exactamente la misma base, sea cual sea su sistema operativo, la facultad ofrece tres puertas de entrada escalonadas. Las tres arrancan la misma imagen de software.
+Para que todos los alumnos trabajen sobre exactamente la misma base, sea cual sea su sistema operativo, la facultad ofrece tres puertas de entrada escalonadas. Las tres siguen la misma receta: las mismas versiones, los mismos paquetes y los mismos ajustes. Los dos primeros niveles son contenedores y el tercero, un sistema operativo completo, pero un laboratorio da los mismos números en cualquiera de ellos.
 
 ```{mermaid}
 %%| label: fig-niveles
