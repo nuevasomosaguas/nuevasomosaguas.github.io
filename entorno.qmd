@@ -95,9 +95,12 @@ En los tres niveles, un **manual de la primera vez** espera en `~/Documents/Bien
 
 Citar no puede ser una tarea aparte, hecha al final a mano. En el entorno, cada referencia pasa por una sola tubería, de la lectura al documento:
 
-1. **Guardar.** En Firefox o Brave, el botón de Zotero guarda la página que se lee con su PDF; en Newsboat, el lector de revistas de la terminal, `,z` guarda el artículo seleccionado. Los PDF quedan en `~/Biblioteca/almacen_pdf`, con el nombre «Autor - Año - Título», y la referencia, en `~/Biblioteca/zotero.bib`, que Better BibTeX reescribe con cada cambio y con claves de cita estables.
+1. **Guardar.** En Firefox o Brave, el botón de Zotero guarda la página que se lee con su PDF; en Newsboat, el lector de revistas de la terminal, `o` ofrece primero lo que se hace con un artículo: abrirlo, guardarlo en Zotero o en los marcadores. Los PDF quedan en `~/Biblioteca/almacen_pdf`, con el nombre «Autor - Año - Título», y la referencia, en `~/Biblioteca/zotero.bib`, que Better BibTeX reescribe con cada cambio y con claves de cita estables.
 2. **Citar.** Junto a la propia está siempre la [biblioteca de la Nueva Somosaguas](biblioteca.qmd). En VS Code y en Obsidian, escribir `@` abre la lista de referencias, con título y autores; en la terminal, `bibsearch` busca en todas las bibliografías, `bibpdf` abre el PDF de una entrada y `bibclave` copia su clave.
 3. **Compilar.** `pandoc informe.md -o informe.pdf` resuelve las citas contra las dos bibliotecas y añade la lista de referencias al final, en español y con la plantilla de la facultad, sin declarar nada.
+4. **Congelar.** Cada trabajo lleva su propia bibliografía, la tercera capa: `bibcongelar informe.md` escribe a su lado `referencias.bib`, con las entradas que cita y solo esas. Viaja con el trabajo en su repositorio, y el documento se compila igual en cualquier máquina, sin la biblioteca de Zotero de quien lo escribió: la reproducibilidad alcanza también a las citas.
+
+Lo leído también deja rastro sin cuentas ni nubes: `lecturas` junta lo que Zathura y Foliate recuerdan de cada PDF y cada EPUB (la página, el porcentaje, la fecha), le pone su clave de la bibliografía y lo deja en un archivo plano, `~/Biblioteca/lecturas.tsv`.
 
 Lo que se quiere tener a mano pero no se cita (conjuntos de datos, documentación, herramientas, cursos) va a los **marcadores**, una base de [buku](https://github.com/jarun/buku) que se consulta desde la terminal (`marcadores`) o desde una página en el navegador, donde basta arrastrar un enlace para guardarlo; los marcadores de Firefox y Brave llegan solos, y se van si se borran allí, sin tocar lo guardado por otras vías.
 
