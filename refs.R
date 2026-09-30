@@ -61,11 +61,14 @@ ficha <- function(o) {
            if (campo("volume") != "") paste0(" ", o[["volume"]]),
            if (campo("number") != "") paste0("(", o[["number"]], ")"))
   } else llano(o[["publisher"]])
-  # The DOI resolves to the work itself; the ISBN, to the libraries that hold it.
+  # The DOI resolves to the work itself; the ISBN, to the libraries that hold it; the
+  # URL, to the author's own copy when the book is free online.
   enlace <- if (campo("doi") != "") {
     sprintf(". [doi:%s](https://doi.org/%s)", o[["doi"]], o[["doi"]])
   } else if (campo("isbn") != "") {
     sprintf(". [ISBN %s](https://search.worldcat.org/isbn/%s)", o[["isbn"]], o[["isbn"]])
+  } else if (campo("url") != "") {
+    sprintf(". [%s](%s)", sub("^https?://", "", o[["url"]]), o[["url"]])
   } else ""
   linea <- sprintf("* %s (%s). *%s*%s%s%s%s. `[Nivel %s | %s]`",
                    nombres,
