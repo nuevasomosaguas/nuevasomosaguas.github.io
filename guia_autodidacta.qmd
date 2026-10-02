@@ -96,7 +96,7 @@ flowchart TB
 **Meta:** modelar la interacción de agentes discretos sin recurrir a entidades holistas.
 
 * **Sociología analítica (DBO):** deseos, creencias y oportunidades como motores generativos de regularidades macro. *Textos:* Peter Hedström — *Dissecting the Social*; Jon Elster — *Explaining Social Behavior*.
-* **Teoría de juegos estratégica y evolutiva:** equilibrios de Nash, juegos repetidos, dinámica de réplica y normas sociales. *Texto:* Robert Gibbons — *Game Theory for Applied Economists*.
+* **Teoría de juegos estratégica y evolutiva:** equilibrios de Nash, juegos repetidos, dinámica de réplica y normas sociales; la regla de Hamilton, la reciprocidad y las señales costosas, derivadas y no citadas como axiomas, con poco más que el álgebra del bachillerato y problemas resueltos al final de cada capítulo. *Textos:* Robert Gibbons — *Game Theory for Applied Economists*; Richard McElreath & Robert Boyd — *Mathematical Models of Social Evolution*.
 * **Teoría de redes sociales:** homofilia, centralidad, difusión y modelos de umbrales. *Texto:* Matthew O. Jackson — *Social and Economic Networks*.
 * **Modelado formal y basado en agentes:** traducir una conjetura verbal sobre contagio, polarización, segregación o normas a un sistema de ecuaciones y a una simulación, y contrastar lo que cada uno predice. Es la puerta de entrada al proyecto de validación. *Texto:* Paul E. Smaldino — *Modeling Social Behavior*.
 

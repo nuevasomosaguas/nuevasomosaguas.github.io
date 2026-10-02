@@ -87,8 +87,8 @@ Cinco asignaturas por curso, tesis incluida.
 * **Textos matriz:** Peter Hedström — *Dissecting the Social*; Jon Elster — *Explaining Social Behavior*.
 
 #### 2.3. Teoría de juegos y comportamiento estratégico
-* **Contenidos:** juegos estáticos y dinámicos con información completa e incompleta, equilibrios de Nash, juegos repetidos, equilibrios evolutivamente estables y dinámica de réplica.
-* **Textos matriz:** Robert Gibbons — *Game Theory for Applied Economists*; Ken Binmore — *Game Theory: A Very Short Introduction*.
+* **Contenidos:** juegos estáticos y dinámicos con información completa e incompleta, equilibrios de Nash, juegos repetidos, equilibrios evolutivamente estables y dinámica de réplica; halcón-paloma, regla de Hamilton, reciprocidad directa e indirecta, señales costosas y selección entre grupos con la ecuación de Price.
+* **Textos matriz:** Robert Gibbons — *Game Theory for Applied Economists*; Ken Binmore — *Game Theory: A Very Short Introduction*; Richard McElreath & Robert Boyd — *Mathematical Models of Social Evolution*.
 
 #### 2.4. Inferencia causal y econometría estructural
 * **Contenidos:** modelo de resultados potenciales de Rubin, identificación no paramétrica con grafos acíclicos dirigidos, regresión discontinua, variables instrumentales y diferencias en diferencias.
