@@ -81,8 +81,12 @@ format:
     code-fold: show
     highlight-style: github
     html-math-method: mathjax
-    # Para los navegadores sin favicon en SVG y para la pantalla de inicio del iPhone.
+    # Para los navegadores sin favicon en SVG y para la pantalla de inicio del iPhone. Y
+    # MathJax 4 sin la voz, el braille ni la copia enriquecida que genera de serie para
+    # cada fórmula (cientos de megas en una página con muchas): se queda el MathML que
+    # leen los lectores de pantalla, y lo demás se activa desde su menú (clic derecho).
     include-in-header:
       text: |
         <link rel="icon" href="/images/logo/favicon.ico" sizes="48x48">
         <link rel="apple-touch-icon" href="/images/logo/apple-touch-icon.png">
+        <script>window.MathJax = { options: { menuOptions: { settings: { enrich: false, speech: false, braille: false, assistiveMml: true } } } };</script>
