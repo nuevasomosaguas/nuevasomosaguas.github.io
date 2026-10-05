@@ -12,6 +12,10 @@ format:
 **Propósito institucional:** el ingreso al plan de estudios exige un dominio operativo del cálculo en varias variables, del álgebra matricial y de la programación científica. Este programa estival de doce semanas no adelanta el currículo ordinario: purga lagunas analíticas, corrige vicios computacionales y garantiza que el estudiante afronte el primer curso con capacidad de derivar en la pizarra e implementar algoritmos reproducibles en la terminal.
 :::
 
+::: {.callout-tip appearance="simple"}
+**Las guías de laboratorio**, una por semana, están en el [sitio del bootcamp](https://nuevasomosaguas.github.io/bootcamp/), con la [prueba de nivel](https://nuevasomosaguas.github.io/bootcamp/diagnostico/) que dice qué repasar del Bachillerato antes de empezar. Cada guía se entrega como un script que la integración continua ejecuta en limpio.
+:::
+
 ## 1. Propósito del curso de nivelación
 
 La educación universitaria tradicional asume que los estudiantes procedentes de itinerarios humanísticos están incapacitados para las matemáticas avanzadas, y que los procedentes de ciencias puras comprenden por intuición la complejidad de la interacción humana. Ninguno de los dos supuestos resiste el contraste.
