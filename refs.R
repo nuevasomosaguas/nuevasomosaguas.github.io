@@ -49,6 +49,8 @@ for (o in secundarias) {
 }
 curadas <- Filter(function(o) o[["estado"]] == "curada", secundarias)  # the web shows only these
 n_obras <- length(obras)
+# The core is closed: a work enters only when another one leaves.
+if (n_obras != 150) stop("biblioteca.bib: el núcleo tiene ", n_obras, " obras y su tope son 150: para que entre una, otra tiene que salir")
 n_secundarias <- length(curadas)
 n_referencias <- length(todas)
 
