@@ -8,14 +8,14 @@ Cada versión del núcleo de la [biblioteca](biblioteca.qmd) lleva una etiqueta 
 
 ## v1.1 — Reequilibrio del núcleo (10 de octubre de 2026)
 
-El núcleo sigue en 150 obras: salen 28 y entran 28. El área secundaria pasa de 22 a 63. Los artículos de la frontera suben de 6 a 14, y la sección se llama ahora «Artículos seminales y frontera».
+El núcleo sigue en 150 obras: salen 28 y entran 28. El área secundaria pasa de 22 a 65. Los artículos de la frontera suben de 6 a 14, y la sección se llama ahora «Artículos seminales y frontera».
 
 | Sección | v1.0 | v1.1 |
 |---|---|---|
-| Estrato 0. El sustrato material | 23 | 22 |
+| Estrato 0. El sustrato material | 23 | 21 |
 | Estrato 1. La acción estratégica | 26 | 24 |
 | Estrato 2. Topología y dinámica de agregación | 31 | 28 |
-| Estrato 3. El laboratorio inferencial | 36 | 36 |
+| Estrato 3. El laboratorio inferencial | 36 | 37 |
 | Artículos seminales y frontera | 6 | 14 |
 | Núcleo instrumental de cómputo | 28 | 26 |
 | **Total** | **150** | **150** |
@@ -47,6 +47,7 @@ El núcleo sigue en 150 obras: salen 28 y entran 28. El área secundaria pasa de
 **Estrato 3**
 
 * [Ragin (2008)](biblioteca.qmd#ragin2008redesigning), *Redesigning Social Inquiry*: viene del Estrato 1, porque es método.
+* [Beaujean (2014)](biblioteca.qmd#beaujean2014latent), *Latent Variable Modeling Using R*: viene del Estrato 0, porque también es método. Es la única obra del núcleo que enseña a medir lo que no se observa: análisis factorial confirmatorio, ecuaciones estructurales e invariancia de la medida. Entra con ficha, y debajo cuelgan Bollen (1989), *Structural Equations with Latent Variables*, el tratado de referencia, como profundización técnica, y Borsboom (2005), *Measuring the Mind*, que pregunta si los rasgos latentes existen o son artefactos del modelo, como contraste.
 * [Lohr (2021)](biblioteca.qmd#lohr2021sampling), *Sampling: Design and Analysis*: el muestreo, que faltaba.
 * [Gelman, Hill y Vehtari (2020)](biblioteca.qmd#gelman2020regression), *Regression and Other Stories*: la regresión aplicada, de acceso libre.
 * [McElreath (2020)](biblioteca.qmd#mcelreath2020statistical), *Statistical Rethinking*: texto matriz de la asignatura 3.3, que no estaba en el núcleo; cubre también los modelos multinivel.
