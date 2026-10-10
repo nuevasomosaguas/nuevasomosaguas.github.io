@@ -8,9 +8,10 @@ Cada versión del núcleo de la [biblioteca](biblioteca.qmd) lleva una etiqueta 
 
 ## Desde v1.1
 
-Cambios que entrarán en la próxima versión. El núcleo sigue en 150 obras, y el área secundaria pasa de 81 a 83.
+Cambios que entrarán en la próxima versión. El núcleo sigue en 150 obras, y el área secundaria pasa de 81 a 84.
 
 * Ainslie (2001), *Breakdown of Will*, cuelga de Elster como fuente original: la voluntad como interacción estratégica entre los yoes sucesivos de una persona, con el descuento hiperbólico como mecanismo y las reglas personales como acuerdos que se sostienen igual que la reputación en un juego repetido. Elster presenta el mecanismo, y Ainslie enseña cómo se construyó. Su contraste, también bajo Elster, es Sozou (1998): con incertidumbre sobre el riesgo de perder la recompensa, el descuento hiperbólico puede ser racional, y la inversión de preferencias deja de ser un fallo de la voluntad para ser una respuesta adaptativa.
+* Runciman (1998), *The Social Animal*, cuelga de Mesoudi como divulgación: la sociología como parte de la teoría de la selección, con tres niveles, la selección natural de los genes, la cultural de las ideas y la social de las prácticas y los roles. Es la evolución cultural de Mesoudi leída por un sociólogo.
 
 ## v1.1 — Reequilibrio del núcleo (10 de octubre de 2026)
 
