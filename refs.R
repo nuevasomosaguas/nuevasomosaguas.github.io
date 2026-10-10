@@ -34,7 +34,7 @@ es_secundaria <- function(o) "capa" %in% names(o) && o[["capa"]] == "secundaria"
 obras <- Filter(Negate(es_secundaria), todas)
 secundarias <- Filter(es_secundaria, todas)
 papeles <- c("Profundización técnica", "Contraste y crítica", "Especialización aplicada",
-             "Fuente original", "Historia y contexto", "Divulgación")
+             "Fuente original", "Historia y contexto", "Divulgación", "Introducción")
 for (o in obras) if (!"estrato" %in% names(o)) stop("biblioteca.bib: ", o[["clave"]], " no tiene estrato")
 # How each core work is read: the time budget of the corpus, checkable from the counts.
 lecturas <- c("Completa con ejercicios", "Completa", "Consulta")
@@ -110,7 +110,8 @@ cita <- function(o) {
     if (!o[["origlanguage"]] %in% names(idiomas)) stop("biblioteca.bib: idioma desconocido en ", o[["clave"]], ": ", o[["origlanguage"]])
     paste0("orig. en ", idiomas[[o[["origlanguage"]]]], if (campo("origtitle") != "") paste0(": *", llano(o[["origtitle"]]), "*"))
   } else ""
-  parentesis <- if (campo("edition") != "") paste(o[["edition"]], "Edition") else if (original != "") original else llano(campo("note"))
+  parentesis <- paste(Filter(nzchar, c(if (campo("edition") != "") paste(o[["edition"]], "Edition"), original, llano(campo("note")))),
+                      collapse = "; ")
   pie <- if (o[["tipo"]] == "article") {
     paste0(llano(o[["journal"]]),
            if (campo("volume") != "") paste0(" ", o[["volume"]]),
