@@ -39,6 +39,8 @@ Una biblioteca científica no es un museo de encuadernaciones ni una lista de le
 Por eso el corpus no se ordena por rótulos de facultad —«Economía», «Sociología», «Biología»—, que son la taxonomía decimonónica de la biblioteca universitaria, sino por **función causal en la arquitectura de los agregados sociales**: cuatro estratos ascendentes, una frontera de artículos y un núcleo instrumental.
 
 Los estratos son los [cuatro pilares](index.qmd#fig-pilares) de la portada, ordenados por función: el Estrato 0 es el pilar 2, la naturaleza humana; el Estrato 1, el pilar 3, la interacción estratégica; el Estrato 2, el pilar 4, la síntesis generativa; y el Estrato 3, con el núcleo instrumental, el pilar 1, las herramientas formales. Los artículos seminales y de frontera atraviesan los cuatro.
+
+El corpus incluye temas incómodos —la genética de la conducta, la psicometría, el conflicto étnico, la crítica de la democracia— porque la explicación causal no puede excluir variables por su coste social. A cambio, ninguno entra sin su crítica más fuerte: lo incómodo llega con su fuente de primer nivel y con su mejor contraste colgado debajo, y se examina con el mismo bisturí que lo cómodo.
 :::
 
 ::: {.callout-tip}
