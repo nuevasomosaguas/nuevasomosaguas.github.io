@@ -8,7 +8,7 @@ Cada versión del núcleo de la [biblioteca](biblioteca.qmd) lleva una etiqueta 
 
 ## v1.1 — Reequilibrio del núcleo (10 de octubre de 2026)
 
-El núcleo sigue en 150 obras: salen 27 y entran 27. El área secundaria pasa de 22 a 53. Los artículos de la frontera suben de 6 a 14, y la sección se llama ahora «Artículos seminales y frontera».
+El núcleo sigue en 150 obras: salen 28 y entran 28. El área secundaria pasa de 22 a 55. Los artículos de la frontera suben de 6 a 14, y la sección se llama ahora «Artículos seminales y frontera».
 
 | Sección | v1.0 | v1.1 |
 |---|---|---|
@@ -42,6 +42,7 @@ El núcleo sigue en 150 obras: salen 27 y entran 27. El área secundaria pasa de
 * [Centola (2018)](biblioteca.qmd#centola2018how), *How Behavior Spreads*: el contagio complejo, la difusión que exige refuerzo.
 * [Squazzoni (2012)](biblioteca.qmd#squazzoni2012agentbased), *Agent-Based Computational Sociology*: los modelos de agentes desde la sociología.
 * [Manzo (2022)](biblioteca.qmd#manzo2022agentbased), *Agent-Based Models and Causal Inference*: el puente entre Epstein y Pearl.
+* [Scheidel (2017)](biblioteca.qmd#scheidel2017great), *The Great Leveler*: la desigualdad en la macrohistoria cuantitativa. Hace pareja con Turchin y con Erikson y Goldthorpe: Turchin explica por qué las élites crecen hasta romperse, Erikson y Goldthorpe miden la movilidad en tiempos de paz, y Scheidel explica qué ha comprimido la desigualdad históricamente. Entra con ficha, y debajo cuelga Milanovic (2016), *Global Inequality*, como contraste.
 
 **Estrato 3**
 
@@ -96,6 +97,7 @@ Entre paréntesis, la obra del núcleo de la que cuelgan y su papel.
 * Galor (2022), *The Journey of Humanity* (Galor, 2011, divulgación): la versión divulgativa de *Unified Growth Theory*.
 * Morris (2014), *War! What Is It Good For?* (Gat, divulgación).
 * Stachurski (2009), *Economic Dynamics* (Strogatz, especialización aplicada).
+* Epstein (1997), *Nonlinear Dynamics, Mathematical Biology, and Social Science* (Strogatz, especialización aplicada): sale para dejar sitio a Scheidel. Strogatz cubre mejor el aparato formal, y Epstein conserva dos obras en el núcleo.
 * Ritchey (2011), *Wicked Problems – Social Messes* (Page, especialización aplicada).
 
 **Estrato 3**
