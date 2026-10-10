@@ -17,9 +17,19 @@ resources:
 #| include: false
 # CSL-JSON, the native format of Pandoc and Zotero's other door, derived from
 # the .bib on every render. Pandoc keeps the standard fields and drops the
-# library's own (estrato, nivel, ficha), which only this site reads.
+# library's own (estrato, nivel, ficha, capa...); they travel in CSL's `custom`,
+# the field the format reserves for them.
 stopifnot(system2("quarto", c("pandoc", "biblioteca.bib", "-f", "bibtex",
                               "-t", "csljson", "-o", "biblioteca.json")) == 0)
+source("refs.R")
+propios <- c("estrato", "nivel", "descriptor", "mecanismo", "aparato", "funcion",
+             "capa", "cuelga", "papel", "estado")
+csl <- jsonlite::read_json("biblioteca.json", simplifyVector = FALSE)
+for (i in seq_along(csl)) {
+  o <- todas[[csl[[i]]$id]]
+  csl[[i]]$custom <- as.list(o[intersect(propios, names(o))])
+}
+jsonlite::write_json(csl, "biblioteca.json", auto_unbox = TRUE, pretty = TRUE)
 ```
 
 ::: {.callout-note}
@@ -31,10 +41,10 @@ Por eso el corpus no se ordena por rótulos de facultad —«Economía», «Soci
 
 ::: {.callout-tip}
 ### Cómo leer las fichas
-Las obras que vertebran cada estrato llevan ficha técnica con tres campos: el **mecanismo** que aíslan, el **aparato formal** que exigen y su **función en el RAG** institucional. La etiqueta `[Nivel 1-3 | Descriptor]` indica el grado de exigencia analítica, no el estrato.
+Las obras que vertebran cada estrato llevan ficha técnica con tres campos: el **mecanismo** que aíslan, el **aparato formal** que exigen y su **función en el RAG** institucional. La etiqueta `[Nivel 1-3 | Descriptor]` indica el grado de exigencia analítica, no el estrato. Debajo de algunas obras cuelgan las del [área secundaria](#área-secundaria), con su papel: profundización técnica, contraste y crítica, especialización aplicada, fuente original, historia y contexto, divulgación o entrada en castellano.
 :::
 
-[<i class="bi bi-download"></i> Descargar las `r n_obras` referencias en BibTeX](biblioteca.bib){.btn .descarga download="nuevasomosaguas.bib"}
+[<i class="bi bi-download"></i> Descargar las `r n_referencias` referencias en BibTeX: `r n_obras` del núcleo y `r n_referencias - n_obras` del área secundaria](biblioteca.bib){.btn .descarga download="nuevasomosaguas.bib"}
 [<i class="bi bi-download"></i> En CSL-JSON](biblioteca.json){.btn .descarga download="nuevasomosaguas.json"}
 
 ---
@@ -108,6 +118,12 @@ Los manuales de taller: cómo hablar con la máquina sin intermediarios ni inter
 #| results: asis
 lista("computo")
 ```
+
+---
+
+## Área secundaria
+
+El núcleo tiene un número cerrado de obras; lo que amplía cada una sin entrar en él forma el área secundaria, que no tiene tope: profundizaciones, contrapesos, aplicaciones, fuentes originales, historia, divulgación y entradas en castellano. Cada obra cuelga de una del núcleo, debajo de la cual aparece en esta página, y todas juntas, con búsqueda y filtros por papel y por tema, están en el **[catálogo del área secundaria](biblioteca-secundaria/index.qmd)**, que hoy reúne `r n_secundarias` obras. Solo entran las curadas: las propuestas esperan su revisión.
 
 ---
 

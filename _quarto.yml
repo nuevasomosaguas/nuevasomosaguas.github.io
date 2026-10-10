@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  # The secondary area's catalogue is generated from biblioteca.bib before every render.
+  pre-render: biblioteca-secundaria/obras.R
   preview:
     port: 4200
     browser: false

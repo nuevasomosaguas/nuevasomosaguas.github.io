@@ -10,13 +10,23 @@
 % obra: hay documentos que ya la citan.
 %
 % Identificadores. doi cuando la editorial lo registra en Crossref para esta
-% edición; si no, isbn. Cualquier gestor bibliográfico completa el resto.
+% edición; si no, isbn. Cualquier gestor bibliográfico completa el resto. Si la obra
+% está gratis en línea por voluntad de sus autores, además url, que es el enlace que
+% muestra la página.
 %
 % Campos propios, que los gestores ignoran:
 %   estrato     sustrato | accion | agregacion | inferencia | frontera | computo
 %   nivel       1 a 3, exigencia analítica
 %   descriptor  la etiqueta que acompaña al nivel
 %   mecanismo, aparato, funcion   la ficha técnica, en Markdown
+%
+% Área secundaria. Lo revisado que amplía el núcleo sin entrar en él, al final del
+% archivo. En lugar de estrato, cada obra lleva:
+%   capa        secundaria
+%   cuelga      la clave de la obra del núcleo de la que parte
+%   papel       Profundización técnica | Contraste y crítica | Especialización aplicada |
+%               Fuente original | Historia y contexto | Divulgación | Entrada en castellano
+%   estado      curada | propuesta: solo las curadas salen en la web
 %
 % El orden de las entradas es el orden de la página. Un campo por línea, entre
 % llaves: refs.R detiene el render ante cualquier línea que no lo cumpla.
@@ -1034,13 +1044,12 @@
   descriptor = {Álgebra Lineal Numérica}
 }
 
-@book{casella2024statistical,
-  author     = {Casella, George and Berger, Roger L.},
-  title      = {Statistical Inference},
-  publisher  = {Chapman and Hall/CRC},
-  edition    = {2nd},
-  year       = {2024},
-  doi        = {10.1201/9781003456285},
+@book{wasserman2004all,
+  author     = {Wasserman, Larry},
+  title      = {All of Statistics: A Concise Course in Statistical Inference},
+  publisher  = {Springer},
+  year       = {2004},
+  doi        = {10.1007/978-0-387-21736-9},
   estrato    = {inferencia},
   nivel      = {2},
   descriptor = {Inferencia Formal}
@@ -1212,25 +1221,26 @@
   descriptor = {Estadística Robusta}
 }
 
-@book{kraskamiller2013nonparametric,
-  author     = {Kraska-Miller, Maria},
-  title      = {Nonparametric Statistics for Social and Behavioral Sciences},
-  publisher  = {CRC Press},
-  year       = {2013},
-  doi        = {10.1201/b16188},
+@book{wasserman2006all,
+  author     = {Wasserman, Larry},
+  title      = {All of Nonparametric Statistics},
+  publisher  = {Springer},
+  year       = {2006},
+  doi        = {10.1007/0-387-30623-4},
   estrato    = {inferencia},
-  nivel      = {2},
+  nivel      = {3},
   descriptor = {No Paramétrica}
 }
 
-@book{pigott2012advances,
-  author     = {Pigott, Terri D.},
-  title      = {Advances in Meta-Analysis},
-  publisher  = {Springer},
-  year       = {2012},
-  doi        = {10.1007/978-1-4614-2278-5},
+@book{harrer2021doing,
+  author     = {Harrer, Mathias and Cuijpers, Pim and Furukawa, Toshi A. and Ebert, David D.},
+  title      = {Doing Meta-Analysis with R: A Hands-On Guide},
+  publisher  = {Chapman \& Hall/CRC},
+  year       = {2021},
+  doi        = {10.1201/9781003107347},
+  url        = {https://doing-meta.guide/},
   estrato    = {inferencia},
-  nivel      = {3},
+  nivel      = {2},
   descriptor = {Meta-Análisis}
 }
 
@@ -1753,4 +1763,312 @@
   estrato    = {computo},
   nivel      = {2},
   descriptor = {Historia de la Excelencia}
+}
+
+% ------------------------------------------------------------------------------------
+% Área secundaria
+% ------------------------------------------------------------------------------------
+
+@book{casella2024statistical,
+  author     = {Casella, George and Berger, Roger L.},
+  title      = {Statistical Inference},
+  publisher  = {Chapman and Hall/CRC},
+  edition    = {2nd},
+  year       = {2024},
+  doi        = {10.1201/9781003456285},
+  capa       = {secundaria},
+  cuelga     = {wasserman2004all},
+  papel      = {Profundización técnica},
+  estado     = {curada},
+  nivel      = {3},
+  descriptor = {Inferencia Formal}
+}
+
+@book{pigott2012advances,
+  author     = {Pigott, Terri D.},
+  title      = {Advances in Meta-Analysis},
+  publisher  = {Springer},
+  year       = {2012},
+  doi        = {10.1007/978-1-4614-2278-5},
+  capa       = {secundaria},
+  cuelga     = {harrer2021doing},
+  papel      = {Profundización técnica},
+  estado     = {curada},
+  nivel      = {3},
+  descriptor = {Meta-Análisis}
+}
+
+@book{borenstein2021introduction,
+  author     = {Borenstein, Michael and Hedges, Larry V. and Higgins, Julian P. T. and Rothstein, Hannah R.},
+  title      = {Introduction to Meta-Analysis},
+  publisher  = {Wiley},
+  edition    = {2nd},
+  year       = {2021},
+  doi        = {10.1002/9781119558378},
+  capa       = {secundaria},
+  cuelga     = {harrer2021doing},
+  papel      = {Profundización técnica},
+  estado     = {curada},
+  nivel      = {2},
+  descriptor = {Meta-Análisis}
+}
+
+@book{finkelstein2015statistics,
+  author     = {Finkelstein, Michael O. and Levin, Bruce},
+  title      = {Statistics for Lawyers},
+  publisher  = {Springer},
+  year       = {2015},
+  doi        = {10.1007/978-1-4419-5985-0},
+  capa       = {secundaria},
+  cuelga     = {wasserman2004all},
+  papel      = {Especialización aplicada},
+  estado     = {curada},
+  nivel      = {1},
+  descriptor = {Aplicación Jurídica}
+}
+
+@book{pawitan2001all,
+  author     = {Pawitan, Yudi},
+  title      = {In All Likelihood: Statistical Modelling and Inference Using Likelihood},
+  publisher  = {Oxford University Press},
+  year       = {2001},
+  doi        = {10.1093/oso/9780198507659.001.0001},
+  capa       = {secundaria},
+  cuelga     = {dienes2008understanding},
+  papel      = {Profundización técnica},
+  estado     = {curada},
+  nivel      = {3},
+  descriptor = {Verosimilitud}
+}
+
+@book{harden2021genetic,
+  author     = {Harden, Kathryn Paige},
+  title      = {The Genetic Lottery: Why DNA Matters for Social Equality},
+  publisher  = {Princeton University Press},
+  year       = {2021},
+  doi        = {10.1515/9780691226705},
+  capa       = {secundaria},
+  cuelga     = {plomin2018blueprint},
+  papel      = {Contraste y crítica},
+  estado     = {curada},
+  nivel      = {1},
+  descriptor = {Genética y Desigualdad}
+}
+
+@article{turkheimer2000three,
+  author     = {Turkheimer, Eric},
+  title      = {Three Laws of Behavior Genetics and What They Mean},
+  journal    = {Current Directions in Psychological Science},
+  volume     = {9},
+  number     = {5},
+  year       = {2000},
+  doi        = {10.1111/1467-8721.00084},
+  capa       = {secundaria},
+  cuelga     = {plomin2018blueprint},
+  papel      = {Contraste y crítica},
+  estado     = {curada},
+  nivel      = {2},
+  descriptor = {Genética Conductual}
+}
+
+@article{fearon2003ethnicity,
+  author     = {Fearon, James D. and Laitin, David D.},
+  title      = {Ethnicity, Insurgency, and Civil War},
+  journal    = {American Political Science Review},
+  volume     = {97},
+  number     = {1},
+  year       = {2003},
+  doi        = {10.1017/S0003055403000534},
+  capa       = {secundaria},
+  cuelga     = {vanhanen2012ethnic},
+  papel      = {Contraste y crítica},
+  estado     = {curada},
+  nivel      = {2},
+  descriptor = {Conflicto Civil}
+}
+
+@article{wimmer2009ethnic,
+  author     = {Wimmer, Andreas and Cederman, Lars-Erik and Min, Brian},
+  title      = {Ethnic Politics and Armed Conflict: A Configurational Analysis of a New Global Data Set},
+  journal    = {American Sociological Review},
+  volume     = {74},
+  number     = {2},
+  year       = {2009},
+  doi        = {10.1177/000312240907400208},
+  capa       = {secundaria},
+  cuelga     = {vanhanen2012ethnic},
+  papel      = {Contraste y crítica},
+  estado     = {curada},
+  nivel      = {2},
+  descriptor = {Conflicto Étnico}
+}
+
+@article{alesina2003fractionalization,
+  author     = {Alesina, Alberto and Devleeschauwer, Arnaud and Easterly, William and Kurlat, Sergio and Wacziarg, Romain},
+  title      = {Fractionalization},
+  journal    = {Journal of Economic Growth},
+  volume     = {8},
+  number     = {2},
+  year       = {2003},
+  doi        = {10.1023/A:1024471506938},
+  capa       = {secundaria},
+  cuelga     = {vanhanen2012ethnic},
+  papel      = {Contraste y crítica},
+  estado     = {curada},
+  nivel      = {2},
+  descriptor = {Fraccionalización Étnica}
+}
+
+@book{gurri2018revolt,
+  author     = {Gurri, Martin},
+  title      = {The Revolt of the Public and the Crisis of Authority in the New Millennium},
+  publisher  = {Stripe Press},
+  year       = {2018},
+  isbn       = {9781732265141},
+  capa       = {secundaria},
+  cuelga     = {kuran1995private},
+  papel      = {Contraste y crítica},
+  estado     = {curada},
+  nivel      = {1},
+  descriptor = {Crisis de Autoridad}
+}
+
+@book{regenwetter2006behavioral,
+  author     = {Regenwetter, Michel and Grofman, Bernard and Marley, A. A. J. and Tsetlin, Ilia},
+  title      = {Behavioral Social Choice: Probabilistic Models, Statistical Inference, and Applications},
+  publisher  = {Cambridge University Press},
+  year       = {2006},
+  isbn       = {9780521829687},
+  capa       = {secundaria},
+  cuelga     = {achen2016democracy},
+  papel      = {Profundización técnica},
+  estado     = {curada},
+  nivel      = {3},
+  descriptor = {Elección Social}
+}
+
+@book{maynardsmith1982evolution,
+  author     = {Maynard Smith, John},
+  title      = {Evolution and the Theory of Games},
+  publisher  = {Cambridge University Press},
+  year       = {1982},
+  doi        = {10.1017/CBO9780511806292},
+  capa       = {secundaria},
+  cuelga     = {mcelreath2007mathematical},
+  papel      = {Fuente original},
+  estado     = {curada},
+  nivel      = {3},
+  descriptor = {Teoría Evolutiva de Juegos}
+}
+
+@book{henrich2016secret,
+  author     = {Henrich, Joseph},
+  title      = {The Secret of Our Success: How Culture Is Driving Human Evolution, Domesticating Our Species, and Making Us Smarter},
+  publisher  = {Princeton University Press},
+  year       = {2016},
+  doi        = {10.1515/9781400873296},
+  capa       = {secundaria},
+  cuelga     = {mesoudi2011cultural},
+  papel      = {Divulgación},
+  estado     = {curada},
+  nivel      = {1},
+  descriptor = {Evolución Cultural}
+}
+
+@book{jerven2013poor,
+  author     = {Jerven, Morten},
+  title      = {Poor Numbers: How We Are Misled by African Development Statistics and What to Do about It},
+  publisher  = {Cornell University Press},
+  year       = {2013},
+  doi        = {10.7591/9780801467615},
+  capa       = {secundaria},
+  cuelga     = {wachter2014essential},
+  papel      = {Contraste y crítica},
+  estado     = {curada},
+  nivel      = {1},
+  descriptor = {Calidad de los Datos}
+}
+
+@book{waldrop2001dream,
+  author     = {Waldrop, M. Mitchell},
+  title      = {The Dream Machine: J. C. R. Licklider and the Revolution That Made Computing Personal},
+  publisher  = {Viking},
+  year       = {2001},
+  isbn       = {9780670899760},
+  capa       = {secundaria},
+  cuelga     = {hamming1997art},
+  papel      = {Historia y contexto},
+  estado     = {curada},
+  nivel      = {1},
+  descriptor = {Historia de la Computación}
+}
+
+@book{roemer1982general,
+  author     = {Roemer, John E.},
+  title      = {A General Theory of Exploitation and Class},
+  publisher  = {Harvard University Press},
+  year       = {1982},
+  doi        = {10.4159/harvard.9780674435865},
+  capa       = {secundaria},
+  cuelga     = {hedstrom2005dissecting},
+  papel      = {Contraste y crítica},
+  estado     = {curada},
+  nivel      = {3},
+  descriptor = {Marxismo Analítico}
+}
+
+@book{deneen2018why,
+  author     = {Deneen, Patrick J.},
+  title      = {Why Liberalism Failed},
+  publisher  = {Yale University Press},
+  year       = {2018},
+  doi        = {10.12987/yale/9780300223446.001.0001},
+  capa       = {secundaria},
+  cuelga     = {achen2016democracy},
+  papel      = {Contraste y crítica},
+  estado     = {curada},
+  nivel      = {1},
+  descriptor = {Crítica del Liberalismo}
+}
+
+@book{legutko2016demon,
+  author     = {Legutko, Ryszard},
+  title      = {The Demon in Democracy: Totalitarian Temptations in Free Societies},
+  publisher  = {Encounter Books},
+  year       = {2016},
+  isbn       = {9781594038631},
+  capa       = {secundaria},
+  cuelga     = {achen2016democracy},
+  papel      = {Contraste y crítica},
+  estado     = {curada},
+  nivel      = {1},
+  descriptor = {Crítica de la Democracia Liberal}
+}
+
+@book{fernandezdelamora1977partitocracia,
+  author     = {Fernández de la Mora, Gonzalo},
+  title      = {La partitocracia},
+  publisher  = {Instituto de Estudios Políticos},
+  year       = {1977},
+  isbn       = {9788425905940},
+  capa       = {secundaria},
+  cuelga     = {achen2016democracy},
+  papel      = {Contraste y crítica},
+  estado     = {curada},
+  nivel      = {1},
+  descriptor = {Crítica de la Partitocracia}
+}
+
+@book{vinuesa1998demografia,
+  author     = {Vinuesa Angulo, Julio and Zamora López, Francisco and others},
+  title      = {Demografía: análisis y proyecciones},
+  publisher  = {Síntesis},
+  year       = {1998},
+  isbn       = {9788477382478},
+  capa       = {secundaria},
+  cuelga     = {wachter2014essential},
+  papel      = {Profundización técnica},
+  estado     = {curada},
+  nivel      = {2},
+  descriptor = {Demografía}
 }

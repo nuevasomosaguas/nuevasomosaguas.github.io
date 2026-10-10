@@ -1,0 +1,34 @@
+---
+title: "Biblioteca: área secundaria"
+subtitle: "Lo que amplía el núcleo sin entrar en él"
+description: "Profundizaciones, contrapesos, aplicaciones, fuentes originales, historia, divulgación y entradas en castellano: obras revisadas que cuelgan de las del núcleo de la biblioteca."
+listing:
+  contents: obras.yml
+  type: table
+  sort: [papel, title]
+  fields: [title, autores, anio, papel, tema, nivel, cuelga]
+  field-display-names:
+    title: "Obra"
+    autores: "Autores"
+    anio: "Año"
+    papel: "Papel"
+    tema: "Tema"
+    nivel: "Nivel"
+    cuelga: "Cuelga de"
+  categories: true
+  page-size: 50
+---
+
+El [núcleo de la biblioteca](../biblioteca.qmd) tiene un número cerrado de obras, ordenadas por función causal. El área secundaria no tiene tope: reúne lo que se ha revisado y aceptado pero no entra en el núcleo. Cada obra cuelga de una del núcleo, y aparece también debajo de ella, en la biblioteca.
+
+Cada obra cumple uno de siete papeles:
+
+* **Profundización técnica:** el mismo terreno que la obra del núcleo, con más aparato formal.
+* **Contraste y crítica:** el contrapeso, la mejor versión del argumento contrario.
+* **Especialización aplicada:** el método llevado a un campo concreto.
+* **Fuente original:** el texto en el que nació la idea.
+* **Historia y contexto:** cómo se llegó hasta ahí, y quién lo hizo.
+* **Divulgación:** la versión para el gran público, cuando es de alto calibre.
+* **Entrada en castellano:** la puerta de entrada para quien llega sin inglés.
+
+Solo aparecen las obras curadas. Las propuestas, de alumnos o de cualquiera, esperan su revisión antes de entrar. Y en las respuestas del sistema RAG, el núcleo va primero: el área secundaria se trae como profundización o como contrapeso, siempre etiquetada como tal, y nunca como el consenso del pensum.
