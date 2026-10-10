@@ -1,0 +1,130 @@
+---
+title: "Biblioteca: registro de cambios"
+subtitle: "Qué entra, qué sale y por qué, versión a versión"
+description: "Las revisiones del núcleo de la biblioteca de la Nueva Somosaguas: cada obra que entra, sale o cambia de sitio, con su razón en una línea."
+---
+
+Cada versión del núcleo de la [biblioteca](biblioteca.qmd) lleva una etiqueta en el repositorio. Quien la leyó en una versión anterior puede ver aquí qué cambió, sin comparar a ojo las entradas, y el detalle exacto está en `git diff v1.0 v1.1 -- biblioteca.bib`. Ninguna obra que sale del núcleo desaparece: pasa al [área secundaria](biblioteca-secundaria/index.qmd), colgada de la obra del núcleo que la recoge.
+
+## v1.1 — Reequilibrio del núcleo (10 de octubre de 2026)
+
+El núcleo sigue en 150 obras: salen 27 y entran 27. El área secundaria pasa de 22 a 53. Los artículos de la frontera suben de 6 a 14, y la sección se llama ahora «Artículos seminales y frontera».
+
+| Sección | v1.0 | v1.1 |
+|---|---|---|
+| Estrato 0. El sustrato material | 23 | 22 |
+| Estrato 1. La acción estratégica | 26 | 24 |
+| Estrato 2. Topología y dinámica de agregación | 31 | 28 |
+| Estrato 3. El laboratorio inferencial | 36 | 36 |
+| Artículos seminales y frontera | 6 | 14 |
+| Núcleo instrumental de cómputo | 28 | 26 |
+| **Total** | **150** | **150** |
+
+### Entran en el núcleo
+
+**Estrato 0**
+
+* [Mills, Barban y Tropf (2020)](biblioteca.qmd#mills2020introduction), *An Introduction to Statistical Genetic Data Analysis*: pone en R lo que Plomin cuenta en prosa, escrito por sociólogos y demógrafos.
+* [Conley y Fletcher (2017)](biblioteca.qmd#conley2017genome), *The Genome Factor*: la puerta de entrada a la genómica desde la sociología.
+* [Hrdy (2009)](biblioteca.qmd#hrdy2009mothers), *Mothers and Others*: el sustrato evolutivo de la familia y la cooperación, que faltaba en el estrato.
+
+**Estrato 1**
+
+* [Coleman (1990)](biblioteca.qmd#coleman1990foundations), *Foundations of Social Theory*: el bote micro-macro sobre el que se monta el esquema DBO; entra con ficha completa.
+* [Hedström y Bearman (2009)](biblioteca.qmd#hedstrom2009oxford), *The Oxford Handbook of Analytical Sociology*: el programa de la sociología analítica, en un volumen.
+* [Goldthorpe (2015)](biblioteca.qmd#goldthorpe2015sociology), *Sociology as a Population Science*: une el programa analítico con la demografía del Estrato 3.
+* [Erikson y Goldthorpe (1992)](biblioteca.qmd#erikson1992constant), *The Constant Flux*: con ella entra la estratificación y la movilidad social, que no estaban en ninguna parte.
+* [Ostrom (1990)](biblioteca.qmd#ostrom1990governing), *Governing the Commons*: el contrapeso empírico a Olson.
+* [Gambetta (2009)](biblioteca.qmd#gambetta2009codes), *Codes of the Underworld*: el DBO aplicado a un caso empírico de señales costosas.
+
+**Estrato 2**
+
+* [Centola (2018)](biblioteca.qmd#centola2018how), *How Behavior Spreads*: el contagio complejo, la difusión que exige refuerzo.
+* [Squazzoni (2012)](biblioteca.qmd#squazzoni2012agentbased), *Agent-Based Computational Sociology*: los modelos de agentes desde la sociología.
+* [Manzo (2022)](biblioteca.qmd#manzo2022agentbased), *Agent-Based Models and Causal Inference*: el puente entre Epstein y Pearl.
+
+**Estrato 3**
+
+* [Ragin (2008)](biblioteca.qmd#ragin2008redesigning), *Redesigning Social Inquiry*: viene del Estrato 1, porque es método.
+* [Lohr (2021)](biblioteca.qmd#lohr2021sampling), *Sampling: Design and Analysis*: el muestreo, que faltaba.
+* [Gelman, Hill y Vehtari (2020)](biblioteca.qmd#gelman2020regression), *Regression and Other Stories*: la regresión aplicada, de acceso libre.
+* [McElreath (2020)](biblioteca.qmd#mcelreath2020statistical), *Statistical Rethinking*: texto matriz de la asignatura 3.3, que no estaba en el núcleo; cubre también los modelos multinivel.
+* [Mills (2011)](biblioteca.qmd#mills2011introducing), *Introducing Survival and Event History Analysis*: el análisis de historia de eventos, en R.
+* [Huntington-Klein (2021)](biblioteca.qmd#huntingtonklein2021effect), *The Effect*: el diseño de investigación causal, de acceso libre.
+
+**Artículos seminales y frontera**
+
+* [Centola y Macy (2007)](biblioteca.qmd#centola2007complex), «Complex Contagions and the Weakness of Long Ties»: hace pareja con Granovetter (1973).
+* [Salganik, Dodds y Watts (2006)](biblioteca.qmd#salganik2006experimental), el mercado cultural artificial: la influencia social, medida en un experimento.
+* [Bruch y Mare (2006)](biblioteca.qmd#bruch2006neighborhood), «Neighborhood Choice and Neighborhood Change»: el contraste empírico del modelo de Schelling.
+* [Howe et al. (2022)](biblioteca.qmd#howe2022withinsibship), los GWAS entre hermanos: el control intrafamiliar de las puntuaciones poligénicas de Plomin.
+* [Breen y Goldthorpe (1997)](biblioteca.qmd#breen1997explaining), «Explaining Educational Differentials»: la teoría formal de la acción racional aplicada a la educación.
+* [Ioannidis (2005)](biblioteca.qmd#ioannidis2005why), «Why Most Published Research Findings Are False».
+* [Simmons, Nelson y Simonsohn (2011)](biblioteca.qmd#simmons2011falsepositive), «False-Positive Psychology».
+* [Open Science Collaboration (2015)](biblioteca.qmd#opensciencecollaboration2015estimating), «Estimating the Reproducibility of Psychological Science»: con los dos anteriores, la crisis de replicación, que el núcleo no recogía.
+
+**Núcleo instrumental de cómputo**
+
+* [Kamiński (2023)](biblioteca.qmd#kaminski2023julia), *Julia for Data Analysis*: el Julia aplicado que promete el pilar 1.
+* [Bryan (2018)](biblioteca.qmd#bryan2018excuse), «Excuse Me, Do You Have a Moment to Talk About Version Control?»: el control de versiones, para estadísticos.
+
+### Pasan al área secundaria
+
+Entre paréntesis, la obra del núcleo de la que cuelgan y su papel.
+
+**Estrato 0**
+
+* Cochran y Harpending (2009), *The 10,000 Year Explosion* (Reich, divulgación): Reich cubre el mismo terreno con datos de ADN antiguo.
+* Tuschman (2013), *Our Political Nature* (Buss y Hawley, divulgación): divulgación de lo que Buss y Hawley tratan con aparato.
+* Lindeberg (2010), *Food and Western Disease* (Harris et al., especialización aplicada): una aplicación médica concreta.
+* Bloom (2016), *Against Empathy* (Mercier y Sperber, divulgación): ensayo divulgativo.
+
+**Estrato 1**
+
+* Binmore (2007), *Game Theory: A Very Short Introduction* (*Playing for Real*, divulgación): queda como lectura preliminar de la asignatura 2.3, donde *Playing for Real* pasa a texto matriz.
+* Okasha y Binmore (2012), *Evolution and Rationality* (Gintis, *The Bounds of Reason*, profundización técnica).
+* Vega-Redondo (2003), *Economics and the Theory of Games* (Gibbons, profundización técnica).
+* Swedberg (2014), *Theorizing in Social Science* (Swedberg, *The Art of Social Theory*, profundización técnica): sale en lugar de Mueller.
+* Taagepera (2007), *Predicting Party Sizes* (Taagepera, 2008, profundización técnica).
+* Wallis (2014), *The Mathematics of Elections and Voting* (Taagepera, 2008, especialización aplicada).
+* Postman (1985), *Amusing Ourselves to Death* (Achen y Bartels, historia y contexto).
+
+**Estrato 2**
+
+* Bairoch (1995), *Economics and World History* (Clark, historia y contexto).
+* Findlay y O'Rourke (2007), *Power and Plenty* (Clark, historia y contexto).
+* Galor (2022), *The Journey of Humanity* (Galor, 2011, divulgación): la versión divulgativa de *Unified Growth Theory*.
+* Morris (2014), *War! What Is It Good For?* (Gat, divulgación).
+* Stachurski (2009), *Economic Dynamics* (Strogatz, especialización aplicada).
+* Ritchey (2011), *Wicked Problems – Social Messes* (Page, especialización aplicada).
+
+**Estrato 3**
+
+* Molak y Jaokar (2023), *Causal Inference and Discovery in Python* (Huntington-Klein, especialización aplicada): la inferencia causal en Python.
+* Lockhart (2012), *Measurement* (Gill, *Essential Mathematics*, divulgación).
+* Briggs (2016), *Uncertainty* (Jaynes, contraste y crítica).
+* Harman y Kulkarni (2007), *Reliable Reasoning* (Efron y Hastie, profundización técnica).
+* Mumford y Anjum (2014), *Causation: A Very Short Introduction* (Pearl et al., *Primer*, divulgación).
+* Wasserman (2006), *All of Nonparametric Statistics* (Wasserman, 2004, profundización técnica): el paso siguiente a *All of Statistics*, no una obra de base.
+
+**Núcleo instrumental de cómputo**
+
+* Murray (2003), *Human Accomplishment* (Hamming, historia y contexto).
+* Newport (2016), *Deep Work* (Hamming, divulgación): sigue siendo el texto de la guía autodidacta.
+* Newport (2012), *So Good They Can't Ignore You* (Hamming, divulgación): ídem.
+* Firestein (2015), *Failure* (Popper, divulgación).
+
+### Se quedan, aunque se propuso que salieran
+
+* [Mueller (2003)](biblioteca.qmd#mueller2003public), *Public Choice III*: es texto matriz de la asignatura 3.4, junto a Buchanan y Tullock.
+
+### Otros cambios
+
+* [Axler (2024)](biblioteca.qmd#axler2024linear), *Linear Algebra Done Right*, pasa del Nivel 1 al Nivel 2: su enfoque abstracto no es una primera lectura.
+* [Wasserman (2004)](biblioteca.qmd#wasserman2004all), *All of Statistics*, recibe ficha técnica y una nota de lectura: muy comprimido, mejor como segunda pasada después de Stat 110.
+* [Vanhanen (2012)](biblioteca.qmd#vanhanen2012ethnic), *Ethnic Conflicts*, recibe ficha técnica, que remite a Hamilton (1964) y a McElreath y Boyd (2007) para contrastar si la regla $rb > c$ se sostiene a escala étnica. Debajo cuelgan cuatro obras más, para que el contraste ataque la medida y el mecanismo: Posner (2004), Cederman, Gleditsch y Buhaug (2013), Horowitz (1985/2000) y Brubaker (2004).
+* La figura de los cuatro pilares de la portada cambia sus recuadros. El pilar 1 queda en probabilidad, inferencia y causalidad (Blitzstein, Wasserman y Pearl), el pilar 3 incorpora el bote micro-macro de Coleman, y el 4 nombra la ciencia social generativa de Epstein. La biblioteca fija la correspondencia: el Estrato 0 es el pilar 2, el Estrato 1 el pilar 3, el Estrato 2 el pilar 4, y el Estrato 3 con el núcleo instrumental el pilar 1.
+
+## v1.0 — Primera versión con área secundaria (10 de octubre de 2026)
+
+El núcleo, con 150 obras en cuatro estratos, una frontera de artículos y un núcleo instrumental, y el área secundaria colgada de él desde el mismo BibTeX.

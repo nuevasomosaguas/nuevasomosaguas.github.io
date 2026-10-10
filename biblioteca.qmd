@@ -37,6 +37,8 @@ jsonlite::write_json(csl, "biblioteca.json", auto_unbox = TRUE, pretty = TRUE)
 Una biblioteca científica no es un museo de encuadernaciones ni una lista de lecturas piadosas. Ninguna de estas **`r n_obras` obras** entra en el canon por prestigio literario o consenso de época: cada una se cataloga porque aísla un mecanismo generativo, impone una restricción medible o aporta el aparato formal necesario para purgar el error inferencial.
 
 Por eso el corpus no se ordena por rótulos de facultad —«Economía», «Sociología», «Biología»—, que son la taxonomía decimonónica de la biblioteca universitaria, sino por **función causal en la arquitectura de los agregados sociales**: cuatro estratos ascendentes, una frontera de artículos y un núcleo instrumental.
+
+Los estratos son los [cuatro pilares](index.qmd#fig-pilares) de la portada, ordenados por función: el Estrato 0 es el pilar 2, la naturaleza humana; el Estrato 1, el pilar 3, la interacción estratégica; el Estrato 2, el pilar 4, la síntesis generativa; y el Estrato 3, con el núcleo instrumental, el pilar 1, las herramientas formales. Los artículos seminales y de frontera atraviesan los cuatro.
 :::
 
 ::: {.callout-tip}
@@ -46,6 +48,8 @@ Las obras que vertebran cada estrato llevan ficha técnica con tres campos: el *
 
 [<i class="bi bi-download"></i> Descargar las `r n_referencias` referencias en BibTeX: `r n_obras` del núcleo y `r n_referencias - n_obras` del área secundaria](biblioteca.bib){.btn .descarga download="nuevasomosaguas.bib"}
 [<i class="bi bi-download"></i> En CSL-JSON](biblioteca.json){.btn .descarga download="nuevasomosaguas.json"}
+
+Qué entró y qué salió en cada revisión del núcleo, obra por obra, está en el [registro de cambios](biblioteca-cambios.qmd).
 
 ---
 
@@ -97,7 +101,7 @@ lista("inferencia")
 
 ---
 
-## Frontera empírica: artículos seminales
+## Artículos seminales y frontera
 
 Los tratados fijan los axiomas, pero el mecanismo se aísla en el artículo. Una biblioteca compuesta solo de monografías arrastra un retraso estructural respecto de la frontera empírica y transmite al estudiante una ilusión de estabilidad que la disciplina no tiene.
 
