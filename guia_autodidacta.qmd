@@ -44,6 +44,7 @@ Esas 2.600 horas no se reúnen acumulando conocimiento técnico, sino sosteniend
 * **La elección del problema.** Qué separa a quienes producen trabajo científico de primer orden de quienes se limitan a engrosar el currículum: el coraje intelectual y la elección deliberada de problemas importantes. *Texto:* Richard W. Hamming — *You and Your Research*, conferencia de 1986 recogida como capítulo final de *The Art of Doing Science and Engineering*.
 * **Artesanía y herejía.** El código como oficio de artesano, la creación de valor y la costumbre de preguntarse qué no se puede decir en voz alta, para pensarlo con libertad fuera del consenso ideológico del momento. *Texto:* Paul Graham — *Hackers & Painters*.
 * **La lectura como resistencia.** La degradación del discurso público cuando se somete a la lógica del entretenimiento. Postman escribía sobre la televisión, pero su diagnóstico explica por qué la lectura analítica sostenida y el trabajo en la consola, que no ofrecen recompensa inmediata, son hoy una elección consciente contra la atrofia intelectual. *Texto:* Neil Postman — *Amusing Ourselves to Death*.
+* **La ciencia que falla.** Fraude, sesgo, negligencia y exageración: cómo un resultado publicado puede ser falso sin que nadie mienta, y por qué un proyecto que se audita y se reproduce vale más que un artículo que se cita. *Texto:* Stuart Ritchie — *Science Fictions*.
 
 ---
 
@@ -73,7 +74,7 @@ flowchart TB
 * **Álgebra lineal computacional:** espacios vectoriales, proyecciones ortogonales y descomposiciones espectrales (SVD, QR). *Texto:* Gilbert Strang — *Linear Algebra and Its Applications*.
 * **Probabilidad axiomática:** variables discretas y continuas, momentos, condicionamiento y teorema de Bayes. *Texto:* Joseph K. Blitzstein & Jessica Hwang — *Introduction to Probability*.
 * **Demografía matemática:** ecuación de Euler-Lotka, tablas de mortalidad y matrices de proyección de Leslie. *Texto:* Kenneth W. Wachter — *Essential Demographic Methods*.
-* **El entorno, en paralelo:** consola de Unix, `git` y Julia desde el primer día. *Textos:* William Shotts — *The Linux Command Line*; Brian W. Kernighan & Rob Pike — *The Practice of Programming*.
+* **El entorno, en paralelo:** consola de Unix, `git` y Julia desde el primer día. *Textos:* William Shotts — *The Linux Command Line*; Bogumił Kamiński — *Julia for Data Analysis*; Brian W. Kernighan & Rob Pike — *The Practice of Programming*.
 
 ::: {.callout-important}
 **Fase de validación I.** Descargar microdatos censales o de mortalidad en bruto, construir el ciclo de vida actuarial completo desde primeros principios y calcular la tasa intrínseca de crecimiento $r$, con un script auditable y un informe reproducible en Typst.
@@ -83,21 +84,22 @@ flowchart TB
 
 **Meta:** purgar el supuesto de la *tabula rasa* y separar formalmente la correlación de la causa.
 
-* **Genética cuantitativa:** descomposición de la varianza fenotípica ($h^2$), modelo infinitesimal y control por correlación e interacción gen-ambiente ($G \times E$). *Texto:* D. S. Falconer & Trudy F. C. Mackay — *Introduction to Quantitative Genetics*.
-* **Inferencia causal estructural:** criterio de la puerta trasera, grafos acíclicos dirigidos y resultados potenciales. *Textos:* Judea Pearl, Madelyn Glymour & Nicholas P. Jewell — *Causal Inference in Statistics*; Joshua D. Angrist & Jörn-Steffen Pischke — *Mostly Harmless Econometrics*.
-* **Psicología evolutiva y etología:** regla de Hamilton, reciprocidad y jerarquías adaptativas. *Textos:* Christopher Boehm — *Hierarchy in the Forest*; Robert Plomin — *Blueprint*.
+* **Inferencia estadística:** estimación, intervalos, contrastes y *bootstrap*, con la inferencia frecuentista y la bayesiana en paralelo, hasta los contrafactuales y los grafos dirigidos con los que sigue el hito. *Texto:* Larry Wasserman — *All of Statistics*, como segunda pasada después de Blitzstein.
+* **Genética cuantitativa:** descomposición de la varianza fenotípica ($h^2$), modelo infinitesimal y control por correlación e interacción gen-ambiente ($G \times E$). *Textos:* D. S. Falconer & Trudy F. C. Mackay — *Introduction to Quantitative Genetics*; Robert Plomin — *Blueprint*.
+* **Inferencia causal estructural:** criterio de la puerta trasera, grafos acíclicos dirigidos y resultados potenciales. *Textos:* Nick Huntington-Klein — *The Effect*, como entrada; Judea Pearl, Madelyn Glymour & Nicholas P. Jewell — *Causal Inference in Statistics*; Joshua D. Angrist & Jörn-Steffen Pischke — *Mostly Harmless Econometrics*.
+* **Psicología evolutiva y etología:** regla de Hamilton, reciprocidad y jerarquías adaptativas. *Textos:* Christopher Boehm — *Hierarchy in the Forest*; Sarah Blaffer Hrdy — *Mothers and Others*.
 
 ::: {.callout-important}
-**Fase de validación II.** Replicar un artículo empírico controvertido sobre movilidad social, aislando la estructura de confusión con un DAG explícito y corrigiendo el sesgo de selección con microdatos de panel.
+**Fase de validación II.** Replicar un artículo empírico controvertido sobre movilidad social, en el marco de Erikson y Goldthorpe (*The Constant Flux*) y de Breen y Goldthorpe, aislando la estructura de confusión con un DAG explícito y corrigiendo el sesgo de selección con microdatos de panel.
 :::
 
 ### Hito III: mecanismos micro y teoría estratégica (~600 horas netas)
 
 **Meta:** modelar la interacción de agentes discretos sin recurrir a entidades holistas.
 
-* **Sociología analítica (DBO):** deseos, creencias y oportunidades como motores generativos de regularidades macro. *Textos:* Peter Hedström — *Dissecting the Social*; Jon Elster — *Explaining Social Behavior*.
+* **Sociología analítica (DBO):** deseos, creencias y oportunidades como motores generativos de regularidades macro. *Textos:* James S. Coleman — *Foundations of Social Theory*; Peter Hedström — *Dissecting the Social*; Jon Elster — *Explaining Social Behavior*.
 * **Teoría de juegos estratégica y evolutiva:** equilibrios de Nash, juegos repetidos, dinámica de réplica y normas sociales; la regla de Hamilton, la reciprocidad y las señales costosas, derivadas y no citadas como axiomas, con poco más que el álgebra del bachillerato y problemas resueltos al final de cada capítulo. *Textos:* Robert Gibbons — *Game Theory for Applied Economists*; Richard McElreath & Robert Boyd — *Mathematical Models of Social Evolution*.
-* **Teoría de redes sociales:** homofilia, centralidad, difusión y modelos de umbrales. *Texto:* Matthew O. Jackson — *Social and Economic Networks*.
+* **Teoría de redes sociales:** homofilia, centralidad, difusión, modelos de umbrales y contagio complejo. *Textos:* Damon Centola — *How Behavior Spreads*, de principio a fin; Matthew O. Jackson — *Social and Economic Networks*, como consulta.
 * **Modelado formal y basado en agentes:** traducir una conjetura verbal sobre contagio, polarización, segregación o normas a un sistema de ecuaciones y a una simulación, y contrastar lo que cada uno predice. Es la puerta de entrada al proyecto de validación. *Texto:* Paul E. Smaldino — *Modeling Social Behavior*.
 
 ::: {.callout-important}
@@ -109,7 +111,7 @@ flowchart TB
 **Meta:** integrar la historia económica cuantitativa, las restricciones energéticas y los sistemas dinámicos.
 
 * **Trampa malthusiana y crecimiento unificado:** la Gran Divergencia y la salida del régimen de subsistencia. *Textos:* Oded Galor — *Unified Growth Theory*; Gregory Clark — *A Farewell to Alms*.
-* **Sistemas dinámicos y cliodinámica:** ecuaciones diferenciales no lineales, sobreproducción de élites y ciclos seculares. *Textos:* Peter Turchin & Sergey A. Nefedov — *Secular Cycles*; Steven H. Strogatz — *Nonlinear Dynamics and Chaos*.
+* **Sistemas dinámicos y cliodinámica:** ecuaciones diferenciales no lineales, sobreproducción de élites, ciclos seculares y compresiones violentas de la desigualdad. *Textos:* Peter Turchin & Sergey A. Nefedov — *Secular Cycles*; Steven H. Strogatz — *Nonlinear Dynamics and Chaos*; Walter Scheidel — *The Great Leveler*.
 * **Elección pública:** búsqueda de rentas e incentivos del decisor burocrático. *Texto:* James M. Buchanan & Gordon Tullock — *The Calculus of Consent*.
 
 ::: {.callout-important}
