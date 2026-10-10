@@ -22,7 +22,7 @@ resources:
 stopifnot(system2("quarto", c("pandoc", "biblioteca.bib", "-f", "bibtex",
                               "-t", "csljson", "-o", "biblioteca.json")) == 0)
 source("refs.R")
-propios <- c("estrato", "nivel", "descriptor", "lectura", "mecanismo", "aparato", "funcion",
+propios <- c("estrato", "nivel", "descriptor", "lectura", "origlanguage", "mecanismo", "aparato", "funcion",
              "capa", "cuelga", "papel", "estado")
 csl <- jsonlite::read_json("biblioteca.json", simplifyVector = FALSE)
 for (i in seq_along(csl)) {
@@ -41,6 +41,8 @@ Por eso el corpus no se ordena por rótulos de facultad —«Economía», «Soci
 Los estratos son los [cuatro pilares](index.qmd#fig-pilares) de la portada, ordenados por función: el Estrato 0 es el pilar 2, la naturaleza humana; el Estrato 1, el pilar 3, la interacción estratégica; el Estrato 2, el pilar 4, la síntesis generativa; y el Estrato 3, con el núcleo instrumental, el pilar 1, las herramientas formales. Los artículos seminales y de frontera atraviesan los cuatro.
 
 El corpus incluye temas incómodos —la genética de la conducta, la psicometría, el conflicto étnico, la crítica de la democracia— porque la explicación causal no puede excluir variables por su coste social. A cambio, ninguno entra sin su crítica más fuerte: lo incómodo llega con su fuente de primer nivel y con su mejor contraste colgado debajo, y se examina con el mismo bisturí que lo cómodo.
+
+El corpus se compone de obras que el estudiante puede leer, y en este campo eso significa el inglés, más lo que en castellano se sostiene por sus méritos. No es desconocimiento de lo que se ha escrito en otras lenguas, sino una decisión sobre la legibilidad. Cuando una fuente original en francés, italiano, alemán o ruso —Boudon, Pareto, Kolmogorov, Markov, Slutsky, Kantorovich— tiene una traducción inglesa establecida, entra por ella, con la lengua, el título y la fecha del original.
 :::
 
 ::: {.callout-tip}

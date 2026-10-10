@@ -96,6 +96,9 @@ destino <- function(o) {
   else if ("isbn" %in% names(o)) c(texto = paste("ISBN", o[["isbn"]]), url = paste0("https://search.worldcat.org/isbn/", o[["isbn"]]))
 }
 
+# Translations: the language of the original, as the page names it.
+idiomas <- c(french = "francés", italian = "italiano", german = "alemán", russian = "ruso")
+
 # One reference as a line of Markdown: authors, year, title, imprint, link and level tag.
 cita <- function(o) {
   campo <- function(k) if (k %in% names(o)) o[[k]] else ""
@@ -103,7 +106,11 @@ cita <- function(o) {
   nombres <- paste0("**", autores(o), "**",
                     if (campo("editor") != "") if (n > 1 || personas(o)$et_al) " (Eds.)" else " (Ed.)")
   titulo <- llano(o[["title"]])
-  parentesis <- if (campo("edition") != "") paste(o[["edition"]], "Edition") else llano(campo("note"))
+  original <- if (campo("origlanguage") != "") {
+    if (!o[["origlanguage"]] %in% names(idiomas)) stop("biblioteca.bib: idioma desconocido en ", o[["clave"]], ": ", o[["origlanguage"]])
+    paste0("orig. en ", idiomas[[o[["origlanguage"]]]], if (campo("origtitle") != "") paste0(": *", llano(o[["origtitle"]]), "*"))
+  } else ""
+  parentesis <- if (campo("edition") != "") paste(o[["edition"]], "Edition") else if (original != "") original else llano(campo("note"))
   pie <- if (o[["tipo"]] == "article") {
     paste0(llano(o[["journal"]]),
            if (campo("volume") != "") paste0(" ", o[["volume"]]),
