@@ -36,6 +36,10 @@ secundarias <- Filter(es_secundaria, todas)
 papeles <- c("Profundización técnica", "Contraste y crítica", "Especialización aplicada",
              "Fuente original", "Historia y contexto", "Divulgación", "Entrada en castellano")
 for (o in obras) if (!"estrato" %in% names(o)) stop("biblioteca.bib: ", o[["clave"]], " no tiene estrato")
+# How each core work is read: the time budget of the corpus, checkable from the counts.
+lecturas <- c("Completa con ejercicios", "Completa", "Consulta")
+for (o in obras) if (!isTRUE(o["lectura"] %in% lecturas)) stop("biblioteca.bib: ", o[["clave"]], " no tiene un modo de lectura válido")
+n_lectura <- table(factor(vapply(obras, `[[`, "", "lectura"), levels = lecturas))
 for (o in secundarias) {
   falta <- setdiff(c("cuelga", "papel", "estado"), names(o))
   if (length(falta) > 0) stop("biblioteca.bib: a ", o[["clave"]], " le falta ", toString(falta))
@@ -117,10 +121,10 @@ cita <- function(o) {
 }
 
 # One core work as the page shows it: an anchor that the secondary catalogue links to,
-# the reference, the three-field record for the works that carry one and, hanging
+# the reference, its reading mode, the three-field record for the works that carry one and, hanging
 # from it, its curated secondary works.
 ficha <- function(o) {
-  rotulos <- c(mecanismo = "Mecanismo", aparato = "Aparato formal", funcion = "Función en el RAG")
+  rotulos <- c(lectura = "Modo de lectura", mecanismo = "Mecanismo", aparato = "Aparato formal", funcion = "Función en el RAG")
   presentes <- intersect(names(rotulos), names(o))
   ramas <- Filter(function(s) s[["cuelga"]] == o[["clave"]], curadas)
   c(sprintf("* []{#%s}%s", o[["clave"]], cita(o)),
