@@ -34,7 +34,7 @@ es_secundaria <- function(o) "capa" %in% names(o) && o[["capa"]] == "secundaria"
 obras <- Filter(Negate(es_secundaria), todas)
 secundarias <- Filter(es_secundaria, todas)
 papeles <- c("Profundización técnica", "Contraste y crítica", "Especialización aplicada",
-             "Fuente original", "Historia y contexto", "Divulgación", "Entrada en castellano")
+             "Fuente original", "Historia y contexto", "Divulgación")
 for (o in obras) if (!"estrato" %in% names(o)) stop("biblioteca.bib: ", o[["clave"]], " no tiene estrato")
 # How each core work is read: the time budget of the corpus, checkable from the counts.
 lecturas <- c("Completa con ejercicios", "Completa", "Consulta")
