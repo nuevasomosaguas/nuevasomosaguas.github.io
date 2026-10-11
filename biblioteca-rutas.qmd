@@ -74,6 +74,19 @@ ruta(c("moore1966social", "luebbert1991liberalism", "kalyvas1996rise", "bergschl
        "acemoglu2006economic", "dunning2008crude", "rueda2007social"))
 ```
 
+## Evolución biológica
+
+Antes de aplicar la evolución a la cultura o a la conducta hay que entender cómo funciona en su terreno original. La ruta va de la evidencia de que la evolución ocurre a sus mecanismos formales, de ahí a la evolución de los rasgos sociales, la cooperación y el conflicto, y termina en la evolución humana reciente leída en el ADN antiguo. Se reparte entre McElreath y Boyd, Pigliucci y Kaplan, Reich, Harris y la frontera, y continúa en la [evolución cultural](#evolución-cultural). El laboratorio [*Cuando el azar puede más que la selección*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/46-deriva-genetica/) pone a funcionar en el navegador su resultado más contraintuitivo: en una población pequeña, la deriva puede más que la selección.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("coyne2009why", "gillespie2004population", "futuyma2022evolution", "hamilton1964genetical",
+       "maynardsmith1982evolution", "nowak2006evolutionary", "mcelreath2007mathematical",
+       "pigliucci2006making", "reich2018who", "hawks2007recent", "mathieson2015genomewide",
+       "zuk2013paleofantasy"))
+```
+
 ## Evolución cultural
 
 Los humanos heredan dos cosas: genes y cultura. La ruta va de la base cognitiva que hace posible aprender de los demás a la teoría que trata la cultura como un segundo sistema de herencia, de ahí a sus modelos formales y su evidencia, y termina en sus aplicaciones: la cooperación, la religión y la mayor transformación económica de la historia. No es una lista temática, sino una sola teoría aplicada a escalas cada vez mayores, del Pleistoceno a la Revolución Industrial. Se reparte entre el Estrato 0, el Estrato 2 y la historia económica de Clark. Los laboratorios [*Por qué Tasmania perdió tecnología*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/39-tasmania/) y [*Por qué una buena idea no se extiende sola*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/45-conformidad-y-prestigio/) ponen dos de sus mecanismos a funcionar en el navegador: el cerebro colectivo de Henrich y los sesgos de conformidad y prestigio de Boyd y Richerson.
@@ -82,6 +95,6 @@ Los humanos heredan dos cosas: genes y cultura. La ruta va de la base cognitiva 
 #| echo: false
 #| results: asis
 ruta(c("tomasello2014natural", "hrdy2009mothers", "boyd1985culture", "richerson2005not",
-       "mcelreath2007mathematical", "mesoudi2011cultural", "henrich2016secret", "gintis2005moral",
-       "norenzayan2013big", "mokyr2016culture"))
+       "mcelreath2007mathematical", "mesoudi2011cultural", "henrich2016secret", "laland2017darwins",
+       "gintis2005moral", "norenzayan2013big", "mokyr2016culture"))
 ```
