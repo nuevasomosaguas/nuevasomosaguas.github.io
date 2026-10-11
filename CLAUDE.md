@@ -10,7 +10,7 @@ Una obra propuesta, por el responsable o por cualquiera, sigue estos pasos. El a
 2. **Cuelga.** Elige la obra del núcleo cuyo mecanismo amplía, contrasta o precede la nueva. Entre dos candidatas, la que deja el motivo más concreto. Las obras del área secundaria no tienen ficha propia: se cuelga siempre del núcleo.
 3. **Papel.** El que describe la relación con la obra de la que cuelga:
    - *Fuente original* solo si es el texto donde nació la idea. Un caso célebre posterior es *especialización aplicada*: Berkeley no es la fuente de la paradoja de Simpson.
-   - *Contraste y crítica* discute la obra de la que cuelga. Una crítica a otra cosa es *especialización aplicada*.
+   - *Contraste y crítica* sostiene una posición opuesta a la de la obra de la que cuelga, o critica otra obra de su misma rama, aunque no la discuta directamente: Friedman (1953) bajo Hedström, o Sánchez-Villagra y van Schaik, que discuten a Wrangham, bajo Boehm. Una crítica a algo ajeno a la rama es *especialización aplicada*.
    - *Profundización técnica* cubre el mismo terreno con más aparato; *introducción*, con menos.
    - El idioma nunca decide el papel.
 4. **Motivo.** Una frase en castellano con la relación concreta, nombrando la obra del núcleo cuando aclara: «Gat explica por qué hay guerras, y Kalyvas, cómo se reparte la violencia dentro de ellas». Escribe solo texto plano: el lector de `refs.R` y BibTeX no admiten `{ } % $ # &` sueltos.

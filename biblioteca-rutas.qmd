@@ -96,6 +96,7 @@ Los humanos heredan dos cosas: genes y cultura. La ruta va de la base cognitiva 
 #| echo: false
 #| results: asis
 ruta(c("tomasello2014natural", "hrdy2009mothers", "boyd1985culture", "richerson2005not",
-       "mcelreath2007mathematical", "mesoudi2011cultural", "henrich2016secret", "laland2017darwins",
+       "mcelreath2007mathematical", "mesoudi2011cultural", "mesoudi2025simulation", "henrich2016secret",
+       "laland2017darwins",
        "gintis2005moral", "norenzayan2013big", "mokyr2016culture"))
 ```
