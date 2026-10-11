@@ -41,7 +41,7 @@ lecturas <- c("Completa con ejercicios", "Completa", "Consulta")
 for (o in obras) if (!isTRUE(o["lectura"] %in% lecturas)) stop("biblioteca.bib: ", o[["clave"]], " no tiene un modo de lectura válido")
 n_lectura <- table(factor(vapply(obras, `[[`, "", "lectura"), levels = lecturas))
 for (o in secundarias) {
-  falta <- setdiff(c("cuelga", "papel", "estado"), names(o))
+  falta <- setdiff(c("cuelga", "papel", "motivo", "estado"), names(o))
   if (length(falta) > 0) stop("biblioteca.bib: a ", o[["clave"]], " le falta ", toString(falta))
   if (!o[["cuelga"]] %in% names(obras)) stop("biblioteca.bib: ", o[["clave"]], " cuelga de ", o[["cuelga"]], ", que no está en el núcleo")
   if (!o[["papel"]] %in% papeles) stop("biblioteca.bib: papel desconocido en ", o[["clave"]], ": ", o[["papel"]])
@@ -133,14 +133,29 @@ cita <- function(o) {
 
 # One core work as the page shows it: an anchor that the secondary catalogue links to,
 # the reference, its reading mode, the three-field record for the works that carry one and, hanging
-# from it, its curated secondary works.
+# from it, its curated secondary works, each with the reason it hangs there.
 ficha <- function(o) {
   rotulos <- c(lectura = "Modo de lectura", mecanismo = "Mecanismo", aparato = "Aparato formal", funcion = "Función en el RAG")
   presentes <- intersect(names(rotulos), names(o))
   ramas <- Filter(function(s) s[["cuelga"]] == o[["clave"]], curadas)
   c(sprintf("* []{#%s}%s", o[["clave"]], cita(o)),
     sprintf("  * *%s:* %s", rotulos[presentes], unlist(o[presentes])),
-    vapply(ramas, function(s) sprintf("  * *%s:* %s", s[["papel"]], cita(s)), ""))
+    vapply(ramas, function(s) sprintf("  * *%s:* %s %s", s[["papel"]], cita(s), s[["motivo"]]), ""))
+}
+
+# A reading route across branches, for a `results: asis` chunk: core works and curated
+# secondary ones in the order given, each with why it is there and a link to where it hangs.
+ruta <- function(claves) {
+  for (k in claves) if (!k %in% c(names(obras), names(curadas))) stop("ruta: ", k, " no está en el núcleo ni entre las curadas")
+  cat(vapply(claves, function(k) {
+    o <- todas[[k]]
+    if (es_secundaria(o)) {
+      n <- obras[[o[["cuelga"]]]]
+      sprintf("1. %s %s Cuelga de [%s (%s)](biblioteca.qmd#%s).", cita(o), o[["motivo"]], apellidos(n), n[["year"]], n[["clave"]])
+    } else {
+      sprintf("1. %s %s [Ficha en el núcleo](biblioteca.qmd#%s).", cita(o), if ("mecanismo" %in% names(o)) o[["mecanismo"]] else "", k)
+    }
+  }, ""), sep = "\n")
 }
 
 # The list for one stratum, in file order, for a `results: asis` chunk.

@@ -6,7 +6,7 @@ listing:
   contents: obras.yml
   type: table
   sort: [papel, title]
-  fields: [title, autores, anio, papel, tema, nivel, cuelga]
+  fields: [title, autores, anio, papel, tema, nivel, cuelga, motivo]
   field-display-names:
     title: "Obra"
     autores: "Autores"
@@ -15,6 +15,7 @@ listing:
     tema: "Tema"
     nivel: "Nivel"
     cuelga: "Cuelga de"
+    motivo: "Por qué"
   categories: true
   page-size: 50
 ---
@@ -31,4 +32,4 @@ Cada obra cumple uno de siete papeles:
 * **Divulgación:** la versión para el gran público, cuando es de alto calibre.
 * **Introducción:** el escalón anterior, el mismo terreno con menos exigencia, para llegar preparado a la obra del núcleo.
 
-Solo aparecen las obras curadas. Las propuestas, de alumnos o de cualquiera, esperan su revisión antes de entrar. Y en las respuestas del sistema RAG, el núcleo va primero: el área secundaria se trae como profundización o como contrapeso, siempre etiquetada como tal, y nunca como el consenso del pensum.
+Además del papel, cada obra lleva su motivo: una frase con la relación concreta con la obra de la que cuelga. Solo aparecen las obras curadas. Lo nuevo, de alumnos o de cualquiera, entra como propuesta con su motivo y pasa a curada en una sesión de revisión. Los temas que atraviesan varias ramas tienen sus [rutas de lectura](../biblioteca-rutas.qmd). Y en las respuestas del sistema RAG, el núcleo va primero: el área secundaria se trae como profundización o como contrapeso, siempre etiquetada como tal, y nunca como el consenso del pensum.

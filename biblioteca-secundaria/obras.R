@@ -14,6 +14,7 @@ items <- lapply(unname(curadas), function(o) {
          tema = o[["descriptor"]],
          nivel = as.integer(o[["nivel"]]),
          cuelga = sprintf("[%s (%s)](../biblioteca.html#%s)", apellidos(nucleo), nucleo[["year"]], nucleo[["clave"]]),
+         motivo = o[["motivo"]],
          categories = c(o[["papel"]], o[["descriptor"]])))
 })
 yaml::write_yaml(items, "biblioteca-secundaria/obras.yml")

@@ -33,7 +33,11 @@
 %   cuelga      la clave de la obra del núcleo de la que parte
 %   papel       Profundización técnica | Contraste y crítica | Especialización aplicada |
 %               Fuente original | Historia y contexto | Divulgación | Introducción
-%   estado      curada | propuesta: solo las curadas salen en la web
+%   motivo      una frase con la relación concreta con la obra de la que cuelga, que el
+%               papel solo clasifica: «Gat explica por qué hay guerras, y Kalyvas, cómo se
+%               reparte la violencia dentro de ellas»
+%   estado      curada | propuesta: solo las curadas salen en la web. Lo nuevo entra como
+%               propuesta, con su motivo, y pasa a curada en una sesión de revisión
 %
 % El núcleo tiene exactamente 150 obras: para que entre una, otra tiene que salir al área
 % secundaria, y refs.R detiene el render si el recuento no cuadra.
@@ -2022,6 +2026,7 @@
   capa       = {secundaria},
   cuelga     = {wasserman2004all},
   papel      = {Profundización técnica},
+  motivo     = {Wasserman resume la inferencia clásica en pocas páginas; Casella y Berger demuestran cada resultado, para quien necesita el aparato completo.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Inferencia Formal}
@@ -2036,6 +2041,7 @@
   capa       = {secundaria},
   cuelga     = {harrer2021doing},
   papel      = {Profundización técnica},
+  motivo     = {Lleva el metaanálisis de Harrer a sus problemas abiertos: datos faltantes, sesgo de publicación, potencia y metaanálisis con datos individuales.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Meta-Análisis}
@@ -2051,6 +2057,7 @@
   capa       = {secundaria},
   cuelga     = {harrer2021doing},
   papel      = {Profundización técnica},
+  motivo     = {La referencia de los métodos que Harrer implementa en R, efectos fijos y aleatorios, heterogeneidad y sesgo de publicación, explicados sin código.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Meta-Análisis}
@@ -2065,6 +2072,7 @@
   capa       = {secundaria},
   cuelga     = {wasserman2004all},
   papel      = {Especialización aplicada},
+  motivo     = {La inferencia de Wasserman llevada a los tribunales: discriminación, muestreo y pruebas estadísticas en casos judiciales reales.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Aplicación Jurídica}
@@ -2079,6 +2087,7 @@
   capa       = {secundaria},
   cuelga     = {dienes2008understanding},
   papel      = {Profundización técnica},
+  motivo     = {Dienes presenta la verosimilitud como una de las escuelas de inferencia; Pawitan la desarrolla como enfoque completo de modelización.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Verosimilitud}
@@ -2093,6 +2102,7 @@
   capa       = {secundaria},
   cuelga     = {plomin2018blueprint},
   papel      = {Contraste y crítica},
+  motivo     = {Acepta la evidencia de Plomin y discute su lectura política: la genética como argumento a favor de la igualdad, no en su contra.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Genética y Desigualdad}
@@ -2109,6 +2119,7 @@
   capa       = {secundaria},
   cuelga     = {plomin2018blueprint},
   papel      = {Contraste y crítica},
+  motivo     = {Las tres leyes de la genética conductual, con la advertencia de que una heredabilidad alta no revela el mecanismo genético ni vuelve irrelevante el ambiente.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Genética Conductual}
@@ -2125,6 +2136,7 @@
   capa       = {secundaria},
   cuelga     = {vanhanen2012ethnic},
   papel      = {Contraste y crítica},
+  motivo     = {Con datos de 1945 a 1999, la diversidad étnica no predice la guerra civil una vez controlada la renta: la insurgencia depende de la capacidad del Estado y del terreno.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Conflicto Civil}
@@ -2141,6 +2153,7 @@
   capa       = {secundaria},
   cuelga     = {vanhanen2012ethnic},
   papel      = {Contraste y crítica},
+  motivo     = {Frente a la diversidad étnica de Vanhanen, lo que predice el conflicto armado es la exclusión étnica del poder del Estado.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Conflicto Étnico}
@@ -2157,6 +2170,7 @@
   capa       = {secundaria},
   cuelga     = {vanhanen2012ethnic},
   papel      = {Contraste y crítica},
+  motivo     = {Los índices de fraccionalización étnica, lingüística y religiosa más usados, construidos y discutidos: la medida que Vanhanen da por buena, vista por dentro.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Fraccionalización Étnica}
@@ -2171,6 +2185,7 @@
   capa       = {secundaria},
   cuelga     = {kuran1995private},
   papel      = {Especialización aplicada},
+  motivo     = {Amplía la falsificación de preferencias de Kuran a la era digital: la información abundante destapa el descontento y erosiona la autoridad de las instituciones.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Crisis de Autoridad}
@@ -2185,6 +2200,7 @@
   capa       = {secundaria},
   cuelga     = {achen2016democracy},
   papel      = {Profundización técnica},
+  motivo     = {Contrasta los modelos de elección social con datos de votaciones reales, y encuentra muchas menos paradojas de Condorcet de las que predice la teoría.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Elección Social}
@@ -2199,6 +2215,7 @@
   capa       = {secundaria},
   cuelga     = {mcelreath2007mathematical},
   papel      = {Fuente original},
+  motivo     = {El libro que fundó la teoría evolutiva de juegos y la estrategia evolutivamente estable, la herramienta de casi todos los modelos de McElreath y Boyd.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Teoría Evolutiva de Juegos}
@@ -2213,6 +2230,7 @@
   capa       = {secundaria},
   cuelga     = {mesoudi2011cultural},
   papel      = {Divulgación},
+  motivo     = {La evolución cultural de Mesoudi contada para el gran público: la cultura acumulada como motor de la evolución humana.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Evolución Cultural}
@@ -2227,6 +2245,7 @@
   capa       = {secundaria},
   cuelga     = {wachter2014essential},
   papel      = {Contraste y crítica},
+  motivo     = {Las cifras africanas de renta y crecimiento son mucho peores de lo que parecen: un contrapeso a la confianza en los datos agregados de los que parte la demografía formal.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Calidad de los Datos}
@@ -2241,6 +2260,7 @@
   capa       = {secundaria},
   cuelga     = {hamming1997art},
   papel      = {Historia y contexto},
+  motivo     = {La historia de Licklider y de la informática interactiva y en red: la cultura de investigación que Hamming describe desde dentro, vista desde fuera.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Historia de la Computación}
@@ -2255,6 +2275,7 @@
   capa       = {secundaria},
   cuelga     = {hedstrom2005dissecting},
   papel      = {Contraste y crítica},
+  motivo     = {La explotación y las clases deducidas con teoría de juegos a partir de la desigualdad de activos: Marx reconstruido con el individualismo metodológico que exige Hedström.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Marxismo Analítico}
@@ -2269,6 +2290,7 @@
   capa       = {secundaria},
   cuelga     = {achen2016democracy},
   papel      = {Contraste y crítica},
+  motivo     = {El liberalismo fracasa por sus propios éxitos, al disolver las comunidades que lo sostenían: una crítica normativa de la democracia que Achen y Bartels estudian empíricamente.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Crítica del Liberalismo}
@@ -2283,6 +2305,7 @@
   capa       = {secundaria},
   cuelga     = {achen2016democracy},
   papel      = {Contraste y crítica},
+  motivo     = {Desde la experiencia del comunismo polaco, la democracia liberal comparte con él la tentación de uniformar la sociedad.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Crítica de la Democracia Liberal}
@@ -2297,6 +2320,7 @@
   capa       = {secundaria},
   cuelga     = {achen2016democracy},
   papel      = {Contraste y crítica},
+  motivo     = {La crítica clásica en castellano de la democracia de partidos: los partidos suplantan a los ciudadanos como sujetos de la soberanía.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Crítica de la Partitocracia}
@@ -2311,6 +2335,7 @@
   capa       = {secundaria},
   cuelga     = {wachter2014essential},
   papel      = {Profundización técnica},
+  motivo     = {Los métodos de Wachter con datos españoles: mortalidad, fecundidad, migraciones y proyecciones de población.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Demografía}
@@ -2326,6 +2351,7 @@
   capa       = {secundaria},
   cuelga     = {imbens2015causal},
   papel      = {Profundización técnica},
+  motivo     = {Une los resultados potenciales de Imbens y Rubin con los grafos de Pearl, con ejemplos de epidemiología y código.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Resultados Potenciales y Grafos}
@@ -2340,6 +2366,7 @@
   capa       = {secundaria},
   cuelga     = {reich2018who},
   papel      = {Divulgación},
+  motivo     = {La tesis de que la evolución humana se aceleró con la agricultura, que Reich trata con datos de ADN antiguo, contada para el gran público.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Evolución Reciente}
@@ -2354,6 +2381,7 @@
   capa       = {secundaria},
   cuelga     = {buss2010evolution},
   papel      = {Divulgación},
+  motivo     = {Divulgación de lo que Buss y Hawley tratan con aparato: las diferencias políticas como rasgos de personalidad con raíces evolutivas.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Psicología Política}
@@ -2368,6 +2396,7 @@
   capa       = {secundaria},
   cuelga     = {harris2011changing},
   papel      = {Especialización aplicada},
+  motivo     = {La dieta occidental y las enfermedades de la civilización vistas desde la biología evolutiva: una aplicación médica concreta de la historia antropométrica de The Changing Body.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Medicina Evolutiva}
@@ -2382,6 +2411,7 @@
   capa       = {secundaria},
   cuelga     = {mercier2017enigma},
   papel      = {Divulgación},
+  motivo     = {La empatía sesga el juicio moral hacia lo cercano y lo visible: un ensayo que cuelga de Mercier y Sperber, para quienes la razón sirve para argumentar.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Ética Racional}
@@ -2396,6 +2426,7 @@
   capa       = {secundaria},
   cuelga     = {binmore2007playing},
   papel      = {Divulgación},
+  motivo     = {La versión breve de Playing for Real, como lectura preliminar de la asignatura de teoría de juegos.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Teoría de Juegos Introductoria}
@@ -2410,6 +2441,7 @@
   capa       = {secundaria},
   cuelga     = {gintis2017bounds},
   papel      = {Profundización técnica},
+  motivo     = {Filósofos y teóricos de juegos sobre cómo la selección natural produce racionalidad: el terreno de Gintis, con más aparato.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Juegos Evolutivos}
@@ -2424,6 +2456,7 @@
   capa       = {secundaria},
   cuelga     = {gibbons1992game},
   papel      = {Profundización técnica},
+  motivo     = {El paso siguiente a Gibbons: juegos evolutivos, aprendizaje y racionalidad limitada con el rigor de un manual de posgrado.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Economía Matemática}
@@ -2438,6 +2471,7 @@
   capa       = {secundaria},
   cuelga     = {swedberg2014art},
   papel      = {Profundización técnica},
+  motivo     = {El mismo terreno que The Art of Social Theory con más aparato: cómo se construyen las teorías en la fase de descubrimiento, antes de comprobarlas.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Contexto de Descubrimiento}
@@ -2452,6 +2486,7 @@
   capa       = {secundaria},
   cuelga     = {taagepera2008making},
   papel      = {Profundización técnica},
+  motivo     = {El modelo del producto de escaños y las leyes electorales que Taagepera usa como ejemplo de ciencia predictiva, desarrollados con todo su aparato.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Leyes Electorales Formales}
@@ -2466,6 +2501,7 @@
   capa       = {secundaria},
   cuelga     = {taagepera2008making},
   papel      = {Especialización aplicada},
+  motivo     = {La matemática de las reglas de votación y de reparto de escaños, para comparar los sistemas que Taagepera modela.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Sistemas Electorales}
@@ -2480,6 +2516,7 @@
   capa       = {secundaria},
   cuelga     = {achen2016democracy},
   papel      = {Historia y contexto},
+  motivo     = {La televisión convierte el discurso público en entretenimiento: el contexto mediático del votante poco informado de Achen y Bartels.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Sociología de Medios}
@@ -2494,6 +2531,7 @@
   capa       = {secundaria},
   cuelga     = {clark2007farewell},
   papel      = {Historia y contexto},
+  motivo     = {Los mitos de la historia económica desmontados con números: el contexto de la gran divergencia que Clark explica.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Historia Económica Cuantitativa}
@@ -2508,6 +2546,7 @@
   capa       = {secundaria},
   cuelga     = {clark2007farewell},
   papel      = {Historia y contexto},
+  motivo     = {Mil años de comercio mundial ligado a la guerra y al poder: el contexto en el que se rompió la trampa malthusiana de Clark.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Comercio y Poder}
@@ -2522,6 +2561,7 @@
   capa       = {secundaria},
   cuelga     = {galor2011unified},
   papel      = {Divulgación},
+  motivo     = {La versión divulgativa de Unified Growth Theory.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Teoría del Crecimiento Unificado}
@@ -2536,6 +2576,7 @@
   capa       = {secundaria},
   cuelga     = {gat2017causes},
   papel      = {Divulgación},
+  motivo     = {La tesis de Gat contada para el gran público: las guerras crearon Estados más grandes, y esos Estados redujeron la violencia.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Evolución del Conflicto}
@@ -2550,6 +2591,7 @@
   capa       = {secundaria},
   cuelga     = {strogatz2015nonlinear},
   papel      = {Especialización aplicada},
+  motivo     = {Los sistemas dinámicos de Strogatz llevados a la economía y al ordenador: cadenas de Markov, programación dinámica y estabilidad.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Computación Económica}
@@ -2564,6 +2606,7 @@
   capa       = {secundaria},
   cuelga     = {page2007difference},
   papel      = {Especialización aplicada},
+  motivo     = {El análisis morfológico para problemas sociales mal definidos: una herramienta de decisión que explota la diversidad de enfoques de Page.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Análisis Morfológico}
@@ -2578,6 +2621,7 @@
   capa       = {secundaria},
   cuelga     = {huntingtonklein2021effect},
   papel      = {Especialización aplicada},
+  motivo     = {La inferencia causal de Huntington-Klein en Python, con el descubrimiento causal a partir de los datos.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Inferencia Causal en Python}
@@ -2592,6 +2636,7 @@
   capa       = {secundaria},
   cuelga     = {gill2006essential},
   papel      = {Divulgación},
+  motivo     = {La intuición geométrica y el gusto por razonar que preceden al formalismo de Gill.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Intuición Matemática}
@@ -2606,6 +2651,7 @@
   capa       = {secundaria},
   cuelga     = {jaynes2003probability},
   papel      = {Contraste y crítica},
+  motivo     = {La probabilidad como lógica, como en Jaynes, pero contra los parámetros, los p-valores y buena parte de la modelización estadística al uso.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Modelización}
@@ -2620,6 +2666,7 @@
   capa       = {secundaria},
   cuelga     = {efron2016computer},
   papel      = {Profundización técnica},
+  motivo     = {La teoría del aprendizaje estadístico vista por un filósofo y un ingeniero: cuándo es fiable la inducción en la que se apoyan los métodos de Efron y Hastie.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Teoría del Aprendizaje}
@@ -2634,6 +2681,7 @@
   capa       = {secundaria},
   cuelga     = {pearl2016causal},
   papel      = {Divulgación},
+  motivo     = {Qué es una causa, en pocas páginas de metafísica, antes de los grafos de Pearl.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Metafísica Causal}
@@ -2648,6 +2696,7 @@
   capa       = {secundaria},
   cuelga     = {wasserman2004all},
   papel      = {Profundización técnica},
+  motivo     = {El paso siguiente a All of Statistics, no una obra de base.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {No Paramétrica}
@@ -2662,6 +2711,7 @@
   capa       = {secundaria},
   cuelga     = {hamming1997art},
   papel      = {Historia y contexto},
+  motivo     = {La excelencia en las artes y las ciencias, cuantificada a lo largo de la historia: el contexto de la pregunta de Hamming sobre por qué unos pocos hacen el trabajo importante.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Historia de la Excelencia}
@@ -2676,6 +2726,7 @@
   capa       = {secundaria},
   cuelga     = {hamming1997art},
   papel      = {Divulgación},
+  motivo     = {El trabajo concentrado como ventaja escasa, en la línea de Hamming; sigue siendo el texto de la guía autodidacta.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Trabajo Profundo}
@@ -2690,6 +2741,7 @@
   capa       = {secundaria},
   cuelga     = {hamming1997art},
   papel      = {Divulgación},
+  motivo     = {La pasión sigue a la destreza, y no al revés: cómo se construye una carrera, en la línea de Hamming y en la guía autodidacta.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Capital de Carrera}
@@ -2704,6 +2756,7 @@
   capa       = {secundaria},
   cuelga     = {popper2002logic},
   papel      = {Divulgación},
+  motivo     = {El fracaso como motor de la ciencia: la falsación de Popper contada desde el laboratorio.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Filosofía de la Ciencia}
@@ -2720,6 +2773,7 @@
   capa       = {secundaria},
   cuelga     = {vanhanen2012ethnic},
   papel      = {Profundización técnica},
+  motivo     = {Un índice de fraccionalización con los grupos políticamente relevantes en lugar de todos los étnicos: ataca la medida en la que se apoya Vanhanen.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Medición Étnica}
@@ -2734,6 +2788,7 @@
   capa       = {secundaria},
   cuelga     = {vanhanen2012ethnic},
   papel      = {Contraste y crítica},
+  motivo     = {Lo que lleva a la guerra civil no es la diversidad, sino las desigualdades horizontales, políticas y económicas, entre grupos y el agravio que producen.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Desigualdades Horizontales}
@@ -2749,6 +2804,7 @@
   capa       = {secundaria},
   cuelga     = {vanhanen2012ethnic},
   papel      = {Fuente original},
+  motivo     = {La obra clásica sobre el conflicto étnico, con su teoría de la comparación entre grupos y de la política de partidos étnicos.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Conflicto Étnico}
@@ -2763,6 +2819,7 @@
   capa       = {secundaria},
   cuelga     = {vanhanen2012ethnic},
   papel      = {Contraste y crítica},
+  motivo     = {Los grupos étnicos no son actores dados, sino categorías que se activan: ataca la premisa de Vanhanen de que la etnia es una unidad natural de cuenta.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Constructivismo Étnico}
@@ -2777,6 +2834,7 @@
   capa       = {secundaria},
   cuelga     = {strogatz2015nonlinear},
   papel      = {Especialización aplicada},
+  motivo     = {Los modelos de Strogatz aplicados a la sociedad, de la carrera de armamentos de Richardson a la ley de Lanchester; salió del núcleo para dejar sitio a Scheidel.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Sistemas Dinámicos}
@@ -2791,6 +2849,7 @@
   capa       = {secundaria},
   cuelga     = {scheidel2017great},
   papel      = {Contraste y crítica},
+  motivo     = {Frente a la desigualdad que solo bajan las catástrofes de Scheidel, la curva del elefante y las olas de Kuznets de la globalización.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Desigualdad Global}
@@ -2805,6 +2864,7 @@
   capa       = {secundaria},
   cuelga     = {wachter2014essential},
   papel      = {Especialización aplicada},
+  motivo     = {La obra fundacional del Cambridge Group: tres siglos de población inglesa reconstruidos por proyección inversa desde los registros parroquiales.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Demografía Histórica}
@@ -2819,6 +2879,7 @@
   capa       = {secundaria},
   cuelga     = {morris2009dynamics},
   papel      = {Profundización técnica},
+  motivo     = {Enseña a construir y a criticar un índice compuesto, el de desarrollo social, con el que comparar civilizaciones a lo largo de milenios.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Índices Compuestos}
@@ -2834,6 +2895,7 @@
   capa       = {secundaria},
   cuelga     = {haier2017neuroscience},
   papel      = {Contraste y crítica},
+  motivo     = {El manual más equilibrado sobre la inteligencia, contrapeso a la neurociencia de Haier.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Psicometría}
@@ -2849,6 +2911,7 @@
   capa       = {secundaria},
   cuelga     = {haier2017neuroscience},
   papel      = {Divulgación},
+  motivo     = {Puerta de entrada breve a la investigación sobre la inteligencia, antes de Haier.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Inteligencia}
@@ -2863,6 +2926,7 @@
   capa       = {secundaria},
   cuelga     = {haier2017neuroscience},
   papel      = {Divulgación},
+  motivo     = {Puerta de entrada a lo que se sabe de la inteligencia y a sus controversias, antes de Haier.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Inteligencia}
@@ -2879,6 +2943,7 @@
   capa       = {secundaria},
   cuelga     = {dunning2012natural},
   papel      = {Especialización aplicada},
+  motivo     = {El efecto causal de la escolarización sobre el CI, estimado con reformas educativas y discontinuidades por fecha de nacimiento, los experimentos naturales de Dunning.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Escolarización e Inteligencia}
@@ -2893,6 +2958,7 @@
   capa       = {secundaria},
   cuelga     = {achen2016democracy},
   papel      = {Contraste y crítica},
+  motivo     = {Defiende la competencia democrática sobre el teorema de la diversidad de Page, frente al votante de Achen y Bartels.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Inteligencia Colectiva}
@@ -2907,6 +2973,7 @@
   capa       = {secundaria},
   cuelga     = {opensciencecollaboration2015estimating},
   papel      = {Divulgación},
+  motivo     = {La crisis de replicación contada, con el fracaso de los genes candidatos que explica el paso a los GWAS.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Crisis de Replicación}
@@ -2921,6 +2988,7 @@
   capa       = {secundaria},
   cuelga     = {beaujean2014latent},
   papel      = {Profundización técnica},
+  motivo     = {Las ecuaciones estructurales con variables latentes que Beaujean implementa en R, con todo su aparato.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Ecuaciones Estructurales}
@@ -2935,6 +3003,7 @@
   capa       = {secundaria},
   cuelga     = {beaujean2014latent},
   papel      = {Contraste y crítica},
+  motivo     = {Qué se afirma al decir que un test mide un atributo latente, y por qué muchos modelos psicométricos no lo justifican.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Teoría de la Medida}
@@ -2949,6 +3018,7 @@
   capa       = {secundaria},
   cuelga     = {strang1991calculus},
   papel      = {Introducción},
+  motivo     = {La intuición del cálculo antes del formalismo de Strang, para quien llega con matemáticas débiles.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Cálculo}
@@ -2963,6 +3033,7 @@
   capa       = {secundaria},
   cuelga     = {strang2005linear},
   papel      = {Introducción},
+  motivo     = {La intuición del álgebra lineal antes del formalismo de Strang, para quien llega con matemáticas débiles.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Álgebra Lineal}
@@ -2978,6 +3049,7 @@
   capa       = {secundaria},
   cuelga     = {blitzstein2019introduction},
   papel      = {Divulgación},
+  motivo     = {Quita el miedo a la estadística, pero se queda muy por debajo de Blitzstein y no prepara para él.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Estadística Descriptiva}
@@ -2993,6 +3065,7 @@
   capa       = {secundaria},
   cuelga     = {gelman2020regression},
   papel      = {Introducción},
+  motivo     = {La intuición de la regresión antes de Gelman, Hill y Vehtari; trabaja con Excel.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Regresión}
@@ -3007,6 +3080,7 @@
   capa       = {secundaria},
   cuelga     = {date2015sql},
   papel      = {Introducción},
+  motivo     = {La intuición de las bases de datos relacionales antes de Date.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Bases de Datos}
@@ -3021,6 +3095,7 @@
   capa       = {secundaria},
   cuelga     = {hedstrom2009oxford},
   papel      = {Historia y contexto},
+  motivo     = {El Handbook presenta el estado del campo; la antología recoge, traducidos, los textos con los que se constituyó.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Sociología Analítica}
@@ -3038,6 +3113,7 @@
   capa       = {secundaria},
   cuelga     = {breen1997explaining},
   papel      = {Fuente original},
+  motivo     = {La desigualdad de oportunidades educativas como resultado de decisiones racionales, que Breen y Goldthorpe formalizan en buena parte.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Desigualdad Educativa}
@@ -3055,6 +3131,7 @@
   capa       = {secundaria},
   cuelga     = {coleman1990foundations},
   papel      = {Fuente original},
+  motivo     = {Los efectos no buscados de la acción, el paso micro-macro del bote de Coleman.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Efectos Perversos}
@@ -3071,6 +3148,7 @@
   capa       = {secundaria},
   cuelga     = {turchin2009secular},
   papel      = {Fuente original},
+  motivo     = {La circulación de las élites, antecedente de la sobreproducción de élites de Turchin y Nefedov.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Circulación de las Élites}
@@ -3089,6 +3167,7 @@
   capa       = {secundaria},
   cuelga     = {turchin2009secular},
   papel      = {Contraste y crítica},
+  motivo     = {La suma de causas aleatorias basta para producir ciclos, así que un ciclo en una serie no prueba un mecanismo endógeno.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Ciclos Estocásticos}
@@ -3107,6 +3186,7 @@
   capa       = {secundaria},
   cuelga     = {blitzstein2019introduction},
   papel      = {Fuente original},
+  motivo     = {Las cadenas de Markov nacen contando vocales y consonantes en Eugenio Oneguin.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Cadenas de Markov}
@@ -3124,6 +3204,7 @@
   capa       = {secundaria},
   cuelga     = {blitzstein2019introduction},
   papel      = {Fuente original},
+  motivo     = {La axiomática de la probabilidad sobre la que se construye Blitzstein.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Axiomática de la Probabilidad}
@@ -3142,6 +3223,7 @@
   capa       = {secundaria},
   cuelga     = {simon1994mathematics},
   papel      = {Fuente original},
+  motivo     = {La programación lineal, nacida para planificar la producción soviética, antecedente de la optimización con restricciones de Simon y Blume.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Programación Lineal}
@@ -3159,6 +3241,7 @@
   capa         = {secundaria},
   cuelga       = {wachter2014essential},
   papel        = {Introducción},
+  motivo       = {El escalón anterior a Wachter; la edición de Ariel está agotada.},
   estado       = {curada},
   nivel        = {1},
   descriptor   = {Demografía}
@@ -3174,6 +3257,7 @@
   capa       = {secundaria},
   cuelga     = {clark2007farewell},
   papel      = {Historia y contexto},
+  motivo     = {La población, los recursos y el entorno contados por un demógrafo, con las pandemias que conectan con Scheidel: el contexto demográfico de Clark.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Historia de la Población}
@@ -3190,6 +3274,7 @@
   capa         = {secundaria},
   cuelga       = {blitzstein2019introduction},
   papel        = {Profundización técnica},
+  motivo       = {La probabilidad de la escuela soviética en 150 páginas y con problemas resueltos, la segunda pasada después de Blitzstein.},
   estado       = {curada},
   nivel        = {2},
   descriptor   = {Probabilidad}
@@ -3204,6 +3289,7 @@
   capa       = {secundaria},
   cuelga     = {elster2015explaining},
   papel      = {Fuente original},
+  motivo     = {Elster presenta el descuento hiperbólico como mecanismo; Ainslie enseña cómo se construyó, con la voluntad como negociación entre los yoes sucesivos de una persona.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Descuento Hiperbólico}
@@ -3220,6 +3306,7 @@
   capa       = {secundaria},
   cuelga     = {elster2015explaining},
   papel      = {Contraste y crítica},
+  motivo     = {Con incertidumbre sobre el riesgo de perder la recompensa, el descuento hiperbólico de Elster puede ser racional.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Descuento Hiperbólico}
@@ -3235,6 +3322,7 @@
   capa       = {secundaria},
   cuelga     = {mesoudi2011cultural},
   papel      = {Divulgación},
+  motivo     = {La evolución cultural de Mesoudi leída por un sociólogo: la selección natural, la cultural y la social.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Sociología Seleccionista}
@@ -3249,6 +3337,7 @@
   capa       = {secundaria},
   cuelga     = {mesoudi2011cultural},
   papel      = {Profundización técnica},
+  motivo     = {La versión técnica de The Social Animal: la sociología como parte de la teoría de la selección.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Sociología Seleccionista}
@@ -3265,6 +3354,7 @@
   capa       = {secundaria},
   cuelga     = {efron2016computer},
   papel      = {Profundización técnica},
+  motivo     = {Los capítulos de aprendizaje automático de Efron y Hastie son en buena parte un resumen de él.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Aprendizaje Estadístico}
@@ -3281,6 +3371,7 @@
   capa       = {secundaria},
   cuelga     = {efron2016computer},
   papel      = {Introducción},
+  motivo     = {El escalón anterior a The Elements of Statistical Learning, de los mismos autores y con laboratorios en R.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Aprendizaje Estadístico}
@@ -3297,6 +3388,7 @@
   capa       = {secundaria},
   cuelga     = {grimmer2022text},
   papel      = {Especialización aplicada},
+  motivo     = {Para qué sirve el aprendizaje automático en sociología, con la advertencia de que un buen ajuste predictivo no es una explicación causal.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Predicción y Explicación}
@@ -3313,6 +3405,7 @@
   capa       = {secundaria},
   cuelga     = {angrist2009mostly},
   papel      = {Especialización aplicada},
+  motivo     = {Distingue predecir de estimar parámetros: el aprendizaje automático sirve para lo primero, y la econometría de Angrist y Pischke, para lo segundo.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Predicción y Estimación}
@@ -3329,6 +3422,7 @@
   capa       = {secundaria},
   cuelga     = {falconer2009introduction},
   papel      = {Fuente original},
+  motivo     = {El equilibrio de Hardy-Weinberg, en una carta de dos páginas.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Equilibrio de Hardy-Weinberg}
@@ -3345,6 +3439,7 @@
   capa       = {secundaria},
   cuelga     = {falconer2009introduction},
   papel      = {Fuente original},
+  motivo     = {El déficit de heterocigotos de una población que mezcla subpoblaciones.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Estructura de Poblaciones}
@@ -3359,6 +3454,7 @@
   capa       = {secundaria},
   cuelga     = {wachter2014essential},
   papel      = {Fuente original},
+  motivo     = {La extinción de los apellidos como proceso de ramificación.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Procesos de Ramificación}
@@ -3375,6 +3471,7 @@
   capa       = {secundaria},
   cuelga     = {turchin2009secular},
   papel      = {Fuente original},
+  motivo     = {El modelo de depredador y presa, para explicar las capturas de pesca del Adriático tras la Primera Guerra Mundial.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Depredador y Presa}
@@ -3391,6 +3488,7 @@
   capa       = {secundaria},
   cuelga     = {jackson2008social},
   papel      = {Fuente original},
+  motivo     = {El consenso por promedios repetidos en una red, el modelo de aprendizaje social que Jackson desarrolla.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Aprendizaje en Redes}
@@ -3407,6 +3505,7 @@
   capa       = {secundaria},
   cuelga     = {mcelreath2007mathematical},
   papel      = {Fuente original},
+  motivo     = {Halcones y palomas: por qué los conflictos entre animales suelen ser rituales y no a muerte.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Teoría Evolutiva de Juegos}
@@ -3424,6 +3523,7 @@
   capa       = {secundaria},
   cuelga     = {pearl2016causal},
   papel      = {Especialización aplicada},
+  motivo     = {Las admisiones de Berkeley, el caso clásico de la paradoja de Simpson.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Paradoja de Simpson}
@@ -3440,6 +3540,7 @@
   capa       = {secundaria},
   cuelga     = {pearl2016causal},
   papel      = {Fuente original},
+  motivo     = {El sesgo del colisionador, descubierto en los datos de un hospital.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Sesgo del Colisionador}
@@ -3456,6 +3557,7 @@
   capa       = {secundaria},
   cuelga     = {pearl2016causal},
   papel      = {Especialización aplicada},
+  motivo     = {Qué variables controlar y cuáles no, con el criterio de la puerta trasera de Pearl aplicado caso por caso.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Controles Buenos y Malos}
@@ -3471,6 +3573,7 @@
   capa       = {secundaria},
   cuelga     = {dienes2008understanding},
   papel      = {Fuente original},
+  motivo     = {El tamaño del efecto y el análisis de potencia, el complemento de la crítica de Dienes a los contrastes de significación.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Tamaño del Efecto y Potencia}
@@ -3487,6 +3590,7 @@
   capa       = {secundaria},
   cuelga     = {hedstrom2005dissecting},
   papel      = {Especialización aplicada},
+  motivo     = {La geografía del tiempo: las oportunidades del DBO de Hedström medidas en horas y kilómetros.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Geografía del Tiempo}
@@ -3503,6 +3607,7 @@
   capa       = {secundaria},
   cuelga     = {huntingtonklein2021effect},
   papel      = {Especialización aplicada},
+  motivo     = {El fenómeno Will Rogers: mover casos de un grupo a otro sube la media de los dos sin cambiar a nadie.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Efecto Composición}
@@ -3519,6 +3624,7 @@
   capa       = {secundaria},
   cuelga     = {mueller2003public},
   papel      = {Fuente original},
+  motivo     = {Las preferencias unimodales y el teorema del votante mediano.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Votante Mediano}
@@ -3534,6 +3640,7 @@
   capa       = {secundaria},
   cuelga     = {blitzstein2019introduction},
   papel      = {Fuente original},
+  motivo     = {La ley del primer dígito, propia de las distribuciones que abarcan varios órdenes de magnitud.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Ley de Benford}
@@ -3550,6 +3657,7 @@
   capa       = {secundaria},
   cuelga     = {blitzstein2019introduction},
   papel      = {Especialización aplicada},
+  motivo     = {La ley de Benford aplicada a detectar fraude electoral, y por qué falla tan a menudo.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Forense Electoral}
@@ -3566,6 +3674,7 @@
   capa       = {secundaria},
   cuelga     = {kuran1995private},
   papel      = {Profundización técnica},
+  motivo     = {La respuesta aleatorizada, la herramienta para medir lo que la falsificación de preferencias oculta.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Respuesta Aleatorizada}
@@ -3580,6 +3689,7 @@
   capa       = {secundaria},
   cuelga     = {elster2015explaining},
   papel      = {Historia y contexto},
+  motivo     = {Marx examinado con individualismo metodológico, teoría de juegos y explicación por mecanismos: una de las raíces de la sociología analítica.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Marxismo Analítico}
@@ -3594,6 +3704,7 @@
   capa       = {secundaria},
   cuelga     = {elster2015explaining},
   papel      = {Fuente original},
+  motivo     = {La obra fundacional del marxismo analítico: el materialismo histórico defendido con la claridad de la filosofía analítica.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Marxismo Analítico}
@@ -3608,6 +3719,7 @@
   capa       = {secundaria},
   cuelga     = {galor2011unified},
   papel      = {Historia y contexto},
+  motivo     = {Marx como el último gran economista clásico, en diálogo con Ricardo y Malthus, antes de la salida de la trampa malthusiana que modela Galor.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Economía Clásica}
@@ -3622,6 +3734,7 @@
   capa       = {secundaria},
   cuelga     = {buchanan2020calculus},
   papel      = {Especialización aplicada},
+  motivo     = {La restricción presupuestaria blanda: los incentivos institucionales del socialismo real, en estado puro.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Economía Política Comparada}
@@ -3636,6 +3749,7 @@
   capa       = {secundaria},
   cuelga     = {erikson1992constant},
   papel      = {Contraste y crítica},
+  motivo     = {El esquema de clases neomarxista frente al de Erikson y Goldthorpe: dos operacionalizaciones de la clase social con los mismos datos.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Esquemas de Clase}
@@ -3652,6 +3766,7 @@
   capa         = {secundaria},
   cuelga       = {kuran1995private},
   papel        = {Historia y contexto},
+  motivo       = {El ketman: la falsificación de preferencias de los intelectuales polacos bajo el estalinismo, contada desde dentro.},
   estado       = {curada},
   nivel        = {1},
   descriptor   = {Falsificación de Preferencias}
@@ -3670,6 +3785,7 @@
   capa         = {secundaria},
   cuelga       = {kuran1995private},
   papel        = {Historia y contexto},
+  motivo       = {El verdulero que pone en el escaparate un cartel en el que no cree, el ejemplo más famoso de falsificación de preferencias.},
   estado       = {curada},
   nivel        = {1},
   descriptor   = {Falsificación de Preferencias}
@@ -3684,6 +3800,7 @@
   capa       = {secundaria},
   cuelga     = {ragin2008redesigning},
   papel      = {Fuente original},
+  motivo     = {La obra fundacional de la sociología histórica comparada: las coaliciones de clase agrarias deciden si un país acaba en democracia, fascismo o comunismo.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Sociología Histórica Comparada}
@@ -3698,6 +3815,7 @@
   capa       = {secundaria},
   cuelga     = {ragin2008redesigning},
   papel      = {Especialización aplicada},
+  motivo     = {Los regímenes de entreguerras como resultado de con quién se aliaba el campesinado propietario: una causalidad configuracional.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Sociología Histórica Comparada}
@@ -3714,6 +3832,7 @@
   capa       = {secundaria},
   cuelga     = {ragin2008redesigning},
   papel      = {Contraste y crítica},
+  motivo     = {Somete a una prueba booleana, el método de Ragin, las explicaciones de la caída de la democracia en entreguerras, Luebbert incluido.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Análisis Cualitativo Comparado}
@@ -3728,6 +3847,7 @@
   capa       = {secundaria},
   cuelga     = {gat2017causes},
   papel      = {Especialización aplicada},
+  motivo     = {Gat explica por qué hay guerras, y Kalyvas, cómo se reparte la violencia dentro de ellas.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Violencia Política}
@@ -3742,6 +3862,7 @@
   capa       = {secundaria},
   cuelga     = {ragin2008redesigning},
   papel      = {Especialización aplicada},
+  motivo     = {Los partidos confesionales como resultado no buscado de las estrategias de la Iglesia y el clero, junto a las coaliciones de Luebbert.},
   estado     = {curada},
   nivel      = {2},
   descriptor = {Partidos Confesionales}

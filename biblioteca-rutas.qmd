@@ -1,0 +1,41 @@
+---
+title: "Biblioteca: rutas"
+subtitle: "Itinerarios que atraviesan varias ramas"
+description: "Rutas de lectura por la biblioteca de la Nueva Somosaguas: temas que se reparten entre varias obras del núcleo, recorridos en orden y sin duplicar entradas."
+engine: knitr
+format:
+  html:
+    toc: true
+    toc-depth: 2
+    toc-location: right
+---
+
+```{r}
+#| include: false
+source("refs.R")
+```
+
+La [biblioteca](biblioteca.qmd) se organiza por dependencias: cada obra del [área secundaria](biblioteca-secundaria/index.qmd) cuelga de la del núcleo que la recoge. Algunos temas, sin embargo, atraviesan varias ramas. Una ruta los recorre en orden de lectura, con obras del núcleo y del área secundaria, cada una con la frase que dice por qué está ahí y el enlace a la rama de la que cuelga.
+
+## Marx en la Nueva Somosaguas
+
+Marx no ocupa un sitio del núcleo como lectura obligada. Está en su reconstrucción analítica, en su análisis económico, en su resultado histórico y en su descendencia sociológica, repartido entre cinco ramas.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("cohen1978karl", "elster1985making", "roemer1982general", "hollander2008economics",
+       "kornai1992socialist", "erikson1992constant", "wright1985classes"))
+```
+
+## Violencia y conflicto
+
+De por qué hay guerras a cómo se reparte la violencia dentro de ellas, y de la diversidad étnica a la exclusión y el agravio como causas del conflicto. La ruta termina en los umbrales: la revolución que estalla cuando cae la falsificación de preferencias y la rebelión que se genera agente a agente. Los laboratorios [*La revolución que nadie vio venir*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/06-kuran/), [*Rebeldes y policías*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/35-rebeldes-y-policias/) y [*La ley de Lanchester*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/36-ley-de-lanchester/) los ponen a funcionar en el navegador.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("gat2017causes", "morris2014war", "horowitz2000ethnic", "vanhanen2012ethnic",
+       "fearon2003ethnicity", "wimmer2009ethnic", "cederman2013inequality", "kalyvas2006logic",
+       "kuran1995private", "epstein2006generative"))
+```
