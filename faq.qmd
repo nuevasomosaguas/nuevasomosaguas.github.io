@@ -83,7 +83,7 @@ Sí, y por varias puertas, según el tiempo y las ganas de cada cual. La totalid
 - **El recorrido completo.** La [guía autodidacta](guia_autodidacta.qmd) lo organiza en cuatro hitos, cada uno con su presupuesto de horas y su proyecto de verificación con microdatos reales. Son unas 2.600 horas netas en total, entre dos años y medio y tres y medio a 15-20 horas semanales: la cifra se declara por delante para que nadie confunda el ritmo real con el de un curso de verano.
 - **Un tema, en unas semanas.** Cada [ruta](biblioteca-rutas.qmd) de la biblioteca recorre en orden de lectura un tema que atraviesa varias disciplinas, de la evolución cultural a la medición de lo social.
 - **Un mecanismo, en una tarde.** Los [problemas interactivos](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/) se resuelven en el navegador, sin instalar nada, y cada uno pone a funcionar un mecanismo con su comprobación.
-- **Un mal argumento, mañana mismo.** El [manual de bolsillo](manual_bolsillo.qmd) reúne diez herramientas para detectarlo en el debate público.
+- **Un mal argumento, mañana mismo.** El [manual de bolsillo](manual_bolsillo.qmd) reúne doce herramientas para detectarlo en el debate público.
 
 Y para quien quiera trabajar en serio, el [entorno de trabajo](entorno.qmd) trae listas todas las herramientas del programa, en el navegador, en VS Code o como distribución de Linux instalable.
 

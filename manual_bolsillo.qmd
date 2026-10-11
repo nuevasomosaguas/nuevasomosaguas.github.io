@@ -1,7 +1,7 @@
 ---
 title: "Manual de bolsillo"
-subtitle: "Diez herramientas analíticas para el debate cotidiano"
-description: "Diez preguntas en castellano llano para desarmar las falacias del debate público sin jerga ni pedantería, cada una con el andamiaje teórico que la sostiene."
+subtitle: "Doce herramientas analíticas para el debate cotidiano"
+description: "Doce preguntas en castellano llano para desarmar las falacias del debate público sin jerga ni pedantería, cada una con el andamiaje teórico que la sostiene, sus límites y un laboratorio para practicarla."
 format:
   html:
     toc: true
@@ -18,7 +18,9 @@ El debate público está anegado de buenas intenciones morales, correlaciones in
 
 Decirle a alguien que está «abriendo un colisionador de Berkson» no desarma su argumento: lo desconcierta, o lo irrita. La elegancia analítica consiste en **aplicar la estructura lógica del concepto sin nombrar al autor ni exhibir el tecnicismo**. La misma objeción, en castellano llano, suena así: «estás juzgando a todo el grupo mirando solo a quienes ya superaron el filtro de entrada».
 
-Cada herramienta de este manual se presenta, por tanto, en tres piezas: cuándo aparece la falacia, la pregunta que la desarma y —al final, para quien quiera profundizar— el andamiaje teórico que la sostiene. El orden importa: la etiqueta técnica va al pie, no en la boca.
+Cada herramienta de este manual se presenta, por tanto, en tres piezas: cuándo aparece la falacia, la pregunta que la desarma y —al final, para quien quiera profundizar— el andamiaje teórico que la sostiene. El orden importa: la etiqueta técnica va al pie, no en la boca. Cuando hace falta, la herramienta lleva además dónde acaba su argumento y un laboratorio para practicarla.
+
+Ninguna pregunta tiene bando. Cada una corta en las dos direcciones del espectro, y los ejemplos lo muestran: quien solo la aplica a los argumentos del adversario no está usando un método, sino un arma.
 
 ::: {.callout-warning}
 ### A quién se dirige realmente
@@ -29,12 +31,13 @@ El destinatario es **el espectador neutral** que asiste a la controversia. A él
 
 ---
 
-## Las diez reglas
+## Las doce reglas
 
 ### 1. Exige el sujeto y la acción
 
-* **En el debate:** cada vez que alguien invoque «el Mercado», «el Patriarcado», «la Sociedad» o «el Capitalismo» como causas activas de un problema.
-* **El fondo teórico:** el esquema DBO —deseos, creencias, oportunidades— de Jon Elster y Peter Hedström. Las abstracciones no tienen manos, cuentas corrientes ni voluntad. Todo fenómeno agregado resulta de agentes concretos decidiendo bajo restricciones concretas.
+* **En el debate:** cada vez que alguien invoque «el Mercado», «el Patriarcado», «la Sociedad» o «el Capitalismo» como causas activas de un problema; y lo mismo cuando la causa sea «el Estado», «la Inmigración», «Bruselas» o «la Ideología».
+* **El fondo teórico:** el esquema DBO —deseos, creencias, oportunidades— de [Jon Elster](biblioteca.qmd#elster2015explaining) y [Peter Hedström](biblioteca.qmd#hedstrom2005dissecting). Las abstracciones no tienen manos, cuentas corrientes ni voluntad. Todo fenómeno agregado resulta de agentes concretos decidiendo bajo restricciones concretas.
+* **Para practicarlo:** [*La segregación de Schelling*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/05-schelling/), donde una segregación intensa sale de vecinos que solo quieren no quedarse en minoría.
 
 :::{.callout-note title="La pregunta"}
 > *«¿Quién hizo qué, exactamente, y qué ganaba al hacerlo?»*
@@ -44,8 +47,9 @@ El destinatario es **el espectador neutral** que asiste a la controversia. A él
 
 ### 2. No confundas el filtro con el efecto
 
-* **En el debate:** cuando afirmen que «los graduados de tal universidad ganan más porque la enseñanza es superior», o que «los hospitales enferman, porque allí muere más gente».
+* **En el debate:** cuando afirmen que «los graduados de tal universidad ganan más porque la enseñanza es superior», o que «los hospitales enferman, porque allí muere más gente». Y en las dos direcciones de la misma polémica: «las mujeres que llegan a la cúpula cobran lo mismo que los hombres, luego no hay ninguna barrera», o «las empresas con más directivas rinden más, luego la paridad aumenta el rendimiento».
 * **El fondo teórico:** el sesgo de selección y la paradoja del colisionador. Cuando se evalúa un resultado observando solo a quienes cruzaron un umbral previo —admisión, contratación, ingreso hospitalario—, la muestra está truncada y la comparación directa queda invalidada.
+* **Para practicarlo:** [*El talento y el esfuerzo de los admitidos*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/03-berkson/), donde dos rasgos independientes parecen opuestos entre quienes pasaron el corte.
 
 :::{.callout-note title="La pregunta"}
 > *«¿Esas personas ya eran distintas antes de entrar por la puerta?»*
@@ -55,8 +59,8 @@ El destinatario es **el espectador neutral** que asiste a la controversia. A él
 
 ### 3. La realidad se pesa en toneladas y megavatios
 
-* **En el debate:** ante planes de descarbonización instantánea o promesas de abundancia sin coste material.
-* **El fondo teórico:** la contabilidad biofísica de Vaclav Smil. Las sociedades operan dentro de balances innegociables de masa y energía, y ni las leyes de la física ni el rendimiento de los materiales se modifican por consenso parlamentario.
+* **En el debate:** ante planes de descarbonización instantánea o promesas de abundancia sin coste material; y ante la promesa contraria, la de seguir creciendo sin límite con lo de siempre, como si los yacimientos no se agotaran ni la atmósfera tuviera capacidad finita.
+* **El fondo teórico:** la contabilidad biofísica de [Vaclav Smil](biblioteca.qmd#smil2017energy). Las sociedades operan dentro de balances innegociables de masa y energía, y ni las leyes de la física ni el rendimiento de los materiales se modifican por consenso parlamentario.
 
 ::: {.callout-important}
 **Dónde acaba el argumento físico.** Smil da la **frontera de lo posible**, no el mecanismo de la acción social. El uso efectivo de un recurso depende de precios relativos, derechos de propiedad, costes de extracción y sustitución tecnológica. Reducir una sociedad a megajulios es el mismo determinismo tuerto que se le reprocha al estructuralismo, cambiando el capital por los teravatios. La física acota el espacio factible; los incentivos y las instituciones deciden la asignación dentro de él.
@@ -70,11 +74,13 @@ El destinatario es **el espectador neutral** que asiste a la controversia. A él
 
 ### 4. El juicio calibrado, que no es el prejuicio
 
-* **En el debate:** cuando se descalifique cualquier estimación probabilística sobre grupos tachándola sin más de prejuicio arbitrario.
-* **El fondo teórico:** la calibración empírica de Lee Jussim. El resultado no es que todo prejuicio vulgar sea verdad revelada. Es más estrecho y más interesante: las estimaciones agregadas de la gente común sobre medias de grupo correlacionan con los datos censales reales en torno a $r \approx 0{,}60$–$0{,}80$, lo que las convierte en heurísticas razonablemente calibradas **cuando no hay información individual**.
+* **En el debate:** cuando se descalifique cualquier estimación probabilística sobre grupos tachándola sin más de prejuicio arbitrario; y, en sentido contrario, cuando se use la media de un grupo para juzgar a una persona de la que ya se sabe algo.
+* **El fondo teórico:** la calibración empírica de [Lee Jussim](biblioteca.qmd#jussim2012social). El resultado no es que todo prejuicio vulgar sea verdad revelada. Es más estrecho y más interesante: las estimaciones de la gente común sobre las medias de los grupos se parecen mucho a los datos reales, hasta el punto de que la revisión de Jussim, Crawford y Rubinstein (2015) presenta la precisión de los estereotipos como uno de los efectos mayores y más replicables de la psicología social. Eso las convierte en heurísticas razonablemente calibradas **cuando no hay información individual**.
 
 ::: {.callout-important}
 **El segundo paso, que es el decisivo.** Un promedio de grupo es una estimación *a priori*, y solo eso. En cuanto se dispone de información diagnóstica sobre la persona concreta, el agente racional **descarta el prior y juzga por el dato individual**. Omitir este paso convierte una defensa de la racionalidad bayesiana en una apología del prejuicio, que es precisamente lo contrario de lo que la evidencia sostiene.
+
+**Dónde acaba el argumento.** La tesis tiene críticas serias, y en la biblioteca cuelgan de Jussim. Judd y Park (1993) atacan la medición: un estereotipo puede ordenar bien a los grupos, que es la correlación en la que descansa buena parte de la evidencia, y aun así exagerar la distancia entre ellos o subestimar la variedad dentro de cada uno. Leslie (2017) ataca el objeto medido: los estereotipos funcionan como genéricos, «los X son Y», y no como estimaciones de frecuencia, así que el test de precisión mide lo que la gente sabe y deja fuera lo que guía su conducta.
 :::
 
 :::{.callout-note title="La pregunta"}
@@ -85,8 +91,9 @@ El destinatario es **el espectador neutral** que asiste a la controversia. A él
 
 ### 5. Identifica la regla del juego, no la moral del jugador
 
-* **En el debate:** cuando se atribuya una ineficiencia persistente a la «maldad» o la «falta de solidaridad» de los implicados.
-* **El fondo teórico:** la teoría de juegos de Nash y Binmore. Si un mal resultado se repite de forma sostenida, no se debe a un defecto biográfico de los actores: la estructura de pagos convierte esa conducta en su mejor respuesta individual.
+* **En el debate:** cuando se atribuya una ineficiencia persistente a la «maldad» o la «falta de solidaridad» de los implicados: a la «avaricia» de los empresarios, o a la «vagancia» de los parados.
+* **El fondo teórico:** la teoría de juegos de Nash y [Binmore](biblioteca.qmd#binmore2007playing). Si un mal resultado se repite de forma sostenida, no se debe a un defecto biográfico de los actores: la estructura de pagos convierte esa conducta en su mejor respuesta individual.
+* **Para practicarlo:** [*Halcones y palomas*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/12-halcon-paloma/), donde la proporción de agresivos la fija la tabla de pagos, no el carácter de nadie.
 
 :::{.callout-note title="La pregunta"}
 > *«Si una persona sensata e informada estuviera en esa misma posición, ¿tendría motivos para actuar de otra manera?»*
@@ -96,30 +103,40 @@ El destinatario es **el espectador neutral** que asiste a la controversia. A él
 
 ### 6. La aritmética actuarial no negocia
 
-* **En el debate:** promesas de pensiones blindadas, sanidad en expansión perpetua y jubilación temprana en sociedades con fecundidad bajo mínimos.
-* **El fondo teórico:** la ecuación de renovación de Lotka y la demografía formal de Keyfitz. Un sistema de reparto no es una reserva guardada en una caja fuerte: es una transferencia en tiempo real entre generaciones vivas. Si la tasa de reemplazo colapsa, ningún decreto fabrica cotizantes que no nacieron.
+* **En el debate:** promesas de pensiones blindadas, sanidad en expansión perpetua y jubilación temprana en sociedades con fecundidad bajo mínimos; y, en sentido contrario, la promesa de arreglarlo todo con natalidad, o cerrando la puerta a la inmigración.
+* **El fondo teórico:** la ecuación de renovación de Lotka y la demografía formal de [Keyfitz](biblioteca.qmd#keyfitz2005applied). Un sistema de reparto no es una reserva guardada en una caja fuerte: es una transferencia en tiempo real entre generaciones vivas. Si la fecundidad se queda durante décadas por debajo del nivel de reemplazo, ningún decreto fabrica cotizantes que no nacieron.
+* **Para practicarlo:** [*¿Cuántos trabajadores por pensionista?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/29-trabajadores-por-pensionista/)
+
+::: {.callout-important}
+**Dónde acaba el argumento.** La aritmética fija el problema, no la solución. Las palancas existen: la edad de jubilación, la cuantía de la pensión, la inmigración y una fecundidad por encima del reemplazo. Lo que la aritmética exige es decir cuál se mueve y cuánto. La natalidad, además, tarda veinte años en producir un cotizante: es la palanca más lenta, no la más fácil.
+:::
 
 :::{.callout-note title="La pregunta"}
-> *«¿Cuántos cotizantes sostendrán a cada jubilado dentro de quince años, y qué parte de su nómina habrá que retenerles?»*
+> *«¿Cuántos cotizantes sostendrán a cada jubilado dentro de quince años, qué parte de su nómina habrá que retenerles, y qué palanca propones mover?»*
 :::
 
 ---
 
 ### 7. El coste del altruismo supuesto
 
-* **En el debate:** cuando se diseñe un proyecto público dando por hecho que todos colaborarán de forma espontánea por el bien común.
-* **El fondo teórico:** la lógica de la acción colectiva de Mancur Olson. Salvo en grupos pequeños y densamente supervisados, los bienes públicos se desmoronan ante el incentivo universal al parasitismo racional, a menos que existan sanciones o incentivos selectivos.
+* **En el debate:** cuando se diseñe un proyecto público dando por hecho que todos colaborarán de forma espontánea por el bien común; y también cuando se dé por hecho lo contrario, que un bien común sin dueño ni Estado está condenado a la ruina.
+* **El fondo teórico:** la lógica de la acción colectiva de [Mancur Olson](biblioteca.qmd#olson2020logic). Salvo en grupos pequeños y densamente supervisados, los bienes públicos se desmoronan ante el incentivo universal al parasitismo racional, a menos que existan sanciones o incentivos selectivos.
+
+::: {.callout-important}
+**Dónde acaba el argumento.** [Elinor Ostrom](biblioteca.qmd#ostrom1990governing) mostró que muchas comunidades gestionan durante siglos pastos, pesquerías y regadíos sin privatizarlos ni entregarlos al Estado, con reglas propias: límites claros, vigilancia por los propios usuarios, sanciones graduales y foros para resolver conflictos. El parasitismo no es un destino: es lo que ocurre cuando faltan esas reglas.
+:::
 
 :::{.callout-note title="La pregunta"}
-> *«¿Qué incentivo tiene alguien para no aportar nada, si va a disfrutar del beneficio de todos modos?»*
+> *«¿Qué incentivo tiene alguien para no aportar nada, si va a disfrutar del beneficio de todos modos, y qué regla se lo impediría?»*
 :::
 
 ---
 
 ### 8. Mide el contrafactual, no la secuencia temporal
 
-* **En el debate:** «aprobamos la ley X y dos meses después subió el empleo; luego la ley X funcionó».
-* **El fondo teórico:** el modelo de resultados potenciales de Rubin y el arsenal cuasi-experimental de Angrist y Pischke. La inferencia causal no consiste en observar qué pasó después de una intervención, sino en reconstruir de forma creíble qué habría pasado sin ella.
+* **En el debate:** «aprobamos la ley X y dos meses después subió el empleo; luego la ley X funcionó». O «bajamos los impuestos y subió la recaudación; luego las rebajas se pagan solas».
+* **El fondo teórico:** el modelo de resultados potenciales de [Imbens y Rubin](biblioteca.qmd#imbens2015causal) y el arsenal cuasi-experimental de [Angrist y Pischke](biblioteca.qmd#angrist2009mostly). La inferencia causal no consiste en observar qué pasó después de una intervención, sino en reconstruir de forma creíble qué habría pasado sin ella.
+* **Para practicarlo:** [*El programa que funciona y no sirve*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/51-el-programa-que-funciona/), donde ni siquiera un ensayo aleatorizado mide lo que parece medir.
 
 :::{.callout-note title="La pregunta"}
 > *«¿Qué habría ocurrido con esa misma variable en un territorio idéntico donde no se aprobó la medida?»*
@@ -129,8 +146,8 @@ El destinatario es **el espectador neutral** que asiste a la controversia. A él
 
 ### 9. Desconfía de la explicación que sirve para todo
 
-* **En el debate:** argumentos circulares donde tanto un resultado como su contrario se leen como confirmación de la misma teoría.
-* **El fondo teórico:** el criterio de demarcación de Karl Popper. Una proposición que no concibe ningún escenario empírico capaz de refutarla no es una explicación del mundo: es un dogma, o un blindaje retórico inmune al aprendizaje.
+* **En el debate:** argumentos circulares donde tanto un resultado como su contrario se leen como confirmación de la misma teoría: «si el plan fracasa, fue sabotaje; si triunfa, prueba que funcionaba», o «si el mercado falla, es que no era lo bastante libre».
+* **El fondo teórico:** el criterio de demarcación de [Karl Popper](biblioteca.qmd#popper2002logic). Una proposición que no concibe ningún escenario empírico capaz de refutarla no es una explicación del mundo: es un dogma, o un blindaje retórico inmune al aprendizaje.
 
 :::{.callout-note title="La pregunta"}
 > *«¿Qué dato observable te obligaría a admitir que tu hipótesis era falsa?»*
@@ -140,9 +157,54 @@ El destinatario es **el espectador neutral** que asiste a la controversia. A él
 
 ### 10. La burocracia vive del problema, no de la solución
 
-* **En el debate:** la creencia de que las agencias y comités públicos actúan como planificadores neutrales empeñados en eliminar su propio objeto de trabajo.
-* **El fondo teórico:** la teoría de la elección pública de Buchanan y Tullock. El gestor público responde a su propia función de utilidad —presupuesto, estatus, influencia—, y tiene un incentivo estructural para ampliar la definición del agravio y perpetuar la necesidad de intervenir.
+* **En el debate:** la creencia de que las agencias y comités públicos actúan como planificadores neutrales empeñados en eliminar su propio objeto de trabajo; y la creencia simétrica de que el sector privado no tiene ese incentivo, cuando la consultora que cobra por diagnosticar o el contratista que cobra por mantener también viven del problema.
+* **El fondo teórico:** la teoría de la elección pública de [Buchanan y Tullock](biblioteca.qmd#buchanan2020calculus). El gestor público responde a su propia función de utilidad —presupuesto, estatus, influencia—, y tiene un incentivo estructural para ampliar la definición del agravio y perpetuar la necesidad de intervenir.
+
+::: {.callout-important}
+**Dónde acaba el argumento.** La versión fuerte, la del burócrata que maximiza su presupuesto sin límite (Niskanen), ha encontrado poco apoyo cuando se ha contrastado: la recopilación de Blais y Dion (1991) lo muestra, y Dunleavy propuso que los altos cargos prefieren dar forma a sus organismos, más pequeños y prestigiosos, antes que hacerlos crecer. El incentivo existe, pero es una hipótesis que hay que comprobar organismo a organismo, no un veredicto que se pueda dictar de antemano.
+:::
 
 :::{.callout-note title="La pregunta"}
 > *«Si este organismo resolviera definitivamente el problema, ¿qué pasaría con su presupuesto y con los puestos de quienes lo dirigen?»*
+:::
+
+---
+
+### 11. Pregunta por la segunda vuelta
+
+* **En el debate:** cualquier propuesta cuyo efecto se calcula suponiendo que nadie reacciona: una ayuda al alquiler que bajaría el alquiler en su cuantía, una multa que reduciría la conducta multada, una subida de impuestos que recaudaría lo que dice la hoja de cálculo, o un recorte que ahorraría exactamente su importe.
+* **El fondo teórico:** las consecuencias no buscadas de la acción de Merton y los efectos perversos de Boudon, ordenados con la cadena de [Hedström](biblioteca.qmd#hedstrom2005dissecting): la gente responde a la nueva regla, la suma de sus respuestas cambia el entorno de todos, y el nuevo entorno cambia lo que creen y desean. La primera vuelta es la cuenta de la vieja; la segunda decide el resultado.
+* **Para practicarlo:** los [laboratorios de efectos de segundo orden](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/#category=efectos%20de%20segundo%20orden), como [*¿Quién se queda la ayuda al alquiler?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/47-ayuda-al-alquiler/) o [*Una multa es un precio*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/48-una-multa-es-un-precio/).
+
+::: {.callout-important}
+**Dónde acaba el argumento.** La segunda vuelta no juega siempre en contra. Vacunar a una parte de la población protege también a la otra, y la cuenta de la vieja se queda corta en lugar de pasarse ([*La inmunidad que no se ve*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/56-la-inmunidad-que-no-se-ve/)). Lo que falla es el cálculo estático, en cualquiera de las dos direcciones.
+:::
+
+:::{.callout-note title="La pregunta"}
+> *«¿Y qué hará la gente cuando cambie la regla?»*
+:::
+
+---
+
+### 12. Desconfía del indicador que se premia
+
+* **En el debate:** cuando una cifra se convierte en objetivo: la tasa de aprobados como medida de la calidad docente, las listas de espera como medida de la gestión sanitaria, las detenciones como medida de la eficacia policial, o la cotización de la acción como medida del trabajo de un consejero delegado.
+* **El fondo teórico:** la ley de Campbell, o de Goodhart. Cuanto más se usa un indicador cuantitativo para tomar decisiones sociales, más presiones sufre para corromperse y más deforma los procesos que debía vigilar. Medir bien, como enseña [Lohr](biblioteca.qmd#lohr2021sampling), no basta: hay que preguntarse qué le pasa a la medida cuando alguien gana o pierde con ella.
+* **Para practicarlo:** [*Lo que se mide se corrompe*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/53-lo-que-se-mide-se-corrompe/), donde los aprobados suben el doble de lo previsto y el aprendizaje, la mitad.
+
+:::{.callout-note title="La pregunta"}
+> *«¿Qué le pasará a ese indicador cuando se use para premiar o castigar?»*
+:::
+
+---
+
+## Contra el mal uso de este manual
+
+::: {.callout-warning}
+### La retórica de la reacción
+Varias de estas herramientas —la física de Smil, la aritmética actuarial, el parasitismo de Olson, la burocracia que vive del problema, la segunda vuelta— pueden convertirse en una excusa para no intentar nada. Albert O. Hirschman describió en *The Rhetoric of Reaction* (1991) las tres tesis con las que se ha argumentado contra casi toda reforma de los dos últimos siglos: la **perversidad**, que la reforma empeorará lo que quería mejorar; la **futilidad**, que no cambiará nada; y el **riesgo**, que pondrá en peligro lo ya conseguido. A veces son ciertas. Pero un argumento que predice el fracaso de toda reforma, sea cual sea, ha dejado de analizar y ha empezado a militar: es la regla 9 aplicada a uno mismo.
+:::
+
+:::{.callout-note title="La pregunta"}
+> *«¿Este argumento predice que toda reforma fracasa? ¿Con qué caso lo has comprobado?»*
 :::
