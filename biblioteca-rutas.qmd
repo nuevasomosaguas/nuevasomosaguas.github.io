@@ -62,3 +62,14 @@ ruta(c("lohr2021sampling", "beaujean2014latent", "bollen1989structural", "borsbo
        "bond2019sad", "judd1993definition", "posner2004measuring", "morris2013measure",
        "coyle2015gdp", "jerven2013poor", "stiglitz2010mismeasuring"))
 ```
+
+## El origen de los regímenes
+
+Por qué unos países acaban en democracias y otros en dictaduras, y a quién representan después los partidos que nacieron de esa lucha. La ruta va de las coaliciones de clase de la sociología histórica comparada a su comprobación booleana, de ahí al conflicto redistributivo entre élites y mayorías hecho modelo formal y a su discusión con el petróleo, y termina en la socialdemocracia de hoy. Se reparte entre cuatro ramas: Ragin, Scheidel, Dunning y Olson.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("moore1966social", "luebbert1991liberalism", "kalyvas1996rise", "bergschlosser1994conditions",
+       "acemoglu2006economic", "dunning2008crude", "rueda2007social"))
+```
