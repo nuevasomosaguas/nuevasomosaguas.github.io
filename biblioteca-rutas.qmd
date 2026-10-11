@@ -50,3 +50,15 @@ El aprendizaje automático predice muy bien, y el pensum gira en torno a la iden
 ruta(c("efron2016computer", "james2021introduction", "hastie2009elements", "varian2014big",
        "mullainathan2017machine", "molina2019machine", "grimmer2022text"))
 ```
+
+## Medir lo social
+
+Antes de explicar algo hay que medirlo, y cada medida esconde decisiones. La ruta va de a quién se mide, con el muestreo, a qué se mide cuando el objeto no se observa, con los constructos latentes y las escalas ordinales, y de ahí a las percepciones, los índices y la contabilidad nacional. Cada obra cuelga de una rama distinta, pero todas responden a la misma pregunta: qué significa medir lo social y cómo se equivoca uno al hacerlo.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("lohr2021sampling", "beaujean2014latent", "bollen1989structural", "borsboom2005measuring",
+       "bond2019sad", "judd1993definition", "posner2004measuring", "morris2013measure",
+       "coyle2015gdp", "jerven2013poor", "stiglitz2010mismeasuring"))
+```
