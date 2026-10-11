@@ -76,7 +76,7 @@ ruta(c("moore1966social", "luebbert1991liberalism", "kalyvas1996rise", "bergschl
 
 ## Evolución cultural
 
-Los humanos heredan dos cosas: genes y cultura. La ruta va de la base cognitiva que hace posible aprender de los demás a la teoría que trata la cultura como un segundo sistema de herencia, de ahí a sus modelos formales y su evidencia, y termina en sus aplicaciones: la cooperación, la religión y la mayor transformación económica de la historia. No es una lista temática, sino una sola teoría aplicada a escalas cada vez mayores, del Pleistoceno a la Revolución Industrial. Se reparte entre el Estrato 0, el Estrato 2 y la historia económica de Clark.
+Los humanos heredan dos cosas: genes y cultura. La ruta va de la base cognitiva que hace posible aprender de los demás a la teoría que trata la cultura como un segundo sistema de herencia, de ahí a sus modelos formales y su evidencia, y termina en sus aplicaciones: la cooperación, la religión y la mayor transformación económica de la historia. No es una lista temática, sino una sola teoría aplicada a escalas cada vez mayores, del Pleistoceno a la Revolución Industrial. Se reparte entre el Estrato 0, el Estrato 2 y la historia económica de Clark. Los laboratorios [*Por qué Tasmania perdió tecnología*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/39-tasmania/) y [*Por qué una buena idea no se extiende sola*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/45-conformidad-y-prestigio/) ponen dos de sus mecanismos a funcionar en el navegador: el cerebro colectivo de Henrich y los sesgos de conformidad y prestigio de Boyd y Richerson.
 
 ```{r}
 #| echo: false
