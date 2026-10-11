@@ -119,7 +119,7 @@ cita <- function(o) {
     paste0(llano(o[["journal"]]),
            if (campo("volume") != "") paste0(" ", o[["volume"]]),
            if (campo("number") != "") paste0("(", o[["number"]], ")"))
-  } else llano(o[["publisher"]])
+  } else llano(o[[if (o[["tipo"]] == "online") "organization" else "publisher"]])
   d <- destino(o)
   enlace <- if (is.null(d)) "" else sprintf(". [%s](%s)", d[["texto"]], d[["url"]])
   sprintf("%s (%s). *%s*%s%s%s%s. `[Nivel %s | %s]`",
