@@ -69,6 +69,8 @@ Llamamos **consiliencia** a la idea de que una explicación gana fuerza cuando e
 
 ## Por dónde empezar
 
+**Un programa exigente, con varias puertas.** El grado completo no es para todos: pide años de trabajo, una base matemática que se construye con esfuerzo y mucha disciplina. Pero no hace falta cursarlo para sacarle partido. Una ruta de lectura te da en pocas semanas una visión seria de un tema; un laboratorio te enseña en una tarde cómo funciona un mecanismo; el manual de bolsillo te sirve mañana mismo para detectar un mal argumento. Entra por la puerta que se ajuste a tu tiempo y a tus ganas.
+
 **Si quieres cursar el grado:** el [Currículo](curriculo.qmd), cuatro años y veinte asignaturas con Julia como entorno principal, y el [Bootcamp de verano](bootcamp.qmd), doce semanas de nivelación previa.
 
 **Si estudias por tu cuenta:** la [Guía autodidacta](guia_autodidacta.qmd), con cuatro hitos y su presupuesto de horas; los [Laboratorios](laboratorios.qmd) y los [problemas interactivos](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/), que se ejecutan en el navegador sin instalar nada; y el [Entorno de trabajo](entorno.qmd).
