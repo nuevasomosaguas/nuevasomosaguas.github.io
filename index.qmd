@@ -1,12 +1,12 @@
 ---
 title: "Nueva Somosaguas"
-subtitle: "Facultad libre de ciencias sociales analíticas y cuantitativas"
-description: "Facultad libre y de código abierto que refunda la sociología sobre las matemáticas, la demografía formal, la genética cuantitativa, la inferencia causal y la computación reproducible."
+subtitle: "Una facultad abierta de ciencias sociales analíticas y cuantitativas"
+description: "Una facultad abierta que enseña a explicar cómo ocurre lo social: formular cada mecanismo con precisión, contrastarlo con datos y reconstruirlo con código."
 # Telegram shows no preview when og:title merely repeats og:site_name.
 open-graph:
-  title: "Nueva Somosaguas – Facultad libre de ciencias sociales analíticas y cuantitativas"
+  title: "Nueva Somosaguas – Una facultad abierta de ciencias sociales analíticas y cuantitativas"
 twitter-card:
-  title: "Nueva Somosaguas – Facultad libre de ciencias sociales analíticas y cuantitativas"
+  title: "Nueva Somosaguas – Una facultad abierta de ciencias sociales analíticas y cuantitativas"
 ---
 
 ```{r}
@@ -14,21 +14,24 @@ twitter-card:
 source("refs.R")
 ```
 
-::: {.hero}
-# La ciencia social fundada en la realidad
+## Explicar cómo ocurre lo social
 
-> *«Durante décadas, la academia dominante abjuró del método formal para dividirse entre la exégesis doctrinaria y el ajuste estadístico ciego. La Nueva Somosaguas recupera el estudio del hombre y la sociedad mediante la integración rigurosa de las matemáticas, la demografía formal, la genética cuantitativa, la sociología analítica y la computación reproducible.»*
-:::
+Sabemos que los hijos de familias con estudios llegan más lejos en la escuela. Pero saberlo no es entenderlo. ¿Ocurre porque heredan capacidades? ¿Porque sus padres pueden ayudarles? ¿Porque, a igualdad de notas, calculan que seguir estudiando les compensa más que a otros? Cada respuesta describe una cadena distinta de decisiones de personas concretas que, sumadas, producen el patrón que vemos. A esas cadenas las llamamos **mecanismos**.
 
-## El fin de la especulación de salón
+Un mecanismo responde a la pregunta «¿cómo ocurre?», no solo a «¿qué ocurre?». Es la diferencia entre saber que la aspirina quita el dolor de cabeza y saber cómo actúa en el cuerpo.
 
-La **Nueva Somosaguas** no es un ajuste cosmético ni una reforma académica de compromiso. Es una sociología que sustituye el arbitrio discursivo por las matemáticas y el contraste empírico de la biología.
+La Nueva Somosaguas enseña a hacer tres cosas con cada mecanismo: formularlo con precisión, contrastarlo con datos y reconstruirlo con código.
 
-Frente a la tradición que redujo la sociología a una exégesis verbal de textos sagrados o a una defensa apriorística de agendas políticas, nuestra facultad exige la **disciplina intelectual del dato, la inferencia causal por diseño y la verificación formal**.
+**Pruébalo en dos minutos:** en el laboratorio [*La revolución que nadie vio venir*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/06-kuran/) verás cómo unas pocas reglas sobre lo que cada persona se atreve a decir en público producen un estallido colectivo que nadie había previsto.
 
-------------------------------------------------------------------------
+## Qué hace distinto a este programa
 
-## Los cuatro pilares de la consiliencia
+- **Las matemáticas y el código como herramientas para pensar.** Probabilidad, inferencia causal y simulación desde el primer curso, con una nivelación previa para quien llega sin base.
+- **Biología y sociedad, juntas.** Genes, evolución y entorno social interactúan, y ninguno explica por sí solo la conducta humana.
+- **Cada idea con su mejor crítica.** Ninguna tesis entra en la biblioteca sin las obras que la discuten con más fuerza.
+- **Todo abierto.** Bibliografía, guías, código y tutores están disponibles para cualquiera que quiera aprender por su cuenta.
+
+## Los cuatro pilares
 
 ```{mermaid}
 %%| label: fig-pilares
@@ -45,7 +48,7 @@ flowchart LR
 
     P1 --> R1["Probabilidad · Blitzstein<br/>Inferencia · Wasserman<br/>Grafos causales · Pearl"]
     P2 --> R2["Puntuaciones poligénicas · Plomin<br/>Paleogenómica · Reich<br/>Genética cuantitativa · Falconer"]
-    P3 --> R3["Bote micro-macro · Coleman<br/>Mecanismos DBO · Hedström<br/>Teoría de juegos · Binmore"]
+    P3 --> R3["De lo individual a lo colectivo · Coleman<br/>Mecanismos · Hedström<br/>Teoría de juegos · Binmore"]
     P4 --> R4["Ciencia social generativa · Epstein<br/>Ciclos seculares · Turchin<br/>Energía y civilización · Smil"]
 
     classDef raiz fill:#3a3a30,stroke:#57564a,stroke-width:2px,color:#f8f9fa
@@ -57,88 +60,23 @@ flowchart LR
     class R1,R2,R3,R4 ref
 ```
 
-### 1. Cimientos formales e inferencia rigurosa
+Llamamos **consiliencia** a la idea de que una explicación gana fuerza cuando encaja a la vez con lo que saben varias disciplinas. El programa se apoya en cuatro:
 
-El lenguaje de la naturaleza social es matemático. Desde el primer semestre, el estudiante domina la probabilidad bayesiana (*Harvard Stat 110* / *Jaynes*), el álgebra lineal matricial y sus descomposiciones (*Strang*), el cálculo de variaciones y la infraestructura computacional políglota en **Julia, R y SQL**.
+1. **Herramientas formales.** Probabilidad, inferencia y causalidad: saber cuándo unos datos prueban algo y cuándo no.
+2. **La naturaleza humana.** Qué aportan la genética y la evolución al estudio de la sociedad, y cómo interactúan con el entorno social.
+3. **La interacción estratégica.** Cómo las decisiones de cada uno dependen de las de los demás, a partir de lo que las personas desean, creen y pueden hacer.
+4. **La síntesis generativa.** Simular sociedades agente a agente y estudiar cómo nacen, se sostienen y caen las instituciones a lo largo de siglos.
 
-### 2. Biología evolutiva y genética cuantitativa
+## Por dónde empezar
 
-El ser humano no es una *tabla rasa* ni un constructo discursivo maleable. Integramos la arquitectura genómica poligénica, la paleogenómica poblacional y las restricciones de la biología evolutiva como parámetros estructurales indispensables para modelar la varianza fenotípica individual y purgar los sesgos de autoselección en el análisis de la desigualdad.
+**Si quieres cursar el grado:** el [Currículo](curriculo.qmd), cuatro años y veinte asignaturas con Julia como entorno principal, y el [Bootcamp de verano](bootcamp.qmd), doce semanas de nivelación previa.
 
-### 3. Sociología analítica y mecanismos micro (DBO)
+**Si estudias por tu cuenta:** la [Guía autodidacta](guia_autodidacta.qmd), con cuatro hitos y su presupuesto de horas; los [Laboratorios](laboratorios.qmd) y los [problemas interactivos](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/), que se ejecutan en el navegador sin instalar nada; y el [Entorno de trabajo](entorno.qmd).
 
-Rechazamos las explicaciones holistas que atribuyen causalidad a entidades abstractas o totalidades colectivas. Todo patrón macro-social debe derivarse de mecanismos generativos discretos fundamentados en Deseos, Creencias y Oportunidades (esquema DBO), formalizarse mediante teoría de juegos evolutiva y contrastarse empíricamente asegurando la identificación causal mediante modelos gráficos dirigidos (DAGs).
+**Si quieres leer:** la [Biblioteca](biblioteca.qmd), `r n_obras` obras centrales con su ficha y un área secundaria de consulta, y sus [Rutas](biblioteca-rutas.qmd), itinerarios temáticos que atraviesan varias disciplinas.
 
-### 4. Ciencias sociales generativas y macrohistoria
+**Si quieres saber más:** las [Preguntas frecuentes](faq.qmd), la [Política de inteligencia artificial](politica_ia.qmd) y el [Manual de bolsillo](manual_bolsillo.qmd) para el debate público.
 
-La sociedad se comprende cuando se puede *reconstruir computacionalmente*. Mediante la simulación basada en agentes (*Joshua Epstein*), los modelos dinámicos de ciclos seculares (*Peter Turchin*) y las restricciones biofísicas de conversión energética (*Vaclav Smil*), estudiamos el nacimiento, la cohesión y el colapso de las instituciones.
+## Abierto a todos
 
-------------------------------------------------------------------------
-
-## Estructura del dominio
-
-Explore los documentos fundamentales que articulan la facultad:
-
-:::::::::: grid
-::: {.g-col-12 .g-col-md-12}
-### [Currículo](curriculo.qmd)
-
-Consulte el plan de estudios de 4 años (20 asignaturas): de los fundamentos formales y la demografía matricial al diseño causal, los modelos de agentes y la cliodinámica, con Julia como entorno nuclear.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### [Bootcamp de verano](bootcamp.qmd)
-
-Doce semanas de nivelación antes del primer curso, en tres fases: geometría matricial y consola de Unix, cálculo multivariante y probabilidad axiomática, y replicación demográfica en Julia.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### [Guía autodidacta](guia_autodidacta.qmd)
-
-Cuatro hitos para recorrer el pensum en solitario, con su presupuesto de horas declarado y un proyecto auditable con microdatos reales al final de cada uno.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### [Laboratorios](laboratorios.qmd)
-
-Cinco laboratorios ejecutables en Julia y SQL, sin librerías de caja negra: paradoja de Berkson, actualización conjugada, segregación de Schelling, tabla de mortalidad e intervalos por *bootstrap*.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### [Entorno de trabajo](entorno.qmd)
-
-La terminal de Unix, entornos congelados con Julia, tres puertas de entrada sin instalación y un estándar gráfico que iguala la figura al texto.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### [Política de inteligencia artificial](politica_ia.qmd)
-
-El *exoesqueleto cognitivo*: exámenes a terminal abierta donde se asume el uso de la IA, trazabilidad del *prompt* y la semilla, y la prohibición de delegarle la identificación causal.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### [Manual de bolsillo](manual_bolsillo.qmd)
-
-Diez herramientas para desarmar la retórica blanda sin recurrir al tecnicismo: cuándo aparece la falacia, la pregunta que la parte en dos y el andamiaje teórico al pie.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### [Biblioteca](biblioteca.qmd)
-
-El corpus completo de `r n_obras` obras, ordenado no por rótulos de facultad sino por función causal en `r estratos_txt` estratos, con ficha técnica del mecanismo que aísla cada obra vertebral.
-:::
-
-::: {.g-col-12 .g-col-md-6}
-### [Preguntas frecuentes](faq.qmd)
-
-Nueve respuestas sobre el reduccionismo biológico, la neutralidad axiológica, el lugar que conserva lo cualitativo, la criba de acceso, la elección de Julia y las salidas del grado.
-:::
-::::::::::
-
-------------------------------------------------------------------------
-
-## Principio abierto y mérito puro
-
-La **Nueva Somosaguas** cree en la universalidad del saber. La totalidad de nuestra bibliografía, guías docentes, scripts de simulación y entornos RAG están abiertos a cualquier ciudadano que busque instruirse por su cuenta.
-
-Las pruebas de acceso psicométrico (como el test de Raven avanzado) existen únicamente para administrar recursos públicos de laboratorio escasos; el derecho a cultivar una mente analítica, rigurosa y libre de tonterías pertenece a cualquiera con la disciplina suficiente para exigírselo.
+La bibliografía, las guías, el código de las simulaciones y los tutores están abiertos a cualquiera que quiera aprender por su cuenta. Las plazas presenciales son limitadas; los criterios de acceso se explican en las [preguntas frecuentes](faq.qmd).
