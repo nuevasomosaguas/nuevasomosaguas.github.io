@@ -102,7 +102,7 @@ Ningún agente desea vivir en un gueto homogéneo: solo prefiere no ser una mino
 
 ![El tablero de 40 × 40 al principio, con los dos grupos mezclados al azar, y tras nueve rondas de mudanzas.](images/laboratorios/schelling.png){fig-alt="Dos cuadrículas de casillas granates, azules y blancas. En la primera los colores están mezclados al azar; en la segunda forman grandes manchas de un solo color."}
 
-**Explicación analítica:** el umbral es del 30 %, es decir, cada agente acepta ser minoría en una proporción de dos a uno. Aun así el índice de segregación —la proporción media de vecinos afines— pasa de $0{,}504$, el valor esperado en una distribución aleatoria, a $0{,}753$ en nueve iteraciones. Nadie ha buscado el gueto; lo produce la agregación de decisiones locales, que es exactamente la tesis generativa de Schelling y Joshua Epstein.
+**Explicación analítica:** el umbral es del 30%, es decir, cada agente acepta ser minoría en una proporción de dos a uno. Aun así el índice de segregación —la proporción media de vecinos afines— pasa de $0{,}504$, el valor esperado en una distribución aleatoria, a $0{,}753$ en nueve iteraciones. Nadie ha buscado el gueto; lo produce la agregación de decisiones locales, que es exactamente la tesis generativa de Schelling y Joshua Epstein.
 
 ::: {.callout-tip collapse="true" icon="false"}
 ## El código, en Julia
@@ -234,9 +234,9 @@ Wrigley, E. A., Davies, R. S., Oeppen, J. E. y Schofield, R. S. (1997). *English
 
 Al estudiar rentas, patrimonios o ratios de fecundidad —distribuciones con cola pesada— suponer normalidad es un error de bulto. El remuestreo de Efron reconstruye la distribución muestral del estimador extrayendo muestras con reemplazo de los propios datos, sin postular nada sobre su forma.
 
-![Las medianas de 10 000 remuestras, con el intervalo percentil al 95 % y la mediana de la población.](images/laboratorios/bootstrap.png){fig-alt="Histograma irregular de las medianas remuestreadas, entre 8000 y 17 000 euros, con dos líneas discontinuas que marcan el intervalo y una línea continua en la mediana de la población, dentro del intervalo."}
+![Las medianas de 10 000 remuestras, con el intervalo percentil al 95% y la mediana de la población.](images/laboratorios/bootstrap.png){fig-alt="Histograma irregular de las medianas remuestreadas, entre 8000 y 17 000 euros, con dos líneas discontinuas que marcan el intervalo y una línea continua en la mediana de la población, dentro del intervalo."}
 
-**Explicación analítica:** la mediana de una lognormal es $e^{\mu}$, aquí $e^{9{,}5} \approx 13\,360$. La mediana muestral es $13\,055{,}63$ y el intervalo percentil al 95 % resulta $[10\,065{,}89;\ 14\,907{,}10]$, que cubre el valor poblacional. Se construye sin fórmula cerrada y sin suponer simetría, que es lo que lo hace utilizable sobre datos reales de patrimonio. El histograma es irregular porque la mediana de una remuestra solo puede tomar unos pocos valores de la muestra original, los del centro.
+**Explicación analítica:** la mediana de una lognormal es $e^{\mu}$, aquí $e^{9{,}5} \approx 13\,360$. La mediana muestral es $13\,055{,}63$ y el intervalo percentil al 95% resulta $[10\,065{,}89;\ 14\,907{,}10]$, que cubre el valor poblacional. Se construye sin fórmula cerrada y sin suponer simetría, que es lo que lo hace utilizable sobre datos reales de patrimonio. El histograma es irregular porque la mediana de una remuestra solo puede tomar unos pocos valores de la muestra original, los del centro.
 
 ::: {.callout-tip collapse="true" icon="false"}
 ## El código, en Julia
@@ -258,7 +258,7 @@ for b in 1:B
     medianas_boot[b] = median(remuestra)
 end
 
-# Intervalo percentil al 95 %
+# Intervalo percentil al 95%
 ic_inferior = quantile(medianas_boot, 0.025)
 ic_superior = quantile(medianas_boot, 0.975)
 

@@ -58,8 +58,8 @@ tablero <- function(m, momento) {
              grupo = factor(as.vector(m), levels = 0:2, labels = c("Vacía", "Grupo A", "Grupo B")),
              momento = momento)
 }
-s <- rbind(tablero(leer("schelling_inicial.csv"), "Al principio: 50 % de vecinos afines"),
-           tablero(leer("schelling_final.csv"), "Tras nueve rondas: 75 %"))
+s <- rbind(tablero(leer("schelling_inicial.csv"), "Al principio: 50% de vecinos afines"),
+           tablero(leer("schelling_final.csv"), "Tras nueve rondas: 75%"))
 s$momento <- factor(s$momento, levels = unique(s$momento))
 guardar(
   ggplot(s, aes(columna, fila, fill = grupo)) +
@@ -83,7 +83,7 @@ guardar(
     geom_vline(xintercept = ic, colour = granate, linetype = "dashed") +
     geom_vline(xintercept = exp(9.5), colour = "black") +
     annotate("text", x = exp(9.5), y = Inf, label = "  mediana de la población", hjust = 0, vjust = 1.5) +
-    annotate("text", x = ic[1], y = Inf, label = "IC 95 %  ", hjust = 1, vjust = 1.5, colour = granate) +
+    annotate("text", x = ic[1], y = Inf, label = "IC 95%  ", hjust = 1, vjust = 1.5, colour = granate) +
     scale_x_continuous(labels = scales::label_number(big.mark = ".", decimal.mark = ",")) +
     labs(x = "Mediana del patrimonio en cada remuestra (€)", y = "Remuestras") + tema,
   "bootstrap.png")
