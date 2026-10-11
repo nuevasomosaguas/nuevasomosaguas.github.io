@@ -1,7 +1,7 @@
 ---
 title: "Preguntas frecuentes"
-subtitle: "Fundamentos epistemológicos, criterios docentes y salidas del programa"
-description: "Respuestas sobre los fundamentos epistemológicos, los criterios docentes, el acceso y las salidas profesionales de la Nueva Somosaguas."
+subtitle: "Método, acceso, biblioteca y salidas del programa"
+description: "Respuestas sobre el método, la consiliencia, los modelos, el acceso, la biblioteca y las salidas profesionales de la Nueva Somosaguas."
 format:
   html:
     toc: true
@@ -9,7 +9,7 @@ format:
 ---
 
 ::: {.lead}
-Este documento responde a las dudas más habituales sobre los fundamentos epistemológicos, los criterios docentes y las salidas profesionales de la Nueva Somosaguas.
+Este documento responde a las dudas más habituales sobre el método, el acceso, la biblioteca y las salidas profesionales de la Nueva Somosaguas.
 :::
 
 ---
@@ -26,13 +26,31 @@ La Nueva Somosaguas asume que la sociedad es un agregado de organismos biológic
 
 ### 2. ¿Constituye este enfoque una forma de reduccionismo biológico?
 
-Rechazamos tanto el reduccionismo genético ingenuo como el constructivismo radical de la *tabula rasa*. El ser humano no es un autómata determinado por sus genes, pero tampoco es arcilla maleable sin restricciones biológicas previas.
+No, y conviene separar dos afirmaciones que la acusación suele confundir. Una es que la biología importa: los rasgos humanos tienen una base genética y una historia evolutiva, y eso es una afirmación empírica difícil de negar. La otra es que la biología lo determina todo, una posición que casi nadie defiende en serio, y este programa tampoco.
 
-Siguiendo los modelos de coevolución gen-cultura (Boyd y Richerson) y la genética cuantitativa moderna (Falconer, Plomin), la biología se trata no como destino unívoco, sino como un conjunto de restricciones estructurales y distribuciones de rasgos que interactúan de forma dinámica con el entorno institucional. La mayoría de los rasgos humanos son poligénicos y probabilísticos, y el análisis de la interacción gen-ambiente ($G \times E$) forma parte explícita de los modelos que se enseñan.
+En el pensum, la biología es uno de los cuatro pilares, no el edificio entero, y entra casi siempre como interacción. Siguiendo los modelos de coevolución gen-cultura (Boyd y Richerson) y la genética cuantitativa (Falconer, Plomin), se trata como un conjunto de restricciones y de distribuciones de rasgos que interactúan con el entorno, no como un destino. La mayoría de los rasgos humanos son poligénicos y probabilísticos, y la interacción gen-ambiente ($G \times E$) forma parte explícita de los modelos que se enseñan.
+
+La genómica de los últimos veinte años lo ha confirmado con sus propios datos. Freese, Li y Wade (2003) y Mills y Tropf (2020), sociólogos que escriben para sociólogos, repasan qué aporta la genética a la sociología y qué no. Kong y sus colegas (2018) mostraron que los alelos que los padres no transmiten también predicen el logro educativo de los hijos: solo pueden actuar a través del ambiente que crean los padres, así que parte de lo que parecía un efecto genético directo es ambiental. Y ninguna tesis biológica de la [biblioteca](biblioteca.qmd) se lee sin sus críticas, de Turkheimer a Mackintosh o Zuk.
 
 ---
 
-### 3. ¿Tiene la Nueva Somosaguas una orientación ideológica o partidista?
+### 3. ¿Qué significa «consiliencia»?
+
+La palabra es de William Whewell, que en 1840 habló de la consiliencia de las inducciones: una teoría gana credibilidad cuando explica hechos de ámbitos que nadie había relacionado. Es un criterio de evidencia, y es el sentido en que la usamos: una explicación gana fuerza cuando encaja a la vez con lo que saben varias disciplinas.
+
+Edward O. Wilson la popularizó en 1998 con otro sentido, vertical y reduccionista: las ciencias sociales acabarían apoyándose en la biología, y esta en la química y la física. No es la nuestra. La consiliencia del programa es horizontal: las disciplinas convergen en mecanismos compartidos, como el esquema de deseos, creencias y oportunidades de Hedström o el de creencias, preferencias y restricciones de Gintis, sin que ninguna absorba a las demás. Stephen Jay Gould respondió a Wilson que ciencias y humanidades deben dialogar sin subordinarse unas a otras, y los dos libros están en la biblioteca, uno junto al otro.
+
+---
+
+### 4. ¿Qué es un modelo, y qué se le puede pedir?
+
+Todos los científicos sociales usan modelos; la diferencia es si los escriben en palabras o en ecuaciones y código. Los verbales pueden esconder supuestos que nadie ha declarado, y los formales obligan a especificar cada uno. Es el argumento de Alex Mesoudi, el de Paul Smaldino, que los modelos son estúpidos y por eso necesitamos más, y el de Joshua Epstein, que da dieciséis razones para modelizar distintas de predecir.
+
+Qué se le pide a un modelo es otra cuestión, y tiene al menos cuatro respuestas serias. Para Milton Friedman, un modelo vale si predice, aunque sus supuestos sean irreales. Para Ariel Rubinstein, es una fábula que no predice, sino que ilumina un mecanismo. Para Itzhak Gilboa y sus colegas, es una analogía: un caso que se razona para aplicarlo por semejanza a otros. Para Peter Hedström, vale si captura el mecanismo que de verdad produce lo que se observa. El programa se queda con la última y enseña las otras tres como sus contrastes, porque el estudiante tiene que saber defender la suya frente a ellas.
+
+---
+
+### 5. ¿Tiene la Nueva Somosaguas una orientación ideológica o partidista?
 
 Ninguna. La institución mantiene una neutralidad axiológica estricta en el sentido de Max Weber. No se evalúan adhesiones morales ni declaraciones de principios políticos.
 
@@ -40,35 +58,50 @@ El único criterio de validez descansa en tres cosas: la consistencia deductiva 
 
 ---
 
-### 4. ¿Queda descartada la investigación cualitativa?
+### 6. ¿Queda descartada la investigación cualitativa?
 
 No. Como sostienen sociólogos analíticos como Peter Hedström y Richard Swedberg, la observación cualitativa rigurosa, el trabajo de archivo y el trabajo de campo etnográfico son instrumentos insustituibles para descubrir mecanismos sociales plausibles y formular conjeturas sobre ellos.
 
-Lo que este plan rechaza es la sustitución del contraste formal por la exégesis textual. La intuición cualitativa es aquí el punto de partida que identifica deseos, creencias y oportunidades; el trabajo posterior consiste en formalizar ese mecanismo y someterlo a evaluación empírica.
+Lo que este plan rechaza es la sustitución del contraste formal por la exégesis textual. La intuición cualitativa es aquí el punto de partida que identifica deseos, creencias y oportunidades; el trabajo posterior consiste en formalizar ese mecanismo y someterlo a evaluación empírica. La biblioteca lo recoge: la *Apología para la historia* de Marc Bloch enseña a razonar con fuentes incompletas, y James C. Scott muestra lo que se pierde cuando un plan ignora la *mētis*, el saber práctico y local que no cabe en ninguna estadística.
 
 ---
 
 ## Acceso y seguimiento
 
-### 5. ¿Por qué se utiliza una criba psicométrica para el acceso presencial?
+### 7. ¿Por qué se utiliza una criba psicométrica para el acceso presencial?
 
-El plan somete al alumno desde el primer curso a cálculo multivariante, álgebra matricial y programación científica. Administrar recursos públicos escasos —plazas de laboratorio, tiempo de cómputo y atención docente en grupos reducidos— exige verificar que el estudiante cuenta con la aptitud analítica abstracta necesaria para afrontar esa carga sin frustración ni abandono prematuro.
+Porque el grado completo no es para todos, y es mejor decirlo antes que después. El plan somete al alumno desde el primer curso a cálculo multivariante, álgebra matricial y programación científica. Administrar recursos públicos escasos —plazas de laboratorio, tiempo de cómputo y atención docente en grupos reducidos— exige verificar que el estudiante cuenta con la aptitud analítica abstracta necesaria para afrontar esa carga sin frustración ni abandono prematuro.
 
-No es un juicio sobre la dignidad ni el valor de las personas, sino un criterio técnico de adecuación curricular, habitual en las disciplinas formales de mayor exigencia.
+No es un juicio sobre la dignidad ni el valor de las personas, sino un criterio técnico de adecuación curricular, habitual en las disciplinas formales de mayor exigencia. Y la criba solo regula las plazas presenciales: todo lo demás está abierto, y no hace falta cursar el grado para sacarle partido (ver la pregunta siguiente).
 
 ---
 
-### 6. Si no resido en Madrid o trabajo a jornada completa, ¿puedo seguir el programa?
+### 8. Si no resido en Madrid o trabajo a jornada completa, ¿puedo seguir el programa?
 
-Sí. La totalidad del canon bibliográfico, los cuadernos de laboratorio, los scripts reproducibles y las guías de estudio están publicados en acceso abierto. Cualquier persona con la constancia necesaria puede recorrer el itinerario por su cuenta, sin barrera económica ni territorial.
+Sí, y por varias puertas, según el tiempo y las ganas de cada cual. La totalidad del canon bibliográfico, los laboratorios, los scripts reproducibles y las guías de estudio están publicados en acceso abierto, sin barrera económica ni territorial.
 
-La [guía autodidacta](guia_autodidacta.qmd) organiza ese recorrido en cuatro hitos, cada uno con su presupuesto de horas y su proyecto de verificación con microdatos reales. Son unas 2.600 horas netas en total, entre dos años y medio y tres y medio a 15-20 horas semanales: la cifra se declara por delante para que nadie confunda el ritmo real con el de un curso de verano.
+- **El recorrido completo.** La [guía autodidacta](guia_autodidacta.qmd) lo organiza en cuatro hitos, cada uno con su presupuesto de horas y su proyecto de verificación con microdatos reales. Son unas 2.600 horas netas en total, entre dos años y medio y tres y medio a 15-20 horas semanales: la cifra se declara por delante para que nadie confunda el ritmo real con el de un curso de verano.
+- **Un tema, en unas semanas.** Cada [ruta](biblioteca-rutas.qmd) de la biblioteca recorre en orden de lectura un tema que atraviesa varias disciplinas, de la evolución cultural a la medición de lo social.
+- **Un mecanismo, en una tarde.** Los [problemas interactivos](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/) se resuelven en el navegador, sin instalar nada, y cada uno pone a funcionar un mecanismo con su comprobación.
+- **Un mal argumento, mañana mismo.** El [manual de bolsillo](manual_bolsillo.qmd) reúne diez herramientas para detectarlo en el debate público.
+
+Y para quien quiera trabajar en serio, el [entorno de trabajo](entorno.qmd) trae listas todas las herramientas del programa, en el navegador, en VS Code o como distribución de Linux instalable.
+
+---
+
+## La biblioteca
+
+### 9. ¿Cómo entra una obra en la biblioteca?
+
+La [biblioteca](biblioteca.qmd) tiene dos partes. El núcleo es un número cerrado de obras con su ficha técnica: para que entre una, otra tiene que salir. El [área secundaria](biblioteca-secundaria/index.qmd) no tiene tope, y en ella cada obra cuelga de una del núcleo, con un papel (fuente original, profundización técnica, contraste y crítica, especialización aplicada, historia y contexto, divulgación o introducción) y un motivo, una frase con su relación concreta con la obra de la que cuelga.
+
+Una obra nueva entra como propuesta, y solo aparece en la web cuando pasa a curada en una sesión de revisión: la web refleja el criterio, no el entusiasmo del momento. Ninguna tesis llega sola. Entra con las obras que la discuten con más fuerza, que cuelgan de la misma rama como contraste. Cuando un tema reparte al menos tres obras curadas entre al menos tres ramas, se le dedica una [ruta](biblioteca-rutas.qmd). Y cada cambio queda, con sus razones, en el [registro de cambios](biblioteca-cambios.qmd).
 
 ---
 
 ## Tecnología y salidas
 
-### 7. ¿Cuál es el papel de la inteligencia artificial en la docencia?
+### 10. ¿Cuál es el papel de la inteligencia artificial en la docencia?
 
 La IA se utiliza como exoesqueleto cognitivo y tutor socrático permanente, inspirado en el *CS50 Duck*, nunca como sustituto del pensamiento autónomo. El estudiante la emplea para depurar código, acelerar tareas de formateo y someter sus propios argumentos a escrutinio dialéctico.
 
@@ -76,15 +109,15 @@ Para evitar la dependencia no reflexiva, las evaluaciones decisivas se realizan 
 
 ---
 
-### 8. ¿Por qué Julia como lenguaje principal, y no Python o R?
+### 11. ¿Por qué Julia como lenguaje principal, y no Python o R?
 
 Julia resuelve el problema de los dos lenguajes: combina la expresividad de una sintaxis próxima a la notación matemática con la velocidad de ejecución y la eficiencia en memoria del código compilado. El estudiante puede implementar simulaciones basadas en agentes, optimización dinámica y cálculo matricial a gran escala sin delegar el núcleo del cómputo en una caja negra ajena.
 
-Python y R se conservan como herramientas auxiliares, cada una en lo que hace mejor: la ingesta y manipulación de datos tabulares, y el análisis microeconométrico, bioestadístico y psicométrico.
+Python y R se conservan como herramientas auxiliares, cada una en lo que hace mejor: la ingesta y manipulación de datos tabulares, y el análisis microeconométrico, bioestadístico y psicométrico. Los problemas interactivos están en R por una razón práctica: webR lo ejecuta en el navegador, sin instalar nada, y Julia todavía no corre en el navegador con la misma facilidad.
 
 ---
 
-### 9. ¿Cuáles son las salidas profesionales de un egresado?
+### 12. ¿Cuáles son las salidas profesionales de un egresado?
 
 El graduado no compite en el mercado de la opinión: ofrece competencias técnicas directamente demandables. Las salidas naturales incluyen la ciencia de datos, la consultoría cuantitativa, el análisis demográfico y actuarial, la evaluación econométrica de políticas públicas en organismos internacionales, la planificación logística territorial y la modelización de riesgos en entidades financieras.
 
