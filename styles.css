@@ -241,3 +241,10 @@ svg[id$="-mermaid"] foreignObject {
 #title-block-header .description {
   display: none;
 }
+
+/* A listing table with many columns, like the secondary catalogue's, scrolls inside
+   its column when the window is narrower than it needs, instead of spilling under the
+   categories in the margin. */
+.quarto-listing-container-table {
+  overflow-x: auto;
+}

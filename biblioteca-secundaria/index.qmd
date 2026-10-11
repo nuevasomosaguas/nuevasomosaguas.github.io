@@ -18,6 +18,7 @@ listing:
     motivo: "Por qué"
   categories: true
   page-size: 50
+page-layout: full
 ---
 
 El [núcleo de la biblioteca](../biblioteca.qmd) tiene un número cerrado de obras, ordenadas por función causal. El área secundaria no tiene tope: reúne lo que se ha revisado y aceptado pero no entra en el núcleo. Cada obra cuelga de una del núcleo, y aparece también debajo de ella, en la biblioteca.
