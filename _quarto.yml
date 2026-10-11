@@ -95,6 +95,19 @@ format:
     # MathJax 4 sin la voz, el braille ni la copia enriquecida que genera de serie para
     # cada fórmula (cientos de megas en una página con muchas): se queda el MathML que
     # leen los lectores de pantalla, y lo demás se activa desde su menú (clic derecho).
+    # Quarto marca la página actual solo en los enlaces de primer nivel del menú: en un
+    # submenú, como el de la Biblioteca, la marca la pone esto, en el enlace y en su menú.
+    include-after-body:
+      text: |
+        <script>
+        const pagina = u => u.pathname.replace(/index\.html$/, "");
+        document.querySelectorAll(".navbar .dropdown-item").forEach(a => {
+          if (pagina(a) !== pagina(location)) return;
+          a.classList.add("active");
+          a.setAttribute("aria-current", "page");
+          a.closest(".dropdown").querySelector(".dropdown-toggle").classList.add("active");
+        });
+        </script>
     include-in-header:
       text: |
         <link rel="icon" href="/images/logo/favicon.ico" sizes="48x48">
