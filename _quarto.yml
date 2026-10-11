@@ -58,7 +58,15 @@ website:
       - text: "Debate público"
         href: manual_bolsillo.qmd
       - text: "Biblioteca"
-        href: biblioteca.qmd
+        menu:
+          - text: "Núcleo"
+            href: biblioteca.qmd
+          - text: "Área secundaria"
+            href: biblioteca-secundaria/index.qmd
+          - text: "Rutas"
+            href: biblioteca-rutas.qmd
+          - text: "Cambios"
+            href: biblioteca-cambios.qmd
       - text: "FAQ"
         href: faq.qmd
       - text: "Quiénes somos"
