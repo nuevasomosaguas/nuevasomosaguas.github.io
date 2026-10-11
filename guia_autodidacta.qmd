@@ -45,6 +45,7 @@ Esas 2.600 horas no se reúnen acumulando conocimiento técnico, sino sosteniend
 * **Artesanía y herejía.** El código como oficio de artesano, la creación de valor y la costumbre de preguntarse qué no se puede decir en voz alta, para pensarlo con libertad fuera del consenso ideológico del momento. *Texto:* Paul Graham — *Hackers & Painters*.
 * **La lectura como resistencia.** La degradación del discurso público cuando se somete a la lógica del entretenimiento. Postman escribía sobre la televisión, pero su diagnóstico explica por qué la lectura analítica sostenida y el trabajo en la consola, que no ofrecen recompensa inmediata, son hoy una elección consciente contra la atrofia intelectual. *Texto:* Neil Postman — *Amusing Ourselves to Death*.
 * **La ciencia que falla.** Fraude, sesgo, negligencia y exageración: cómo un resultado publicado puede ser falso sin que nadie mienta, y por qué un proyecto que se audita y se reproduce vale más que un artículo que se cita. *Texto:* Stuart Ritchie — *Science Fictions*.
+* **Escribir con claridad.** Escribir es tan parte del oficio como programar. La prosa inflada de las ciencias sociales, la pasiva que esconde quién hizo qué y las palabras que suenan a teoría sin decir nada no son un estilo, sino una manera de no pensar. Un manual breve y práctico, escrito por un sociólogo contra los vicios de su propia disciplina, que enseña a reescribir un borrador hasta que diga lo que quiere decir. *Texto:* Howard S. Becker — *Writing for Social Scientists*.
 
 ---
 
