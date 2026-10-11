@@ -39,3 +39,14 @@ ruta(c("gat2017causes", "morris2014war", "horowitz2000ethnic", "vanhanen2012ethn
        "fearon2003ethnicity", "wimmer2009ethnic", "cederman2013inequality", "kalyvas2006logic",
        "kuran1995private", "epstein2006generative"))
 ```
+
+## Predecir y explicar
+
+El aprendizaje automático predice muy bien, y el pensum gira en torno a la identificación causal. La ruta va del aparato a su advertencia: qué se puede tomar de los métodos de predicción, para qué sirven en ciencias sociales y por qué un buen ajuste predictivo no es una explicación causal.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("efron2016computer", "james2021introduction", "hastie2009elements", "varian2014big",
+       "mullainathan2017machine", "molina2019machine", "grimmer2022text"))
+```
