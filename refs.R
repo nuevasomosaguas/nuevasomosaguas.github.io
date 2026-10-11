@@ -100,7 +100,7 @@ destino <- function(o) {
 
 # Translations: the language of the original, as the page names it.
 idiomas <- c(french = "francés", italian = "italiano", german = "alemán", russian = "ruso",
-             polish = "polaco", czech = "checo")
+             polish = "polaco", czech = "checo", arabic = "árabe")
 
 # One reference as a line of Markdown: authors, year, title, imprint, link and level tag.
 cita <- function(o) {
