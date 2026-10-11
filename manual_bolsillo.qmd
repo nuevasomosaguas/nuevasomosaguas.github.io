@@ -103,7 +103,7 @@ El destinatario es **el espectador neutral** que asiste a la controversia. A él
 
 ### 6. La aritmética actuarial no negocia
 
-* **En el debate:** promesas de pensiones blindadas, sanidad en expansión perpetua y jubilación temprana en sociedades con fecundidad bajo mínimos; y, en sentido contrario, la promesa de arreglarlo todo con natalidad, o cerrando la puerta a la inmigración.
+* **En el debate:** promesas de pensiones blindadas, sanidad en expansión perpetua y jubilación temprana en sociedades con fecundidad bajo mínimos; y, en sentido contrario, la promesa de arreglarlo todo con natalidad, o inmigración a raudales.
 * **El fondo teórico:** la ecuación de renovación de Lotka y la demografía formal de [Keyfitz](biblioteca.qmd#keyfitz2005applied). Un sistema de reparto no es una reserva guardada en una caja fuerte: es una transferencia en tiempo real entre generaciones vivas. Si la fecundidad se queda durante décadas por debajo del nivel de reemplazo, ningún decreto fabrica cotizantes que no nacieron.
 * **Para practicarlo:** [*¿Cuántos trabajadores por pensionista?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/29-trabajadores-por-pensionista/)
 
