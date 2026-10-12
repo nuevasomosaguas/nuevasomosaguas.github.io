@@ -19,7 +19,7 @@ La [biblioteca](biblioteca.qmd) se organiza por dependencias: cada obra del [ár
 
 Las rutas son de tres clases. Las que sirven **para saber de algo** recorren un tema, como la violencia o la movilidad social, o un autor, Marx, a través de las disciplinas que lo estudian. Las que sirven **para saber hacer algo** enseñan un oficio, de calcular con probabilidades a tratar el texto como dato. Y las que sirven **para saber qué vale lo que se sabe** discuten cuándo unos datos prueban una causa, cuándo una buena predicción explica algo y qué esconde una medida.
 
-Casi todas terminan en sus [laboratorios](laboratorios.qmd), que ponen a funcionar en el navegador, sin instalar nada, los mecanismos que la ruta ha dado a leer: cada ruta cierra así el ciclo de leer, entender y simular.
+Todas terminan en sus [laboratorios](laboratorios.qmd), que ponen a funcionar en el navegador, sin instalar nada, los mecanismos que la ruta ha dado a leer: cada ruta cierra así el ciclo de leer, entender y simular.
 
 ## Para saber de algo
 
@@ -33,6 +33,8 @@ Marx no ocupa un sitio del núcleo como lectura obligada. Está en su reconstruc
 ruta(c("cohen1978karl", "elster1985making", "roemer1982general", "hollander2008economics",
        "kornai1992socialist", "erikson1992constant", "wright1985classes"))
 ```
+
+**Para simularlo:** [*¿Quién trabaja para quién?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/71-quien-trabaja-para-quien/): la economía del maíz de Roemer, en la que las cinco clases y la explotación salen de un reparto desigual de la simiente, y desaparecen al igualarlo.
 
 ### Violencia y conflicto
 
@@ -58,6 +60,8 @@ Por qué unos países acaban en democracias y otros en dictaduras, y a quién re
 ruta(c("moore1966social", "luebbert1991liberalism", "kalyvas1996rise", "bergschlosser1994conditions",
        "acemoglu2006economic", "dunning2008crude", "rueda2007social"))
 ```
+
+**Para simularlo:** [*El umbral de la revolución*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/72-el-umbral-de-la-revolucion/): el modelo de Acemoglu y Robinson, en el que la élite compra la paz con promesas mientras son creíbles, cede el voto cuando dejan de serlo y reprime si la democracia le sale demasiado cara, de modo que la democracia solo sale con una desigualdad intermedia.
 
 ### Evolución biológica
 
@@ -102,7 +106,7 @@ ruta(c("blau1978american", "erikson1992constant", "wright1985classes", "roemer19
        "harden2021genetic"))
 ```
 
-**Para simularlo:** [*Todos con máster*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/50-todos-con-master/) y [*¿Cuántas generaciones dura la cuna?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/37-movilidad-markov/): la educación como señal de Spence y la movilidad como cadena de Markov, en la que dos países con la misma desigualdad a la larga olvidan la cuna a ritmos muy distintos.
+**Para simularlo:** [*¿Quién trabaja para quién?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/71-quien-trabaja-para-quien/), [*Todos con máster*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/50-todos-con-master/) y [*¿Cuántas generaciones dura la cuna?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/37-movilidad-markov/): las clases de Roemer deducidas de la propiedad, la educación como señal de Spence y la movilidad como cadena de Markov, en la que dos países con la misma desigualdad a la larga olvidan la cuna a ritmos muy distintos.
 
 ## Para saber hacer algo
 
