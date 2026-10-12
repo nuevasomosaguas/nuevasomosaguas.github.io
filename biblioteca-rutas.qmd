@@ -108,6 +108,20 @@ ruta(c("blau1978american", "erikson1992constant", "wright1985classes", "roemer19
 
 **Para simularlo:** [*¿Quién trabaja para quién?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/71-quien-trabaja-para-quien/), [*Todos con máster*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/50-todos-con-master/) y [*¿Cuántas generaciones dura la cuna?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/37-movilidad-markov/): las clases de Roemer deducidas de la propiedad, la educación como señal de Spence y la movilidad como cadena de Markov, en la que dos países con la misma desigualdad a la larga olvidan la cuna a ritmos muy distintos.
 
+### Cliodinámica
+
+Por qué los Estados crecen, se estancan y se hunden en ciclos de siglos, y si la historia se puede escribir con ecuaciones. La ruta empieza con las dos intuiciones de las que parte la cliodinámica, el ciclo de la cohesión de grupo de Ibn Jaldún y la circulación de las élites de Pareto, y sigue con su aparato: el modelo de depredador y presa de Volterra, la dinámica no lineal de Strogatz y su aplicación a la carrera de armamentos y al combate. Después viene la teoría: el ciclo agrario malthusiano del Languedoc que reconstruyó Le Roy Ladurie, la teoría demográfico-estructural de Turchin y Nefedov, con la sobreproducción de élites y la pauperización como motores de la inestabilidad, y las compresiones violentas de la desigualdad de Scheidel. Termina con sus rivales y sus críticos: la complejidad que deja de rendir de Tainter, los colapsos que fueron transformaciones de McAnany y Yoffee, y la advertencia de Slutsky, que la suma de causas aleatorias basta para producir ciclos. Se reparte entre Turchin, Strogatz y Scheidel, y acompaña a la asignatura [4.1 del currículo](curriculo.qmd#asignatura-4-1), *Cliodinámica y sistemas dinámicos históricos*.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("ibnkhaldun2015muqaddimah", "pareto1935mind", "volterra1926fluctuations", "strogatz2015nonlinear",
+       "epstein1997nonlinear", "leroyladurie1974peasants", "turchin2009secular", "scheidel2017great",
+       "tainter1988collapse", "mcanany2010questioning", "slutzky1937summation"))
+```
+
+**Para simularlo:** [*Peces, guerra y depredadores*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/17-lotka-volterra/), [*La ley de Lanchester*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/36-ley-de-lanchester/), [*La trampa malthusiana*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/31-trampa-malthusiana/) y [*El ciclo del ladrillo*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/52-ciclo-del-ladrillo/): el modelo de Volterra con las capturas del Adriático, la ley cuadrática del combate, la población que se come cada invento y un ciclo que sale solo del retraso entre la decisión y su efecto.
+
 ## Para saber hacer algo
 
 ### Probabilidad
@@ -166,6 +180,20 @@ ruta(c("markov2006example", "shannon1948mathematical", "janssens2021data", "jura
 
 **Para simularlo:** [*¿Cuántos bits te delatan?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/59-cuantos-bits-te-delatan/) y [*¿Quién escribió «si los hombres fueran ángeles»?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/70-si-los-hombres-fueran-angeles/): la información de Shannon medida en bits y la distancia entre textos, con los doce artículos disputados de *El Federalista*, que las palabras de estilo acercan a Madison y las de tema, no.
 
+### Redes sociales
+
+Con quién se relaciona cada cual decide qué sabe, qué cree y qué hace. La ruta empieza con la fuerza de los lazos débiles de Granovetter y con la homofilia que Blau deduce de las oportunidades de contacto, sigue con el mundo pequeño de Watts y Strogatz, en el que unos pocos atajos acortan todas las distancias, y llega al aparato: la formación de redes, la centralidad y la difusión de Jackson, y su análisis estadístico en R con Kolaczyk y Csárdi. Después pasa a lo que circula por la red: las creencias que convergen por promedios repetidos de DeGroot, los umbrales de Granovetter, el contagio complejo de Centola, en el que los lazos largos que difunden un rumor no bastan para difundir una conducta, y la desigualdad impredecible que produce la influencia social en el mercado musical artificial de Salganik, Dodds y Watts. Termina con Watts explicando por qué todo esto parece obvio una vez que se sabe la respuesta. Se reparte entre Granovetter, Jackson, Watts y Strogatz, Centola y Salganik, y acompaña a la asignatura [3.1 del currículo](curriculo.qmd#asignatura-3-1), *Teoría de redes sociales y difusión*.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("granovetter1973strength", "blau1977inequality", "watts1998collective", "jackson2008social",
+       "kolaczyk2014statistical", "degroot1974reaching", "granovetter1978threshold", "centola2007complex",
+       "centola2018how", "salganik2006experimental", "watts2011everything"))
+```
+
+**Para simularlo:** [*Un mundo pequeño con pocos atajos*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/38-mundo-pequeno/), [*Las creencias se forman en red*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/09-degroot/) y [*Los umbrales de Granovetter*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/02-granovetter/): la distancia que se desploma al recablear un 1% de los lazos, el consenso por promedios de DeGroot y la cascada que depende del umbral de una sola persona.
+
 ## Para saber qué vale lo que se sabe
 
 ### Causalidad
@@ -210,3 +238,18 @@ ruta(c("crosby1997measure", "hacking1990taming", "lohr2021sampling", "beaujean20
 ```
 
 **Para simularlo:** [*El mismo Gini, dos países distintos*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/19-mismo-gini/), [*La pobreza que baja cuando todos pierden*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/63-la-pobreza-que-baja/), [*Dos mil años de renta*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/57-dos-mil-anos-de-renta/) y [*Lo que se mide se corrompe*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/53-lo-que-se-mide-se-corrompe/): lo que un índice resume y lo que esconde, un umbral de pobreza que baja con la renta de todos, las series de Maddison y la ley de Campbell.
+
+### Sociología analítica
+
+Qué cuenta como explicación de un hecho social. La respuesta de la sociología analítica es un mecanismo: personas con deseos, creencias y oportunidades cuyas acciones, sumadas, producen el hecho, a menudo sin que nadie lo busque. La ruta empieza con Merton, las consecuencias no buscadas de la acción y la profecía que provoca la conducta que la hace verdadera, sigue con el individualismo metodológico y los efectos perversos de Boudon y con la segregación que nadie quiere de Schelling, y llega a la barca de Coleman, que pasa de lo macro a lo micro y de vuelta a lo macro. Después viene el programa: el volumen de Hedström y Swedberg sobre los mecanismos sociales, el esquema de deseos, creencias y oportunidades de Hedström, las tuercas y tornillos de Elster y la antología en castellano de Noguera. La ruta lo confronta con la defensa del como si de Friedman, para quien no importa que los supuestos sean irreales si las predicciones funcionan, pasa por el estado del campo en el *Handbook* y termina con dos desarrollos: la sociología como ciencia de poblaciones de Goldthorpe, que primero establece con estadística las regularidades y después las explica con mecanismos de acción, y los modelos de agentes de Manzo como forma de poner a prueba un mecanismo. Se reparte entre Elster, el *Handbook*, Boudon, Coleman, Schelling, Hedström, Goldthorpe y Manzo, y acompaña a la asignatura [2.2 del currículo](curriculo.qmd#asignatura-2-2), *Sociología analítica y mecanismos generativos*.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("merton1936unanticipated", "merton1948selffulfilling", "boudon1974logic", "boudon1982unintended",
+       "schelling1978micromotives", "coleman1990foundations", "hedstrom1998social", "hedstrom2005dissecting",
+       "elster2015explaining", "noguera2010teoria", "friedman1953methodology", "hedstrom2009oxford",
+       "goldthorpe2015sociology", "manzo2022agentbased"))
+```
+
+**Para simularlo:** [*Tres municipios, un mismo 20%*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/08-tres-municipios/), [*En burro a Somosaguas*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/10-hagerstrand/), [*Las creencias se forman en red*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/09-degroot/), [*La segregación de Schelling*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/05-schelling/), [*Profecías que se cumplen, un poco*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/54-profecias-que-se-cumplen/) y [*¿Quién se queda la ayuda al alquiler?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/47-ayuda-al-alquiler/): un mismo resultado con tres mecanismos distintos, las oportunidades, las creencias, la segregación que nadie quiere, la profecía autocumplida de Merton y una política cuyo efecto se reparte por el mercado de forma que nadie buscaba.
