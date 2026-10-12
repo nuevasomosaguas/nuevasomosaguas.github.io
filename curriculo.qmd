@@ -72,7 +72,7 @@ Cinco asignaturas por curso, tesis incluida.
 
 #### 1.5. Computación científica y estructuras de datos
 * **Contenidos:** arquitectura de computadores, complejidad temporal y espacial ($O(n)$), algoritmos de búsqueda y ordenación, y programación científica en Julia.
-* **Texto matriz:** Brian W. Kernighan & Rob Pike — *The Practice of Programming*.
+* **Textos matriz:** Ben Lauwens & Allen B. Downey — *Think Julia*; Brian W. Kernighan & Rob Pike — *The Practice of Programming*.
 
 ---
 
