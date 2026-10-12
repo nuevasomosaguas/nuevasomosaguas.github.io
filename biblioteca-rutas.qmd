@@ -135,3 +135,16 @@ El texto es el dato más abundante de las ciencias sociales y el más difícil d
 ruta(c("markov2006example", "shannon1948mathematical", "janssens2021data", "jurafsky2026speech",
        "grimmer2022text", "gigerenzer2022how"))
 ```
+
+## Probabilidad
+
+La probabilidad es el lenguaje de la incertidumbre que usa todo el pensum, y la ruta la recorre en tres tiempos: el cálculo, sus usos y su interpretación. Empieza con la historia, cómo pasó de los juegos de azar a la ciencia y a la vida cotidiana, y con una entrada amable, la de Rodríguez y Mendes, que la enseñan con juegos y decisiones en R. Sigue con dos voces para el mismo cálculo, Grinstead y Snell y Blitzstein y Hwang, con las fuentes de las que parte, los axiomas de Kolmogorov y las cadenas que Markov contó en *Eugenio Oneguin*, y con la segunda pasada de Rozanov. Después vienen los usos y los malos usos: los sesgos que Tversky y Kahneman encontraron al juzgar con probabilidades, las frecuencias naturales con que Gigerenzer los corrige y la ley de Benford, de su artículo original a la detección del fraude electoral. Evans y Rosenthal tienden el puente hacia la inferencia de Wasserman, y la ruta termina en qué es una probabilidad: la lógica de la ciencia para Jaynes, y para Gilboa, una herramienta que no siempre basta cuando la información es escasa. Se reparte entre Hacking, Rodríguez, Blitzstein, Elster, Wasserman y Jaynes, y acompaña a la asignatura [1.3 del currículo](curriculo.qmd#asignatura-1-3), *Probabilidad axiomática, inferencia y teoría de la información*. Los laboratorios [*La ley de Benford y el fraude electoral*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/16-benford/) y [*¿Cuántas generaciones dura la cuna?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/37-movilidad-markov/) ponen a funcionar en el navegador la ley del primer dígito y las cadenas de Markov.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("gigerenzer1989empire", "rodriguez2018probability", "grinstead1997introduction",
+       "blitzstein2019introduction", "kolmogorov2018foundations", "markov2006example",
+       "rozanov1977probability", "tversky1974judgment", "gigerenzer2002calculated", "benford1938law",
+       "deckert2011benford", "evans2010probability", "jaynes2003probability", "gilboa2009theory"))
+```
