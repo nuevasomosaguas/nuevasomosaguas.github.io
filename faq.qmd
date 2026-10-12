@@ -81,7 +81,7 @@ No es un juicio sobre la dignidad ni el valor de las personas, sino un criterio 
 Sí, y por varias puertas, según el tiempo y las ganas de cada cual. La totalidad del canon bibliográfico, los laboratorios, los scripts reproducibles y las guías de estudio están publicados en acceso abierto, sin barrera económica ni territorial.
 
 - **El recorrido completo.** La [guía autodidacta](guia_autodidacta.qmd) lo organiza en cuatro hitos, cada uno con su presupuesto de horas y su proyecto de verificación reproducible. Son unas 2.600 horas netas en total, entre dos años y medio y tres y medio a 15-20 horas semanales: la cifra se declara por delante para que nadie confunda el ritmo real con el de un curso de verano.
-- **Un tema, en unas semanas.** Cada [ruta](biblioteca-rutas.qmd) de la biblioteca recorre en orden de lectura un tema que atraviesa varias disciplinas, de la evolución cultural a la medición de lo social.
+- **Un tema, en unas semanas.** Cada [ruta](biblioteca-rutas.qmd) de la biblioteca recorre en orden de lectura un tema, un oficio o una pregunta sobre qué vale lo que se sabe, de la evolución cultural a la probabilidad o a la medición de lo social, y casi todas terminan en los laboratorios que lo ponen a funcionar.
 - **Un mecanismo, en una tarde.** Los [problemas interactivos](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/) se resuelven en el navegador, sin instalar nada, y cada uno pone a funcionar un mecanismo con su comprobación.
 - **Un mal argumento, mañana mismo.** El [manual de bolsillo](manual_bolsillo.qmd) reúne doce herramientas para detectarlo en el debate público.
 

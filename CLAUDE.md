@@ -39,6 +39,8 @@ Cada propuesta queda en uno de tres destinos: `curada`, corregida y `curada`, o 
 
 Una ruta merece existir cuando un tema reparte al menos tres obras curadas entre al menos tres ramas. Es una lista de claves en orden de lectura en `biblioteca-rutas.qmd`, con un párrafo que dice qué recorre; `ruta()` rechaza claves que no estén en el núcleo o entre las curadas.
 
+Cada ruta va, como `###`, en uno de los tres grupos de la página: *para saber de algo* (un tema o un autor), *para saber hacer algo* (un oficio o un método) y *para saber qué vale lo que se sabe* (causalidad, predicción, medida). Tras la lista, una línea «**Para simularlo:**» enlaza los laboratorios que ponen a funcionar sus obras y dice qué mecanismo simula cada uno; si ninguno encaja, la ruta va sin ella. Un laboratorio nuevo se añade a la línea de las rutas cuyas obras simula.
+
 ## Laboratorios
 
 Las lecturas de [laboratorios-y-simulaciones](https://github.com/nuevasomosaguas/laboratorios-y-simulaciones) enlazan `https://nuevasomosaguas.github.io/biblioteca.html#<clave>` con la clave de una obra del núcleo: solo el núcleo tiene ancla. Una lectura del área secundaria enlaza la ficha de la que cuelga.

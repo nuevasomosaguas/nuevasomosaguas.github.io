@@ -1,12 +1,12 @@
 ---
 title: "Biblioteca: rutas"
 subtitle: "Itinerarios que atraviesan varias ramas"
-description: "Rutas de lectura por la biblioteca de la Nueva Somosaguas: temas que se reparten entre varias obras del núcleo, recorridos en orden y sin duplicar entradas."
+description: "Rutas de lectura por la biblioteca de la Nueva Somosaguas, para saber de algo, para saber hacer algo y para saber qué vale lo que se sabe: obras del núcleo y del área secundaria recorridas en orden, y cerradas con sus laboratorios."
 engine: knitr
 format:
   html:
     toc: true
-    toc-depth: 2
+    toc-depth: 3
     toc-location: right
 ---
 
@@ -17,7 +17,13 @@ source("refs.R")
 
 La [biblioteca](biblioteca.qmd) se organiza por dependencias: cada obra del [área secundaria](biblioteca-secundaria/index.qmd) cuelga de la del núcleo que la recoge. Algunos temas, sin embargo, atraviesan varias ramas. Una ruta los recorre en orden de lectura, con obras del núcleo y del área secundaria, cada una con la frase que dice por qué está ahí y el enlace a la rama de la que cuelga.
 
-## Marx en la Nueva Somosaguas
+Las rutas son de tres clases. Las que sirven **para saber de algo** recorren un tema, como la violencia o la movilidad social, o un autor, Marx, a través de las disciplinas que lo estudian. Las que sirven **para saber hacer algo** enseñan un oficio, de calcular con probabilidades a tratar el texto como dato. Y las que sirven **para saber qué vale lo que se sabe** discuten cuándo unos datos prueban una causa, cuándo una buena predicción explica algo y qué esconde una medida.
+
+Casi todas terminan en sus [laboratorios](laboratorios.qmd), que ponen a funcionar en el navegador, sin instalar nada, los mecanismos que la ruta ha dado a leer: cada ruta cierra así el ciclo de leer, entender y simular.
+
+## Para saber de algo
+
+### Marx en la Nueva Somosaguas
 
 Marx no ocupa un sitio del núcleo como lectura obligada. Está en su reconstrucción analítica, en su análisis económico, en su resultado histórico y en su descendencia sociológica, repartido entre cinco ramas.
 
@@ -28,22 +34,9 @@ ruta(c("cohen1978karl", "elster1985making", "roemer1982general", "hollander2008e
        "kornai1992socialist", "erikson1992constant", "wright1985classes"))
 ```
 
-## Causalidad
+### Violencia y conflicto
 
-Qué es una causa y cómo se demuestra que algo la tiene. La ruta va de la metafísica a las tres nociones de causalidad que conviven en la sociología, de ahí a los grafos de Pearl y a sus trampas más conocidas, la paradoja de Simpson, el sesgo del colisionador y los controles que estropean una estimación, y después a los resultados potenciales, que Hernán y Robins unen con los grafos. Sigue con el diseño de investigación, de las variables instrumentales a los experimentos naturales, y con tres advertencias: el problema de la reflexión, el ensayo cuyos tratados encuentran empleo a costa de los no tratados y lo que un ensayo aleatorizado no dice. Termina donde empieza el [currículo](curriculo.qmd#desacople-entre-mecanismo-e-identificación): identificar un efecto no es explicarlo, y Manzo reúne la inferencia causal con los modelos de agentes. Se reparte entre Pearl, Imbens y Rubin, Angrist y Pischke y la frontera. Los laboratorios [*La paradoja de Simpson en Berkeley*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/01-berkeley/), [*El talento y el esfuerzo de los admitidos*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/03-berkson/), [*¿Sirven las clases particulares?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/04-clases-particulares/), [*El problema de la reflexión*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/40-problema-de-la-reflexion/) y [*El programa que funciona y no sirve*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/51-el-programa-que-funciona/) ponen sus trampas a funcionar en el navegador.
-
-```{r}
-#| echo: false
-#| results: asis
-ruta(c("mumford2014causation", "goldthorpe2001causation", "pearl2016causal", "bickel1975sex",
-       "berkson1946limitations", "cinelli2024crash", "imbens2015causal", "hernan2020causal",
-       "morgan2014counterfactuals", "huntingtonklein2021effect", "angrist2009mostly", "dunning2012natural",
-       "manski1993identification", "crepon2013labor", "deaton2018understanding", "manzo2022agentbased"))
-```
-
-## Violencia y conflicto
-
-De por qué los humanos somos poco agresivos en el trato cotidiano y capaces de una violencia planificada extraordinaria a por qué hay guerras y cómo se reparte la violencia dentro de ellas, y de la diversidad étnica a la exclusión y el agravio como causas del conflicto. La ruta termina en los umbrales: la revolución que estalla cuando cae la falsificación de preferencias y la rebelión que se genera agente a agente. Los laboratorios [*La revolución que nadie vio venir*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/06-kuran/), [*Rebeldes y policías*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/35-rebeldes-y-policias/) y [*La ley de Lanchester*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/36-ley-de-lanchester/) los ponen a funcionar en el navegador.
+De por qué los humanos somos poco agresivos en el trato cotidiano y capaces de una violencia planificada extraordinaria a por qué hay guerras y cómo se reparte la violencia dentro de ellas, y de la diversidad étnica a la exclusión y el agravio como causas del conflicto. La ruta termina en los umbrales: la revolución que estalla cuando cae la falsificación de preferencias y la rebelión que se genera agente a agente.
 
 ```{r}
 #| echo: false
@@ -53,31 +46,9 @@ ruta(c("wrangham2019goodness", "gat2017causes", "morris2014war", "horowitz2000et
        "kuran1995private", "epstein2006generative"))
 ```
 
-## Predecir y explicar
+**Para simularlo:** [*La revolución que nadie vio venir*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/06-kuran/), [*Rebeldes y policías*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/35-rebeldes-y-policias/) y [*La ley de Lanchester*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/36-ley-de-lanchester/): la cascada de Kuran, la rebelión agente a agente de Epstein y la ley cuadrática del combate, por la que el doble de soldados vale el cuádruple.
 
-El aprendizaje automático predice muy bien, y el pensum gira en torno a la identificación causal. La ruta va del aparato a su advertencia: qué se puede tomar de los métodos de predicción, para qué sirven en ciencias sociales y por qué un buen ajuste predictivo no es una explicación causal.
-
-```{r}
-#| echo: false
-#| results: asis
-ruta(c("efron2016computer", "james2021introduction", "hastie2009elements", "varian2014big",
-       "mullainathan2017machine", "molina2019machine", "grimmer2022text"))
-```
-
-## Medir lo social
-
-Antes de explicar algo hay que medirlo, y cada medida esconde decisiones. La ruta empieza antes de la medida, con cómo llegamos a creer que el mundo se podía medir, de los relojes medievales de Crosby a la avalancha de números del siglo XIX de Hacking. Luego va de a quién se mide, con el muestreo, a qué se mide cuando el objeto no se observa, con los constructos latentes y las escalas ordinales, y de ahí a las percepciones, los índices y la contabilidad nacional, que Maddison extiende dos mil años hacia atrás y Jerven muestra frágil incluso hoy. Termina en por qué las instituciones confían en los números, con Porter, y en lo que le pasa a una medida cuando se usa para decidir, con Campbell. Los laboratorios [*Dos mil años de renta*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/57-dos-mil-anos-de-renta/) y [*Lo que se mide se corrompe*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/53-lo-que-se-mide-se-corrompe/) ponen a prueba a Maddison y a Campbell. Cada obra cuelga de una rama distinta, pero todas responden a la misma pregunta: qué significa medir lo social y cómo se equivoca uno al hacerlo.
-
-```{r}
-#| echo: false
-#| results: asis
-ruta(c("crosby1997measure", "hacking1990taming", "lohr2021sampling", "beaujean2014latent",
-       "bollen1989structural", "borsboom2005measuring", "bond2019sad", "judd1993definition",
-       "posner2004measuring", "morris2013measure", "coyle2015gdp", "maddison2007contours",
-       "jerven2013poor", "porter2020trust", "stiglitz2010mismeasuring", "campbell1979assessing"))
-```
-
-## El origen de los regímenes
+### El origen de los regímenes
 
 Por qué unos países acaban en democracias y otros en dictaduras, y a quién representan después los partidos que nacieron de esa lucha. La ruta va de las coaliciones de clase de la sociología histórica comparada a su comprobación booleana, de ahí al conflicto redistributivo entre élites y mayorías hecho modelo formal y a su discusión con el petróleo, y termina en la socialdemocracia de hoy. Se reparte entre cuatro ramas: Ragin, Scheidel, Dunning y Olson.
 
@@ -88,9 +59,9 @@ ruta(c("moore1966social", "luebbert1991liberalism", "kalyvas1996rise", "bergschl
        "acemoglu2006economic", "dunning2008crude", "rueda2007social"))
 ```
 
-## Evolución biológica
+### Evolución biológica
 
-Antes de aplicar la evolución a la cultura o a la conducta hay que entender cómo funciona en su terreno original. La ruta va de la evidencia de que la evolución ocurre a sus mecanismos formales, de ahí a la evolución de los rasgos sociales, la cooperación y el conflicto, y termina en la evolución humana reciente leída en el ADN antiguo. Se reparte entre McElreath y Boyd, Pigliucci y Kaplan, Reich, Harris y la frontera, y continúa en la [evolución cultural](#evolución-cultural). El laboratorio [*Cuando el azar puede más que la selección*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/46-deriva-genetica/) pone a funcionar en el navegador su resultado más contraintuitivo: en una población pequeña, la deriva puede más que la selección.
+Antes de aplicar la evolución a la cultura o a la conducta hay que entender cómo funciona en su terreno original. La ruta va de la evidencia de que la evolución ocurre a sus mecanismos formales, de ahí a la evolución de los rasgos sociales, la cooperación y el conflicto, y termina en la evolución humana reciente leída en el ADN antiguo. Se reparte entre McElreath y Boyd, Pigliucci y Kaplan, Reich, Harris y la frontera, y continúa en la [evolución cultural](#evolución-cultural).
 
 ```{r}
 #| echo: false
@@ -101,9 +72,11 @@ ruta(c("coyne2009why", "gillespie2004population", "futuyma2022evolution", "hamil
        "zuk2013paleofantasy"))
 ```
 
-## Evolución cultural
+**Para simularlo:** [*Dos aldeas en equilibrio, una muestra que no lo está*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/11-hardy-weinberg/), [*Cuando el azar puede más que la selección*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/46-deriva-genetica/), [*El altruista que pierde en cada grupo y gana en el total*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/24-ecuacion-de-price/) y [*Halcones y palomas*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/12-halcon-paloma/): el equilibrio de Hardy-Weinberg, la deriva que en una población pequeña puede más que la selección, la ecuación de Price de la que sale la regla de Hamilton y la estrategia evolutivamente estable de Maynard Smith.
 
-Los humanos heredan dos cosas: genes y cultura. La ruta va de la base cognitiva que hace posible aprender de los demás a la teoría que trata la cultura como un segundo sistema de herencia, de ahí a sus modelos formales y su evidencia, y termina en sus aplicaciones: la cooperación, la religión y la mayor transformación económica de la historia. No es una lista temática, sino una sola teoría aplicada a escalas cada vez mayores, del Pleistoceno a la Revolución Industrial. Se reparte entre el Estrato 0, el Estrato 2 y la historia económica de Clark. Los laboratorios [*Por qué Tasmania perdió tecnología*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/39-tasmania/) y [*Por qué una buena idea no se extiende sola*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/45-conformidad-y-prestigio/) ponen dos de sus mecanismos a funcionar en el navegador: el cerebro colectivo de Henrich y los sesgos de conformidad y prestigio de Boyd y Richerson.
+### Evolución cultural
+
+Los humanos heredan dos cosas: genes y cultura. La ruta va de la base cognitiva que hace posible aprender de los demás a la teoría que trata la cultura como un segundo sistema de herencia, de ahí a sus modelos formales y su evidencia, y termina en sus aplicaciones: la cooperación, la religión y la mayor transformación económica de la historia. No es una lista temática, sino una sola teoría aplicada a escalas cada vez mayores, del Pleistoceno a la Revolución Industrial. Se reparte entre el Estrato 0, el Estrato 2 y la historia económica de Clark.
 
 ```{r}
 #| echo: false
@@ -114,31 +87,28 @@ ruta(c("tomasello2014natural", "hrdy2009mothers", "boyd1985culture", "richerson2
        "gintis2005moral", "norenzayan2013big", "mokyr2016culture"))
 ```
 
-## POSIX e investigación reproducible
+**Para simularlo:** [*Por qué una buena idea no se extiende sola*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/45-conformidad-y-prestigio/), [*Por qué Tasmania perdió tecnología*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/39-tasmania/) y [*Una multa es un precio*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/48-una-multa-es-un-precio/): los sesgos de conformidad y prestigio de Boyd y Richerson, el cerebro colectivo de Henrich y la norma moral que un incentivo desplaza, el problema de las preferencias sociales de Gintis.
 
-Lo que se hace con el ratón no deja rastro, y lo que se hace escribiendo órdenes queda escrito y se puede repetir. La ruta va de la línea de comandos de Shotts, la del estándar POSIX que comparten Linux y macOS, a los guiones que automatizan una tarea y a las tuberías que consiguen y limpian datos, y de ahí a la práctica de programación de Kernighan y Pike y a la caja de herramientas de Allesina y Wilmes. Sigue con el control de versiones de Bryan y con el flujo completo de Gandrud, de los datos en bruto al documento compilado, y termina con lo que pasa cuando falta: el error de hoja de cálculo que Herndon, Ash y Pollin encontraron al intentar reproducir a Reinhart y Rogoff. Se reparte entre Shotts, Kernighan y Pike, Allesina y Wilmes, Bryan e Ioannidis, y es el oficio que piden los [estándares de entrega](curriculo.qmd#estándares-de-entrega-y-evaluación) del currículo: todo entregable es un repositorio reproducible.
+### Clase y movilidad social
 
-```{r}
-#| echo: false
-#| results: asis
-ruta(c("shotts2019linux", "taylor2016wicked", "janssens2021data", "kernighan1999practice",
-       "allesina2019computing", "bryan2018excuse", "gandrud2020reproducible", "herndon2014does"))
-```
-
-## NLP y datos textuales
-
-El texto es el dato más abundante de las ciencias sociales y el más difícil de medir. La ruta empieza con el primer modelo estadístico del lenguaje, las vocales y consonantes que Markov contó en *Eugenio Oneguin*, y con las aproximaciones al inglés por letras y por palabras con las que Shannon midió su entropía. Pasa por la terminal, la parte que comparte con la ruta [POSIX e investigación reproducible](#posix-e-investigación-reproducible): las tuberías de Janssens que descargan y limpian un corpus antes de modelizarlo. Sigue con Jurafsky y Martin, de los n-gramas a los *Transformer*, y con Grimmer, Roberts y Stewart, que convierten el texto en medida, tratamiento, resultado o confusor dentro de un diseño de investigación, y termina con el contrapeso de Gigerenzer: los modelos de lenguaje asocian, pero no intervienen. Se reparte entre Blitzstein, Shannon, Shotts, Jurafsky y Grimmer, y acompaña a la asignatura [4.4 del currículo](curriculo.qmd#asignatura-4-4), *Texto como dato y procesamiento del lenguaje*. El laboratorio [*¿Quién escribió «si los hombres fueran ángeles»?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/70-si-los-hombres-fueran-angeles/) pone a funcionar en el navegador la distancia entre textos, con los doce artículos disputados de *El Federalista*: las palabras de estilo los acercan a Madison, y las de tema, no.
+Cuánto decide la cuna dónde acaba cada cual, y por qué. La ruta empieza con el logro de estatus de Blau y Duncan, la tradición cuantitativa frente a la que Erikson y Goldthorpe definieron su análisis de clases y su flujo constante, y pasa por las dos formas rivales de medir la clase, la de Goldthorpe y la neomarxista de Wright, con la explotación de Roemer deducida de la desigualdad de activos. Sigue con los mecanismos: Boudon y la formalización de Breen y Goldthorpe, en la que cada familia evita ante todo bajar de clase, y la señal de Spence, un título que puede valer aunque no enseñe nada. Después mide cuánto dura la ventaja: con apellidos raros y genealogías de siglos, Clark la encuentra mucho más persistente que lo que dicen las correlaciones entre padres e hijos, y la atribuye a la herencia genética. La ruta termina discutiendo esa causa, con la genética del logro educativo de Plomin, la crianza genética de Kong, los diseños entre hermanos que separan el efecto directo de los genes y la lectura igualitaria de Harden. Se reparte entre Erikson y Goldthorpe, Hedström, Breen y Goldthorpe, Gibbons, Clark, Plomin y Howe, y acompaña a la asignatura [2.2 del currículo](curriculo.qmd#asignatura-2-2), *Sociología analítica y mecanismos generativos*, que usa la estratificación y la movilidad de clase como banco de pruebas, y a la [2.1](curriculo.qmd#asignatura-2-1) en los diseños entre hermanos.
 
 ```{r}
 #| echo: false
 #| results: asis
-ruta(c("markov2006example", "shannon1948mathematical", "janssens2021data", "jurafsky2026speech",
-       "grimmer2022text", "gigerenzer2022how"))
+ruta(c("blau1978american", "erikson1992constant", "wright1985classes", "roemer1982general",
+       "boudon1974education", "breen1997explaining", "spence1973job", "clark2015son",
+       "clark2023inheritance", "plomin2018blueprint", "kong2018nature", "howe2022withinsibship",
+       "harden2021genetic"))
 ```
 
-## Probabilidad
+**Para simularlo:** [*Todos con máster*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/50-todos-con-master/) y [*¿Cuántas generaciones dura la cuna?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/37-movilidad-markov/): la educación como señal de Spence y la movilidad como cadena de Markov, en la que dos países con la misma desigualdad a la larga olvidan la cuna a ritmos muy distintos.
 
-La probabilidad es el lenguaje de la incertidumbre que usa todo el pensum, y la ruta la recorre en tres tiempos: el cálculo, sus usos y su interpretación. Empieza con la historia, cómo pasó de los juegos de azar a la ciencia y a la vida cotidiana, y con una entrada amable, la de Rodríguez y Mendes, que la enseñan con juegos y decisiones en R. Sigue con dos voces para el mismo cálculo, Grinstead y Snell y Blitzstein y Hwang, con las fuentes de las que parte, los axiomas de Kolmogorov y las cadenas que Markov contó en *Eugenio Oneguin*, y con la segunda pasada de Rozanov. Después vienen los usos y los malos usos: los sesgos que Tversky y Kahneman encontraron al juzgar con probabilidades, las frecuencias naturales con que Gigerenzer los corrige y la ley de Benford, de su artículo original a la detección del fraude electoral. Evans y Rosenthal tienden el puente hacia la inferencia de Wasserman, y la ruta termina en qué es una probabilidad: la lógica de la ciencia para Jaynes, y para Gilboa, una herramienta que no siempre basta cuando la información es escasa. Se reparte entre Hacking, Rodríguez, Blitzstein, Elster, Wasserman y Jaynes, y acompaña a la asignatura [1.3 del currículo](curriculo.qmd#asignatura-1-3), *Probabilidad axiomática, inferencia y teoría de la información*. Los laboratorios [*La ley de Benford y el fraude electoral*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/16-benford/) y [*¿Cuántas generaciones dura la cuna?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/37-movilidad-markov/) ponen a funcionar en el navegador la ley del primer dígito y las cadenas de Markov.
+## Para saber hacer algo
+
+### Probabilidad
+
+La probabilidad es el lenguaje de la incertidumbre que usa todo el pensum, y la ruta la recorre en tres tiempos: el cálculo, sus usos y su interpretación. Empieza con la historia, cómo pasó de los juegos de azar a la ciencia y a la vida cotidiana, y con una entrada amable, la de Rodríguez y Mendes, que la enseñan con juegos y decisiones en R. Sigue con dos voces para el mismo cálculo, Grinstead y Snell y Blitzstein y Hwang, con las fuentes de las que parte, los axiomas de Kolmogorov y las cadenas que Markov contó en *Eugenio Oneguin*, y con la segunda pasada de Rozanov. Después vienen los usos y los malos usos: los sesgos que Tversky y Kahneman encontraron al juzgar con probabilidades, las frecuencias naturales con que Gigerenzer los corrige y la ley de Benford, de su artículo original a la detección del fraude electoral. Evans y Rosenthal tienden el puente hacia la inferencia de Wasserman, y la ruta termina en qué es una probabilidad: la lógica de la ciencia para Jaynes, y para Gilboa, una herramienta que no siempre basta cuando la información es escasa. Se reparte entre Hacking, Rodríguez, Blitzstein, Elster, Wasserman y Jaynes, y acompaña a la asignatura [1.3 del currículo](curriculo.qmd#asignatura-1-3), *Probabilidad axiomática, inferencia y teoría de la información*.
 
 ```{r}
 #| echo: false
@@ -149,9 +119,11 @@ ruta(c("gigerenzer1989empire", "rodriguez2018probability", "grinstead1997introdu
        "deckert2011benford", "evans2010probability", "jaynes2003probability", "gilboa2009theory"))
 ```
 
-## Demografía
+**Para simularlo:** [*¿Cuántas generaciones dura la cuna?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/37-movilidad-markov/) y [*La ley de Benford y el fraude electoral*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/16-benford/): una cadena de Markov aplicada a la movilidad entre generaciones y la ley del primer dígito aplicada a unas elecciones.
 
-Cuántos nacen, cuántos mueren, cuántos se mudan y a qué edad: casi todo lo social pasa por la estructura de una población, de las pensiones a la desigualdad. La ruta empieza con la historia de la población mundial y con el escalón de entrada de Livi-Bacci, sigue con los dos textos matriz, Wachter y Preston, Heuveline y Guillot, y con sus métodos aplicados a los datos españoles. Después sube al aparato matemático: la extinción de los apellidos como proceso de ramificación de Lotka, la demografía matemática de Keyfitz y Caswell y la fragilidad de Vaupel, que aplana la mortalidad de una población aunque la de nadie se aplane. Añade el tiempo con los modelos de edad, periodo y cohorte y el análisis de supervivencia, y lo aplica hacia atrás, con la población inglesa reconstruida desde los registros parroquiales, y hacia el presente, con las muertes por desesperación de Case y Deaton y el contrapeso de Ruhm. Termina con una advertencia sobre los datos de partida: las cifras oficiales pueden ser mucho peores de lo que parecen. Se reparte entre Clark, Wachter, Preston, Keyfitz, O'Brien y Mills, y acompaña a la asignatura [1.4 del currículo](curriculo.qmd#asignatura-1-4), *Demografía formal y modelos poblacionales*. Los laboratorios [*España muere más que México*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/22-espana-muere-mas/), [*Inercia demográfica*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/28-inercia-demografica/), [*¿Cuántos trabajadores por pensionista?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/29-trabajadores-por-pensionista/), [*La extinción de los apellidos*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/13-apellidos/), [*La entropía de la tabla de vida*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/61-la-entropia-de-la-tabla-de-vida/) y [*Edad, periodo y cohorte*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/30-edad-periodo-cohorte/) ponen a funcionar en el navegador la estandarización por edad, la inercia, la tabla de vida, la ramificación, la entropía de Keyfitz y el problema de identificación de la edad, el periodo y la cohorte.
+### Demografía
+
+Cuántos nacen, cuántos mueren, cuántos se mudan y a qué edad: casi todo lo social pasa por la estructura de una población, de las pensiones a la desigualdad. La ruta empieza con la historia de la población mundial y con el escalón de entrada de Livi-Bacci, sigue con los dos textos matriz, Wachter y Preston, Heuveline y Guillot, y con sus métodos aplicados a los datos españoles. Después sube al aparato matemático: la extinción de los apellidos como proceso de ramificación de Lotka, la demografía matemática de Keyfitz y Caswell y la fragilidad de Vaupel, que aplana la mortalidad de una población aunque la de nadie se aplane. Añade el tiempo con los modelos de edad, periodo y cohorte y el análisis de supervivencia, y lo aplica hacia atrás, con la población inglesa reconstruida desde los registros parroquiales, y hacia el presente, con las muertes por desesperación de Case y Deaton y el contrapeso de Ruhm. Termina con una advertencia sobre los datos de partida: las cifras oficiales pueden ser mucho peores de lo que parecen. Se reparte entre Clark, Wachter, Preston, Keyfitz, O'Brien y Mills, y acompaña a la asignatura [1.4 del currículo](curriculo.qmd#asignatura-1-4), *Demografía formal y modelos poblacionales*.
 
 ```{r}
 #| echo: false
@@ -162,15 +134,75 @@ ruta(c("livibacci2025concise", "livibacci1993introduccion", "wachter2014essentia
        "ruhm2019drivers", "jerven2013poor"))
 ```
 
-## Clase y movilidad social
+**Para simularlo:** [*España muere más que México*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/22-espana-muere-mas/), [*Inercia demográfica*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/28-inercia-demografica/), [*¿Cuántos trabajadores por pensionista?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/29-trabajadores-por-pensionista/), [*La extinción de los apellidos*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/13-apellidos/), [*La entropía de la tabla de vida*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/61-la-entropia-de-la-tabla-de-vida/), [*El fracaso del éxito*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/55-el-fracaso-del-exito/) y [*Edad, periodo y cohorte*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/30-edad-periodo-cohorte/): la estandarización por edad, la inercia, la tabla de vida, la ramificación de Lotka, la entropía de Keyfitz, la fragilidad de Vaupel y el problema de identificación de la edad, el periodo y la cohorte.
 
-Cuánto decide la cuna dónde acaba cada cual, y por qué. La ruta empieza con el logro de estatus de Blau y Duncan, la tradición cuantitativa frente a la que Erikson y Goldthorpe definieron su análisis de clases y su flujo constante, y pasa por las dos formas rivales de medir la clase, la de Goldthorpe y la neomarxista de Wright, con la explotación de Roemer deducida de la desigualdad de activos. Sigue con los mecanismos: Boudon y la formalización de Breen y Goldthorpe, en la que cada familia evita ante todo bajar de clase, y la señal de Spence, un título que puede valer aunque no enseñe nada. Después mide cuánto dura la ventaja: con apellidos raros y genealogías de siglos, Clark la encuentra mucho más persistente que lo que dicen las correlaciones entre padres e hijos, y la atribuye a la herencia genética. La ruta termina discutiendo esa causa, con la genética del logro educativo de Plomin, la crianza genética de Kong, los diseños entre hermanos que separan el efecto directo de los genes y la lectura igualitaria de Harden. Se reparte entre Erikson y Goldthorpe, Hedström, Breen y Goldthorpe, Gibbons, Clark, Plomin y Howe, y acompaña a la asignatura [2.2 del currículo](curriculo.qmd#asignatura-2-2), *Sociología analítica y mecanismos generativos*, que usa la estratificación y la movilidad de clase como banco de pruebas, y a la [2.1](curriculo.qmd#asignatura-2-1) en los diseños entre hermanos. Los laboratorios [*¿Cuántas generaciones dura la cuna?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/37-movilidad-markov/) y [*Todos con máster*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/50-todos-con-master/) ponen a funcionar en el navegador la movilidad como cadena de Markov y la educación como señal.
+### POSIX e investigación reproducible
+
+Lo que se hace con el ratón no deja rastro, y lo que se hace escribiendo órdenes queda escrito y se puede repetir. La ruta va de la línea de comandos de Shotts, la del estándar POSIX que comparten Linux y macOS, a los guiones que automatizan una tarea y a las tuberías que consiguen y limpian datos, y de ahí a la práctica de programación de Kernighan y Pike y a la caja de herramientas de Allesina y Wilmes. Sigue con el control de versiones de Bryan y con el flujo completo de Gandrud, de los datos en bruto al documento compilado, y termina con lo que pasa cuando falta: el error de hoja de cálculo que Herndon, Ash y Pollin encontraron al intentar reproducir a Reinhart y Rogoff. Se reparte entre Shotts, Kernighan y Pike, Allesina y Wilmes, Bryan e Ioannidis, y es el oficio que piden los [estándares de entrega](curriculo.qmd#estándares-de-entrega-y-evaluación) del currículo: todo entregable es un repositorio reproducible.
 
 ```{r}
 #| echo: false
 #| results: asis
-ruta(c("blau1978american", "erikson1992constant", "wright1985classes", "roemer1982general",
-       "boudon1974education", "breen1997explaining", "spence1973job", "clark2015son",
-       "clark2023inheritance", "plomin2018blueprint", "kong2018nature", "howe2022withinsibship",
-       "harden2021genetic"))
+ruta(c("shotts2019linux", "taylor2016wicked", "janssens2021data", "kernighan1999practice",
+       "allesina2019computing", "bryan2018excuse", "gandrud2020reproducible", "herndon2014does"))
 ```
+
+**Para simularlo:** [*El umbral del 90%*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/42-umbral-del-90/) y [*¿Por qué R es como es?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/69-por-que-r-es-como-es/): el error de Reinhart y Rogoff rehecho paso a paso en un guion que se puede auditar, y qué habría pasado si el informe reproducible hubiera llegado en 1981.
+
+### NLP y datos textuales
+
+El texto es el dato más abundante de las ciencias sociales y el más difícil de medir. La ruta empieza con el primer modelo estadístico del lenguaje, las vocales y consonantes que Markov contó en *Eugenio Oneguin*, y con las aproximaciones al inglés por letras y por palabras con las que Shannon midió su entropía. Pasa por la terminal, la parte que comparte con la ruta [POSIX e investigación reproducible](#posix-e-investigación-reproducible): las tuberías de Janssens que descargan y limpian un corpus antes de modelizarlo. Sigue con Jurafsky y Martin, de los n-gramas a los *Transformer*, y con Grimmer, Roberts y Stewart, que convierten el texto en medida, tratamiento, resultado o confusor dentro de un diseño de investigación, y termina con el contrapeso de Gigerenzer: los modelos de lenguaje asocian, pero no intervienen. Se reparte entre Blitzstein, Shannon, Shotts, Jurafsky y Grimmer, y acompaña a la asignatura [4.4 del currículo](curriculo.qmd#asignatura-4-4), *Texto como dato y procesamiento del lenguaje*.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("markov2006example", "shannon1948mathematical", "janssens2021data", "jurafsky2026speech",
+       "grimmer2022text", "gigerenzer2022how"))
+```
+
+**Para simularlo:** [*¿Cuántos bits te delatan?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/59-cuantos-bits-te-delatan/) y [*¿Quién escribió «si los hombres fueran ángeles»?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/70-si-los-hombres-fueran-angeles/): la información de Shannon medida en bits y la distancia entre textos, con los doce artículos disputados de *El Federalista*, que las palabras de estilo acercan a Madison y las de tema, no.
+
+## Para saber qué vale lo que se sabe
+
+### Causalidad
+
+Qué es una causa y cómo se demuestra que algo la tiene. La ruta va de la metafísica a las tres nociones de causalidad que conviven en la sociología, de ahí a los grafos de Pearl y a sus trampas más conocidas, la paradoja de Simpson, el sesgo del colisionador y los controles que estropean una estimación, y después a los resultados potenciales, que Hernán y Robins unen con los grafos. Sigue con el diseño de investigación, de las variables instrumentales a los experimentos naturales, y con tres advertencias: el problema de la reflexión, el ensayo cuyos tratados encuentran empleo a costa de los no tratados y lo que un ensayo aleatorizado no dice. Termina donde empieza el [currículo](curriculo.qmd#desacople-entre-mecanismo-e-identificación): identificar un efecto no es explicarlo, y Manzo reúne la inferencia causal con los modelos de agentes. Se reparte entre Pearl, Imbens y Rubin, Angrist y Pischke y la frontera.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("mumford2014causation", "goldthorpe2001causation", "pearl2016causal", "bickel1975sex",
+       "berkson1946limitations", "cinelli2024crash", "imbens2015causal", "hernan2020causal",
+       "morgan2014counterfactuals", "huntingtonklein2021effect", "angrist2009mostly", "dunning2012natural",
+       "manski1993identification", "crepon2013labor", "deaton2018understanding", "manzo2022agentbased"))
+```
+
+**Para simularlo:** [*La paradoja de Simpson en Berkeley*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/01-berkeley/), [*El talento y el esfuerzo de los admitidos*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/03-berkson/), [*¿Sirven las clases particulares?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/04-clases-particulares/), [*¿Ha bajado el nivel?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/14-bachillerato/), [*El problema de la reflexión*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/40-problema-de-la-reflexion/) y [*El programa que funciona y no sirve*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/51-el-programa-que-funciona/): la paradoja de Simpson, el sesgo del colisionador, la confusión y la mediación, el efecto composición, la reflexión y el desplazamiento de los no tratados.
+
+### Predecir y explicar
+
+El aprendizaje automático predice muy bien, y el pensum gira en torno a la identificación causal. La ruta va del aparato a su advertencia: qué se puede tomar de los métodos de predicción, para qué sirven en ciencias sociales y por qué un buen ajuste predictivo no es una explicación causal.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("efron2016computer", "james2021introduction", "hastie2009elements", "varian2014big",
+       "mullainathan2017machine", "molina2019machine", "grimmer2022text"))
+```
+
+**Para simularlo:** [*El municipio más enfermo de España siempre es pequeño*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/33-municipio-mas-enfermo/), [*¿Cuántos descubrimientos sobreviven?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/41-falsos-descubrimientos/) y [*Puntuar a los tertulianos*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/27-tertulianos/): la contracción hacia la media y la tasa de falsos descubrimientos de Efron y Hastie, y cómo se puntúa una predicción.
+
+### Medir lo social
+
+Antes de explicar algo hay que medirlo, y cada medida esconde decisiones. La ruta empieza antes de la medida, con cómo llegamos a creer que el mundo se podía medir, de los relojes medievales de Crosby a la avalancha de números del siglo XIX de Hacking. Luego va de a quién se mide, con el muestreo, a qué se mide cuando el objeto no se observa, con los constructos latentes y las escalas ordinales, y de ahí a las percepciones, los índices y la contabilidad nacional, que Maddison extiende dos mil años hacia atrás y Jerven muestra frágil incluso hoy. Termina en por qué las instituciones confían en los números, con Porter, y en lo que le pasa a una medida cuando se usa para decidir, con Campbell. Cada obra cuelga de una rama distinta, pero todas responden a la misma pregunta: qué significa medir lo social y cómo se equivoca uno al hacerlo.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("crosby1997measure", "hacking1990taming", "lohr2021sampling", "beaujean2014latent",
+       "bollen1989structural", "borsboom2005measuring", "bond2019sad", "judd1993definition",
+       "posner2004measuring", "morris2013measure", "coyle2015gdp", "maddison2007contours",
+       "jerven2013poor", "porter2020trust", "stiglitz2010mismeasuring", "campbell1979assessing"))
+```
+
+**Para simularlo:** [*El mismo Gini, dos países distintos*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/19-mismo-gini/), [*La pobreza que baja cuando todos pierden*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/63-la-pobreza-que-baja/), [*Dos mil años de renta*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/57-dos-mil-anos-de-renta/) y [*Lo que se mide se corrompe*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/53-lo-que-se-mide-se-corrompe/): lo que un índice resume y lo que esconde, un umbral de pobreza que baja con la renta de todos, las series de Maddison y la ley de Campbell.

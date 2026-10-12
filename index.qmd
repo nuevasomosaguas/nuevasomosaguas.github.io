@@ -75,7 +75,7 @@ Llamamos **consiliencia** a la idea de que una explicación gana fuerza cuando e
 
 **Si estudias por tu cuenta:** la [Guía autodidacta](guia_autodidacta.qmd), con cuatro hitos y su presupuesto de horas; los [Laboratorios](laboratorios.qmd) y los [problemas interactivos](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/), que se ejecutan en el navegador sin instalar nada; y el [Entorno de trabajo](entorno.qmd).
 
-**Si quieres leer:** la [Biblioteca](biblioteca.qmd), `r n_obras` obras centrales con su ficha y un área secundaria de consulta, y sus [Rutas](biblioteca-rutas.qmd), itinerarios temáticos que atraviesan varias disciplinas.
+**Si quieres leer:** la [Biblioteca](biblioteca.qmd), `r n_obras` obras centrales con su ficha y un área secundaria de consulta, y sus [Rutas](biblioteca-rutas.qmd), itinerarios de lectura que atraviesan varias disciplinas, para saber de algo o para saber hacer algo, y que terminan en sus laboratorios.
 
 **Si quieres saber más:** las [Preguntas frecuentes](faq.qmd), la [Política de inteligencia artificial](politica_ia.qmd) y el [Manual de bolsillo](manual_bolsillo.qmd) para el debate público.
 
