@@ -1,7 +1,7 @@
 ---
 title: "Guía autodidacta"
 subtitle: "La carrera en solitario: cuatro hitos, presupuesto real de horas y un proyecto auditable en cada uno"
-description: "La carrera sin aula: cuatro hitos, unas 2.600 horas netas declaradas y un proyecto reproducible con microdatos reales para cerrar cada uno."
+description: "La carrera sin aula: cuatro hitos, unas 2.600 horas netas declaradas y un proyecto reproducible y auditable para cerrar cada uno."
 format:
   html:
     toc: true
@@ -9,7 +9,7 @@ format:
 ---
 
 ::: {.callout-note appearance="simple"}
-Esta guía no es una lista de lecturas. Una lista de lecturas no distingue entre haber leído un manual y saber usarlo, y esa confusión es el modo habitual de fracasar estudiando solo. Lo que sigue es un itinerario con **presupuesto de horas declarado** y un **proyecto de verificación al final de cada hito**: se avanza por haber superado una auditoría reproducible, no por haber terminado un libro.
+Esta guía no es una lista de lecturas. Una lista de lecturas no distingue entre haber leído un manual y saber usarlo, y esa confusión es el modo habitual de fracasar estudiando solo. Lo que sigue es un itinerario con **presupuesto de horas declarado** y un **proyecto de verificación al final de cada hito**: se avanza por haber superado una auditoría reproducible, no por haber terminado un libro. Es, además, un atajo deliberado: cubre catorce de las veinte asignaturas del [currículo](curriculo.qmd), y al final del itinerario dice qué deja fuera y cuándo retomarlo.
 :::
 
 ---
@@ -19,12 +19,12 @@ Esta guía no es una lista de lecturas. Una lista de lecturas no distingue entre
 Estudiar este plan sin pisar un aula exige más disciplina que cursarlo, no menos: nadie corrige, nadie pregunta y nadie detecta el autoengaño. El itinerario se rige por tres restricciones.
 
 * **La regla del compilador.** Ningún concepto se da por aprendido si no se traduce a una función ejecutable o a una deducción formal escrita en texto plano (Typst o Quarto). Subrayar no cuenta; compilar, sí.
-* **Un solo entorno a la vez.** Se elimina la alternancia temprana de lenguajes. Toda la primera mitad de la ruta se cursa sobre **Julia y la consola de Unix**. Aprender dos ecosistemas de paquetería, dos sintaxis de indexación y dos modelos mentales de datos duplica la fricción técnica justo cuando el esfuerzo debería ir al concepto matemático.
-* **Proyectos de control.** No se pasa de hito por haber cerrado un libro, sino por superar la auditoría de un problema empírico con microdatos reales. Si el script no corre o los autovalores divergen, el hito no está terminado, por muchos capítulos que se hayan leído.
+* **Un solo entorno a la vez.** Se elimina la alternancia temprana de lenguajes. Toda la primera mitad de la ruta se cursa sobre **Julia y la consola de Unix**. R entra más tarde, y solo donde el currículo lo conserva como herramienta de biblioteca: la psicometría, la genética estadística y la econometría aplicada. Aprender dos ecosistemas de paquetería, dos sintaxis de indexación y dos modelos mentales de datos duplica la fricción técnica justo cuando el esfuerzo debería ir al concepto matemático.
+* **Proyectos de control.** No se pasa de hito por haber cerrado un libro, sino por superar la auditoría de un proyecto reproducible: un problema empírico con datos reales o, en el hito III, una simulación contrastada con su versión analítica. Si el script no corre o la estimación no converge, el hito no está terminado, por muchos capítulos que se hayan leído.
 
 ### El presupuesto real de horas
 
-Conviene decirlo sin adornos, porque es donde se rompen la mayoría de los intentos. El itinerario completo suma unas **2.600 horas netas de concentración profunda**. A un ritmo sostenible de 15 a 20 horas semanales —el máximo realista para quien además trabaja ocho horas al día—, eso son **entre dos años y medio y tres años y medio**.
+Conviene decirlo sin adornos, porque es donde se rompen la mayoría de los intentos. El itinerario completo suma unas **2.600 horas netas de concentración profunda**. A un ritmo sostenible de 15 a 20 horas semanales —el máximo realista para quien además trabaja ocho horas al día—, eso son entre 130 y 175 semanas de estudio efectivo: **entre dos años y medio y tres años y medio**, según el ritmo y las semanas de descanso de cada año.
 
 Presentar estas fases como etapas ligeras que se despachan en unos meses induce exactamente la lectura superficial que la guía pretende combatir: hojear el manual, subrayar dos teoremas, creerlos asimilados y pasar al siguiente volumen.
 
@@ -41,8 +41,8 @@ Esas 2.600 horas no se reúnen acumulando conocimiento técnico, sino sosteniend
 
 ### Ética del oficio científico y pensamiento independiente
 
-* **La elección del problema.** Qué separa a quienes producen trabajo científico de primer orden de quienes se limitan a engrosar el currículum: el coraje intelectual y la elección deliberada de problemas importantes. *Texto:* Richard W. Hamming — *You and Your Research*, conferencia de 1986 recogida como capítulo final de *The Art of Doing Science and Engineering*.
-* **Artesanía y herejía.** El código como oficio de artesano, la creación de valor y la costumbre de preguntarse qué no se puede decir en voz alta, para pensarlo con libertad fuera del consenso ideológico del momento. *Texto:* Paul Graham — *Hackers & Painters*.
+* **La elección del problema.** Qué separa a quienes producen trabajo científico de primer orden de quienes se limitan a engrosar el currículum: el coraje intelectual y la elección deliberada de problemas importantes. *Texto:* Richard W. Hamming — *You and Your Research*, conferencia de 1986 recogida como capítulo final de [*The Art of Doing Science and Engineering*](biblioteca.qmd#hamming1997art).
+* **Artesanía y herejía.** El código como oficio de artesano, la creación de valor y la costumbre de preguntarse qué no se puede decir en voz alta, para pensarlo con libertad fuera del consenso ideológico del momento. *Texto:* Paul Graham — [*Hackers & Painters*](biblioteca.qmd#graham2004hackers).
 * **La lectura como resistencia.** La degradación del discurso público cuando se somete a la lógica del entretenimiento. Postman escribía sobre la televisión, pero su diagnóstico explica por qué la lectura analítica sostenida y el trabajo en la consola, que no ofrecen recompensa inmediata, son hoy una elección consciente contra la atrofia intelectual. *Texto:* Neil Postman — *Amusing Ourselves to Death*.
 * **La ciencia que falla.** Fraude, sesgo, negligencia y exageración: cómo un resultado publicado puede ser falso sin que nadie mienta, y por qué un proyecto que se audita y se reproduce vale más que un artículo que se cita. *Texto:* Stuart Ritchie — *Science Fictions*.
 * **Escribir con claridad.** Escribir es tan parte del oficio como programar. La prosa inflada de las ciencias sociales, la pasiva que esconde quién hizo qué y las palabras que suenan a teoría sin decir nada no son un estilo, sino una manera de no pensar. Un manual breve y práctico, escrito por un sociólogo contra los vicios de su propia disciplina, que enseña a reescribir un borrador hasta que diga lo que quiere decir. *Texto:* Howard S. Becker — *Writing for Social Scientists*.
@@ -68,56 +68,101 @@ flowchart TB
     class H1,H2,H3,H4 hito
 ```
 
+### Qué cuenta como superar una fase
+
+Cada fase de validación tiene sus propios criterios, y todas comparten cuatro:
+
+* **Un clon limpio basta.** El repositorio, recién clonado en el [entorno](entorno.qmd) del programa, produce el informe completo con una sola orden. Las versiones quedan fijadas en `Project.toml` y `Manifest.toml`.
+* **Ninguna cifra tecleada a mano.** Todo número, tabla y figura del informe sale del código, con la semilla fijada.
+* **La expectativa, antes que el resultado.** Lo que se espera encontrar se escribe y se registra en `git` antes de mirar los datos de resultado o de lanzar la simulación: la fecha del *commit* es la prueba.
+* **Audita otro.** Alguien distinto del autor reproduce el informe desde cero y lo interroga. A falta de otra persona, el modelo de lenguaje, con el interrogatorio de la [sección 4](#el-modelo-de-lenguaje-como-claustro-socrático).
+
 ### Hito I: el andamiaje formal (~800 horas netas)
 
 **Meta:** sustituir la lógica verbal por la geometría matricial, la probabilidad y la contabilidad poblacional.
 
-* **Álgebra lineal computacional:** espacios vectoriales, proyecciones ortogonales y descomposiciones espectrales (SVD, QR). *Texto:* Gilbert Strang — *Linear Algebra and Its Applications*.
-* **Probabilidad axiomática:** variables discretas y continuas, momentos, condicionamiento y teorema de Bayes. *Texto:* Joseph K. Blitzstein & Jessica Hwang — *Introduction to Probability*.
-* **Demografía matemática:** ecuación de Euler-Lotka, tablas de mortalidad y matrices de proyección de Leslie. *Texto:* Kenneth W. Wachter — *Essential Demographic Methods*.
-* **El entorno, en paralelo:** consola de Unix, `git` y Julia desde el primer día. *Textos:* William Shotts — *The Linux Command Line*; Bogumił Kamiński — *Julia for Data Analysis*; Brian W. Kernighan & Rob Pike — *The Practice of Programming*.
+**En el currículo:** asignaturas [1.2](curriculo.qmd#asignatura-1-2), [1.3](curriculo.qmd#asignatura-1-3), [1.4](curriculo.qmd#asignatura-1-4) y [1.5](curriculo.qmd#asignatura-1-5).
+
+* **Álgebra lineal computacional:** espacios vectoriales, proyecciones ortogonales, autovalores y descomposiciones matriciales (QR y en valores singulares). *Texto:* Gilbert Strang — [*Linear Algebra and Its Applications*](biblioteca.qmd#strang2005linear).
+* **Probabilidad axiomática:** variables discretas y continuas, momentos, condicionamiento y teorema de Bayes. *Texto:* Joseph K. Blitzstein & Jessica Hwang — [*Introduction to Probability*](biblioteca.qmd#blitzstein2019introduction).
+* **Demografía matemática:** ecuación de Euler-Lotka, tablas de mortalidad y matrices de proyección de Leslie. *Texto:* Kenneth W. Wachter — [*Essential Demographic Methods*](biblioteca.qmd#wachter2014essential).
+* **El entorno, en paralelo:** consola de Unix, `git` y Julia desde el primer día, en el [entorno](entorno.qmd) congelado del programa. *Textos:* William Shotts — [*The Linux Command Line*](biblioteca.qmd#shotts2019linux); Bogumił Kamiński — [*Julia for Data Analysis*](biblioteca.qmd#kaminski2023julia); Brian W. Kernighan & Rob Pike — [*The Practice of Programming*](biblioteca.qmd#kernighan1999practice).
 
 ::: {.callout-important}
-**Fase de validación I.** Descargar microdatos censales o de mortalidad en bruto, construir el ciclo de vida actuarial completo desde primeros principios y calcular la tasa intrínseca de crecimiento $r$, con un script auditable y un informe reproducible en Typst.
+**Fase de validación I.** Descargar datos en bruto de defunciones, población expuesta y nacimientos, construir la tabla de vida completa desde primeros principios y calcular la tasa intrínseca de crecimiento $r$, con un script auditable y un informe reproducible en Typst.
+
+* **Datos:** la Human Mortality Database y la Human Fertility Database, con registro gratuito, o los microdatos del Movimiento Natural de la Población del INE.
+* **Se supera si** la tabla, alimentada con las tasas de mortalidad que publica la fuente, reproduce su esperanza de vida al nacer con menos de 0,05 años de diferencia, y la construida desde los recuentos en bruto se queda a pocas décimas, con la diferencia explicada por la exposición o por el cierre de la tabla: con los datos del INE de 2024 y el método más simple, es de una a dos décimas; si $r$ cumple la ecuación de Euler-Lotka con un residuo despreciable; y si el logaritmo del autovalor dominante de la matriz de Leslie construida con la misma tabla, dividido por la amplitud de sus grupos de edad, coincide con $r$ salvo una diferencia menor del 1% de $r$, que se explica por la discretización: con los datos del INE de 2024, es del 0,01% con grupos de un año y del 0,24% con grupos de cinco.
+* **Para calentar:** [Inercia demográfica](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/28-inercia-demografica/), [La entropía de la tabla de vida](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/61-la-entropia-de-la-tabla-de-vida/) y [La extinción de los apellidos](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/13-apellidos/).
 :::
 
 ### Hito II: restricciones biológicas e identificación causal (~700 horas netas)
 
 **Meta:** purgar el supuesto de la *tabula rasa* y separar formalmente la correlación de la causa.
 
-* **Inferencia estadística:** estimación, intervalos, contrastes y *bootstrap*, con la inferencia frecuentista y la bayesiana en paralelo, hasta los contrafactuales y los grafos dirigidos con los que sigue el hito. *Texto:* Larry Wasserman — *All of Statistics*, como segunda pasada después de Blitzstein.
-* **Genética cuantitativa:** descomposición de la varianza fenotípica ($h^2$), modelo infinitesimal y control por correlación e interacción gen-ambiente ($G \times E$). *Textos:* D. S. Falconer & Trudy F. C. Mackay — *Introduction to Quantitative Genetics*; Robert Plomin — *Blueprint*.
-* **Inferencia causal estructural:** criterio de la puerta trasera, grafos acíclicos dirigidos y resultados potenciales. *Textos:* Nick Huntington-Klein — *The Effect*, como entrada; Judea Pearl, Madelyn Glymour & Nicholas P. Jewell — *Causal Inference in Statistics*; Joshua D. Angrist & Jörn-Steffen Pischke — *Mostly Harmless Econometrics*.
-* **Psicología evolutiva y etología:** regla de Hamilton, reciprocidad y jerarquías adaptativas. *Textos:* Christopher Boehm — *Hierarchy in the Forest*; Sarah Blaffer Hrdy — *Mothers and Others*.
+**En el currículo:** asignaturas [1.3](curriculo.qmd#asignatura-1-3), [2.1](curriculo.qmd#asignatura-2-1) y [2.4](curriculo.qmd#asignatura-2-4); la etología no tiene asignatura propia.
+
+* **Inferencia estadística:** estimación, intervalos, contrastes y *bootstrap*, con la inferencia frecuentista y la bayesiana en paralelo, hasta los contrafactuales y los grafos dirigidos con los que sigue el hito. *Texto:* Larry Wasserman — [*All of Statistics*](biblioteca.qmd#wasserman2004all), como segunda pasada después de Blitzstein.
+* **Genética cuantitativa:** descomposición de la varianza fenotípica ($h^2$), modelo infinitesimal y control por correlación e interacción gen-ambiente ($G \times E$). *Textos:* D. S. Falconer & Trudy F. C. Mackay — [*Introduction to Quantitative Genetics*](biblioteca.qmd#falconer2009introduction); Robert Plomin — [*Blueprint*](biblioteca.qmd#plomin2018blueprint).
+* **Inferencia causal estructural:** criterio de la puerta trasera, grafos acíclicos dirigidos y resultados potenciales. *Textos:* Nick Huntington-Klein — [*The Effect*](biblioteca.qmd#huntingtonklein2021effect), como entrada; Judea Pearl, Madelyn Glymour & Nicholas P. Jewell — [*Causal Inference in Statistics*](biblioteca.qmd#pearl2016causal); Joshua D. Angrist & Jörn-Steffen Pischke — [*Mostly Harmless Econometrics*](biblioteca.qmd#angrist2009mostly).
+* **Psicología evolutiva y etología:** el igualitarismo de los cazadores-recolectores como jerarquía de dominancia invertida y la crianza cooperativa; la regla de Hamilton y la reciprocidad, que aquí se presentan, se derivan en el hito III. *Textos:* Christopher Boehm — [*Hierarchy in the Forest*](biblioteca.qmd#boehm1999hierarchy); Sarah Blaffer Hrdy — [*Mothers and Others*](biblioteca.qmd#hrdy2009mothers).
 
 ::: {.callout-important}
-**Fase de validación II.** Replicar un artículo empírico controvertido sobre movilidad social, en el marco de Erikson y Goldthorpe (*The Constant Flux*) y de Breen y Goldthorpe, aislando la estructura de confusión con un DAG explícito y corrigiendo el sesgo de selección con microdatos de panel.
+**Fase de validación II.** Replicar un artículo empírico controvertido sobre movilidad social o rendimiento educativo, aislando la estructura de confusión con un DAG explícito y corrigiendo el sesgo de selección con microdatos de panel.
+
+* **Datos:** el PSID y la NLSY, de Estados Unidos, gratuitos: el PSID pide registrarse, y la NLSY, una cuenta para guardar los extractos; Understanding Society, del Reino Unido, con una cuenta gratuita del UK Data Service para uso no comercial, también desde fuera del Reino Unido; o la Encuesta de Condiciones de Vida del INE, cuyo componente longitudinal se descarga sin registro.
+* **Se supera si** la estimación principal del artículo se reproduce dentro de su error típico antes de cambiar nada, o el informe documenta dónde se rompe; si el conjunto de ajuste sale del criterio de la puerta trasera aplicado al DAG, y al menos una independencia condicional que el DAG implica se contrasta con los datos; si el abandono del panel se trata de forma explícita, con pesos o con cotas, y el informe dice cuánto mueve la estimación; y si un análisis de sensibilidad dice cuánto confusor no observado haría falta para anular el resultado.
+* **Para calentar:** [La paradoja de Simpson en Berkeley](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/01-berkeley/), [El talento y el esfuerzo de los admitidos](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/03-berkson/), [¿Sirven las clases particulares?](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/04-clases-particulares/), [¿Cuántas generaciones dura la cuna?](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/37-movilidad-markov/) y [El jardín de senderos que se bifurcan](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/66-el-jardin-de-senderos/).
 :::
 
 ### Hito III: mecanismos micro y teoría estratégica (~600 horas netas)
 
 **Meta:** modelar la interacción de agentes discretos sin recurrir a entidades holistas.
 
-* **Sociología analítica (DBO):** deseos, creencias y oportunidades como motores generativos de regularidades macro. *Textos:* James S. Coleman — *Foundations of Social Theory*; Peter Hedström — *Dissecting the Social*; Jon Elster — *Explaining Social Behavior*.
-* **Teoría de juegos estratégica y evolutiva:** equilibrios de Nash, juegos repetidos, dinámica de réplica y normas sociales; la regla de Hamilton, la reciprocidad y las señales costosas, derivadas y no citadas como axiomas, con poco más que el álgebra del bachillerato y problemas resueltos al final de cada capítulo. *Textos:* Robert Gibbons — *Game Theory for Applied Economists*; Richard McElreath & Robert Boyd — *Mathematical Models of Social Evolution*.
-* **Teoría de redes sociales:** homofilia, centralidad, difusión, modelos de umbrales y contagio complejo. *Textos:* Damon Centola — *How Behavior Spreads*, de principio a fin; Matthew O. Jackson — *Social and Economic Networks*, como consulta.
-* **Modelado formal y basado en agentes:** traducir una conjetura verbal sobre contagio, polarización, segregación o normas a un sistema de ecuaciones y a una simulación, y contrastar lo que cada uno predice. Es la puerta de entrada al proyecto de validación. *Texto:* Paul E. Smaldino — *Modeling Social Behavior*.
+**En el currículo:** asignaturas [2.2](curriculo.qmd#asignatura-2-2), [2.3](curriculo.qmd#asignatura-2-3), [3.1](curriculo.qmd#asignatura-3-1) y [3.2](curriculo.qmd#asignatura-3-2).
+
+* **Sociología analítica (DBO):** deseos, creencias y oportunidades como motores generativos de regularidades macro. La estratificación educativa de Breen y Goldthorpe sirve de banco de pruebas: la decisión de seguir estudiando como elección racional con recursos desiguales. *Textos:* James S. Coleman — [*Foundations of Social Theory*](biblioteca.qmd#coleman1990foundations); Peter Hedström — [*Dissecting the Social*](biblioteca.qmd#hedstrom2005dissecting); Jon Elster — [*Explaining Social Behavior*](biblioteca.qmd#elster2015explaining).
+* **Teoría de juegos estratégica y evolutiva:** equilibrios de Nash, juegos repetidos, dinámica de réplica y normas sociales; la regla de Hamilton, la reciprocidad y las señales costosas, derivadas y no citadas como axiomas, con poco más que el álgebra del bachillerato y problemas resueltos al final de cada capítulo. *Textos:* Robert Gibbons — [*Game Theory for Applied Economists*](biblioteca.qmd#gibbons1992game); Richard McElreath & Robert Boyd — [*Mathematical Models of Social Evolution*](biblioteca.qmd#mcelreath2007mathematical).
+* **Teoría de redes sociales:** homofilia, centralidad, difusión, modelos de umbrales y contagio complejo. *Textos:* Damon Centola — [*How Behavior Spreads*](biblioteca.qmd#centola2018how), de principio a fin; Matthew O. Jackson — [*Social and Economic Networks*](biblioteca.qmd#jackson2008social), como consulta.
+* **Modelado formal y basado en agentes:** traducir una conjetura verbal sobre contagio, polarización, segregación o normas a un sistema de ecuaciones y a una simulación, y contrastar lo que cada uno predice. Es la puerta de entrada al proyecto de validación. *Texto:* Paul E. Smaldino — [*Modeling Social Behavior*](biblioteca.qmd#smaldino2023modeling).
 
 ::: {.callout-important}
 **Fase de validación III.** Programar en la terminal una simulación de agentes que reproduzca la emergencia de una norma cooperativa o de un patrón de segregación espacial a partir de reglas individuales microscópicas. Con el método de Smaldino, formular antes la versión analítica del mismo mecanismo y contrastar su predicción con la de la simulación: la discrepancia entre ambas forma parte del informe.
+
+* **Datos:** no hacen falta. Si se calibra, los de un censo por secciones bastan para la segregación.
+* **Se supera si** la regla de cada agente pasa pruebas unitarias con el paquete `Test` de Julia sobre casos calculados a mano; si los resultados se dan sobre muchas réplicas con semillas distintas, con su dispersión, y nunca sobre una sola corrida; si, donde se cumplen los supuestos del modelo analítico, como una población grande y bien mezclada, la simulación reproduce su predicción dentro del error de Monte Carlo; y si un barrido de al menos un parámetro muestra dónde se separan las dos versiones y por qué.
+* **Para calentar:** [La segregación de Schelling](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/05-schelling/), [Los umbrales de Granovetter](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/02-granovetter/), [Halcones y palomas](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/12-halcon-paloma/) y [Por qué una buena idea no se extiende sola](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/45-conformidad-y-prestigio/).
 :::
 
 ### Hito IV: dinámicas macro y cliodinámica (~500 horas netas)
 
-**Meta:** integrar la historia económica cuantitativa, las restricciones energéticas y los sistemas dinámicos.
+**Meta:** integrar la historia económica cuantitativa, las restricciones malthusianas y los sistemas dinámicos.
 
-* **Trampa malthusiana y crecimiento unificado:** la Gran Divergencia y la salida del régimen de subsistencia. *Textos:* Oded Galor — *Unified Growth Theory*; Gregory Clark — *A Farewell to Alms*.
-* **Sistemas dinámicos y cliodinámica:** ecuaciones diferenciales no lineales, sobreproducción de élites, ciclos seculares y compresiones violentas de la desigualdad. *Textos:* Peter Turchin & Sergey A. Nefedov — *Secular Cycles*; Steven H. Strogatz — *Nonlinear Dynamics and Chaos*; Walter Scheidel — *The Great Leveler*.
-* **Elección pública:** búsqueda de rentas e incentivos del decisor burocrático. *Texto:* James M. Buchanan & Gordon Tullock — *The Calculus of Consent*.
+**En el currículo:** asignaturas [3.4](curriculo.qmd#asignatura-3-4), [3.5](curriculo.qmd#asignatura-3-5), [4.1](curriculo.qmd#asignatura-4-1) y [4.5](curriculo.qmd#asignatura-4-5).
+
+* **Trampa malthusiana y crecimiento unificado:** la Gran Divergencia y la salida del régimen de subsistencia. *Textos:* Oded Galor — [*Unified Growth Theory*](biblioteca.qmd#galor2011unified); Gregory Clark — [*A Farewell to Alms*](biblioteca.qmd#clark2007farewell).
+* **Sistemas dinámicos y cliodinámica:** ecuaciones diferenciales no lineales, sobreproducción de élites, ciclos seculares y compresiones violentas de la desigualdad. *Textos:* Peter Turchin & Sergey A. Nefedov — [*Secular Cycles*](biblioteca.qmd#turchin2009secular); Steven H. Strogatz — [*Nonlinear Dynamics and Chaos*](biblioteca.qmd#strogatz2015nonlinear); Walter Scheidel — [*The Great Leveler*](biblioteca.qmd#scheidel2017great).
+* **Elección pública:** las reglas antes que las políticas: los costes de decidir en grupo, la unanimidad y la constitución como contrato. *Texto:* James M. Buchanan & Gordon Tullock — [*The Calculus of Consent*](biblioteca.qmd#buchanan2020calculus).
 
 ::: {.callout-important}
 **Fase de validación IV, la tesis autodidacta.** Publicar un repositorio con un modelo dinámico calibrado sobre series históricas, auditado de punta a punta y documentado en texto plano.
+
+* **Datos:** el banco de historia global Seshat, la Maddison Project Database, Clio Infra o la serie milenaria de datos macroeconómicos del Banco de Inglaterra.
+* **Se supera si** el modelo, calibrado con una parte de la serie, predice el tramo que se dejó fuera mejor que una referencia ingenua, como la persistencia o la tendencia lineal, o el informe dice que no lo consigue; si recupera sus propios parámetros a partir de datos sintéticos que él mismo genera con valores conocidos; si las conclusiones resisten cambios razonables en las condiciones iniciales y en la versión de la serie; y si la integración continua del repositorio reconstruye todo, desde la descarga hasta el documento, en cada cambio.
+* **Para calentar:** [Peces, guerra y depredadores](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/17-lotka-volterra/), [La trampa malthusiana](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/31-trampa-malthusiana/) y [Dos mil años de renta](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/57-dos-mil-anos-de-renta/).
 :::
+
+### Para ir más allá
+
+La guía es un atajo deliberado. Cubre catorce de las veinte asignaturas del [currículo](curriculo.qmd), y no todas con todos sus textos: lo que deja fuera no es secundario, pero cabe después, cuando el itinerario ya se sostiene. Estas ampliaciones quedan fuera del presupuesto de 2.600 horas, y cada una dice en qué momento conviene abrirla.
+
+* **Antes de empezar, si nunca has programado.** Ben Lauwens & Allen B. Downey — [*Think Julia*](biblioteca.qmd#lauwens2019think), antes que Kamiński, que da el lenguaje por sabido.
+* **Antes del hito III, si el cálculo del bachillerato se ha oxidado.** Carl P. Simon & Lawrence Blume — [*Mathematics for Economists*](biblioteca.qmd#simon1994mathematics): Gibbons y Strogatz dan por sabidas las derivadas parciales y la optimización con restricciones.
+* **Con el hito I.** Claude E. Shannon — [«A Mathematical Theory of Communication»](biblioteca.qmd#shannon1948mathematical), la entropía y la información mutua en su texto fundacional; y Samuel H. Preston, Patrick Heuveline & Michel Guillot — [*Demography*](biblioteca.qmd#preston2001demography), la demografía de Wachter con más aparato.
+* **Después del hito II, con R.** Melinda C. Mills, Nicola Barban & Felix C. Tropf — [*An Introduction to Statistical Genetic Data Analysis*](biblioteca.qmd#mills2020introduction), que pone en código lo que Plomin cuenta en prosa; A. Alexander Beaujean — [*Latent Variable Modeling Using R*](biblioteca.qmd#beaujean2014latent), la psicometría y la invariancia de la medida; y Richard McElreath — [*Statistical Rethinking*](biblioteca.qmd#mcelreath2020statistical), la inferencia bayesiana que Wasserman solo presenta.
+* **Con el hito IV.** Dennis C. Mueller — [*Public Choice III*](biblioteca.qmd#mueller2003public), de consulta, para la búsqueda de rentas y la burocracia; Elinor Ostrom — [*Governing the Commons*](biblioteca.qmd#ostrom1990governing), los comunes que se gobiernan sin Estado ni mercado; y Vaclav Smil — [*Energy and Civilization*](biblioteca.qmd#smil2017energy), las restricciones energéticas de la historia económica.
+* **Cuando la simulación del hito III se vuelva lenta.** Christopher Rackauckas — [*Parallel Computing and Scientific Machine Learning*](biblioteca.qmd#rackauckas2026parallel), en sus capítulos de rendimiento y paralelismo, y Jennifer Bryan — [«Excuse Me, Do You Have a Moment to Talk About Version Control?»](biblioteca.qmd#bryan2018excuse).
+* **Después de la tesis.** Matthew J. Salganik — [*Bit by Bit*](biblioteca.qmd#salganik2018bit) y Sharon L. Lohr — [*Sampling*](biblioteca.qmd#lohr2021sampling), para evaluar políticas con encuestas, registros y experimentos; y Justin Grimmer, Margaret E. Roberts & Brandon M. Stewart — [*Text as Data*](biblioteca.qmd#grimmer2022text), con Daniel Jurafsky & James H. Martin — [*Speech and Language Processing*](biblioteca.qmd#jurafsky2026speech) de consulta, para tratar el texto como dato.
 
 ---
 
@@ -125,7 +170,7 @@ flowchart TB
 
 El mayor riesgo de estudiar solo no es la falta de libros: es el atasco. Bloquearse dos semanas en una derivación o en una matriz de covarianza y abandonar por frustración acaba con más itinerarios que la dificultad del material.
 
-El autodidacta no usa la IA para generar código a ciegas ni para producir resúmenes que le eximan de leer. La usa como tutor permanente en la terminal:
+El autodidacta no usa la IA para generar código a ciegas ni para producir resúmenes que le eximan de leer. La usa como tutor permanente en la terminal, dentro de la [política de inteligencia artificial](politica_ia.qmd) del programa:
 
 * **Exigencia de mecanismos.** Obligar al modelo a aislar el espacio de estados y los supuestos de identificación *antes* de abrir un texto denso.
 * **Auditoría de código.** Depurar cuellos de botella de memoria o explicar fallos de convergencia en optimizaciones matriciales.

@@ -54,24 +54,24 @@ Cinco asignaturas por curso, tesis incluida.
 
 ### Primer año: fundamentos formales y restricciones materiales
 
-#### 1.1. Cálculo multivariante y optimización
+#### 1.1. Cálculo multivariante y optimización {#asignatura-1-1}
 * **Contenidos:** espacios euclídeos, gradientes, teorema de la función implícita y estática comparada, y optimización con y sin restricciones mediante multiplicadores de Lagrange.
 * **Texto matriz:** Carl P. Simon & Lawrence Blume — *Mathematics for Economists*.
 
-#### 1.2. Álgebra lineal computacional
+#### 1.2. Álgebra lineal computacional {#asignatura-1-2}
 * **Contenidos:** espacios vectoriales, proyecciones ortogonales, descomposiciones matriciales (LU, QR, SVD), autovalores y matrices de Markov aplicadas a transiciones sociales.
 * **Texto matriz:** Gilbert Strang — *Linear Algebra and Its Applications*, con implementación en Julia.
 
-#### 1.3. Probabilidad axiomática, inferencia y teoría de la información
+#### 1.3. Probabilidad axiomática, inferencia y teoría de la información {#asignatura-1-3}
 * **Contenidos:** espacios de probabilidad, variables aleatorias discretas y continuas, distribuciones conjuntas, entropía de Shannon e información mutua; estimación, intervalos, contrastes y *bootstrap*, con la inferencia frecuentista y la bayesiana en paralelo.
 * **Textos matriz:** Joseph K. Blitzstein & Jessica Hwang — *Introduction to Probability*; Larry Wasserman — *All of Statistics*, como segunda pasada.
 * **Lectura:** Claude E. Shannon — «A Mathematical Theory of Communication».
 
-#### 1.4. Demografía formal y modelos poblacionales
+#### 1.4. Demografía formal y modelos poblacionales {#asignatura-1-4}
 * **Contenidos:** ecuación de Euler-Lotka, tablas de vida, matrices de proyección de Leslie, modelos de población estable y descomposición de tasas.
 * **Textos matriz:** Samuel H. Preston, Patrick Heuveline & Michel Guillot — *Demography*; Kenneth W. Wachter — *Essential Demographic Methods*.
 
-#### 1.5. Computación científica y estructuras de datos
+#### 1.5. Computación científica y estructuras de datos {#asignatura-1-5}
 * **Contenidos:** complejidad temporal y espacial ($O(n)$), estructuras de datos, algoritmos de búsqueda y ordenación, y programación científica en Julia.
 * **Textos matriz:** Ben Lauwens & Allen B. Downey — *Think Julia*; Brian W. Kernighan & Rob Pike — *The Practice of Programming*.
 
@@ -79,27 +79,27 @@ Cinco asignaturas por curso, tesis incluida.
 
 ### Segundo año: microfundamentos, biología y diseño causal
 
-#### 2.1. Genética cuantitativa y arquitectura biológica
+#### 2.1. Genética cuantitativa y arquitectura biológica {#asignatura-2-1}
 * **Contenidos:** modelos infinitesimales, heredabilidad en sentido estricto ($h^2$), descomposición de varianza fenotípica, puntuaciones poligénicas y sesgos por correlación e interacción gen-ambiente ($G \times E$); diseños entre hermanos para separar los efectos genéticos directos de la crianza y la estratificación.
 * **Textos matriz:** D. S. Falconer & Trudy F. C. Mackay — *Introduction to Quantitative Genetics*; Melinda C. Mills, Nicola Barban & Felix C. Tropf — *An Introduction to Statistical Genetic Data Analysis*.
 * **Lectura preliminar:** Robert Plomin — *Blueprint*.
 
-#### 2.2. Sociología analítica y mecanismos generativos
+#### 2.2. Sociología analítica y mecanismos generativos {#asignatura-2-2}
 * **Contenidos:** individualismo metodológico estructural, esquema de Deseos, Creencias y Oportunidades (DBO), racionalidad acotada y transiciones micro-macro con la barca de Coleman; la estratificación y la movilidad de clase como banco de pruebas del DBO (Breen y Goldthorpe).
 * **Textos matriz:** James S. Coleman — *Foundations of Social Theory*; Peter Hedström — *Dissecting the Social*.
 * **Lectura preliminar:** Jon Elster — *Explaining Social Behavior*.
 
-#### 2.3. Teoría de juegos y comportamiento estratégico
+#### 2.3. Teoría de juegos y comportamiento estratégico {#asignatura-2-3}
 * **Contenidos:** juegos estáticos y dinámicos con información completa e incompleta, equilibrios de Nash, juegos repetidos, equilibrios evolutivamente estables y dinámica de réplica; halcón-paloma, regla de Hamilton, reciprocidad directa e indirecta, señales costosas y selección entre grupos con la ecuación de Price.
 * **Textos matriz:** Robert Gibbons — *Game Theory for Applied Economists*; Ken Binmore — *Playing for Real*; Richard McElreath & Robert Boyd — *Mathematical Models of Social Evolution*.
 * **Lectura preliminar:** Ken Binmore — *Game Theory: A Very Short Introduction*.
 
-#### 2.4. Inferencia causal y diseño de investigación
+#### 2.4. Inferencia causal y diseño de investigación {#asignatura-2-4}
 * **Contenidos:** modelo de resultados potenciales de Rubin, identificación no paramétrica con grafos acíclicos dirigidos, regresión discontinua, variables instrumentales y diferencias en diferencias.
 * **Textos matriz:** Judea Pearl, Madelyn Glymour & Nicholas P. Jewell — *Causal Inference in Statistics*; Joshua D. Angrist & Jörn-Steffen Pischke — *Mostly Harmless Econometrics*; Guido W. Imbens & Donald B. Rubin — *Causal Inference for Statistics, Social, and Biomedical Sciences*, de consulta para los resultados potenciales.
 * **Lectura preliminar:** Nick Huntington-Klein — *The Effect*.
 
-#### 2.5. Psicometría y modelización de variables latentes
+#### 2.5. Psicometría y modelización de variables latentes {#asignatura-2-5}
 * **Contenidos:** teoría clásica de los tests, análisis factorial exploratorio y confirmatorio, factor general ($g$), curvas características del ítem, matrices de covarianza de rasgos cognitivos y de personalidad, e invariancia de la medida entre grupos y cohortes.
 * **Texto matriz:** A. Alexander Beaujean — *Latent Variable Modeling Using R*.
 * **Práctica:** comparar el rendimiento académico entre cohortes de reformas educativas distintas, demostrando antes que las pruebas miden lo mismo en todas ellas: sin invariancia, un aparente declive puede ser un cambio de instrumento.
@@ -108,23 +108,23 @@ Cinco asignaturas por curso, tesis incluida.
 
 ### Tercer año: redes, agentes, instituciones y dinámica macro
 
-#### 3.1. Teoría de redes sociales y difusión
+#### 3.1. Teoría de redes sociales y difusión {#asignatura-3-1}
 * **Contenidos:** topología de grafos, medidas de centralidad, modelos de homofilia, umbrales de difusión de Granovetter, contagio complejo y juegos sobre redes.
 * **Textos matriz:** Damon Centola — *How Behavior Spreads*; Matthew O. Jackson — *Social and Economic Networks*.
 
-#### 3.2. Modelos basados en agentes y sistemas complejos
+#### 3.2. Modelos basados en agentes y sistemas complejos {#asignatura-3-2}
 * **Contenidos:** autómatas celulares, segregación espacial de Schelling, contagio y polarización, modelos de ecuaciones frente a modelos de agentes, modelos generativos *Agent_Zero* y calibración de dinámicas emergentes.
 * **Textos matriz:** Joshua Epstein — *Generative Social Science*; Paul E. Smaldino — *Modeling Social Behavior*; Steven F. Railsback & Volker Grimm — *Agent-Based and Individual-Based Modeling*.
 
-#### 3.3. Inferencia bayesiana y computación MCMC
+#### 3.3. Inferencia bayesiana y computación MCMC {#asignatura-3-3}
 * **Contenidos:** teorema de Bayes sobre distribuciones continuas, *priors* débilmente informativos y regularizadores, modelos jerárquicos y multinivel, y muestreo de la posterior: de Metropolis y Gibbs al Monte Carlo hamiltoniano.
 * **Texto matriz:** Richard McElreath — *Statistical Rethinking*, implementado con Turing.jl o Stan.
 
-#### 3.4. Teoría de la elección pública e instituciones
+#### 3.4. Teoría de la elección pública e instituciones {#asignatura-3-4}
 * **Contenidos:** agregación de preferencias, teorema de imposibilidad de Arrow, modelos del votante mediano, búsqueda de rentas, fallos del Estado y gobierno de los recursos comunes.
 * **Textos matriz:** James M. Buchanan & Gordon Tullock — *The Calculus of Consent*; Dennis C. Mueller — *Public Choice III*; Elinor Ostrom — *Governing the Commons*.
 
-#### 3.5. Transición demográfica y macroeconomía malthusiana
+#### 3.5. Transición demográfica y macroeconomía malthusiana {#asignatura-3-5}
 * **Contenidos:** límites malthusianos, trampas de subsistencia, transición demográfica, la Gran Divergencia y modelos unificados de crecimiento.
 * **Textos matriz:** Oded Galor — *Unified Growth Theory*; Gregory Clark — *A Farewell to Alms*.
 
@@ -132,27 +132,27 @@ Cinco asignaturas por curso, tesis incluida.
 
 ### Cuarto año: síntesis estructural y validación empírica
 
-#### 4.1. Cliodinámica y sistemas dinámicos históricos
+#### 4.1. Cliodinámica y sistemas dinámicos históricos {#asignatura-4-1}
 * **Contenidos:** ecuaciones diferenciales no lineales acopladas, ciclos sociopolíticos seculares, sobreproducción de élites, compresiones violentas de la desigualdad y calibración paramétrica con series históricas.
 * **Textos matriz:** Peter Turchin & Sergey A. Nefedov — *Secular Cycles*; Steven H. Strogatz — *Nonlinear Dynamics and Chaos*; Walter Scheidel — *The Great Leveler*.
 
-#### 4.2. Evaluación cuantitativa de políticas públicas
+#### 4.2. Evaluación cuantitativa de políticas públicas {#asignatura-4-2}
 * **Contenidos:** diseño muestral y ponderación, microdatos censales y de registros administrativos, trazas digitales, paneles longitudinales, experimentos de campo y auditoría de intervenciones estatales.
 * **Textos matriz:** Matthew J. Salganik — *Bit by Bit: Social Research in the Digital Age*; Sharon L. Lohr — *Sampling: Design and Analysis*.
 * **Práctica:** replicación empírica de políticas laborales, de vivienda y de transferencias asistenciales.
 
-#### 4.3. Computación de alto rendimiento y modelado distribuido
+#### 4.3. Computación de alto rendimiento y modelado distribuido {#asignatura-4-3}
 * **Contenidos:** paralelización en clústeres de cómputo, optimización de memoria en simulaciones a gran escala y canalizaciones reproducibles con control de versiones.
 * **Texto matriz:** Christopher Rackauckas — *Parallel Computing and Scientific Machine Learning* (caps. 2, 5, 6, 12, 13 y 18: código serie, paralelismo, MPI, GPU y perfilado; el resto es aprendizaje automático científico).
 * **Lectura:** Jennifer Bryan — «Excuse Me, Do You Have a Moment to Talk About Version Control?».
 * **Práctica:** modelado generativo de poblaciones sintéticas completas.
 
-#### 4.4. Texto como dato y procesamiento del lenguaje
+#### 4.4. Texto como dato y procesamiento del lenguaje {#asignatura-4-4}
 * **Contenidos:** tokenización y modelos de lenguaje probabilísticos, *embeddings* y arquitectura *Transformer*, modelos estructurales de temas y el texto como tratamiento, resultado o confusor en un diseño causal.
 * **Textos matriz:** Justin Grimmer, Margaret E. Roberts & Brandon M. Stewart — *Text as Data*; Daniel Jurafsky & James H. Martin — *Speech and Language Processing*.
 * **Práctica:** medición validada frente a codificación humana sobre un archivo legislativo o notarial completo.
 
-#### 4.5. Tesis de grado
+#### 4.5. Tesis de grado {#asignatura-4-5}
 * **Contenidos:** desarrollo de un modelo analítico original o replicación destructiva de un resultado de la literatura empírica.
 * **Lecturas:** John P. A. Ioannidis — «Why Most Published Research Findings Are False»; Joseph P. Simmons, Leif D. Nelson & Uri Simonsohn — «False-Positive Psychology»; Open Science Collaboration — «Estimating the Reproducibility of Psychological Science».
 * **Escritura:** Howard S. Becker — *Writing for Social Scientists*, del área secundaria de la biblioteca, para empezar y terminar la memoria.
