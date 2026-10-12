@@ -148,3 +148,16 @@ ruta(c("gigerenzer1989empire", "rodriguez2018probability", "grinstead1997introdu
        "rozanov1977probability", "tversky1974judgment", "gigerenzer2002calculated", "benford1938law",
        "deckert2011benford", "evans2010probability", "jaynes2003probability", "gilboa2009theory"))
 ```
+
+## Demografía
+
+Cuántos nacen, cuántos mueren, cuántos se mudan y a qué edad: casi todo lo social pasa por la estructura de una población, de las pensiones a la desigualdad. La ruta empieza con la historia de la población mundial y con el escalón de entrada de Livi-Bacci, sigue con los dos textos matriz, Wachter y Preston, Heuveline y Guillot, y con sus métodos aplicados a los datos españoles. Después sube al aparato matemático: la extinción de los apellidos como proceso de ramificación de Lotka, la demografía matemática de Keyfitz y Caswell y la fragilidad de Vaupel, que aplana la mortalidad de una población aunque la de nadie se aplane. Añade el tiempo con los modelos de edad, periodo y cohorte y el análisis de supervivencia, y lo aplica hacia atrás, con la población inglesa reconstruida desde los registros parroquiales, y hacia el presente, con las muertes por desesperación de Case y Deaton y el contrapeso de Ruhm. Termina con una advertencia sobre los datos de partida: las cifras oficiales pueden ser mucho peores de lo que parecen. Se reparte entre Clark, Wachter, Preston, Keyfitz, O'Brien y Mills, y acompaña a la asignatura [1.4 del currículo](curriculo.qmd#asignatura-1-4), *Demografía formal y modelos poblacionales*. Los laboratorios [*España muere más que México*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/22-espana-muere-mas/), [*Inercia demográfica*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/28-inercia-demografica/), [*¿Cuántos trabajadores por pensionista?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/29-trabajadores-por-pensionista/), [*La extinción de los apellidos*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/13-apellidos/), [*La entropía de la tabla de vida*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/61-la-entropia-de-la-tabla-de-vida/) y [*Edad, periodo y cohorte*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/30-edad-periodo-cohorte/) ponen a funcionar en el navegador la estandarización por edad, la inercia, la tabla de vida, la ramificación, la entropía de Keyfitz y el problema de identificación de la edad, el periodo y la cohorte.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("livibacci2025concise", "livibacci1993introduccion", "wachter2014essential", "preston2001demography",
+       "vinuesa1998demografia", "lotka1931extinction", "keyfitz2005applied", "vaupel1979impact",
+       "obrien2014age", "mills2011introducing", "wrigley1981population", "case2020deaths",
+       "ruhm2019drivers", "jerven2013poor"))
+```
