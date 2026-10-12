@@ -142,6 +142,7 @@ Cinco asignaturas por curso, tesis incluida.
 
 #### 4.3. Computación de alto rendimiento y modelado distribuido
 * **Contenidos:** paralelización en clústeres de cómputo, optimización de memoria en simulaciones a gran escala y canalizaciones reproducibles con control de versiones.
+* **Texto matriz:** Christopher Rackauckas — *Parallel Computing and Scientific Machine Learning*.
 * **Lectura:** Jennifer Bryan — «Excuse Me, Do You Have a Moment to Talk About Version Control?».
 * **Práctica:** modelado generativo de poblaciones sintéticas completas.
 

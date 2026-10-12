@@ -15,8 +15,8 @@
 % muestra la página.
 %
 % Cursos y textos en línea. Las clases, las lecciones y los libros abiertos que viven como
-% web y no tienen editorial entran como @online, solo en el área
-% secundaria: url, organization (quien las aloja, que la página muestra en lugar de la
+% web y no tienen editorial entran como @online, en el área secundaria, salvo que sean
+% texto matriz de una asignatura del currículo: url, organization (quien las aloja, que la página muestra en lugar de la
 % editorial), year (la edición o versión que se recomienda) y urldate (la fecha en que se
 % comprobó el enlace, AAAA-MM-DD). Un autor institucional va entre llaves dobles.
 %
@@ -1936,17 +1936,17 @@
   lectura    = {Completa}
 }
 
-@book{taylor2016wicked,
-  author     = {Taylor, Dave and Perry, Brandon},
-  title      = {Wicked Cool Shell Scripts},
-  publisher  = {No Starch Press},
-  edition    = {2nd},
-  year       = {2016},
-  isbn       = {9781593276027},
+@online{rackauckas2026parallel,
+  author     = {Rackauckas, Christopher},
+  title      = {Parallel Computing and Scientific Machine Learning ({SciML}): Methods and Applications},
+  organization = {MIT},
+  year       = {2026},
+  url        = {https://book.sciml.ai/},
+  urldate    = {2026-10-12},
   estrato    = {computo},
-  nivel      = {1},
-  descriptor = {Scripting Unix},
-  lectura    = {Consulta}
+  nivel      = {3},
+  descriptor = {Computación Paralela},
+  lectura    = {Completa con ejercicios}
 }
 
 @book{freeman2019programming,
@@ -6063,4 +6063,20 @@
   estado     = {curada},
   nivel      = {1},
   descriptor = {Datos en la Terminal}
+}
+
+@book{taylor2016wicked,
+  author     = {Taylor, Dave and Perry, Brandon},
+  title      = {Wicked Cool Shell Scripts},
+  publisher  = {No Starch Press},
+  edition    = {2nd},
+  year       = {2016},
+  isbn       = {9781593276027},
+  capa       = {secundaria},
+  cuelga     = {shotts2019linux},
+  papel      = {Especialización aplicada},
+  motivo     = {Recetas de guiones de shell para quien ya sabe moverse por la terminal con Shotts: un libro de consulta, que se abre cuando hace falta automatizar una tarea concreta y no se lee entero.},
+  estado     = {curada},
+  nivel      = {1},
+  descriptor = {Scripting Unix}
 }

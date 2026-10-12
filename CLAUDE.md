@@ -45,7 +45,7 @@ Las lecturas de [laboratorios-y-simulaciones](https://github.com/nuevasomosaguas
 
 ## Render y commits
 
-- Quarto no está en el PATH: usa el de RStudio, `/usr/lib/rstudio/resources/app/bin/quarto/bin/quarto`.
+- Quarto no está en el PATH: añade el de RStudio, `PATH=/usr/lib/rstudio/resources/app/bin/quarto/bin:$PATH quarto render`, porque `biblioteca.qmd` llama a `quarto pandoc` desde R.
 - `_site/` lo genera y publica GitHub Actions: restáuralo con `git checkout -- _site && git clean -fdq _site` tras un render local.
 - Un commit por alta o por tanda, con un mensaje en castellano que diga qué cuelga de qué. Sin firma ni `Co-Authored-By`.
 - Push solo cuando el responsable lo pida.
