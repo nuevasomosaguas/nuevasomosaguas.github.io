@@ -113,3 +113,14 @@ ruta(c("tomasello2014natural", "hrdy2009mothers", "boyd1985culture", "richerson2
        "laland2017darwins",
        "gintis2005moral", "norenzayan2013big", "mokyr2016culture"))
 ```
+
+## POSIX e investigación reproducible
+
+Lo que se hace con el ratón no deja rastro, y lo que se hace escribiendo órdenes queda escrito y se puede repetir. La ruta va de la línea de comandos de Shotts, la del estándar POSIX que comparten Linux y macOS, a los guiones que automatizan una tarea y a las tuberías que consiguen y limpian datos, y de ahí a la práctica de programación de Kernighan y Pike y a la caja de herramientas de Allesina y Wilmes. Sigue con el control de versiones de Bryan y con el flujo completo de Gandrud, de los datos en bruto al documento compilado, y termina con lo que pasa cuando falta: el error de hoja de cálculo que Herndon, Ash y Pollin encontraron al intentar reproducir a Reinhart y Rogoff. Se reparte entre Shotts, Kernighan y Pike, Allesina y Wilmes, Bryan e Ioannidis, y es el oficio que piden los [estándares de entrega](curriculo.qmd#estándares-de-entrega-y-evaluación) del currículo: todo entregable es un repositorio reproducible.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("shotts2019linux", "taylor2016wicked", "janssens2021data", "kernighan1999practice",
+       "allesina2019computing", "bryan2018excuse", "gandrud2020reproducible", "herndon2014does"))
+```
