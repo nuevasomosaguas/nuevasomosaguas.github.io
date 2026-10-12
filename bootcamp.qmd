@@ -13,20 +13,20 @@ format:
 :::
 
 ::: {.callout-tip appearance="simple"}
-**Las guías de laboratorio**, una por semana, están en el [sitio del bootcamp](https://nuevasomosaguas.github.io/bootcamp/), con la [prueba de nivel](https://nuevasomosaguas.github.io/bootcamp/diagnostico/) que dice qué repasar del Bachillerato antes de empezar. Cada guía se entrega como un script que la integración continua ejecuta en limpio.
+**Las guías de laboratorio**, una por semana, están en el [sitio del bootcamp](https://nuevasomosaguas.github.io/bootcamp/), con la [prueba de nivel](https://nuevasomosaguas.github.io/bootcamp/diagnostico/) que dice qué repasar del Bachillerato antes de empezar y los [consejos generales](https://nuevasomosaguas.github.io/bootcamp/consejos/) para trabajar las doce semanas. Quien llega del Bachillerato de Humanidades sin Matemáticas tiene un [puente](https://nuevasomosaguas.github.io/bootcamp/puente/) que empieza antes y termina en la misma prueba de nivel. Cada guía se entrega como un script que la integración continua ejecuta en limpio.
 :::
 
 ## 1. Propósito del curso de nivelación
 
 La educación universitaria tradicional asume que los estudiantes procedentes de itinerarios humanísticos están incapacitados para las matemáticas avanzadas, y que los procedentes de ciencias puras comprenden por intuición la complejidad de la interacción humana. Ninguno de los dos supuestos resiste el contraste.
 
-Rige una política estricta de economía de medios: **un solo entorno computacional** —Julia sobre consola de Unix— y la sustitución de la memorización enciclopédica por la resolución intensiva de series de problemas semanales. La alternancia temprana entre lenguajes se elimina, no se enseña como si fuera inevitable: el estudiante aprende la lógica de asignación en memoria, la indexación y el coste computacional en un único entorno matricial limpio.
+Rige una política estricta de economía de medios: **un solo [entorno](entorno.qmd) computacional** —Julia sobre consola de Unix— y la sustitución de la memorización enciclopédica por la resolución intensiva de series de problemas semanales. La alternancia temprana entre lenguajes se elimina, no se enseña como si fuera inevitable: el estudiante aprende la lógica de asignación en memoria, la indexación y el coste computacional en un único entorno matricial limpio.
 
 ---
 
 ## 2. Alcance: nivelación, no adelanto del currículo
 
-El bootcamp no compite con la carrera en profundidad: compite contra la parálisis inicial. Cubrir en noventa días la teoría de juegos avanzada, los modelos de agentes, los grafos causales de Pearl o la cliodinámica no lineal produciría familiaridad superficial con un vocabulario, no competencia. Esas materias exigen una maduración teórica que solo cabe en los cursos intermedios y avanzados del grado, y por eso están fuera de este programa.
+El bootcamp no compite con la carrera en profundidad: compite contra la parálisis inicial. Cubrir en noventa días la teoría de juegos avanzada, los modelos de agentes, los grafos causales de Pearl o la cliodinámica no lineal produciría familiaridad superficial con un vocabulario, no competencia. Esas materias exigen una maduración teórica que solo cabe en los cursos intermedios y avanzados del [grado](curriculo.qmd), y por eso están fuera de este programa.
 
 Lo que el verano entrega es **amplitud estratégica**; la **profundidad operativa** es el trabajo de los cuatro años.
 
@@ -41,10 +41,10 @@ Lo que el verano entrega es **amplitud estratégica**; la **profundidad operativ
 | Dimensión | Bootcamp (12 semanas) | Grado de 4 años (20 asignaturas) |
 |:---|:---|:---|
 | **Enfoque** | Nivelación y fluidez operativa. | Derivación y réplica estricta. |
-| **Matemáticas** | Álgebra matricial, cálculo multivariante y probabilidad axiomática. | Optimización estocástica, teoría de la información y variables latentes. |
-| **Modelos** | Tablas de vida y matrices de Leslie. | Identificación causal, juegos, redes, agentes y cliodinámica. |
-| **Cómputo** | Julia sobre consola de Unix, sin librerías de caja negra. | Julia y R, cómputo distribuido y poblaciones sintéticas. |
-| **Evaluación** | Series de problemas y una replicación demográfica. | Prueba de la pizarra (*Blackboard Defence*), sin código delante. |
+| **Matemáticas** | Álgebra matricial, cálculo multivariante y probabilidad axiomática. | Teoría de la información, inferencia bayesiana jerárquica, sistemas dinámicos no lineales y variables latentes. |
+| **Modelos** | Regresión, contagio social, tablas de vida y matrices de Leslie. | Identificación causal, juegos, redes, agentes y cliodinámica. |
+| **Cómputo** | Julia sobre consola de Unix, con el núcleo numérico programado desde primeros principios. | Julia y R, cómputo distribuido y poblaciones sintéticas. |
+| **Evaluación** | Once laboratorios con integración continua, la prueba de la pizarra y una replicación demográfica. | Prueba de la pizarra (*Blackboard Defence*), sin código delante. |
 
 ---
 
@@ -56,9 +56,9 @@ Lo que el verano entrega es **amplitud estratégica**; la **profundidad operativ
 
 %%{init: {"flowchart": {"nodeSpacing": 26, "rankSpacing": 42, "padding": 28, "wrappingWidth": 460, "useMaxWidth": true}}}%%
 flowchart TB
-    F1["Fase I · Semanas 1-4<br/>Geometría matricial y entorno de cálculo<br/>Espacios vectoriales · QR · POSIX · git · Julia"]
-    F2["Fase II · Semanas 5-8<br/>Cálculo multivariante y probabilidad axiomática<br/>Gradientes · Hessianas · Lagrange · Kolmogorov"]
-    F3["Fase III · Semanas 9-12<br/>Demografía matemática y replicación empírica<br/>Tablas de vida · Euler-Lotka · Leslie · Typst"]
+    F1["Fase I · Semanas 1-4<br/>Geometría matricial y entorno de cálculo<br/>Espacios vectoriales · QR · Regresión · POSIX · git"]
+    F2["Fase II · Semanas 5-8<br/>Cálculo multivariante y probabilidad axiomática<br/>Derivadas · Bayes · Newton y Lagrange · Tablas hash"]
+    F3["Fase III · Semanas 9-12<br/>Demografía matemática y replicación empírica<br/>Tablas de vida · Euler-Lotka · Leslie · Proyección"]
 
     F1 --> F2 --> F3
 
@@ -75,28 +75,31 @@ El orden no es arbitrario. El álgebra lineal y la geometría analítica ocupan 
 * **Álgebra lineal geométrica:** espacios vectoriales, independencia lineal, bases, dimensión y proyecciones ortogonales. Descomposición en subespacios fundamentales, determinantes y factorización QR.
 * **Arquitectura del sistema:** estándar POSIX, navegación en consola de Unix, control de versiones con `git`, tuberías y redirecciones de flujos de texto.
 * **Computación vectorial:** implementación matricial desde primeros principios en Julia. Indexación de memoria contigua frente a no contigua y coste computacional.
+* **La regresión como proyección:** mínimos cuadrados por QR, el teorema de Gauss-Markov comprobado por Monte Carlo, el apalancamiento y la distancia de Cook. El proyecto de cierre de la fase estima una ecuación de salarios con los microdatos de la Encuesta de Estructura Salarial del INE.
 
-**Textos de referencia:** Gilbert Strang — *Linear Algebra and Its Applications*; Brian W. Kernighan & Rob Pike — *The Practice of Programming* (caps. 1-3).
+**Textos de referencia:** Gilbert Strang — [*Linear Algebra and Its Applications*](biblioteca.qmd#strang2005linear); Brian W. Kernighan & Rob Pike — [*The Practice of Programming*](biblioteca.qmd#kernighan1999practice) (cap. 1).
 
 ### Fase II: cálculo multivariante y probabilidad axiomática (semanas 5 a 8)
 
 **Objetivo:** formalizar la probabilidad bajo la estructura de Kolmogorov y dominar la optimización analítica de funciones escalares y vectoriales.
 
-* **Cálculo en varias variables:** gradientes, matrices hessianas, desarrollos de Taylor multivariantes y optimización con restricciones de igualdad mediante multiplicadores de Lagrange.
-* **Probabilidad axiomática:** espacios de probabilidad, probabilidad condicional, regla de Bayes, variables aleatorias discretas y continuas, esperanza, varianza y momentos.
-* **Estructuras de datos y complejidad:** arreglos, listas enlazadas, tablas *hash* y complejidad temporal y espacial, $O(n)$ frente a $O(n^2)$.
+* **La derivada como dinámica:** tasas de cambio y ecuaciones diferenciales, integradas por el método de Euler y con un integrador de paso adaptativo; el contagio de normas y creencias con el modelo SIR, y el caos de May.
+* **Probabilidad axiomática:** espacios de probabilidad, probabilidad condicional, regla de Bayes, variables aleatorias discretas y continuas, esperanza, varianza y momentos. La regla de Bayes, sobre una rejilla: la actualización secuencial, la decisión con una pérdida asimétrica, el intervalo de confianza frente al de credibilidad y la respuesta aleatorizada de Warner.
+* **Cálculo en varias variables:** gradientes, matrices hessianas, desarrollos de Taylor multivariantes, el ascenso de gradiente y el método de Newton para estimar un modelo logístico por máxima verosimilitud, y optimización con restricciones de igualdad mediante multiplicadores de Lagrange, con la máxima entropía como ejemplo.
+* **Estructuras de datos y complejidad:** arreglos, listas enlazadas, tablas *hash* y complejidad temporal y espacial: unir dos registros con bucles anidados cuesta $O(nm)$, y con una tabla *hash*, $O(n + m)$.
 
-**Textos de referencia:** Carl P. Simon & Lawrence Blume — *Mathematics for Economists*; Joseph K. Blitzstein & Jessica Hwang — *Introduction to Probability*.
+**Textos de referencia:** Gilbert Strang — [*Calculus*](biblioteca.qmd#strang1991calculus); Carl P. Simon & Lawrence Blume — [*Mathematics for Economists*](biblioteca.qmd#simon1994mathematics); Joseph K. Blitzstein & Jessica Hwang — [*Introduction to Probability*](biblioteca.qmd#blitzstein2019introduction); Brian W. Kernighan & Rob Pike — [*The Practice of Programming*](biblioteca.qmd#kernighan1999practice) (cap. 2).
 
 ### Fase III: demografía matemática y replicación empírica (semanas 9 a 12)
 
 **Objetivo:** conectar el aparato formal con las restricciones biológicas y poblacionales mediante la replicación estricta de modelos clásicos.
 
-* **Demografía formal:** construcción paso a paso de tablas de mortalidad, tasas de supervivencia, esperanza de vida temporal y deducción de la ecuación de Euler-Lotka.
-* **Matrices de Leslie:** proyecciones discretas de cohortes de edad por multiplicación matricial repetida y análisis espectral de los autovalores de convergencia.
-* **Tipografía científica y canalizaciones:** maquetación de informes en Typst o Quarto con código ejecutable integrado.
+* **La tabla de vida:** construcción paso a paso de la tabla de mortalidad de 2024 a partir de los microdatos de defunciones del INE, con la exposición de Lexis; tasas de supervivencia, esperanza de vida temporal y la caída de 2020.
+* **Fecundidad y reproducción:** tasas por edad, tasa neta de reproducción, deducción de la ecuación de Euler-Lotka y tasa intrínseca de crecimiento, y el efecto tempo de Bongaarts y Feeney.
+* **Matrices de Leslie:** proyecciones discretas de cohortes de edad por multiplicación matricial repetida, el método de la potencia, el autovalor dominante y la estructura estable; el valor reproductivo, la inercia demográfica y la migración neta por el método residual.
+* **Tipografía científica y canalizaciones:** informes en Typst con todos los números leídos de la salida del código.
 
-**Textos de referencia:** Kenneth W. Wachter — *Essential Demographic Methods*; Samuel H. Preston, Patrick Heuveline & Michel Guillot — *Demography*.
+**Textos de referencia:** Kenneth W. Wachter — [*Essential Demographic Methods*](biblioteca.qmd#wachter2014essential); Samuel H. Preston, Patrick Heuveline & Michel Guillot — [*Demography*](biblioteca.qmd#preston2001demography); Gilbert Strang — [*Linear Algebra and Its Applications*](biblioteca.qmd#strang2005linear) (cap. 5); INE — [*Tablas de mortalidad. Metodología*](https://www.ine.es/metodologia/t20/t2020319a.pdf).
 
 ---
 
@@ -104,17 +107,17 @@ El orden no es arbitrario. El álgebra lineal y la geometría analítica ocupan 
 
 No hay exámenes de opción múltiple ni ensayos cualitativos. El rendimiento se calibra con dos instrumentos, sobre una dedicación estimada de 25-30 horas semanales.
 
-1. **Series semanales de problemas.** Ocho entregas con derivaciones analíticas a mano y scripts auditables en la terminal.
-2. **Ejercicio de replicación empírica.** Cada estudiante recibe una matriz de microdatos censales o de registros de mortalidad anonimizados y entrega un repositorio reproducible con:
-   * el script que limpia la muestra y aplica la proyección sin librerías externas de caja negra;
-   * un informe de dos páginas en Typst donde se deriven las ecuaciones de las tablas de vida, se presenten los vectores de proyección y se evalúe la tasa intrínseca de crecimiento;
+1. **Laboratorios semanales.** Once entregas, de la semana 1 a la 11, cada una con un script que la integración continua ejecuta en limpio y una prueba de la pizarra en la que se deriva a mano lo que el script calcula.
+2. **Ejercicio de replicación empírica.** Cada estudiante recibe una comunidad autónoma y, con los microdatos públicos de defunciones del INE, entrega un repositorio reproducible con:
+   * un script de consola que extrae las defunciones de su comunidad, y un script de Julia que construye sus tablas de vida, su tasa intrínseca de crecimiento, su matriz de Leslie y una proyección a treinta años, con el cálculo programado desde primeros principios y paquetes externos solo para las figuras;
+   * un informe de dos páginas en Typst donde se deriven las ecuaciones de las tablas de vida, se presenten los vectores de proyección y se evalúe la tasa intrínseca de crecimiento, con todos los números leídos de la salida del script;
    * una defensa oral individual en la pizarra, derivando los autovectores de la matriz de Leslie y respondiendo a objeciones directas.
 
-El proyecto es de replicación, no de creación libre: reconstruir de forma exacta una tabla de vida y una matriz de proyección con microdatos reales evita el ajuste *ad hoc* de parámetros que premia la invención de modelos sin identificación formal.
+El proyecto es de replicación, no de creación libre: reconstruir una tabla de vida y una matriz de proyección con microdatos reales, hasta quedar a milésimas de año de la esperanza de vida que publica el INE en todas las comunidades salvo Ceuta y Melilla, que quedan a menos de una centésima, evita el ajuste *ad hoc* de parámetros que premia la invención de modelos sin identificación formal.
 
 Todo trabajo cuya compilación falle en limpio en el entorno de pruebas recibe calificación nula.
 
 ::: {.callout-tip}
 ### ¿Eres un estudiante autodidacta?
-Puedes seguir este bootcamp a tu propio ritmo con la [guía autodidacta](guia_autodidacta.qmd) y el repositorio de laboratorios. Todo el material —series de problemas, datos y scripts— es abierto.
+Puedes seguir este bootcamp a tu propio ritmo: las guías, los datos y los tests de cada semana están abiertos en el [sitio del bootcamp](https://nuevasomosaguas.github.io/bootcamp/), y los tests se ejecutan igual en tu máquina. Para lo que viene después, la [guía autodidacta](guia_autodidacta.qmd) organiza el grado en cuatro hitos.
 :::
