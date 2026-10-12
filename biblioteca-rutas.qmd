@@ -161,3 +161,16 @@ ruta(c("livibacci2025concise", "livibacci1993introduccion", "wachter2014essentia
        "obrien2014age", "mills2011introducing", "wrigley1981population", "case2020deaths",
        "ruhm2019drivers", "jerven2013poor"))
 ```
+
+## Clase y movilidad social
+
+Cuánto decide la cuna dónde acaba cada cual, y por qué. La ruta empieza con el logro de estatus de Blau y Duncan, la tradición cuantitativa frente a la que Erikson y Goldthorpe definieron su análisis de clases y su flujo constante, y pasa por las dos formas rivales de medir la clase, la de Goldthorpe y la neomarxista de Wright, con la explotación de Roemer deducida de la desigualdad de activos. Sigue con los mecanismos: Boudon y la formalización de Breen y Goldthorpe, en la que cada familia evita ante todo bajar de clase, y la señal de Spence, un título que puede valer aunque no enseñe nada. Después mide cuánto dura la ventaja: con apellidos raros y genealogías de siglos, Clark la encuentra mucho más persistente que lo que dicen las correlaciones entre padres e hijos, y la atribuye a la herencia genética. La ruta termina discutiendo esa causa, con la genética del logro educativo de Plomin, la crianza genética de Kong, los diseños entre hermanos que separan el efecto directo de los genes y la lectura igualitaria de Harden. Se reparte entre Erikson y Goldthorpe, Hedström, Breen y Goldthorpe, Gibbons, Clark, Plomin y Howe, y acompaña a la asignatura [2.2 del currículo](curriculo.qmd#asignatura-2-2), *Sociología analítica y mecanismos generativos*, que usa la estratificación y la movilidad de clase como banco de pruebas, y a la [2.1](curriculo.qmd#asignatura-2-1) en los diseños entre hermanos. Los laboratorios [*¿Cuántas generaciones dura la cuna?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/37-movilidad-markov/) y [*Todos con máster*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/50-todos-con-master/) ponen a funcionar en el navegador la movilidad como cadena de Markov y la educación como señal.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("blau1978american", "erikson1992constant", "wright1985classes", "roemer1982general",
+       "boudon1974education", "breen1997explaining", "spence1973job", "clark2015son",
+       "clark2023inheritance", "plomin2018blueprint", "kong2018nature", "howe2022withinsibship",
+       "harden2021genetic"))
+```
