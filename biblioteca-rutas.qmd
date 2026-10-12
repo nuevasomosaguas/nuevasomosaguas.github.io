@@ -28,6 +28,19 @@ ruta(c("cohen1978karl", "elster1985making", "roemer1982general", "hollander2008e
        "kornai1992socialist", "erikson1992constant", "wright1985classes"))
 ```
 
+## Causalidad
+
+Qué es una causa y cómo se demuestra que algo la tiene. La ruta va de la metafísica a las tres nociones de causalidad que conviven en la sociología, de ahí a los grafos de Pearl y a sus trampas más conocidas, la paradoja de Simpson, el sesgo del colisionador y los controles que estropean una estimación, y después a los resultados potenciales, que Hernán y Robins unen con los grafos. Sigue con el diseño de investigación, de las variables instrumentales a los experimentos naturales, y con tres advertencias: el problema de la reflexión, el ensayo cuyos tratados encuentran empleo a costa de los no tratados y lo que un ensayo aleatorizado no dice. Termina donde empieza el [currículo](curriculo.qmd#desacople-entre-mecanismo-e-identificación): identificar un efecto no es explicarlo, y Manzo reúne la inferencia causal con los modelos de agentes. Se reparte entre Pearl, Imbens y Rubin, Angrist y Pischke y la frontera. Los laboratorios [*La paradoja de Simpson en Berkeley*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/01-berkeley/), [*El talento y el esfuerzo de los admitidos*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/03-berkson/), [*¿Sirven las clases particulares?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/04-clases-particulares/), [*El problema de la reflexión*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/40-problema-de-la-reflexion/) y [*El programa que funciona y no sirve*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/51-el-programa-que-funciona/) ponen sus trampas a funcionar en el navegador.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("mumford2014causation", "goldthorpe2001causation", "pearl2016causal", "bickel1975sex",
+       "berkson1946limitations", "cinelli2024crash", "imbens2015causal", "hernan2020causal",
+       "morgan2014counterfactuals", "huntingtonklein2021effect", "angrist2009mostly", "dunning2012natural",
+       "manski1993identification", "crepon2013labor", "deaton2018understanding", "manzo2022agentbased"))
+```
+
 ## Violencia y conflicto
 
 De por qué los humanos somos poco agresivos en el trato cotidiano y capaces de una violencia planificada extraordinaria a por qué hay guerras y cómo se reparte la violencia dentro de ellas, y de la diversidad étnica a la exclusión y el agravio como causas del conflicto. La ruta termina en los umbrales: la revolución que estalla cuando cae la falsificación de preferencias y la rebelión que se genera agente a agente. Los laboratorios [*La revolución que nadie vio venir*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/06-kuran/), [*Rebeldes y policías*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/35-rebeldes-y-policias/) y [*La ley de Lanchester*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/36-ley-de-lanchester/) los ponen a funcionar en el navegador.
