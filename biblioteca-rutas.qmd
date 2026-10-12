@@ -150,7 +150,7 @@ Cuántos nacen, cuántos mueren, cuántos se mudan y a qué edad: casi todo lo s
 ruta(c("livibacci2025concise", "livibacci1993introduccion", "wachter2014essential", "preston2001demography",
        "vinuesa1998demografia", "lotka1931extinction", "keyfitz2005applied", "vaupel1979impact",
        "obrien2014age", "mills2011introducing", "wrigley1981population", "reher1990town",
-       "reher2004demographic", "reher1998family", "reher2021aftermath", "case2020deaths",
+       "reher2004demographic", "reher1996familia", "reher1998family", "reher2021aftermath", "case2020deaths",
        "ruhm2019drivers", "jerven2013poor"))
 ```
 
