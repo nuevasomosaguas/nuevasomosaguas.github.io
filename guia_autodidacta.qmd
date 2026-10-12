@@ -75,7 +75,7 @@ Cada fase de validación tiene sus propios criterios, y todas comparten cuatro:
 * **Un clon limpio basta.** El repositorio, recién clonado en el [entorno](entorno.qmd) del programa, produce el informe completo con una sola orden. Las versiones quedan fijadas en `Project.toml` y `Manifest.toml`.
 * **Ninguna cifra tecleada a mano.** Todo número, tabla y figura del informe sale del código, con la semilla fijada.
 * **La expectativa, antes que el resultado.** Lo que se espera encontrar se escribe y se registra en `git` antes de mirar los datos de resultado o de lanzar la simulación: la fecha del *commit* es la prueba.
-* **Audita otro.** Alguien distinto del autor reproduce el informe desde cero y lo interroga. A falta de otra persona, el modelo de lenguaje, con el interrogatorio de la [sección 4](#el-modelo-de-lenguaje-como-claustro-socrático).
+* **Audita otro.** Alguien distinto del autor reproduce el informe desde cero y lo interroga. A falta de otra persona, el modelo de lenguaje, con el interrogatorio de la [sección 4](#el-modelo-de-lenguaje-como-claustro-socrático). Si se ha usado un modelo, en la auditoría o durante el trabajo, el registro de ese debate va al repositorio, como pide la [política de inteligencia artificial](politica_ia.qmd).
 
 ### Hito I: el andamiaje formal (~800 horas netas)
 

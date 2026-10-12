@@ -16,7 +16,7 @@ source("refs.R")
 
 ## El fin de la falsa dicotomía: ni prohibición ni capitulación
 
-La universidad burocrática oscila entre dos respuestas igualmente estériles ante la inteligencia artificial generativa: la prohibición tecnofóbica, inútil y contraria al progreso instrumental, o la claudicación complaciente que acepta texto sintético mediocre como sucedáneo del pensamiento propio.
+La universidad burocrática oscila entre dos respuestas igualmente estériles ante la inteligencia artificial generativa: la prohibición, inútil y contraria al progreso instrumental, o la claudicación complaciente que acepta texto sintético mediocre como sucedáneo del pensamiento propio.
 
 La **Nueva Somosaguas** rechaza ambos extremos. Asume los modelos de lenguaje y los entornos de inferencia local como un **exoesqueleto cognitivo**: una herramienta para reducir a cero el coste temporal de la tarea mecánica —raspado de datos, conversión de formatos, depuración sintáctica— y desplazar el esfuerzo intelectual hacia donde la máquina es ciega: la identificación causal, la formulación de hipótesis generativas y el rigor matemático.
 
@@ -30,20 +30,20 @@ La tecnología es el siervo; el rigor intelectual es el criterio. Ningún estudi
 
 ### El principio socrático: prohibición de respuestas cerradas
 
-La infraestructura de cómputo y los agentes RAG institucionales están gobernados por directivas que emulan la pedagogía del *CS50 Duck*. El modelo tiene vetado resolver ejercicios, redactar memorandos evaluables o entregar derivaciones acabadas. Su función es actuar como interlocutor dialéctico: señalar contradicciones en las premisas del alumno, cuestionar la completitud de los supuestos, advertir de complejidades algorítmicas ineficientes —un $O(n^2)$ donde cabía un $O(n \log n)$— y conducir mediante preguntas hacia la deducción autónoma.
+La infraestructura de cómputo y los agentes RAG institucionales están gobernados por directivas que emulan la pedagogía del *CS50 Duck*, como la instrucción de sistema que trae la [guía autodidacta](guia_autodidacta.qmd#el-modelo-de-lenguaje-como-claustro-socrático). El modelo tiene vetado resolver ejercicios, redactar memorandos evaluables o entregar derivaciones acabadas. Su función es actuar como interlocutor dialéctico: señalar contradicciones en las premisas del alumno, cuestionar la completitud de los supuestos, advertir de complejidades algorítmicas ineficientes —un $O(n^2)$ donde cabía un $O(n \log n)$— y conducir mediante preguntas hacia la deducción autónoma.
 
 De ahí se sigue una obligación, no solo un permiso: el estudiante debe usar el modelo **contra** su propio trabajo. Instruirlo para que busque colisionadores o variables omitidas en su DAG, proponga explicaciones alternativas basadas en incentivos y critique la elección de *priors*. La memoria de cada trabajo incluye el registro de ese debate adversarial y la justificación de cómo se defendió o se corrigió el modelo.
 
 ### Asimetría epistemológica: asociación frente a causalidad
 
-Todo estudiante debe asimilar un límite computacional inviolable. Los modelos de lenguaje son optimizadores autorregresivos de patrones estadísticos en espacios latentes continuos: manejan asociaciones, no estructuras generativas. No poseen noción intrínseca de intervención, y por tanto no operan el $do$-cálculo aunque sepan describirlo con fluidez. Ese límite no se acepta de oídas: en la asignatura 4.4 el estudiante deriva la autoatención con Jurafsky y Martin y comprueba que en ella no hay ningún operador de intervención.
+Todo estudiante debe asimilar un límite computacional inviolable. Los modelos de lenguaje son optimizadores autorregresivos de patrones estadísticos en espacios latentes continuos: manejan asociaciones, no estructuras generativas. No poseen noción intrínseca de intervención, y por tanto no operan el $do$-cálculo aunque sepan describirlo con fluidez. Ese límite no se acepta de oídas: en la [asignatura 4.4](curriculo.qmd#asignatura-4-4) el estudiante deriva la autoatención con Jurafsky y Martin y comprueba que en ella no hay ningún operador de intervención.
 
 * **Prohibición de delegación causal.** Ninguna IA decide si un conjunto de variables satisface el criterio de la puerta trasera, ni si un estimador sufre sesgo de colisionador. El grafo acíclico dirigido y la justificación teórica del mecanismo DBO son concebidos y defendidos por el investigador humano, sin excepción.
-* **Temperatura cero en consulta.** Las consultas analíticas sobre el canon y los repositorios institucionales se ejecutan con muestreo determinista ($T = 0$), para erradicar el relleno retórico y la fabulación estocástica.
+* **Temperatura cero en consulta.** Las consultas analíticas sobre el canon y los repositorios institucionales se ejecutan con muestreo determinista ($T = 0$) cuando el modelo lo permite, para que la misma pregunta dé la misma respuesta y la consulta se pueda auditar. Eso hace la respuesta repetible, no verdadera: un modelo fabula con la misma soltura a temperatura cero. Lo que la ancla es la cita obligatoria de la [arquitectura RAG](#la-arquitectura-rag-y-el-grounding).
 
 ### Transparencia y trazabilidad del código
 
-Se permite y se fomenta el uso de asistentes de código para agilizar la escritura en Julia, SQL o consola de Unix. Rige a cambio la **regla de autoría responsable**: el estudiante responde de cada byte entregado, y desconocer la lógica de una función generada por una máquina se califica como incompetencia técnica, no como descuido.
+Se permite y se fomenta el uso de asistentes de código para agilizar la escritura en Julia, R, SQL o consola de Unix. Rige a cambio la **regla de autoría responsable**: el estudiante responde de cada byte entregado, y desconocer la lógica de una función generada por una máquina se califica como incompetencia técnica, no como descuido.
 
 En términos operativos, toda función de origen algorítmico entra en el repositorio acompañada de tres cosas:
 
@@ -85,7 +85,7 @@ flowchart TD
     class E alumno
 ```
 
-1. **Grounding estricto.** Los entornos RAG institucionales y los tutores locales se alimentan de las `r n_obras` fuentes del pensum, más las que se incorporen superando los mismos estándares. Cada afirmación fáctica del sistema va acompañada de su cita y de la trazabilidad directa al texto fuente.
+1. **Grounding estricto.** Los entornos RAG institucionales y los tutores locales se alimentan de la [biblioteca](biblioteca.qmd): las `r n_obras` obras del núcleo y las `r n_secundarias` curadas del área secundaria, con cuatro reglas de recuperación. El núcleo se recupera y se cita primero. Un pasaje del área secundaria llega etiquetado con su papel y con la obra del núcleo de la que cuelga, nunca como el consenso del canon. Una obra discutida trae consigo las que la contrastan. Y lo que está en propuesta no se indexa hasta que se cura. Cada afirmación fáctica del sistema va acompañada de su cita y de la trazabilidad directa al texto fuente.
 2. **Auditoría de alucinaciones como evaluación.** Parte del adiestramiento avanzado consiste en localizar los fallos del modelo: dónde confunde correlación con causalidad, dónde yerra en la inducción estadística, cuándo inventa una referencia. Encontrar el error de la máquina cuenta como evidencia de dominio.
 
 ---
@@ -93,5 +93,7 @@ flowchart TD
 ## Gobernanza del cómputo y privacidad de los datos
 
 * **Procesamiento en local.** Los análisis con microdatos censales anonimizados o registros sensibles se ejecutan exclusivamente en los servidores GPU del campus, sobre modelos abiertos cuantizados, sin enviar tráfico a intermediarios comerciales.
+* **Fuera del campus.** Quien sigue el [bootcamp](bootcamp.qmd) o la [guía autodidacta](guia_autodidacta.qmd) no tiene servidores de la facultad, y rige el mismo criterio con sus propios medios: los datos públicos pueden ir a cualquier servicio, y los que se ceden con condiciones de uso, solo a un modelo abierto que corra en la propia máquina.
+* **Las licencias de los datos mandan.** Antes de pegar datos en un servicio de IA se leen sus condiciones de uso. La licencia de usuario final del UK Data Service, con la que se descarga Understanding Society, prohíbe usar con sus datos herramientas en línea, incluidas las de IA generativa, sin permiso escrito del proveedor. La información estadística del INE, en cambio, se reutiliza, salvo que se indique lo contrario, con la licencia Creative Commons Reconocimiento 4.0.
 * **Ética de la investigación con trazas digitales.** Los proyectos que observan conducta en plataformas o experimentan sobre usuarios se evalúan con los cuatro principios de Salganik en *Bit by Bit*: respeto por las personas, beneficencia, justicia y respeto por la ley y el interés público. Se razona desde los principios, no desde una lista de comprobación, porque la investigación digital plantea casos que ninguna norma previó.
-* **Minería de textos para investigación.** La indexación de literatura técnica para los sistemas RAG institucionales se ampara en el derecho de cita y en las excepciones de minería de textos y datos con fines de investigación científica del marco legal vigente.
+* **Minería de textos para investigación.** La indexación de literatura técnica para los sistemas RAG institucionales se ampara en el derecho de cita y en el artículo 67 del Real Decreto-ley 24/2021, que transpone la Directiva (UE) 2019/790. Permite la minería de textos y datos de obras accesibles de forma legítima, salvo que sus titulares la hayan reservado expresamente, y deja a los organismos de investigación conservar las copias para verificar los resultados. Por eso el corpus solo indexa ejemplares obtenidos de forma legítima.
