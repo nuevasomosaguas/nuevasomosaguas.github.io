@@ -1,7 +1,7 @@
 ---
 title: "Currículo"
 subtitle: "Estructura de 4 años y 20 asignaturas del grado en ciencias sociales analíticas y cuantitativas"
-description: "Cuatro años y 20 asignaturas con Julia como entorno nuclear: un texto matriz y un cuaderno reproducible por materia, y el mecanismo separado de la identificación causal."
+description: "Cuatro años y 20 asignaturas con Julia como entorno nuclear: pocos textos matriz y un cuaderno reproducible por materia, y el mecanismo separado de la identificación causal."
 format:
   html:
     toc: true
@@ -18,11 +18,11 @@ El plan de estudios de la **Nueva Somosaguas** no es una antología de deseos bi
 
 ### 1. Julia como entorno nuclear
 
-El llamado *two-language problem* —prototipar en un lenguaje cómodo y reescribir en otro rápido— se resuelve eliminándolo del primer año en lugar de enseñarlo como si fuera inevitable. **Julia** es el lenguaje vehicular para cálculo numérico, álgebra computacional, modelos basados en agentes y ecuaciones diferenciales estocásticas. **R** se conserva como herramienta de biblioteca, no como entorno general: econometría aplicada tabular, bioestadística y psicometría empírica.
+El llamado *two-language problem* —prototipar en un lenguaje cómodo y reescribir en otro rápido— se resuelve eliminándolo del primer año en lugar de enseñarlo como si fuera inevitable. **Julia** es el lenguaje vehicular para cálculo numérico, álgebra lineal, modelos basados en agentes y ecuaciones diferenciales. **R** se conserva como herramienta de biblioteca, no como entorno general: econometría aplicada tabular, bioestadística y psicometría empírica.
 
 ### 2. Puente matricial explícito
 
-El álgebra lineal se enseña con determinantes y matrices, no sin ellos. Frente al enfoque puramente abstracto de Axler, el grado adopta un binomio aplicado —Strang, o Boyd y Vandenberghe— que conecta los operadores lineales con la descomposición QR, los valores singulares, las matrices de Leslie y el análisis de Markov multivariante. El estudiante debe poder pasar del operador al código sin un salto de fe.
+El álgebra lineal se enseña con determinantes y matrices, no sin ellos. Frente al enfoque puramente abstracto de Axler, el grado adopta el aplicado de Strang, que conecta los operadores lineales con la descomposición QR, los valores singulares, las matrices de Leslie y el análisis de Markov multivariante. Boyd y Vandenberghe lo acompañan en los mínimos cuadrados y en la implementación, pero no lo sustituyen: prescinden de los determinantes y no llegan a los autovalores. El estudiante debe poder pasar del operador al código sin un salto de fe.
 
 ### 3. Desacople entre mecanismo e identificación
 
@@ -45,17 +45,17 @@ Cinco asignaturas por curso, tesis incluida.
 
 | Curso | Eje | Enfoque central |
 |:---|:---|:---|
-| **Primer año** | *Fundamentos formales y restricciones materiales* | Cálculo, álgebra computacional, probabilidad axiomática, demografía formal y estructuras de datos. |
+| **Primer año** | *Fundamentos formales y restricciones materiales* | Cálculo, álgebra lineal computacional, probabilidad axiomática, demografía formal y estructuras de datos. |
 | **Segundo año** | *Microfundamentos, biología y diseño causal* | Genética cuantitativa, mecanismos DBO, teoría de juegos, inferencia causal y variables latentes. |
-| **Tercer año** | *Interacción estratégica, redes y dinámica macro* | Redes, modelos de agentes, computación bayesiana, elección pública y transición demográfica. |
+| **Tercer año** | *Redes, agentes, instituciones y dinámica macro* | Redes, modelos de agentes, computación bayesiana, elección pública y transición demográfica. |
 | **Cuarto año** | *Síntesis estructural y validación empírica* | Cliodinámica, evaluación de políticas, cómputo de alto rendimiento, texto como dato y tesis. |
 
 ---
 
 ### Primer año: fundamentos formales y restricciones materiales
 
-#### 1.1. Cálculo multivariante y optimización estocástica
-* **Contenidos:** espacios euclídeos, gradientes, multiplicadores de Lagrange, optimización estática y dinámica.
+#### 1.1. Cálculo multivariante y optimización
+* **Contenidos:** espacios euclídeos, gradientes, teorema de la función implícita y estática comparada, y optimización con y sin restricciones mediante multiplicadores de Lagrange.
 * **Texto matriz:** Carl P. Simon & Lawrence Blume — *Mathematics for Economists*.
 
 #### 1.2. Álgebra lineal computacional
@@ -65,13 +65,14 @@ Cinco asignaturas por curso, tesis incluida.
 #### 1.3. Probabilidad axiomática, inferencia y teoría de la información
 * **Contenidos:** espacios de probabilidad, variables aleatorias discretas y continuas, distribuciones conjuntas, entropía de Shannon e información mutua; estimación, intervalos, contrastes y *bootstrap*, con la inferencia frecuentista y la bayesiana en paralelo.
 * **Textos matriz:** Joseph K. Blitzstein & Jessica Hwang — *Introduction to Probability*; Larry Wasserman — *All of Statistics*, como segunda pasada.
+* **Lectura:** Claude E. Shannon — «A Mathematical Theory of Communication».
 
 #### 1.4. Demografía formal y modelos poblacionales
 * **Contenidos:** ecuación de Euler-Lotka, tablas de vida, matrices de proyección de Leslie, modelos de población estable y descomposición de tasas.
 * **Textos matriz:** Samuel H. Preston, Patrick Heuveline & Michel Guillot — *Demography*; Kenneth W. Wachter — *Essential Demographic Methods*.
 
 #### 1.5. Computación científica y estructuras de datos
-* **Contenidos:** arquitectura de computadores, complejidad temporal y espacial ($O(n)$), algoritmos de búsqueda y ordenación, y programación científica en Julia.
+* **Contenidos:** complejidad temporal y espacial ($O(n)$), estructuras de datos, algoritmos de búsqueda y ordenación, y programación científica en Julia.
 * **Textos matriz:** Ben Lauwens & Allen B. Downey — *Think Julia*; Brian W. Kernighan & Rob Pike — *The Practice of Programming*.
 
 ---
@@ -84,7 +85,7 @@ Cinco asignaturas por curso, tesis incluida.
 * **Lectura preliminar:** Robert Plomin — *Blueprint*.
 
 #### 2.2. Sociología analítica y mecanismos generativos
-* **Contenidos:** individualismo metodológico estructural, esquema de Deseos, Creencias y Oportunidades (DBO), racionalidad acotada y transiciones micro-macro con el bote de Coleman; la estratificación y la movilidad de clase como banco de pruebas del DBO (Breen y Goldthorpe).
+* **Contenidos:** individualismo metodológico estructural, esquema de Deseos, Creencias y Oportunidades (DBO), racionalidad acotada y transiciones micro-macro con la barca de Coleman; la estratificación y la movilidad de clase como banco de pruebas del DBO (Breen y Goldthorpe).
 * **Textos matriz:** James S. Coleman — *Foundations of Social Theory*; Peter Hedström — *Dissecting the Social*.
 * **Lectura preliminar:** Jon Elster — *Explaining Social Behavior*.
 
@@ -93,9 +94,9 @@ Cinco asignaturas por curso, tesis incluida.
 * **Textos matriz:** Robert Gibbons — *Game Theory for Applied Economists*; Ken Binmore — *Playing for Real*; Richard McElreath & Robert Boyd — *Mathematical Models of Social Evolution*.
 * **Lectura preliminar:** Ken Binmore — *Game Theory: A Very Short Introduction*.
 
-#### 2.4. Inferencia causal y econometría estructural
+#### 2.4. Inferencia causal y diseño de investigación
 * **Contenidos:** modelo de resultados potenciales de Rubin, identificación no paramétrica con grafos acíclicos dirigidos, regresión discontinua, variables instrumentales y diferencias en diferencias.
-* **Textos matriz:** Judea Pearl, Madelyn Glymour & Nicholas P. Jewell — *Causal Inference in Statistics*; Joshua D. Angrist & Jörn-Steffen Pischke — *Mostly Harmless Econometrics*.
+* **Textos matriz:** Judea Pearl, Madelyn Glymour & Nicholas P. Jewell — *Causal Inference in Statistics*; Joshua D. Angrist & Jörn-Steffen Pischke — *Mostly Harmless Econometrics*; Guido W. Imbens & Donald B. Rubin — *Causal Inference for Statistics, Social, and Biomedical Sciences*, de consulta para los resultados potenciales.
 * **Lectura preliminar:** Nick Huntington-Klein — *The Effect*.
 
 #### 2.5. Psicometría y modelización de variables latentes
@@ -105,7 +106,7 @@ Cinco asignaturas por curso, tesis incluida.
 
 ---
 
-### Tercer año: interacción estratégica, redes y dinámica macro
+### Tercer año: redes, agentes, instituciones y dinámica macro
 
 #### 3.1. Teoría de redes sociales y difusión
 * **Contenidos:** topología de grafos, medidas de centralidad, modelos de homofilia, umbrales de difusión de Granovetter, contagio complejo y juegos sobre redes.
@@ -116,7 +117,7 @@ Cinco asignaturas por curso, tesis incluida.
 * **Textos matriz:** Joshua Epstein — *Generative Social Science*; Paul E. Smaldino — *Modeling Social Behavior*; Steven F. Railsback & Volker Grimm — *Agent-Based and Individual-Based Modeling*.
 
 #### 3.3. Inferencia bayesiana y computación MCMC
-* **Contenidos:** teorema de Bayes sobre distribuciones continuas, *priors* conjugados y no informativos, Metropolis-Hastings y muestreo de Gibbs para modelos jerárquicos.
+* **Contenidos:** teorema de Bayes sobre distribuciones continuas, *priors* débilmente informativos y regularizadores, modelos jerárquicos y multinivel, y muestreo de la posterior: de Metropolis y Gibbs al Monte Carlo hamiltoniano.
 * **Texto matriz:** Richard McElreath — *Statistical Rethinking*, implementado con Turing.jl o Stan.
 
 #### 3.4. Teoría de la elección pública e instituciones
@@ -124,7 +125,7 @@ Cinco asignaturas por curso, tesis incluida.
 * **Textos matriz:** James M. Buchanan & Gordon Tullock — *The Calculus of Consent*; Dennis C. Mueller — *Public Choice III*; Elinor Ostrom — *Governing the Commons*.
 
 #### 3.5. Transición demográfica y macroeconomía malthusiana
-* **Contenidos:** límites malthusianos, trampas de subsistencia, la Gran Divergencia y modelos unificados de crecimiento.
+* **Contenidos:** límites malthusianos, trampas de subsistencia, transición demográfica, la Gran Divergencia y modelos unificados de crecimiento.
 * **Textos matriz:** Oded Galor — *Unified Growth Theory*; Gregory Clark — *A Farewell to Alms*.
 
 ---
@@ -136,13 +137,13 @@ Cinco asignaturas por curso, tesis incluida.
 * **Textos matriz:** Peter Turchin & Sergey A. Nefedov — *Secular Cycles*; Steven H. Strogatz — *Nonlinear Dynamics and Chaos*; Walter Scheidel — *The Great Leveler*.
 
 #### 4.2. Evaluación cuantitativa de políticas públicas
-* **Contenidos:** análisis coste-beneficio, diseño muestral y ponderación, microdatos censales y de registros administrativos, trazas digitales, paneles longitudinales, experimentos de campo y auditoría de intervenciones estatales.
+* **Contenidos:** diseño muestral y ponderación, microdatos censales y de registros administrativos, trazas digitales, paneles longitudinales, experimentos de campo y auditoría de intervenciones estatales.
 * **Textos matriz:** Matthew J. Salganik — *Bit by Bit: Social Research in the Digital Age*; Sharon L. Lohr — *Sampling: Design and Analysis*.
 * **Práctica:** replicación empírica de políticas laborales, de vivienda y de transferencias asistenciales.
 
 #### 4.3. Computación de alto rendimiento y modelado distribuido
 * **Contenidos:** paralelización en clústeres de cómputo, optimización de memoria en simulaciones a gran escala y canalizaciones reproducibles con control de versiones.
-* **Texto matriz:** Christopher Rackauckas — *Parallel Computing and Scientific Machine Learning*.
+* **Texto matriz:** Christopher Rackauckas — *Parallel Computing and Scientific Machine Learning* (caps. 2, 5, 6, 12, 13 y 18: código serie, paralelismo, MPI, GPU y perfilado; el resto es aprendizaje automático científico).
 * **Lectura:** Jennifer Bryan — «Excuse Me, Do You Have a Moment to Talk About Version Control?».
 * **Práctica:** modelado generativo de poblaciones sintéticas completas.
 
@@ -154,6 +155,7 @@ Cinco asignaturas por curso, tesis incluida.
 #### 4.5. Tesis de grado
 * **Contenidos:** desarrollo de un modelo analítico original o replicación destructiva de un resultado de la literatura empírica.
 * **Lecturas:** John P. A. Ioannidis — «Why Most Published Research Findings Are False»; Joseph P. Simmons, Leif D. Nelson & Uri Simonsohn — «False-Positive Psychology»; Open Science Collaboration — «Estimating the Reproducibility of Psychological Science».
+* **Escritura:** Howard S. Becker — *Writing for Social Scientists*, del área secundaria de la biblioteca, para empezar y terminar la memoria.
 * **Requisitos:** código fuente en repositorio público, datos abiertos y memoria en Typst o Quarto que compile de forma determinista desde la terminal.
 
 ---
