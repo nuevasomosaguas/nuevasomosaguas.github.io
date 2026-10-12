@@ -195,6 +195,21 @@ ruta(c("granovetter1973strength", "blau1977inequality", "watts1998collective", "
 
 **Para simularlo:** [*Un mundo pequeño con pocos atajos*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/38-mundo-pequeno/), [*Las creencias se forman en red*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/09-degroot/) y [*Los umbrales de Granovetter*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/02-granovetter/): la distancia que se desploma al recablear un 1% de los lazos, el consenso por promedios de DeGroot y la cascada que depende del umbral de una sola persona.
 
+### Agentes sociales
+
+Un modelo de agentes construye la sociedad de abajo arriba: muchas personas simuladas, cada una con reglas sencillas, que interactúan entre sí, y un resultado colectivo que nadie ha programado. La ruta empieza con por qué modelizar, con las dieciséis razones de Epstein distintas de predecir y el argumento de Smaldino de que los modelos son estúpidos y por eso hacen falta más, y con el marco de los sistemas adaptativos complejos de Miller y Page y los cursos abiertos del Instituto de Santa Fe. Sigue con el primer modelo de agentes de las ciencias sociales, la segregación de Schelling, en su artículo original y en su libro, y con el oficio: Smaldino, que formaliza cada modelo a la vez con ecuaciones y con agentes, y Railsback y Grimm, que enseñan a programarlos y a documentarlos. Después viene el programa: la ciencia social generativa de Epstein, para quien explicar un fenómeno es hacerlo crecer desde los agentes, la sociología computacional de Squazzoni, la segregación de Schelling rehecha por Bruch y Mare con preferencias estimadas en encuestas, y el agente con emociones, razonamiento y vínculos de *Agent_Zero*. Termina con Manzo: qué hace falta para que un modelo de agentes sirva de prueba causal. Se reparte entre Epstein, Smaldino, Schelling, Railsback y Grimm, Squazzoni, Bruch y Mare y Manzo, y acompaña a la asignatura [3.2 del currículo](curriculo.qmd#asignatura-3-2), *Modelos basados en agentes y sistemas complejos*.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("epstein2008why", "smaldino2017models", "miller2007complex", "santafe2026complexity",
+       "schelling1971dynamic", "schelling1978micromotives", "smaldino2023modeling", "railsback2019agent",
+       "epstein2006generative", "squazzoni2012agentbased", "bruch2006neighborhood", "epstein2014agentzero",
+       "manzo2022agentbased"))
+```
+
+**Para simularlo:** [*La segregación de Schelling*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/05-schelling/), [*Los umbrales de Granovetter*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/02-granovetter/), [*Rebeldes y policías*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/35-rebeldes-y-policias/) y [*La inmunidad que no se ve*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/56-la-inmunidad-que-no-se-ve/): la ciudad que se segrega sin que nadie lo quiera, la cascada que depende de una sola persona, la revuelta de Epstein que estalla si la legitimidad cae de golpe y no si cae poco a poco, y un contagio en el que vacunar a una parte protege a todos.
+
 ## Para saber qué vale lo que se sabe
 
 ### Causalidad
