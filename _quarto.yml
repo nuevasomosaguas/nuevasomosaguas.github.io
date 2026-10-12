@@ -55,7 +55,7 @@ website:
         href: entorno.qmd
       - text: "Política de inteligencia artificial"
         href: politica_ia.qmd
-      - text: "Debate público"
+      - text: "Manual de bolsillo"
         href: manual_bolsillo.qmd
       - text: "Biblioteca"
         menu:
