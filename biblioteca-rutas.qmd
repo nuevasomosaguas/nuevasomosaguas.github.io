@@ -124,3 +124,14 @@ Lo que se hace con el ratón no deja rastro, y lo que se hace escribiendo órden
 ruta(c("shotts2019linux", "taylor2016wicked", "janssens2021data", "kernighan1999practice",
        "allesina2019computing", "bryan2018excuse", "gandrud2020reproducible", "herndon2014does"))
 ```
+
+## NLP y datos textuales
+
+El texto es el dato más abundante de las ciencias sociales y el más difícil de medir. La ruta empieza con el primer modelo estadístico del lenguaje, las vocales y consonantes que Markov contó en *Eugenio Oneguin*, y con las aproximaciones al inglés por letras y por palabras con las que Shannon midió su entropía. Pasa por la terminal, la parte que comparte con la ruta [POSIX e investigación reproducible](#posix-e-investigación-reproducible): las tuberías de Janssens que descargan y limpian un corpus antes de modelizarlo. Sigue con Jurafsky y Martin, de los n-gramas a los *Transformer*, y con Grimmer, Roberts y Stewart, que convierten el texto en medida, tratamiento, resultado o confusor dentro de un diseño de investigación, y termina con el contrapeso de Gigerenzer: los modelos de lenguaje asocian, pero no intervienen. Se reparte entre Blitzstein, Shannon, Shotts, Jurafsky y Grimmer, y acompaña a la asignatura [4.4 del currículo](curriculo.qmd#asignatura-4-4), *Texto como dato y procesamiento del lenguaje*.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("markov2006example", "shannon1948mathematical", "janssens2021data", "jurafsky2026speech",
+       "grimmer2022text", "gigerenzer2022how"))
+```
