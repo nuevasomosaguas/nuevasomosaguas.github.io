@@ -77,8 +77,9 @@ El primer año da por sabido lo que entrega el [bootcamp](bootcamp.qmd): cálcul
 * **Lectura:** Claude E. Shannon — «A Mathematical Theory of Communication».
 
 #### 1.4. Demografía formal y modelos poblacionales {#asignatura-1-4}
-* **Contenidos:** ecuación de Euler-Lotka, tablas de vida, matrices de proyección de Leslie, modelos de población estable y descomposición de tasas.
+* **Contenidos:** ecuación de Euler-Lotka, tablas de vida, matrices de proyección de Leslie, modelos de población estable y descomposición de tasas; al final, de la tabla de vida al análisis de supervivencia con datos individuales.
 * **Textos matriz:** Samuel H. Preston, Patrick Heuveline & Michel Guillot — *Demography*; Kenneth W. Wachter — *Essential Demographic Methods*.
+* **Ampliación:** Melinda C. Mills — *Introducing Survival and Event History Analysis*, que lleva la tabla de vida a las historias individuales: la función de riesgo, el estimador de Kaplan-Meier, que es una tabla de vida con censura, la regresión de Cox, los modelos de tiempo discreto y los riesgos competitivos, con el nacimiento de un hijo, una unión, un empleo o una migración como eventos. Es el puente entre esta asignatura y la regresión de la 2.4. Su código está en R, pero aquí se lee por los métodos y el cuaderno sigue en Julia.
 
 #### 1.5. Computación científica y estructuras de datos {#asignatura-1-5}
 * **Contenidos:** complejidad temporal y espacial ($O(n)$), estructuras de datos, algoritmos de búsqueda y ordenación, y programación científica en Julia.
