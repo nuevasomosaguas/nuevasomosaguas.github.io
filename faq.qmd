@@ -109,11 +109,11 @@ Para evitar la dependencia no reflexiva, las evaluaciones decisivas se realizan 
 
 ---
 
-### 11. ¿Por qué Julia como lenguaje principal, y no Python o R?
+### 11. ¿Por qué Julia y R, y no Python?
 
 Julia resuelve el problema de los dos lenguajes: combina la expresividad de una sintaxis próxima a la notación matemática con la velocidad de ejecución y la eficiencia en memoria del código compilado. El estudiante puede implementar simulaciones basadas en agentes, optimización dinámica y cálculo matricial a gran escala sin delegar el núcleo del cómputo en una caja negra ajena.
 
-Python y R se conservan como herramientas auxiliares, cada una en lo que hace mejor: la ingesta y manipulación de datos tabulares, y el análisis microeconométrico, bioestadístico y psicométrico. Los problemas interactivos están en R por una razón práctica: webR lo ejecuta en el navegador, sin instalar nada, y Julia todavía no corre en el navegador con la misma facilidad.
+R no es una herramienta auxiliar: es el lenguaje de la estadística aplicada del grado, la econometría tabular, la bioestadística y la psicometría, porque ahí están sus textos y su ecosistema, y seis de las veinte asignaturas lo usan en su cuaderno, con el [reparto](curriculo.qmd#julia-y-r-cada-uno-en-su-terreno) que fija el currículo. Python queda como herramienta auxiliar para la ingesta y la manipulación de datos tabulares. Los problemas interactivos están en R por una razón práctica: webR lo ejecuta en el navegador, sin instalar nada, y Julia todavía no corre en el navegador con la misma facilidad.
 
 ---
 
