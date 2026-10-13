@@ -64,7 +64,8 @@ Cinco asignaturas por curso, tesis incluida.
 
 #### 1.3. Probabilidad axiomática, inferencia y teoría de la información {#asignatura-1-3}
 * **Contenidos:** espacios de probabilidad, variables aleatorias discretas y continuas, distribuciones conjuntas, entropía de Shannon e información mutua; estimación, intervalos, contrastes y *bootstrap*, con la inferencia frecuentista y la bayesiana en paralelo.
-* **Textos matriz:** Joseph K. Blitzstein & Jessica Hwang — *Introduction to Probability*; Larry Wasserman — *All of Statistics*, como segunda pasada.
+* **Textos matriz:** Joseph K. Blitzstein & Jessica Hwang — *Introduction to Probability*; Michael J. Evans & Jeffrey S. Rosenthal — *Probability and Statistics: The Science of Uncertainty*, como puente hacia la inferencia.
+* **Síntesis:** Larry Wasserman — *All of Statistics*, del área secundaria de la biblioteca, para repasar al final lo aprendido y como obra de consulta.
 * **Lectura:** Claude E. Shannon — «A Mathematical Theory of Communication».
 
 #### 1.4. Demografía formal y modelos poblacionales {#asignatura-1-4}

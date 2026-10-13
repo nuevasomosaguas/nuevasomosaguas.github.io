@@ -46,7 +46,7 @@ flowchart LR
     NS --> P3["3. La interacción estratégica"]
     NS --> P4["4. La síntesis generativa"]
 
-    P1 --> R1["Probabilidad · Blitzstein<br/>Inferencia · Wasserman<br/>Grafos causales · Pearl"]
+    P1 --> R1["Probabilidad · Blitzstein<br/>Inferencia · Evans y Rosenthal<br/>Grafos causales · Pearl"]
     P2 --> R2["Puntuaciones poligénicas · Plomin<br/>Paleogenómica · Reich<br/>Genética cuantitativa · Falconer"]
     P3 --> R3["De lo individual a lo colectivo · Coleman<br/>Mecanismos · Hedström<br/>Teoría de juegos · Binmore"]
     P4 --> R4["Ciencia social generativa · Epstein<br/>Ciclos seculares · Turchin<br/>Energía y civilización · Smil"]

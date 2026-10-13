@@ -1092,20 +1092,22 @@
   lectura    = {Completa con ejercicios}
 }
 
-@book{wasserman2004all,
-  author     = {Wasserman, Larry},
-  title      = {All of Statistics: A Concise Course in Statistical Inference},
-  publisher  = {Springer},
-  year       = {2004},
-  note       = {Muy comprimido: mejor como segunda pasada, después de Stat 110},
-  doi        = {10.1007/978-0-387-21736-9},
+@book{evans2010probability,
+  author     = {Evans, Michael J. and Rosenthal, Jeffrey S.},
+  title      = {Probability and Statistics: The Science of Uncertainty},
+  publisher  = {W. H. Freeman},
+  edition    = {2nd},
+  year       = {2010},
+  note       = {Hay traducción castellana de la primera edición, en Reverté (2005)},
+  isbn       = {9781429224628},
+  url        = {https://utstat.utoronto.ca/mikevans/jeffrosenthal/},
   estrato    = {inferencia},
-  nivel      = {2},
+  nivel      = {1},
   descriptor = {Inferencia Formal},
   lectura    = {Completa con ejercicios},
-  mecanismo  = {La inferencia como el problema inverso de la probabilidad: dados los datos, qué distribución los generó y con cuánta incertidumbre. Recorre la estimación, los intervalos, los contrastes, el *bootstrap* y la inferencia bayesiana y frecuentista en paralelo, y cierra con contrafactuales y grafos dirigidos.},
-  aparato    = {Modos de convergencia, verosimilitud e información de Fisher, método delta, estimación no paramétrica de la función de distribución y remuestreo.},
-  funcion    = {Referencia canónica de las definiciones formales de la inferencia, entre la probabilidad de [Blitzstein y Hwang](#blitzstein2019introduction) y el rigor de Casella y Berger. Cuando un pasaje divulgativo usa mal «significativo» o «intervalo de confianza», es la fuente que lo corrige.}
+  mecanismo  = {La inferencia como el problema inverso de la probabilidad: dados los datos, qué modelo los generó y con cuánta incertidumbre. Recorre la verosimilitud, la inferencia bayesiana, la inferencia óptima y la comprobación del modelo, y termina en las relaciones entre variables: el experimento, la regresión y el análisis de la varianza.},
+  aparato    = {Leyes de los grandes números y teorema central del límite, suficiencia y máxima verosimilitud, intervalos, contrastes y potencia, *bootstrap*, distribución a posteriori y muestreo de Gibbs, Rao-Blackwell y Neyman-Pearson; las demostraciones avanzadas, en secciones aparte.},
+  funcion    = {El escalón entre la probabilidad de [Blitzstein y Hwang](#blitzstein2019introduction) y la síntesis de Wasserman, gratis en PDF por voluntad de sus autores. Cuando un pasaje divulgativo usa mal «significativo» o «intervalo de confianza», es la fuente que lo corrige.}
 }
 
 @book{efron2016computer,
@@ -2036,9 +2038,9 @@
   year       = {2024},
   doi        = {10.1201/9781003456285},
   capa       = {secundaria},
-  cuelga     = {wasserman2004all},
+  cuelga     = {evans2010probability},
   papel      = {Profundización técnica},
-  motivo     = {Wasserman resume la inferencia clásica en pocas páginas; Casella y Berger demuestran cada resultado, para quien necesita el aparato completo.},
+  motivo     = {Evans y Rosenthal dejan las demostraciones avanzadas en secciones aparte; Casella y Berger demuestran cada resultado, para quien necesita el aparato completo.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Inferencia Formal}
@@ -2082,9 +2084,9 @@
   year       = {2015},
   doi        = {10.1007/978-1-4419-5985-0},
   capa       = {secundaria},
-  cuelga     = {wasserman2004all},
+  cuelga     = {evans2010probability},
   papel      = {Especialización aplicada},
-  motivo     = {La inferencia de Wasserman llevada a los tribunales: discriminación, muestreo y pruebas estadísticas en casos judiciales reales.},
+  motivo     = {La inferencia de Evans y Rosenthal llevada a los tribunales: discriminación, muestreo y pruebas estadísticas en casos judiciales reales.},
   estado     = {curada},
   nivel      = {1},
   descriptor = {Aplicación Jurídica}
@@ -2770,9 +2772,9 @@
   year       = {2006},
   doi        = {10.1007/0-387-30623-4},
   capa       = {secundaria},
-  cuelga     = {wasserman2004all},
+  cuelga     = {evans2010probability},
   papel      = {Profundización técnica},
-  motivo     = {El paso siguiente a All of Statistics, no una obra de base.},
+  motivo     = {Evans y Rosenthal dedican a los métodos sin distribución una sección, y Wasserman, un libro entero: el paso siguiente a All of Statistics, no una obra de base.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {No Paramétrica}
@@ -4935,9 +4937,9 @@
   doi        = {10.1017/cbo9781107741973},
   url        = {https://webhomes.maths.ed.ac.uk/~swood34/core-statistics.pdf},
   capa       = {secundaria},
-  cuelga     = {wasserman2004all},
+  cuelga     = {evans2010probability},
   papel      = {Profundización técnica},
-  motivo     = {Wasserman da las definiciones y los teoremas de la inferencia, y Wood enseña a calcularlos en R con datos reales, de la maximización de una verosimilitud al muestreo de una posterior, con la estabilidad numérica y el álgebra matricial que eso exige: el puente entre Wasserman y Efron y Hastie.},
+  motivo     = {Evans y Rosenthal dan las definiciones y los teoremas de la inferencia, y Wood enseña a calcularlos en R con datos reales, de la maximización de una verosimilitud al muestreo de una posterior, con la estabilidad numérica y el álgebra matricial que eso exige: el puente entre los manuales de inferencia y Efron y Hastie.},
   estado     = {curada},
   nivel      = {3},
   descriptor = {Inferencia Computacional}
@@ -6132,21 +6134,19 @@
   descriptor = {Probabilidad}
 }
 
-@book{evans2010probability,
-  author     = {Evans, Michael J. and Rosenthal, Jeffrey S.},
-  title      = {Probability and Statistics: The Science of Uncertainty},
-  publisher  = {W. H. Freeman},
-  edition    = {2nd},
-  year       = {2010},
-  note       = {Hay traducción castellana de la primera edición, en Reverté (2005)},
-  isbn       = {9781429224628},
-  url        = {https://utstat.utoronto.ca/mikevans/jeffrosenthal/},
+@book{wasserman2004all,
+  author     = {Wasserman, Larry},
+  title      = {All of Statistics: A Concise Course in Statistical Inference},
+  publisher  = {Springer},
+  year       = {2004},
+  note       = {Muy comprimido: mejor como síntesis y consulta, después de Evans y Rosenthal},
+  doi        = {10.1007/978-0-387-21736-9},
   capa       = {secundaria},
-  cuelga     = {wasserman2004all},
-  papel      = {Introducción},
-  motivo     = {El mismo recorrido que Wasserman, de los modelos de probabilidad a la verosimilitud, la inferencia bayesiana y la teoría de la decisión, con más ejemplos numéricos y las demostraciones avanzadas aparte: la rampa para quien se atasca con su densidad, gratis en PDF por voluntad de sus autores.},
+  cuelga     = {evans2010probability},
+  papel      = {Profundización técnica},
+  motivo     = {El recorrido de Evans y Rosenthal en muchas menos páginas, que llega además a los contrafactuales y los grafos dirigidos: demasiado comprimido para aprender la inferencia, es la síntesis y la obra de consulta para quien ya la ha aprendido.},
   estado     = {curada},
-  nivel      = {1},
+  nivel      = {2},
   descriptor = {Inferencia Formal}
 }
 

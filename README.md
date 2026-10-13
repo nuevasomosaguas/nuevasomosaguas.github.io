@@ -27,7 +27,7 @@ El criterio de admisión de cualquier contenido es el mismo en todo el sitio: si
 ## Los cuatro pilares
 
 1. **Cimientos formales e inferencia rigurosa**
-   * Probabilidad axiomática e inferencia estadística (*Harvard Stat 110*, Blitzstein y Hwang; Wasserman).
+   * Probabilidad axiomática e inferencia estadística (*Harvard Stat 110*, Blitzstein y Hwang; Evans y Rosenthal).
    * Identificación causal por grafos acíclicos dirigidos y resultados potenciales (Pearl; Angrist y Pischke; Imbens y Rubin).
    * Álgebra lineal matricial y sus descomposiciones: QR, SVD, matrices de Markov (Strang).
    * Cálculo multivariante y optimización con restricciones (Simon y Blume).
