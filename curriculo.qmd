@@ -1,7 +1,7 @@
 ---
 title: "Currículo"
 subtitle: "Estructura de 4 años y 20 asignaturas del grado en ciencias sociales analíticas y cuantitativas"
-description: "Cuatro años y 20 asignaturas con Julia como entorno nuclear: pocos textos matriz y un cuaderno reproducible por materia, y el mecanismo separado de la identificación causal."
+description: "Cuatro años y 20 asignaturas, con pocos textos matriz y un cuaderno reproducible por materia: Julia para el modelo, R para la estadística aplicada y el mecanismo separado de la identificación causal."
 format:
   html:
     toc: true
@@ -9,16 +9,16 @@ format:
 ---
 
 ::: {.lead}
-El plan de estudios de la **Nueva Somosaguas** no es una antología de deseos bibliográficos, sino un itinerario técnico cerrado. Cada asignatura se articula en torno a **modelos formales y derivaciones explícitas**: si un modelo no se programa o no se deriva en la pizarra, no entra en el temario.
+El plan de estudios de la **Nueva Somosaguas** no es una antología de deseos bibliográficos, sino un itinerario técnico cerrado. Cada asignatura tiene un **núcleo formal que se programa o se deriva en la pizarra**, y las obras históricas y empíricas le dan el material contra el que contrastarlo: lo que no se programa ni se deriva no es el núcleo de ninguna asignatura.
 :::
 
 ---
 
 ## 1. Principios rectores de la reforma
 
-### 1. Julia como entorno nuclear
+### 1. Julia para el modelo, R para la estadística aplicada
 
-El llamado *two-language problem* —prototipar en un lenguaje cómodo y reescribir en otro rápido— se resuelve eliminándolo del primer año en lugar de enseñarlo como si fuera inevitable. **Julia** es el lenguaje vehicular para cálculo numérico, álgebra lineal, modelos basados en agentes y ecuaciones diferenciales. **R** se conserva como herramienta de biblioteca, no como entorno general: econometría aplicada tabular, bioestadística y psicometría empírica.
+**Julia** es el lenguaje de todo lo numérico y generativo —álgebra lineal, ecuaciones diferenciales, modelos basados en agentes y cómputo de alto rendimiento— y el único del primer año: las pocas líneas de R de Blitzstein y Hwang se traducen a Julia, como hace el [bootcamp](bootcamp.qmd). En ese terreno resuelve el *two-language problem* en su sentido propio: no hay que prototipar en un lenguaje cómodo y lento para reescribir después en otro rápido, porque el prototipo ya es rápido. **R** entra en segundo para la estadística aplicada —la regresión y la inferencia causal, la genética estadística y la psicometría—, porque ahí están los textos y el ecosistema: Gelman, Hill y Vehtari, Mills, Barban y Tropf y Beaujean enseñan con R, y traducirlos no añadiría nada. Los [problemas interactivos](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/) están en R por una razón práctica, que explican las [preguntas frecuentes](faq.qmd): webR lo ejecuta en el navegador sin instalar nada. Son ejercicios cortos con un hueco que rellenar, no un segundo entorno.
 
 ### 2. Puente matricial explícito
 
@@ -35,13 +35,15 @@ Una teoría del mecanismo no identifica un efecto, y un diseño de identificaci�
 
 ### 4. Poda del canon
 
-Cada asignatura se apoya en pocos textos matriz, al menos uno de los cuales se lee entero, y en un cuaderno computacional reproducible. Los demás se trabajan por sus capítulos centrales: el modo de lectura de cada obra en la [biblioteca](biblioteca.qmd) dice cuál se lee y cuál se consulta. Se elimina la acumulación bibliográfica decorativa: diez manuales por asignatura garantizan que no se lea ninguno. El entregable de cada materia es un documento que compila desde la terminal, no una lista de lecturas.
+Cada asignatura se apoya en pocos textos matriz, al menos uno de los cuales se lee entero, salvo cuando el único texto es más amplio que la asignatura y el currículo fija sus capítulos, como en la 4.3, y en un cuaderno computacional reproducible. Los demás se trabajan por sus capítulos centrales: el modo de lectura de cada obra en la [biblioteca](biblioteca.qmd) dice cuál se lee y cuál se consulta. Se elimina la acumulación bibliográfica decorativa: diez manuales por asignatura garantizan que no se lea ninguno. El entregable de cada materia es un documento que compila desde la terminal, no una lista de lecturas.
 
 ---
 
 ## 2. Estructura curricular
 
 Cinco asignaturas por curso, tesis incluida.
+
+El primer año da por sabido lo que entrega el [bootcamp](bootcamp.qmd): cálculo, álgebra matricial y programación en Julia sobre la terminal. Quien llega del Bachillerato de Ciencias Sociales, con Matemáticas Aplicadas a las Ciencias Sociales II, empieza por su [prueba de nivel](https://nuevasomosaguas.github.io/bootcamp/diagnostico/), que dice qué repasar; quien llega del de Humanidades sin matemáticas, por el [puente](https://nuevasomosaguas.github.io/bootcamp/puente/), que termina en la misma prueba.
 
 | Curso | Eje | Enfoque central |
 |:---|:---|:---|
@@ -55,8 +57,8 @@ Cinco asignaturas por curso, tesis incluida.
 ### Primer año: fundamentos formales y restricciones materiales
 
 #### 1.1. Cálculo multivariante y optimización {#asignatura-1-1}
-* **Contenidos:** espacios euclídeos, gradientes, teorema de la función implícita y estática comparada, y optimización con y sin restricciones mediante multiplicadores de Lagrange.
-* **Texto matriz:** Carl P. Simon & Lawrence Blume — *Mathematics for Economists*.
+* **Contenidos:** espacios euclídeos, gradientes, teorema de la función implícita y estática comparada, y optimización con y sin restricciones mediante multiplicadores de Lagrange; al final, ecuaciones en diferencias y diferenciales y la estabilidad de los equilibrios, que usan la dinámica de réplica de la 2.3, los modelos de ecuaciones de la 3.2 y Galor en la 3.5.
+* **Texto matriz:** Carl P. Simon & Lawrence Blume — *Mathematics for Economists*, hasta sus capítulos 23 a 25, autovalores y dinámica; Strogatz retoma la parte no lineal en la 4.1.
 
 #### 1.2. Álgebra lineal computacional {#asignatura-1-2}
 * **Contenidos:** espacios vectoriales, proyecciones ortogonales, descomposiciones matriciales (LU, QR, SVD), autovalores y matrices de Markov aplicadas a transiciones sociales.
@@ -96,8 +98,8 @@ Cinco asignaturas por curso, tesis incluida.
 * **Lectura preliminar:** Ken Binmore — *Game Theory: A Very Short Introduction*.
 
 #### 2.4. Inferencia causal y diseño de investigación {#asignatura-2-4}
-* **Contenidos:** regresión lineal y logística como comparación entre grupos y como predicción, con la simulación para expresar su incertidumbre; modelo de resultados potenciales de Rubin, identificación no paramétrica con grafos acíclicos dirigidos, regresión discontinua, variables instrumentales y diferencias en diferencias.
-* **Textos matriz:** Andrew Gelman, Jennifer Hill & Aki Vehtari — *Regression and Other Stories* (caps. 1 a 14 y 18 a 21: la regresión lineal y logística y la inferencia causal; el diseño muestral y la postestratificación vuelven en la asignatura 4.2 con Lohr); Judea Pearl, Madelyn Glymour & Nicholas P. Jewell — *Causal Inference in Statistics*; Joshua D. Angrist & Jörn-Steffen Pischke — *Mostly Harmless Econometrics*.
+* **Contenidos:** regresión lineal, logística y de conteos como comparación entre grupos y como predicción, con la simulación para expresar su incertidumbre; modelo de resultados potenciales de Rubin, identificación no paramétrica con grafos acíclicos dirigidos, regresión discontinua, variables instrumentales y diferencias en diferencias.
+* **Textos matriz:** Andrew Gelman, Jennifer Hill & Aki Vehtari — *Regression and Other Stories* (caps. 1 a 15 y 18 a 21: la regresión lineal y logística, la de Poisson y la binomial negativa para tasas y recuentos, y la inferencia causal; el diseño muestral y la postestratificación vuelven en la asignatura 4.2 con Lohr); Judea Pearl, Madelyn Glymour & Nicholas P. Jewell — *Causal Inference in Statistics*; Joshua D. Angrist & Jörn-Steffen Pischke — *Mostly Harmless Econometrics*.
 * **Lectura preliminar:** Nick Huntington-Klein — *The Effect*.
 
 #### 2.5. Psicometría y modelización de variables latentes {#asignatura-2-5}
@@ -115,7 +117,8 @@ Cinco asignaturas por curso, tesis incluida.
 
 #### 3.2. Modelos basados en agentes y sistemas complejos {#asignatura-3-2}
 * **Contenidos:** autómatas celulares, segregación espacial de Schelling, contagio y polarización, modelos de ecuaciones frente a modelos de agentes, modelos generativos *Agent_Zero* y calibración de dinámicas emergentes.
-* **Textos matriz:** Joshua Epstein — *Generative Social Science*; Paul E. Smaldino — *Modeling Social Behavior*; Steven F. Railsback & Volker Grimm — *Agent-Based and Individual-Based Modeling*.
+* **Textos matriz:** Joshua M. Epstein — *Generative Social Science*; Paul E. Smaldino — *Modeling Social Behavior*; Steven F. Railsback & Volker Grimm — *Agent-Based and Individual-Based Modeling*. Los dos últimos enseñan con NetLogo, y sus modelos se reimplementan en Agents.jl.
+* **Lectura:** Joshua M. Epstein — *Agent_Zero: Toward Neurocognitive Foundations for Generative Social Science*.
 
 #### 3.3. Inferencia bayesiana y computación MCMC {#asignatura-3-3}
 * **Contenidos:** teorema de Bayes sobre distribuciones continuas, *priors* débilmente informativos y regularizadores, modelos jerárquicos y multinivel, y muestreo de la posterior: de Metropolis y Gibbs al Monte Carlo hamiltoniano.
@@ -135,7 +138,7 @@ Cinco asignaturas por curso, tesis incluida.
 
 #### 4.1. Cliodinámica y sistemas dinámicos históricos {#asignatura-4-1}
 * **Contenidos:** ecuaciones diferenciales no lineales acopladas, ciclos sociopolíticos seculares, sobreproducción de élites, compresiones violentas de la desigualdad y calibración paramétrica con series históricas.
-* **Textos matriz:** Peter Turchin & Sergey A. Nefedov — *Secular Cycles*; Steven H. Strogatz — *Nonlinear Dynamics and Chaos*; Walter Scheidel — *The Great Leveler*.
+* **Textos matriz:** Steven H. Strogatz — *Nonlinear Dynamics and Chaos*, para las ecuaciones acopladas; Peter Turchin & Sergey A. Nefedov — *Secular Cycles*, los casos históricos contra los que se calibran; Walter Scheidel — *The Great Leveler*.
 
 #### 4.2. Evaluación cuantitativa de políticas públicas {#asignatura-4-2}
 * **Contenidos:** diseño muestral y ponderación, microdatos censales y de registros administrativos, trazas digitales, paneles longitudinales, experimentos de campo y auditoría de intervenciones estatales.
@@ -154,7 +157,7 @@ Cinco asignaturas por curso, tesis incluida.
 * **Práctica:** medición validada frente a codificación humana sobre un archivo legislativo o notarial completo.
 
 #### 4.5. Tesis de grado {#asignatura-4-5}
-* **Contenidos:** desarrollo de un modelo analítico original o replicación destructiva de un resultado de la literatura empírica.
+* **Contenidos:** desarrollo de un modelo analítico original o replicación crítica de un resultado de la literatura empírica.
 * **Lecturas:** John P. A. Ioannidis — «Why Most Published Research Findings Are False»; Joseph P. Simmons, Leif D. Nelson & Uri Simonsohn — «False-Positive Psychology»; Open Science Collaboration — «Estimating the Reproducibility of Psychological Science».
 * **Escritura:** Howard S. Becker — *Writing for Social Scientists*, del área secundaria de la biblioteca, para empezar y terminar la memoria.
 * **Requisitos:** código fuente en repositorio público, datos abiertos y memoria en Typst o Quarto que compile de forma determinista desde la terminal.
