@@ -123,6 +123,21 @@ ruta(c("ibnkhaldun2015muqaddimah", "pareto1935mind", "volterra1926fluctuations",
 
 **Para simularlo:** [*Peces, guerra y depredadores*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/17-lotka-volterra/), [*La ley de Lanchester*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/36-ley-de-lanchester/), [*La trampa malthusiana*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/31-trampa-malthusiana/) y [*El ciclo del ladrillo*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/52-ciclo-del-ladrillo/): el modelo de Volterra con las capturas del Adriático, la ley cuadrática del combate, la población que se come cada invento y un ciclo que sale solo del retraso entre la decisión y su efecto.
 
+### Historia económica
+
+Por qué unos países son ricos y otros no, cuando durante casi toda la historia nadie lo fue. La ruta empieza con el mapa del debate de Koyama y Rubin, que ponen a prueba la geografía, las instituciones, la cultura, la demografía y el colonialismo, y con los números de Maddison, la renta del mundo desde el año 1, que dibujan la curva en forma de palo de hockey. Sigue con el mundo anterior a la industria: la vida material de Braudel y la trampa malthusiana de Clark, en la que cada invento acababa en más gente y no en gente más rica. Después viene la salida contada como energía: Smil mide la historia en flujos de energía, Wrigley explica cómo el carbón liberó a Inglaterra de la restricción de la tierra y Jevons encuentra que las máquinas de vapor más eficientes hicieron gastar más carbón, no menos. Entonces la ruta discute por qué fue Inglaterra y no China: el carbón accesible y las colonias de Pomeranz, los salarios altos y la energía barata de Allen, el mercado de ideas de Mokyr, la legitimidad de los gobernantes de Rubin y el capital humano de la teoría unificada de Galor. Sigue con dos formas en que el pasado pesa sobre el presente: la geografía que actúa a través de los tráficos de esclavos, en Nunn, y el teclado QWERTY de David, que sobrevivió porque cada mecanógrafo aprendía el que usaban los demás. Termina con lo que dejó el crecimiento: el gran escape de Deaton, en el que unos salen de la pobreza y la enfermedad antes que otros, y la curva del elefante de Milanovic, la desigualdad del mundo en la era de la globalización. Se reparte entre Clark, Smil, Wrigley, Galor, Durlauf, Harris y Scheidel, y acompaña a la asignatura [3.5 del currículo](curriculo.qmd#asignatura-3-5), *Transición demográfica y macroeconomía malthusiana*.
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("koyama2022how", "maddison2007contours", "braudel1992structures", "clark2007farewell",
+       "smil2017energy", "wrigley2010energy", "jevons1865coal", "pomeranz2021great", "allen2009british",
+       "mokyr2016culture", "rubin2017rulers", "galor2011unified", "nunn2012ruggedness", "david1985clio",
+       "deaton2013great", "milanovic2016global"))
+```
+
+**Para simularlo:** [*Dos mil años de renta*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/57-dos-mil-anos-de-renta/), [*La trampa malthusiana*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/31-trampa-malthusiana/), [*El rebote de Jevons*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/49-rebote-de-jevons/) y [*¿Por qué R es como es?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/69-por-que-r-es-como-es/): la curva de Maddison, que en escala logarítmica empieza a subir en 1820 y antes descansa en muy pocos datos, la población que se come cada invento, la mejora de eficiencia que hace gastar más energía cuando la demanda es elástica y el bloqueo de Arthur con el que se formaliza el QWERTY de David.
+
 ## Para saber hacer algo
 
 ### Probabilidad
