@@ -87,10 +87,10 @@ Incorporar o retirar una obra es editar ese archivo. Cada revisión del núcleo 
 
 ## Entorno computacional
 
-Un solo entorno nuclear, para no pagar el coste de aprender dos ecosistemas a la vez:
+Julia y R, cada uno en su terreno:
 
 * **Julia** — cálculo matricial, simulación basada en agentes, ecuaciones diferenciales y optimización. Es el lenguaje vehicular desde el primer curso.
-* **R** — econometría aplicada tabular, bioestadística y psicometría. Herramienta de biblioteca, no entorno general.
+* **R** — estadística aplicada, econometría tabular, bioestadística y psicometría, donde están sus textos y su ecosistema. Los problemas interactivos también, porque webR los ejecuta en el navegador.
 * **SQL** — extracción relacional pura, funciones de ventana y agregación censal en PostgreSQL o SQLite.
 * **Bash, Git y Quarto o Typst** — consola de Unix, canalizaciones reproducibles y publicación determinista.
 

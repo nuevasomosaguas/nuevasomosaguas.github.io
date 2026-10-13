@@ -1,7 +1,7 @@
 ---
 title: "Currículo"
 subtitle: "Estructura de 4 años y 20 asignaturas del grado en ciencias sociales analíticas y cuantitativas"
-description: "Cuatro años y 20 asignaturas, con pocos textos matriz y un cuaderno reproducible por materia: Julia para el modelo, R para la estadística aplicada y el mecanismo separado de la identificación causal."
+description: "Cuatro años y 20 asignaturas: Julia para el cómputo y R para la estadística aplicada, pocos textos matriz con un cuaderno reproducible por materia, y el mecanismo separado de la identificación causal."
 format:
   html:
     toc: true
@@ -16,9 +16,15 @@ El plan de estudios de la **Nueva Somosaguas** no es una antología de deseos bi
 
 ## 1. Principios rectores de la reforma
 
-### 1. Julia para el modelo, R para la estadística aplicada
+### 1. Julia y R, cada uno en su terreno
 
-**Julia** es el lenguaje de todo lo numérico y generativo —álgebra lineal, ecuaciones diferenciales, modelos basados en agentes y cómputo de alto rendimiento— y el único del primer año: las pocas líneas de R de Blitzstein y Hwang se traducen a Julia, como hace el [bootcamp](bootcamp.qmd). En ese terreno resuelve el *two-language problem* en su sentido propio: no hay que prototipar en un lenguaje cómodo y lento para reescribir después en otro rápido, porque el prototipo ya es rápido. **R** entra en segundo para la estadística aplicada —la regresión y la inferencia causal, la genética estadística y la psicometría—, porque ahí están los textos y el ecosistema: Gelman, Hill y Vehtari, Mills, Barban y Tropf y Beaujean enseñan con R, y traducirlos no añadiría nada. Los [problemas interactivos](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/) están en R por una razón práctica, que explican las [preguntas frecuentes](faq.qmd): webR lo ejecuta en el navegador sin instalar nada. Son ejercicios cortos con un hueco que rellenar, no un segundo entorno.
+**Julia** es el lenguaje vehicular del grado para el cálculo numérico, el álgebra lineal, los modelos basados en agentes, las ecuaciones diferenciales y el cómputo de alto rendimiento: con un solo lenguaje se prototipa y se escala, sin reescribir el modelo en otro más rápido. **R** se usa donde están sus textos y su ecosistema: la estadística aplicada, la econometría tabular, la bioestadística y la psicometría. Los manuales de inferencia, regresión y variables latentes del grado traen su código en R, y traducirlo no añade nada. Desde el primer curso se trabaja con los dos, y cada asignatura usa uno en su cuaderno:
+
+* **Julia:** 1.1, 1.2, 1.4, 1.5, 2.2, 2.3, 3.1, 3.2, 3.4, 3.5, 4.1 y 4.3.
+* **R:** 1.3, 2.1, 2.4, 2.5, 4.2 y 4.4.
+* **A elegir:** la 3.3, con Turing.jl o con Stan, y la tesis.
+
+Los [problemas interactivos](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/) son abiertos y van aparte. Están en R porque se ejecutan en el navegador con webR, sin instalar nada, y así cualquiera puede resolverlos desde cualquier ordenador; Julia todavía no corre en el navegador con la misma facilidad.
 
 ### 2. Puente matricial explícito
 
@@ -139,6 +145,7 @@ El primer año da por sabido lo que entrega el [bootcamp](bootcamp.qmd): cálcul
 #### 4.1. Cliodinámica y sistemas dinámicos históricos {#asignatura-4-1}
 * **Contenidos:** ecuaciones diferenciales no lineales acopladas, ciclos sociopolíticos seculares, sobreproducción de élites, compresiones violentas de la desigualdad y calibración paramétrica con series históricas.
 * **Textos matriz:** Steven H. Strogatz — *Nonlinear Dynamics and Chaos*, para las ecuaciones acopladas; Peter Turchin & Sergey A. Nefedov — *Secular Cycles*, los casos históricos contra los que se calibran; Walter Scheidel — *The Great Leveler*.
+* **Lectura:** Peter Turchin — *Historical Dynamics: Why States Rise and Fall*, del área secundaria de la biblioteca: los modelos de la teoría demográfico-estructural escritos como ecuaciones y contrastados con datos, el paso de Strogatz a los casos.
 
 #### 4.2. Evaluación cuantitativa de políticas públicas {#asignatura-4-2}
 * **Contenidos:** diseño muestral y ponderación, microdatos censales y de registros administrativos, trazas digitales, paneles longitudinales, experimentos de campo y auditoría de intervenciones estatales.
