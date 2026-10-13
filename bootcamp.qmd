@@ -117,6 +117,15 @@ El proyecto es de replicación, no de creación libre: reconstruir una tabla de 
 
 Todo trabajo cuya compilación falle en limpio en el entorno de pruebas recibe calificación nula.
 
+---
+
+## 5. Después del bootcamp
+
+El bootcamp nivela, pero no cierra la parte cuantitativa del grado: quien lo termina ha cruzado la puerta, no ha recorrido la casa.
+
+* **Para leer, sin código:** Kosuke Imai & Nora Webb Williams — *Quantitative Social Science: An Introduction in Tidyverse*, del área secundaria de la biblioteca. Es un panorama de para qué sirve todo lo anterior, de la causalidad y la medición a la predicción y la incertidumbre, contado sobre estudios publicados. Se lee por sus preguntas y sus estudios, no por su código, que está en R. Es la vista desde la puerta, no la estadística del programa: quien lo termina sabe adónde va, no ha llegado.
+* **Lo que sigue:** la probabilidad de Blitzstein y Hwang, que la fase II solo empieza, se termina en la asignatura [1.3](curriculo.qmd#asignatura-1-3), y continúa con la inferencia de Michael J. Evans & Jeffrey S. Rosenthal — [*Probability and Statistics: The Science of Uncertainty*](biblioteca.qmd#evans2010probability), de la verosimilitud a la comprobación del modelo. La regresión, que aquí se ha visto como proyección, vuelve en la asignatura [2.4](curriculo.qmd#asignatura-2-4) como comparación y como herramienta causal, con Andrew Gelman, Jennifer Hill & Aki Vehtari — [*Regression and Other Stories*](biblioteca.qmd#gelman2020regression).
+
 ::: {.callout-tip}
 ### ¿Eres un estudiante autodidacta?
 Puedes seguir este bootcamp a tu propio ritmo: las guías, los datos y los tests de cada semana están abiertos en el [sitio del bootcamp](https://nuevasomosaguas.github.io/bootcamp/), y los tests se ejecutan igual en tu máquina. Para lo que viene después, la [guía autodidacta](guia_autodidacta.qmd) organiza el grado en cuatro hitos.

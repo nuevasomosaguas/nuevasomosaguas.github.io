@@ -64,7 +64,7 @@ Cinco asignaturas por curso, tesis incluida.
 
 #### 1.3. Probabilidad axiomática, inferencia y teoría de la información {#asignatura-1-3}
 * **Contenidos:** espacios de probabilidad, variables aleatorias discretas y continuas, distribuciones conjuntas, entropía de Shannon e información mutua; estimación, intervalos, contrastes y *bootstrap*, con la inferencia frecuentista y la bayesiana en paralelo.
-* **Textos matriz:** Joseph K. Blitzstein & Jessica Hwang — *Introduction to Probability*; Michael J. Evans & Jeffrey S. Rosenthal — *Probability and Statistics: The Science of Uncertainty*, como puente hacia la inferencia.
+* **Textos matriz:** Joseph K. Blitzstein & Jessica Hwang — *Introduction to Probability*, para la probabilidad; Michael J. Evans & Jeffrey S. Rosenthal — *Probability and Statistics: The Science of Uncertainty* (caps. 5 a 9: de la verosimilitud a la inferencia bayesiana, la inferencia óptima y la comprobación del modelo; los cuatro primeros repiten la probabilidad de Blitzstein), para la inferencia que Blitzstein no cubre.
 * **Síntesis:** Larry Wasserman — *All of Statistics*, del área secundaria de la biblioteca, para repasar al final lo aprendido y como obra de consulta.
 * **Lectura:** Claude E. Shannon — «A Mathematical Theory of Communication».
 
@@ -96,8 +96,8 @@ Cinco asignaturas por curso, tesis incluida.
 * **Lectura preliminar:** Ken Binmore — *Game Theory: A Very Short Introduction*.
 
 #### 2.4. Inferencia causal y diseño de investigación {#asignatura-2-4}
-* **Contenidos:** modelo de resultados potenciales de Rubin, identificación no paramétrica con grafos acíclicos dirigidos, regresión discontinua, variables instrumentales y diferencias en diferencias.
-* **Textos matriz:** Judea Pearl, Madelyn Glymour & Nicholas P. Jewell — *Causal Inference in Statistics*; Joshua D. Angrist & Jörn-Steffen Pischke — *Mostly Harmless Econometrics*; Guido W. Imbens & Donald B. Rubin — *Causal Inference for Statistics, Social, and Biomedical Sciences*, de consulta para los resultados potenciales.
+* **Contenidos:** regresión lineal y logística como comparación entre grupos y como predicción, con la simulación para expresar su incertidumbre; modelo de resultados potenciales de Rubin, identificación no paramétrica con grafos acíclicos dirigidos, regresión discontinua, variables instrumentales y diferencias en diferencias.
+* **Textos matriz:** Andrew Gelman, Jennifer Hill & Aki Vehtari — *Regression and Other Stories* (caps. 1 a 14 y 18 a 21: la regresión lineal y logística y la inferencia causal; el diseño muestral y la postestratificación vuelven en la asignatura 4.2 con Lohr); Judea Pearl, Madelyn Glymour & Nicholas P. Jewell — *Causal Inference in Statistics*; Joshua D. Angrist & Jörn-Steffen Pischke — *Mostly Harmless Econometrics*.
 * **Lectura preliminar:** Nick Huntington-Klein — *The Effect*.
 
 #### 2.5. Psicometría y modelización de variables latentes {#asignatura-2-5}
