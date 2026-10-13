@@ -82,3 +82,5 @@ Llamamos **consiliencia** a la idea de que una explicación gana fuerza cuando e
 ## Abierto a todos
 
 La bibliografía, las guías, el código de las simulaciones y los tutores están abiertos a cualquiera que quiera aprender por su cuenta. Las plazas presenciales son limitadas; los criterios de acceso se explican en las [preguntas frecuentes](faq.qmd).
+
+[<i class="bi bi-github"></i> La Nueva Somosaguas en GitHub](https://github.com/nuevasomosaguas){.btn .descarga}
