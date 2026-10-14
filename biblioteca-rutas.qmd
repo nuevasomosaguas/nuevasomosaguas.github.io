@@ -136,7 +136,7 @@ ruta(c("blau1978american", "erikson1992constant", "wright1985classes", "roemer19
        "harden2021genetic"))
 ```
 
-**Para simularlo:** [*¿Quién trabaja para quién?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/71-quien-trabaja-para-quien/), [*Todos con máster*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/50-todos-con-master/) y [*¿Cuántas generaciones dura la cuna?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/37-movilidad-markov/): las clases de Roemer deducidas de la propiedad, la educación como señal de Spence y la movilidad como cadena de Markov, en la que dos países con la misma desigualdad a la larga olvidan la cuna a ritmos muy distintos.
+**Para simularlo:** [*¿Quién trabaja para quién?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/71-quien-trabaja-para-quien/), [*Todos con máster*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/50-todos-con-master/), [*¿Productividad o estatus?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/77-productividad-o-estatus/) y [*¿Cuántas generaciones dura la cuna?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/37-movilidad-markov/): las clases de Roemer deducidas de la propiedad, la educación como señal de Spence, las horas de más como señal en la carrera de ratas de los bufetes, que separan a los incansables sin producir casi nada, y la movilidad como cadena de Markov, en la que dos países con la misma desigualdad a la larga olvidan la cuna a ritmos muy distintos.
 
 ### Cliodinámica
 
