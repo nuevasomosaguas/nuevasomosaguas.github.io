@@ -18,7 +18,7 @@ source("refs.R")
 
 La [biblioteca](biblioteca.qmd) se organiza por dependencias: cada obra del [área secundaria](biblioteca-secundaria/index.qmd) cuelga de la del núcleo que la recoge. Algunos temas, sin embargo, atraviesan varias ramas. Una ruta los recorre en orden de lectura, con obras del núcleo y del área secundaria, cada una con la frase que dice por qué está ahí y el enlace a la rama de la que cuelga.
 
-Las rutas son de tres clases. Las que sirven **para saber de algo** recorren un tema, como la violencia o la movilidad social, o un autor, Marx, a través de las disciplinas que lo estudian. Las que sirven **para saber hacer algo** enseñan un oficio, de calcular con probabilidades a tratar el texto como dato. Y las que sirven **para saber qué vale lo que se sabe** discuten cuándo unos datos prueban una causa, cuándo una buena predicción explica algo y qué esconde una medida.
+Las rutas son de tres clases. Las que sirven **para saber de algo** recorren un tema, como la violencia o la movilidad social, o un autor, como Marx o Malthus, a través de las disciplinas que lo estudian. Las que sirven **para saber hacer algo** enseñan un oficio, de calcular con probabilidades a tratar el texto como dato. Y las que sirven **para saber qué vale lo que se sabe** discuten cuándo unos datos prueban una causa, cuándo una buena predicción explica algo y qué esconde una medida.
 
 Todas terminan en sus [laboratorios](laboratorios.qmd), que ponen a funcionar en el navegador, sin instalar nada, los mecanismos que la ruta ha dado a leer: cada ruta cierra así el ciclo de leer, entender y simular.
 
@@ -36,6 +36,21 @@ ruta(c("cohen1978karl", "elster1985making", "roemer1982general", "hollander2008e
 ```
 
 **Para simularlo:** [*¿Quién trabaja para quién?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/71-quien-trabaja-para-quien/): la economía del maíz de Roemer, en la que las cinco clases y la explotación salen de un reparto desigual de la simiente, y desaparecen al igualarlo.
+
+### Malthus en la Nueva Somosaguas
+
+Como Marx, Malthus no ocupa un sitio del núcleo, pero su mecanismo recorre varias ramas: la población crece hasta que la renta por persona vuelve a la subsistencia, frenada por más muertes, el freno positivo, o por menos nacimientos, el preventivo. La ruta empieza con la historia de la población del mundo de Livi-Bacci y con el aparato que convierte el crecimiento geométrico en una tasa, la tasa intrínseca de Lotka que Fisher llamó parámetro malthusiano. Sigue con la trampa: para Clark, hasta 1800 cada invento acabó en más gente y no en gente más rica, Maddison pone los números de esa curva plana y Braudel describe la vida material bajo ese techo. Después la pone a prueba en los archivos: Wrigley y Schofield encuentran que en Inglaterra pesaba más el freno preventivo, el matrimonio que se retrasaba cuando bajaban los salarios reales, Le Roy Ladurie reconstruye un ciclo malthusiano completo en el Languedoc, Turchin y Nefedov le añaden las élites y el Estado, y Scheidel cuenta el reverso, la peste que subió los salarios de los que sobrevivieron. Termina con la salida: Wrigley explica cómo el carbón liberó a Inglaterra de la tierra fija de la que partían Malthus y Ricardo, Jevons aplica el razonamiento de Malthus a las minas de carbón, Pomeranz discute por qué fue Inglaterra y no China, Galor modeliza el paso de la época malthusiana al crecimiento moderno y Reher le discute el papel de la mortalidad en la transición demográfica. Se reparte entre Clark, Wachter, Smil, Turchin, Scheidel, Wrigley y Galor, y continúa en la [cliodinámica](#cliodinámica) y la [historia económica](#historia-económica).
+
+```{r}
+#| echo: false
+#| results: asis
+ruta(c("livibacci2025concise", "wachter2014essential", "clark2007farewell", "maddison2007contours",
+       "braudel1992structures", "wrigley1981population", "leroyladurie1974peasants", "turchin2009secular",
+       "scheidel2017great", "wrigley2010energy", "jevons1865coal", "pomeranz2021great", "galor2011unified",
+       "reher2004demographic"))
+```
+
+**Para simularlo:** [*La trampa malthusiana*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/31-trampa-malthusiana/), [*Dos mil años de renta*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/57-dos-mil-anos-de-renta/) y [*El rebote de Jevons*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/49-rebote-de-jevons/): la población que se come cada invento, y en la que la peste y la suciedad de las ciudades suben el salario de equilibrio, la curva de Maddison, plana hasta 1820, y la mejora de eficiencia que hace gastar más carbón cuando la demanda es elástica.
 
 ### Violencia y conflicto
 
