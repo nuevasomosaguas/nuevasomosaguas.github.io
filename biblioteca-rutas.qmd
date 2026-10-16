@@ -275,13 +275,14 @@ ruta(c("mumford2014causation", "goldthorpe2001causation", "pearl2016causal", "bi
 
 ### Predecir y explicar
 
-El aprendizaje automático predice muy bien, y el pensum gira en torno a la identificación causal. La ruta va del aparato a su advertencia: qué se puede tomar de los métodos de predicción, para qué sirven en ciencias sociales y por qué un buen ajuste predictivo no es una explicación causal.
+El aprendizaje automático predice muy bien, y el pensum gira en torno a la identificación causal. La ruta va del aparato a su advertencia: qué se puede tomar de los métodos de predicción, también de los que siguen un estado oculto en el tiempo, los modelos de espacio de estados bayesianos de Prado, Ferreira y West, para qué sirven en ciencias sociales y por qué un buen ajuste predictivo no es una explicación causal, salvo cuando la predicción es el contrafactual, como en las series temporales estructurales de Brodersen y sus coautores. Termina con Healy, que defiende lo que la parsimonia hace con la teoría: abstraer es tirar detalle, y un modelo al que nada le falta no explica nada.
 
 ```{r}
 #| echo: false
 #| results: asis
-ruta(c("efron2016computer", "james2021introduction", "hastie2009elements", "varian2014big",
-       "mullainathan2017machine", "molina2019machine", "grimmer2022text"))
+ruta(c("efron2016computer", "james2021introduction", "hastie2009elements", "prado2021time",
+       "varian2014big", "mullainathan2017machine", "brodersen2015inferring", "molina2019machine",
+       "grimmer2022text", "healy2017fuck"))
 ```
 
 **Para simularlo:** [*El municipio más enfermo de España siempre es pequeño*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/33-municipio-mas-enfermo/), [*¿Cuántos descubrimientos sobreviven?*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/41-falsos-descubrimientos/), [*Puntuar a los tertulianos*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/27-tertulianos/) y [*Contra el matiz*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/73-contra-el-matiz/): la contracción hacia la media y la tasa de falsos descubrimientos de Efron y Hastie, cómo se puntúa una predicción y el LASSO, que predice mejor que una regresión con todo y aun así borra el efecto que un grafo causal recupera.
