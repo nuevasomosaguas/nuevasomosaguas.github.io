@@ -16,13 +16,13 @@ source("refs.R")
 
 ## Explicar cómo ocurre lo social
 
-Sabemos que los hijos de familias con estudios llegan más lejos en la escuela. Pero saberlo no es entenderlo. ¿Ocurre porque heredan capacidades? ¿Porque sus padres pueden ayudarles? ¿Porque, a igualdad de notas, calculan que seguir estudiando les compensa más que a otros? Cada respuesta describe una cadena distinta de decisiones de personas concretas que, sumadas, producen el patrón que vemos. A esas cadenas las llamamos **mecanismos**.
+¿Cómo sabemos cómo les va en la escuela a los hijos de las familias con estudios? Podemos afirmar que llegan más lejos, pero simplemente saberlo no es entenderlo. ¿Ocurre porque heredan capacidades? ¿Porque sus padres pueden ayudarles? ¿Porque, a igualdad de notas, calculan que seguir estudiando les compensa más? Cada respuesta describe una cadena distinta de decisiones de personas concretas que, sumadas, producen el patrón que vemos. A esas cadenas las llamamos **mecanismos**.
 
-Un mecanismo responde a la pregunta «¿cómo ocurre?», no solo a «¿qué ocurre?». Es la diferencia entre saber que la aspirina quita el dolor de cabeza y saber cómo actúa en el cuerpo.
+El **mecanismo** es **cómo ocurre** algo, no sólo **qué ocurre**. Es la diferencia entre saber que la aspirina quita el dolor de cabeza y saber cómo actúa en el cuerpo.
 
 La Nueva Somosaguas enseña a hacer tres cosas con cada mecanismo: formularlo con precisión, contrastarlo con datos y reconstruirlo con código.
 
-**Pruébalo en dos minutos:** en el laboratorio [*La revolución que nadie vio venir*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/06-kuran/) verás cómo unas pocas reglas sobre lo que cada persona se atreve a decir en público producen un estallido colectivo que nadie había previsto.
+**Pruébalo en dos minutos:** en el laboratorio [*La revolución que nadie vio venir*](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/problemas/06-kuran/) verás cómo unas pocas reglas sobre lo que cada persona se atreve a decir en público desembocan en estallidos colectivos imprevistos.
 
 ## Qué hace distinto a este programa
 
@@ -60,7 +60,7 @@ flowchart LR
     class R1,R2,R3,R4 ref
 ```
 
-Llamamos **consiliencia** a la idea de que una explicación gana fuerza cuando encaja a la vez con lo que saben varias disciplinas. El programa se apoya en cuatro:
+La **consiliencia** es la premisa de que una explicación gana fuerza cuando encaja con varias disciplinas. El programa se apoya en cuatro conceptos:
 
 1. **Herramientas formales.** Probabilidad, inferencia y causalidad: saber cuándo unos datos prueban algo y cuándo no.
 2. **La naturaleza humana.** Qué aportan la genética y la evolución al estudio de la sociedad, y cómo interactúan con el entorno social.
@@ -69,23 +69,23 @@ Llamamos **consiliencia** a la idea de que una explicación gana fuerza cuando e
 
 ## Por dónde empezar
 
-**Un programa exigente, con varias puertas.** El grado completo no es para todos: pide años de trabajo, una base matemática que se construye con esfuerzo y mucha disciplina. Pero no hace falta cursarlo para sacarle partido. Una ruta de lectura te da en pocas semanas una visión seria de un tema; un laboratorio te enseña en una tarde cómo funciona un mecanismo; el manual de bolsillo te sirve mañana mismo para detectar un mal argumento. Entra por la puerta que se ajuste a tu tiempo y a tus ganas.
+**Un programa exigente, con varias vías.** El grado completo no es para todos: pide años de trabajo, una base matemática que se construye con esfuerzo y mucha disciplina. Pero no hace falta cursarlo íntegro para aprovecharlo. Una ruta de lectura te da en pocas semanas una visión seria de un tema como la demografía, un laboratorio te enseña en una tarde cómo funciona un mecanismo y el manual de bolsillo te sirve mañana mismo para detectar un mal argumento. Elige lo que se ajuste a tu tiempo y tus ganas.
 
 **Si quieres cursar el grado:** el [Currículo](curriculo.qmd), cuatro años y veinte asignaturas con Julia como entorno principal, y el [Bootcamp de verano](bootcamp.qmd), doce semanas de nivelación previa.
 
-**Si estudias por tu cuenta:** la [Guía autodidacta](guia_autodidacta.qmd), con cuatro hitos y su presupuesto de horas; los [Laboratorios](laboratorios.qmd) y los [problemas interactivos](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/), que se ejecutan en el navegador sin instalar nada; y el [Entorno de trabajo](entorno.qmd).
+**Si estudias por tu cuenta:** la [Guía autodidacta](guia_autodidacta.qmd), con cuatro hitos y su presupuesto de horas, los [Laboratorios](laboratorios.qmd) y los [problemas interactivos](https://nuevasomosaguas.github.io/laboratorios-y-simulaciones/), que se ejecutan en el navegador sin instalar nada, y el [Entorno de trabajo](entorno.qmd).
 
-**Si quieres leer:** la [Biblioteca](biblioteca.qmd), `r n_obras` obras centrales con su ficha y un área secundaria de consulta, y sus [Rutas](biblioteca-rutas.qmd), itinerarios de lectura que atraviesan varias disciplinas, para saber de algo o para saber hacer algo, y que terminan en sus laboratorios.
+**Si quieres leer:** la [Biblioteca](biblioteca.qmd), `r n_obras` obras centrales con su ficha y un área secundaria de consulta, y sus [Rutas](biblioteca-rutas.qmd), itinerarios de lectura que atraviesan varias disciplinas, para saber de algo o para saber hacer algo, y con laboratorios como práctica.
 
 **Si quieres saber más:** las [Preguntas frecuentes](faq.qmd), la [Política de inteligencia artificial](politica_ia.qmd) y el [Manual de bolsillo](manual_bolsillo.qmd) para el debate público.
 
 ## Abierto a todos
 
-La bibliografía, las guías, el código de las simulaciones y los tutores están abiertos a cualquiera que quiera aprender por su cuenta. Las plazas presenciales son limitadas; los criterios de acceso se explican en las [preguntas frecuentes](faq.qmd).
+La bibliografía, las guías, las rutas de lecturas, las simulaciones y los tutores vía IA están abiertos a todo el que quiera aprender por su cuenta. Las plazas presenciales son limitadas, los criterios de acceso se explican en las [preguntas frecuentes](faq.qmd).
 
 [<i class="bi bi-github"></i> La Nueva Somosaguas en GitHub](https://github.com/nuevasomosaguas){.btn .descarga}
 
-Para citar la Nueva Somosaguas:
+¿Cómo citar la Nueva Somosaguas?:
 
 ```bibtex
 @misc{nuevasomosaguas2026,
