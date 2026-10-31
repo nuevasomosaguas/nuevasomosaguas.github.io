@@ -9,7 +9,7 @@ format:
 ---
 
 ::: {.lead}
-El plan de estudios de la **Nueva Somosaguas** no es una antología de deseos bibliográficos, sino un itinerario técnico cerrado. Cada asignatura tiene un **núcleo formal que se programa o se deriva en la pizarra**, y las obras históricas y empíricas le dan el material contra el que contrastarlo: lo que no se programa ni se deriva no es el núcleo de ninguna asignatura.
+El plan de estudios de la **Nueva Somosaguas** no es una lista de la compra, sino un itinerario técnico cerrado. Cada asignatura tiene un **núcleo formal que se programa o se explica en la pizarra**, y las obras históricas y empíricas le dan el material contra el que contrastarlo: lo que no se programa ni se explica no es el núcleo de ninguna asignatura.
 :::
 
 ---

@@ -18,10 +18,10 @@ source("refs.R")
 
 La universidad burocrática oscila entre dos respuestas igualmente estériles ante la inteligencia artificial generativa: la prohibición, inútil y contraria al progreso instrumental, o la claudicación complaciente que acepta texto sintético mediocre como sucedáneo del pensamiento propio.
 
-La **Nueva Somosaguas** rechaza ambos extremos. Asume los modelos de lenguaje y los entornos de inferencia local como un **exoesqueleto cognitivo**: una herramienta para reducir a cero el coste temporal de la tarea mecánica —raspado de datos, conversión de formatos, depuración sintáctica— y desplazar el esfuerzo intelectual hacia donde la máquina es ciega: la identificación causal, la formulación de hipótesis generativas y el rigor matemático.
+La **Nueva Somosaguas** rechaza ambos extremos. Para ella, los modelos de lenguaje y los entornos de inferencia local son un **exoesqueleto cognitivo**: una herramienta para minimizar el coste temporal de la tarea mecánica (raspado de datos, conversión de formatos y depuración sintáctica) y desplazar el esfuerzo intelectual hacia la identificación causal, la formulación de hipótesis generativas y el rigor matemático.
 
 ::: callout-important
-La tecnología es el siervo; el rigor intelectual es el criterio. Ningún estudiante entrega una línea de código, una ecuación o un argumento generado por una máquina que no sepa derivar, explicar y defender por sí mismo ante la pizarra.
+La tecnología sirve al rigor intelectual, que es el criterio.  Ningún estudiante entrega una línea de código, una ecuación o un argumento generado por una máquina que no sepa derivar, explicar y defender por sí mismo en la pizarra.
 :::
 
 ---
