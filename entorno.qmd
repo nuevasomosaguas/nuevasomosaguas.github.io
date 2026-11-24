@@ -9,7 +9,7 @@ format:
 ---
 
 ::: {.callout-note appearance="simple"}
-En las ciencias sociales convencionales, el estudiante pierde semanas luchando contra instalaciones defectuosas, rutas mal configuradas, dependencias rotas y gráficos con estética de hoja de cálculo de los noventa. En la **Nueva Somosaguas**, la infraestructura computacional no es un obstáculo secundario, sino la **tubería transparente** que lleva sin fricción del concepto matemático a su ejecución reproducible en la terminal.
+En las ciencias sociales convencionales, el estudiante pierde semanas peleándose con instalaciones rotas, rutas mal configuradas, dependencias caídas y gráficos con aspecto de hoja de cálculo de los noventa. En la **Nueva Somosaguas**, la infraestructura quita ese estorbo de en medio para pasar directo del concepto matemático al código reproducible en la terminal.
 :::
 
 ---
@@ -20,14 +20,14 @@ El módulo de infraestructura adapta a la ciencia social analítica el espíritu
 
 El objetivo es doble:
 
-1. **Erradicar el abandono por fallo técnico.** Muchos autodidactas no abandonan por la dificultad del cálculo multivariante o de la econometría causal, sino por la frustración de una instalación fallida. Cada obstáculo en la primera hora de estudio es un filtro de selección que ahuyenta talento sin medirlo.
+1. **Evitar el abandono por fallos técnicos.** Muchos autodidactas lo dejan por la frustración de una instalación fallida antes de tropezar con el cálculo multivariante o la econometría causal. Cada tropiezo en la primera hora ahuyenta talento sin medirlo.
 2. **Garantizar la reproducibilidad a largo plazo.** Un laboratorio entregado en 2026 debe volver a ejecutarse en 2036 con resultados idénticos. Para eso cada proyecto congela sus dependencias exactas y cada imagen de contenedor queda archivada con su versión: ninguna actualización de paquetes ni del sistema operativo puede alterar en silencio un resultado numérico o un gráfico.
 
 ---
 
 ## Módulo I: la cuartilla de la terminal
 
-El primer paso de la emancipación intelectual es abandonar las interfaces pasivas —los menús de SPSS o de Excel— y dominar la línea de comandos de Unix (`bash` o `zsh`).
+El primer paso es soltar los menús de SPSS o de Excel y aprender a moverse por la línea de comandos de Unix (`bash` o `zsh`).
 
 ### La hoja de referencia esencial
 
@@ -44,7 +44,7 @@ El primer paso de la emancipación intelectual es abandonar las interfaces pasiv
 
 ### El poder de las tuberías
 
-Toda la filosofía de Unix descansa en componer programas pequeños que hacen una sola cosa bien y se comunican mediante texto plano:
+Toda la filosofía de Unix consiste en encadenar programas pequeños que hacen una sola cosa bien y se comunican con texto plano:
 
 ```bash
 # Defunciones de menores de cinco años por causa, de la más a la menos frecuente.
@@ -58,7 +58,7 @@ Cuatro programas, una línea y ningún archivo intermedio. El `awk -F','` ingenu
 
 ## Módulo II: entornos reproducibles y distribución
 
-Para que todos los alumnos trabajen sobre exactamente la misma base, sea cual sea su sistema operativo, la facultad ofrece tres puertas de entrada escalonadas. Las tres siguen la misma receta: las mismas versiones, paquetes y ajustes. Los dos primeros niveles son contenedores y el tercero, un sistema operativo completo, pero un laboratorio da los mismos números en cualquiera de ellos.
+Para que todos los alumnos trabajen sobre la misma base, sea cual sea su sistema operativo, la facultad ofrece tres puertas de entrada. Las tres siguen la misma receta: idénticas versiones, paquetes y ajustes. Los dos primeros niveles son contenedores y el tercero es un sistema operativo completo, pero un laboratorio da los mismos números en los tres.
 
 ```{mermaid}
 %%| label: fig-niveles
@@ -78,9 +78,9 @@ flowchart TB
 
 1. **Probar en el navegador.** Con [GitHub Codespaces](https://codespaces.new/nuevasomosaguas/entorno), el estudiante dispone del entorno completo en unos minutos, sin instalar nada en su máquina: VS Code, RStudio y un escritorio XFCE con Zotero, JabRef, Obsidian y Zathura, todo en el navegador.
 2. **Devcontainer.** La misma imagen, sin el escritorio, que VS Code abre en local como si fuera una carpeta más, aislada del resto del sistema. Basta Docker y la extensión *Dev Containers*; las instrucciones están en el [repositorio del entorno](https://github.com/nuevasomosaguas/entorno).
-3. **USB arrancable e instalación nativa.** Una imagen ISO de Debian 13 con todo el software del pensum, construida desde la imagen del escritorio: se prueba en vivo desde un USB, o en una máquina virtual (Virtual Machine Manager o VirtualBox), y, si convence, el instalador del escritorio la copia al disco, con cifrado si se marca y con una instantánea al día del sistema y de las carpetas personales (btrfs y Snapper, hasta 90 días), para recuperar un archivo borrado o deshacer una actualización. Se publicará con la versión 2026.2 (TODO). En la facultad presencial, los portátiles asignados llevan Debian con **cifrado de disco completo (LUKS) por omisión**: si un equipo se pierde, los microdatos censales que contiene, anonimizados pero sensibles, siguen protegidos, como exige el RGPD.
+3. **USB arrancable e instalación nativa.** Una imagen ISO de Debian 13 con todo el software del grado, construida sobre el mismo escritorio. Puedes probarla en vivo desde un USB o en una máquina virtual (Virtual Machine Manager o VirtualBox). Si te convence, el instalador la copia al disco con cifrado opcional y guarda una instantánea diaria del sistema y tus carpetas (btrfs y Snapper, hasta 90 días) para recuperar archivos borrados o deshacer actualizaciones. Se publicará con la versión 2026.2 (TODO). En la facultad presencial, los portátiles llevan Debian con **cifrado de disco completo (LUKS) por omisión**: si un equipo se pierde, los microdatos censales siguen protegidos como exige el RGPD.
 
-En los tres niveles, un **manual de la primera vez** espera en `~/Documents/Bienvenida.pdf` —y en el escritorio se abre solo la primera vez—: dónde está cada cosa, cómo abrir la terminal, calcular, citar y capturar, y qué hacer si algo falla. Cuatro páginas, con la misma plantilla que los informes.
+En los tres niveles tienes un **manual de bienvenida** en `~/Documents/Bienvenida.pdf` (en el escritorio se abre solo la primera vez). Son cuatro páginas, con la misma plantilla que los informes: dónde está cada cosa, cómo abrir la terminal, calcular, citar y capturar, y qué hacer si algo falla.
 
 ---
 
@@ -88,21 +88,21 @@ En los tres niveles, un **manual de la primera vez** espera en `~/Documents/Bien
 
 ### Entornos de desarrollo
 
-* **VS Code con sus extensiones oficiales.** Configurado de fábrica para **Julia**, **R**, **Python**, **SQL**, **Quarto** y **Typst** (con Tinymist, que muestra la vista previa mientras se escribe y exporta el PDF al guardar), con formateo automático de código al guardar, *Fira Code* en el editor e integración con Git.
-* **Pluto.jl, cuadernos reactivos.** En Jupyter, ejecutar las celdas en desorden deja estados ocultos: el cuaderno muestra resultados que su propio código ya no produce. Pluto.jl lo impide: cambiar un parámetro en una celda vuelve a ejecutar automáticamente todas las que dependen de ella, según el grafo de dependencias entre celdas, de modo que lo que se ve coincide siempre con lo que el código calcula. Además, cada cuaderno guarda dentro de sí las versiones exactas de sus paquetes. Es el entorno natural para experimentar con autómatas celulares como el modelo de segregación de Schelling.
+* **VS Code con sus extensiones oficiales.** Viene listo para **Julia**, **R**, **Python**, **SQL**, **Quarto** y **Typst** (con Tinymist para ver la vista previa y exportar el PDF al guardar). Incluye formateo automático, *Fira Code* en el editor e integración con Git.
+* **Pluto.jl, cuadernos reactivos.** En Jupyter, ejecutar las celdas en desorden deja estados ocultos: el cuaderno muestra resultados que su propio código ya no produce. Pluto.jl lo impide siguiendo el grafo de dependencias: al cambiar un parámetro en una celda, recalcula todas las que dependen de ella para que lo visible coincida siempre con el código. Además, cada cuaderno guarda las versiones exactas de sus paquetes. Es el sitio natural para probar autómatas celulares como el modelo de segregación de Schelling.
 
 ### La biblioteca y las citas
 
 Citar no puede ser una tarea aparte, hecha al final a mano. En el entorno, cada referencia pasa por una sola tubería, de la lectura al documento:
 
-1. **Guardar.** En Firefox o Brave, el botón de Zotero guarda la página que se lee con su PDF; en Newsboat, el lector de revistas de la terminal, `o` ofrece primero lo que se hace con un artículo: abrirlo, guardarlo en Zotero o en los marcadores. Los PDF quedan en `~/Biblioteca/almacen_pdf`, con el nombre «Autor - Año - Título», y la referencia, en `~/Biblioteca/zotero.bib`, que Better BibTeX reescribe con cada cambio y con claves de cita estables.
+1. **Guardar.** En Firefox o Brave, el botón de Zotero guarda la página y su PDF. En Newsboat, el lector de revistas de la terminal, la tecla `o` pregunta si abrir el artículo, guardarlo en Zotero o mandarlo a marcadores. Los PDF quedan en `~/Biblioteca/almacen_pdf` como «Autor - Año - Título», y la referencia pasa a `~/Biblioteca/zotero.bib`, que Better BibTeX mantiene al día con claves estables.
 2. **Citar.** Junto a la propia está siempre la [biblioteca de la Nueva Somosaguas](biblioteca.qmd). En VS Code y en Obsidian, escribir `@` abre la lista de referencias, con título y autores; en la terminal, `bibsearch` busca en todas las bibliografías, `bibpdf` abre el PDF de una entrada y `bibclave` copia su clave.
 3. **Compilar.** `pandoc informe.md -o informe.pdf` resuelve las citas contra las dos bibliotecas y añade la lista de referencias al final, en español y con la plantilla de la facultad, sin declarar nada.
 4. **Congelar.** Cada trabajo lleva su propia bibliografía, la tercera capa: `bibcongelar informe.md` escribe a su lado `referencias.bib`, con las entradas que cita y solo esas. Viaja con el trabajo en su repositorio, y el documento se compila igual en cualquier máquina, sin la biblioteca de Zotero de quien lo escribió: la reproducibilidad alcanza también a las citas.
 
-Lo leído también deja rastro sin cuentas ni nubes: `lecturas` junta lo que Zathura y Foliate recuerdan de cada PDF y cada EPUB (la página, el porcentaje, la fecha), le pone su clave de la bibliografía y lo deja en un archivo plano, `~/Biblioteca/lecturas.tsv`. Para lo que se lee en papel, `biblectura` crea en Obsidian una ficha de lectura con los datos del libro: el mecanismo y su núcleo formal, las anotaciones con su página y las tareas de verificación, porque una lectura no se da por asimilada hasta que su ecuación funciona como script.
+Lo leído deja rastro sin cuentas ni nubes. El comando `lecturas` recoge lo que Zathura y Foliate guardan de cada PDF o EPUB (página, porcentaje y fecha), añade su clave bibliográfica y lo escribe en `~/Biblioteca/lecturas.tsv`. Para el papel, `biblectura` abre una ficha en Obsidian con los datos del libro, el mecanismo, las notas por página y las tareas de verificación: una lectura no está asimilada hasta que su ecuación corre en un script.
 
-Lo que se quiere tener a mano pero no se cita (conjuntos de datos, documentación, herramientas, cursos, páginas web sueltas, etcétera) va a los **marcadores**, una base de [buku](https://github.com/jarun/buku) que se consulta desde la terminal (`marcadores`) o desde una página en el navegador, donde basta arrastrar un enlace para guardarlo. Los marcadores de Firefox y Brave llegan solos, y se van si se borran allí, sin tocar lo guardado por otras vías.
+Lo que conviene tener a mano sin citarlo (datos, documentación, herramientas, cursos o páginas sueltas) va a los **marcadores**, una base de [buku](https://github.com/jarun/buku). Se consulta desde la terminal (`marcadores`) o desde el navegador, donde basta arrastrar un enlace para guardarlo. Los marcadores de Firefox y Brave se sincronizan solos sin tocar lo guardado por otras vías.
 
 ### Control riguroso de dependencias
 
@@ -123,7 +123,7 @@ DataFrames = "1.8"
 
 `Manifest.toml`, que Julia genera solo, fija la versión exacta de cada paquete y de cada dependencia indirecta. Es el que **congela** el entorno: ambos se versionan en Git, y `Pkg.instantiate()` reconstruye en cualquier máquina el mismo árbol de paquetes, versión por versión.
 
-Las imágenes de contenedor se etiquetan por versión de calendario: una por semestre (`2026.2`, `2027.1`) y un tercer número para los arreglos entre medias (`2026.2.1`). Las etiquetas publicadas no se borran nunca. **GitHub Actions** construye cada imagen y comprueba cada herramienta antes de publicarla: si algo falta, no se publica nada. También vigila el mantenimiento: cada mes compara cada versión fijada con la última publicada, y dos semanas antes de cada semestre prepara la subida de todas ellas —con sus sumas de comprobación y los lockfiles al día— en una petición de cambios con la lista de lo que una persona tiene que revisar y probar antes de publicar. Ejecutar además de principio a fin todos los cuadernos de laboratorio queda pendiente (TODO).
+Las imágenes de contenedor se etiquetan por calendario: una por semestre (`2026.2`, `2027.1`) y un tercer número para arreglos intermedios (`2026.2.1`). Las etiquetas publicadas no se borran nunca. **GitHub Actions** construye cada imagen y prueba cada herramienta antes de publicarla; si falta algo, se detiene. También vigila el mantenimiento: cada mes compara las versiones fijadas con las nuevas. Dos semanas antes de cada semestre abre una petición de cambios con las actualizaciones, sus sumas de comprobación, los lockfiles al día y la lista de comprobaciones manuales. Queda pendiente ejecutar de principio a fin todos los cuadernos de laboratorio (TODO).
 
 ---
 
@@ -156,7 +156,7 @@ Texto con una nota.#nota[A una columna aparece en el margen.]
 typst compile --font-path fonts informe.typ
 ```
 
-**Quarto.** Dentro del entorno, la extensión ya viene instalada y es el aspecto por omisión: un documento con `format: typst` o `format: html`, como los que crea RStudio, ya tiene el diseño de la facultad y en español, y `pandoc` hace lo mismo con un Markdown suelto. Fuera del entorno, o para que el documento se vea igual en cualquier máquina, se instala la extensión en el proyecto y se pide el formato por su nombre, `somosaguas-typst` o `somosaguas-html`. Las notas al pie de Markdown (`^[...]`) pasan al margen en la maqueta a una columna:
+**Quarto.** Dentro del entorno la extensión ya viene instalada por defecto: cualquier documento con `format: typst` o `format: html` (como los que crea RStudio) sale en español y con el diseño de la facultad. Lo mismo hace `pandoc` con un Markdown suelto. Fuera del entorno, o para asegurar el mismo aspecto en cualquier máquina, se instala la extensión en el proyecto y se pide `somosaguas-typst` o `somosaguas-html`. Las notas al pie de Markdown (`^[...]`) pasan al margen en la maqueta a una columna:
 
 ```bash
 quarto install extension nuevasomosaguas/somosaguas-quarto-theme
@@ -216,13 +216,13 @@ save("grafico.pdf", fig)
 
 ## Verificación del entorno
 
-Cualquier estudiante o autodidacta puede comprobar su sistema guardando este script como `check_env.sh` y ejecutando `bash check_env.sh`. Termina con error si falta alguna herramienta, así que sirve también como primer paso de una integración continua.
+Cualquier estudiante o autodidacta puede comprobar su sistema guardando este script como `check_env.sh` y ejecutando `bash check_env.sh`. Devuelve error si falta alguna herramienta, así que sirve también para automatizar pruebas.
 
-Dentro del entorno, `./verificar_entorno.sh` va un paso más allá: no mira si las herramientas existen, sino si calculan. Compila en Typst un grafo causal, reproduce en Julia una actualización bayesiana y resuelve en SQLite una consulta con funciones de ventana, y termina con «Entorno calibrado. Comience a calcular.».
+Dentro del entorno, `./verificar_entorno.sh` va un paso más allá: comprueba que las herramientas calculan, no solo que están instaladas. Compila un grafo causal en Typst, reproduce una actualización bayesiana en Julia y resuelve una consulta con funciones de ventana en SQLite. Si todo pasa, termina con «Entorno calibrado. Comience a calcular.».
 
 ```bash
 #!/usr/bin/env bash
-# check_env.sh — auditoría del entorno de la Nueva Somosaguas
+# check_env.sh: comprueba que están las herramientas del entorno
 
 falta=0
 for herramienta in julia R sqlite3 git quarto typst; do

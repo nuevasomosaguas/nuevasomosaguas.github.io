@@ -14,7 +14,7 @@ format:
 ## El código como microscopio social
 Un mecanismo generativo se entiende de verdad cuando se deriva desde primeros principios y se ejecuta sobre datos. Estos cinco laboratorios son una muestra de cómo se trabaja en la Nueva Somosaguas: cada uno aísla un mecanismo clásico, enseña lo que produce y guarda debajo el código que lo produce.
 
-Están escritos en **Julia** —modelado dinámico, inferencia y simulación— y en **SQL relacional**, sin librerías de caja negra: la mecánica algorítmica queda a la vista, que es justamente lo que se quiere enseñar. Cualquiera puede pegarlos en un REPL de Julia o en un cliente SQLite y verificarlos en segundos. Al final de cada uno hay un enlace para seguir tirando del hilo.
+Están escritos en **Julia** (modelado dinámico, inferencia y simulación) y en **SQL relacional**, sin librerías de caja negra: la mecánica algorítmica queda a la vista, que es lo que se quiere enseñar. Cualquiera puede pegarlos en un REPL de Julia o en un cliente SQLite y verificarlos en segundos. Al final de cada uno hay un enlace para seguir tirando del hilo.
 :::
 
 ---
@@ -25,7 +25,7 @@ Sean dos rasgos independientes en la población general: el talento analítico (
 
 ![La población (en gris) y los admitidos (en granate). Entre los admitidos aparece una correlación negativa que en la población no existe.](images/laboratorios/berkson.png){fig-alt="Nube de puntos de talento frente a diligencia. La nube gris de la población es redonda; los admitidos, en granate, ocupan la esquina superior derecha y forman una banda descendente."}
 
-**Explicación analítica:** la correlación poblacional es nula, como corresponde a dos variables generadas de forma independiente. Al restringir la muestra al decil superior aparece una correlación de $r \approx -0{,}70$. Nada causal ha ocurrido entre $T$ y $D$: el sesgo lo introduce el propio acto de seleccionar por una variable que ambas causan.
+**Explicación analítica:** la correlación poblacional es nula, como corresponde a dos variables independientes. Al restringir la muestra al decil superior aparece una correlación de $r \approx -0{,}70$. Nada causal ha ocurrido entre $T$ y $D$: el sesgo lo introduce el propio acto de seleccionar por una variable que ambas causan.
 
 ::: {.callout-tip collapse="true" icon="false"}
 ## El código, en Julia
@@ -60,7 +60,7 @@ println("Correlación en la muestra condicionada: ", round(r_muestra, digits = 4
 
 ## 2. Actualización conjugada Beta-Binomial
 
-El análisis bayesiano trata la probabilidad de cooperación $\theta$ como una cantidad incierta y actualiza lo que se sabe de ella conforme llega la evidencia. Si la creencia previa se parametriza como $\text{Beta}(\alpha, \beta)$, observar $k$ éxitos en $n$ interacciones actualiza la posterior a $\text{Beta}(\alpha + k,\ \beta + n - k)$ de forma analítica y exacta, sin muestreo.
+El análisis bayesiano trata la probabilidad de cooperación $\theta$ como una cantidad incierta y actualiza lo que se sabe de ella conforme llega la evidencia. Si la creencia previa se parametriza como $\text{Beta}(\alpha, \beta)$, observar $k$ éxitos en $n$ interacciones actualiza la posterior a $\text{Beta}(\alpha + k,\ \beta + n - k)$ con una fórmula exacta, sin muestreo.
 
 ![La creencia previa, débil y centrada en 0,5, y la posterior tras observar 14 jugadas cooperativas en 20 rondas.](images/laboratorios/beta-binomial.png){fig-alt="Dos curvas de densidad: la previa Beta(2, 2), baja y ancha, centrada en 0,5; y la posterior Beta(16, 8), alta y estrecha, con el máximo cerca de 0,68."}
 
@@ -75,7 +75,6 @@ El análisis bayesiano trata la probabilidad de cooperación $\theta$ como una c
 # Datos: 14 jugadas cooperativas en 20 rondas
 k, n = 14, 20
 
-# Actualización conjugada
 α_post = α_0 + k
 β_post = β_0 + (n - k)
 
@@ -102,7 +101,7 @@ Ningún agente desea vivir en un gueto homogéneo: solo prefiere no ser una mino
 
 ![El tablero de 40 × 40 al principio, con los dos grupos mezclados al azar, y tras nueve rondas de mudanzas.](images/laboratorios/schelling.png){fig-alt="Dos cuadrículas de casillas granates, azules y blancas. En la primera los colores están mezclados al azar; en la segunda forman grandes manchas de un solo color."}
 
-**Explicación analítica:** el umbral es del 30%, es decir, cada agente acepta ser minoría en una proporción de dos a uno. Aun así el índice de segregación —la proporción media de vecinos afines— pasa de $0{,}504$, el valor esperado en una distribución aleatoria, a $0{,}753$ en nueve iteraciones. Nadie ha buscado el gueto; lo produce la agregación de decisiones locales, que es exactamente la tesis generativa de Schelling y Joshua Epstein.
+**Explicación analítica:** el umbral es del 30%, es decir, cada agente acepta ser minoría en una proporción de dos a uno. Aun así, el índice de segregación (la proporción media de vecinos afines) pasa de $0{,}504$, el valor esperado en una distribución aleatoria, a $0{,}753$ en nueve iteraciones. Nadie ha buscado el gueto; lo produce la agregación de decisiones locales, que es la tesis generativa de Schelling y Joshua Epstein.
 
 ::: {.callout-tip collapse="true" icon="false"}
 ## El código, en Julia
@@ -179,7 +178,7 @@ println("Índice de segregación final:   ", round(indice_segregacion(tablero_fi
 
 ## 4. Tabla de mortalidad en SQL relacional
 
-Una tabla de mortalidad de cohorte se puede calcular dentro de la propia base de datos, sin exportar nada a una hoja de cálculo. La consulta deriva la función de supervivencia $l(x)$ y la probabilidad condicional de muerte $q(x)$ a partir de un registro bruto de defunciones, por el método de la cohorte extinguida: cuando todos los nacidos en 1680 han muerto, los que sobreviven a la edad $x$ son exactamente los que murieron a esa edad o después.
+Una tabla de mortalidad de cohorte se puede calcular dentro de la propia base de datos, sin exportar nada a una hoja de cálculo. La consulta deriva la función de supervivencia $l(x)$ y la probabilidad condicional de muerte $q(x)$ a partir de un registro bruto de defunciones, por el método de la cohorte extinguida: cuando todos los nacidos en 1680 han muerto, los que sobreviven a la edad $x$ son los que murieron a esa edad o después.
 
 ```sql
 -- SQLite: tabla de mortalidad de la cohorte de 1680, a partir de los registros parroquiales
@@ -232,7 +231,7 @@ Wrigley, E. A., Davies, R. S., Oeppen, J. E. y Schofield, R. S. (1997). *English
 
 ## 5. Intervalos de confianza por bootstrap
 
-Al estudiar rentas, patrimonios o ratios de fecundidad —distribuciones con cola pesada— suponer normalidad es un error de bulto. El remuestreo de Efron reconstruye la distribución muestral del estimador extrayendo muestras con reemplazo de los propios datos, sin postular nada sobre su forma.
+Al estudiar rentas, patrimonios o ratios de fecundidad (distribuciones con cola pesada), suponer normalidad es un error de bulto. El remuestreo de Efron reconstruye la distribución muestral del estimador extrayendo muestras con reemplazo de los propios datos, sin postular nada sobre su forma.
 
 ![Las medianas de 10 000 remuestras, con el intervalo percentil al 95% y la mediana de la población.](images/laboratorios/bootstrap.png){fig-alt="Histograma irregular de las medianas remuestreadas, entre 8000 y 17 000 euros, con dos líneas discontinuas que marcan el intervalo y una línea continua en la mediana de la población, dentro del intervalo."}
 
@@ -258,7 +257,6 @@ for b in 1:B
     medianas_boot[b] = median(remuestra)
 end
 
-# Intervalo percentil al 95%
 ic_inferior = quantile(medianas_boot, 0.025)
 ic_superior = quantile(medianas_boot, 0.975)
 

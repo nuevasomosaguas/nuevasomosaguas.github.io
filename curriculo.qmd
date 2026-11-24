@@ -9,7 +9,7 @@ format:
 ---
 
 ::: {.lead}
-El plan de estudios de la **Nueva Somosaguas** no es una lista de la compra, sino un itinerario técnico cerrado. Cada asignatura tiene un **núcleo formal que se programa o se explica en la pizarra**, y las obras históricas y empíricas le dan el material contra el que contrastarlo: lo que no se programa ni se explica no es el núcleo de ninguna asignatura.
+El plan de estudios de la **Nueva Somosaguas** es un itinerario técnico cerrado, no una lista de la compra. Cada asignatura tiene un **núcleo formal que se programa o se explica en la pizarra**, y las obras históricas y empíricas le dan el material contra el que contrastarlo: lo que no se programa ni se explica no es el núcleo de ninguna asignatura.
 :::
 
 ---
@@ -28,7 +28,7 @@ Los [problemas interactivos](https://nuevasomosaguas.github.io/laboratorios-y-si
 
 ### 2. Puente matricial explícito
 
-El álgebra lineal se enseña con determinantes y matrices, no sin ellos. Frente al enfoque puramente abstracto de Axler, el grado adopta el aplicado de Strang, que conecta los operadores lineales con la descomposición QR, los valores singulares, las matrices de Leslie y el análisis de Markov multivariante. Boyd y Vandenberghe lo acompañan en los mínimos cuadrados y en la implementación, pero no lo sustituyen: prescinden de los determinantes y no llegan a los autovalores. El estudiante debe poder pasar del operador al código sin un salto de fe.
+El álgebra lineal se enseña con determinantes y matrices, no sin ellos. Frente al enfoque abstracto de Axler, el grado adopta el aplicado de Strang, que conecta los operadores lineales con la descomposición QR, los valores singulares, las matrices de Leslie y el análisis de Markov multivariante. Boyd y Vandenberghe lo acompañan en los mínimos cuadrados y en la implementación, pero no lo sustituyen: prescinden de los determinantes y no llegan a los autovalores. El estudiante debe poder pasar del operador al código sin un salto de fe.
 
 ### 3. Desacople entre mecanismo e identificación
 
@@ -41,7 +41,7 @@ Una teoría del mecanismo no identifica un efecto, y un diseño de identificaci�
 
 ### 4. Poda del canon
 
-Cada asignatura se apoya en pocos textos matriz, al menos uno de los cuales se lee entero, salvo cuando el único texto es más amplio que la asignatura y el currículo fija sus capítulos, como en la 4.3, y en un cuaderno computacional reproducible. Los demás se trabajan por sus capítulos centrales: el modo de lectura de cada obra en la [biblioteca](biblioteca.qmd) dice cuál se lee y cuál se consulta. Se elimina la acumulación bibliográfica decorativa: diez manuales por asignatura garantizan que no se lea ninguno. El entregable de cada materia es un documento que compila desde la terminal, no una lista de lecturas.
+Cada asignatura se apoya en un cuaderno computacional reproducible y en pocos textos matriz. Al menos uno de ellos se lee entero, salvo cuando el único texto es más amplio que la asignatura y el currículo fija sus capítulos (como en la 4.3). Los demás se trabajan por sus capítulos centrales: el modo de lectura de cada obra en la [biblioteca](biblioteca.qmd) dice cuál se lee y cuál se consulta. Se elimina la acumulación bibliográfica decorativa: diez manuales por asignatura garantizan que no se lea ninguno. El entregable de cada materia es un documento que compila desde la terminal, no una lista de lecturas.
 
 ---
 
@@ -63,7 +63,7 @@ El primer año da por sabido lo que entrega el [bootcamp](bootcamp.qmd): cálcul
 ### Primer año: fundamentos formales y restricciones materiales
 
 #### 1.1. Cálculo multivariante y optimización {#asignatura-1-1}
-* **Contenidos:** espacios euclídeos, gradientes, teorema de la función implícita y estática comparada, y optimización con y sin restricciones mediante multiplicadores de Lagrange; al final, ecuaciones en diferencias y diferenciales y la estabilidad de los equilibrios, que usan la dinámica de réplica de la 2.3, los modelos de ecuaciones de la 3.2 y Galor en la 3.5.
+* **Contenidos:** espacios euclídeos, gradientes, teorema de la función implícita y estática comparada, y optimización con y sin restricciones con multiplicadores de Lagrange; al final, ecuaciones en diferencias y diferenciales y la estabilidad de los equilibrios, que usan la dinámica de réplica de la 2.3, los modelos de ecuaciones de la 3.2 y Galor en la 3.5.
 * **Texto matriz:** Carl P. Simon & Lawrence Blume — *Mathematics for Economists*, hasta sus capítulos 23 a 25, autovalores y dinámica; Strogatz retoma la parte no lineal en la 4.1.
 
 #### 1.2. Álgebra lineal computacional {#asignatura-1-2}
@@ -72,14 +72,14 @@ El primer año da por sabido lo que entrega el [bootcamp](bootcamp.qmd): cálcul
 
 #### 1.3. Probabilidad axiomática, inferencia y teoría de la información {#asignatura-1-3}
 * **Contenidos:** espacios de probabilidad, variables aleatorias discretas y continuas, distribuciones conjuntas, entropía de Shannon e información mutua; estimación, intervalos, contrastes y *bootstrap*, con la inferencia frecuentista y la bayesiana en paralelo.
-* **Textos matriz:** Joseph K. Blitzstein & Jessica Hwang — *Introduction to Probability*, para la probabilidad; Michael J. Evans & Jeffrey S. Rosenthal — *Probability and Statistics: The Science of Uncertainty* (caps. 5 a 9: de la verosimilitud a la inferencia bayesiana, la inferencia óptima y la comprobación del modelo; los cuatro primeros repiten la probabilidad de Blitzstein), para la inferencia que Blitzstein no cubre.
+* **Textos matriz:** Joseph K. Blitzstein & Jessica Hwang — *Introduction to Probability*, para la probabilidad; Michael J. Evans & Jeffrey S. Rosenthal — *Probability and Statistics: The Science of Uncertainty*, para la inferencia que Blitzstein no cubre (caps. 5 a 9: verosimilitud, inferencia bayesiana, inferencia óptima y comprobación del modelo; los cuatro primeros repiten la probabilidad de Blitzstein).
 * **Síntesis:** Larry Wasserman — *All of Statistics*, del área secundaria de la biblioteca, para repasar al final lo aprendido y como obra de consulta.
 * **Lectura:** Claude E. Shannon — «A Mathematical Theory of Communication».
 
 #### 1.4. Demografía formal y modelos poblacionales {#asignatura-1-4}
 * **Contenidos:** ecuación de Euler-Lotka, tablas de vida, matrices de proyección de Leslie, modelos de población estable y descomposición de tasas; al final, de la tabla de vida al análisis de supervivencia con datos individuales.
 * **Textos matriz:** Samuel H. Preston, Patrick Heuveline & Michel Guillot — *Demography*; Kenneth W. Wachter — *Essential Demographic Methods*.
-* **Ampliación:** Melinda C. Mills — *Introducing Survival and Event History Analysis*, que lleva la tabla de vida a las historias individuales: la función de riesgo, el estimador de Kaplan-Meier, que es una tabla de vida con censura, la regresión de Cox, los modelos de tiempo discreto y los riesgos competitivos, con el nacimiento de un hijo, una unión, un empleo o una migración como eventos. Es el puente entre esta asignatura y la regresión de la 2.4. Su código está en R, pero aquí se lee por los métodos y el cuaderno sigue en Julia.
+* **Ampliación:** Melinda C. Mills — *Introducing Survival and Event History Analysis*, que lleva la tabla de vida a las historias individuales: función de riesgo, estimador de Kaplan-Meier (una tabla de vida con censura), regresión de Cox, modelos de tiempo discreto y riesgos competitivos sobre eventos como un nacimiento, una unión, un empleo o una migración. Es el puente entre esta asignatura y la regresión de la 2.4. Su código está en R, pero aquí se lee por los métodos y el cuaderno sigue en Julia.
 
 #### 1.5. Computación científica y estructuras de datos {#asignatura-1-5}
 * **Contenidos:** complejidad temporal y espacial ($O(n)$), estructuras de datos, algoritmos de búsqueda y ordenación, y programación científica en Julia.
@@ -168,7 +168,7 @@ El primer año da por sabido lo que entrega el [bootcamp](bootcamp.qmd): cálcul
 * **Contenidos:** desarrollo de un modelo analítico original o replicación crítica de un resultado de la literatura empírica.
 * **Lecturas:** John P. A. Ioannidis — «Why Most Published Research Findings Are False»; Joseph P. Simmons, Leif D. Nelson & Uri Simonsohn — «False-Positive Psychology»; Open Science Collaboration — «Estimating the Reproducibility of Psychological Science».
 * **Escritura:** Howard S. Becker — *Writing for Social Scientists*, del área secundaria de la biblioteca, para empezar y terminar la memoria.
-* **Requisitos:** código fuente en repositorio público, datos abiertos y memoria en Typst o Quarto que compile de forma determinista desde la terminal.
+* **Requisitos:** código fuente en repositorio público, datos abiertos y memoria en Typst o Quarto con compilación determinista desde la terminal.
 
 ---
 

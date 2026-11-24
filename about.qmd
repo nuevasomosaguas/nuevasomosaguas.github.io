@@ -12,19 +12,19 @@ format:
 
 Durante más de medio siglo, el campus de Somosaguas fue el centro de gravedad de la sociología y las ciencias políticas en el mundo hispanohablante. Con las décadas, la disciplina fue abandonando la ambición científica de sus fundadores para instalarse en lo que Jon Elster llamó *soft obscurantism*: un entramado de explicaciones funcionales, analogías literarias y causas indemostrables en el que «el capitalismo», «el sistema» o «el patriarcado» actuaban como agentes con voluntad propia.
 
-La **Nueva Somosaguas** no es una reforma burocrática ni una solicitud de despacho. Es una **reapropiación epistemológica** de ese legado: se toma el nombre del epicentro histórico de la disciplina para refundar el estudio de la sociedad sobre los estándares de las ciencias empíricas —álgebra lineal, probabilidad axiomática, demografía formal, genética cuantitativa y computación reproducible—. Donde hubo asamblea sentimental hay ahora cálculo matricial y una terminal abierta.
+La **Nueva Somosaguas** toma el nombre de aquel campus para devolver el estudio de la sociedad a las ciencias empíricas: álgebra lineal, probabilidad axiomática, demografía formal, genética cuantitativa y computación reproducible. No pide despachos ni reformas administrativas. Donde hubo asamblea sentimental hay ahora cálculo matricial y una terminal abierta.
 
 ---
 
 ## Naturaleza institucional
 
-No somos un centro de adoctrinamiento partidista ni una consultora orientada a captar contratos de asesoría estatal. La Nueva Somosaguas se constituye como un **bien público de código abierto**, mantenido por una red independiente y descentralizada de científicos de datos, demógrafos, econometristas y biólogos cuantitativos repartidos entre universidades, centros de cómputo y el sector tecnológico.
+La Nueva Somosaguas es un **bien público de código abierto**, al margen de partidos y consultoras estatales. Lo mantiene una red independiente de científicos de datos, demógrafos, econometristas y biólogos cuantitativos que trabajan en universidades, centros de cálculo y empresas tecnológicas.
 
-La legitimidad del proyecto no descansa en las biografías de quienes lo promueven, sino en la consiliencia de sus fuentes y en la auditabilidad de su código. Tres certezas operativas lo sostienen:
+El proyecto vale por la coherencia de sus fuentes y por el código que cualquiera puede auditar, no por las biografías de quienes lo impulsan. Lo sostienen tres reglas:
 
-* **El fin del mandarinato de cátedra.** La autoridad no emana de la jerarquía funcionarial ni de la antigüedad en un claustro cerrado, sino de la consistencia deductiva interna y de la resistencia del código ante microdatos administrativos en bruto.
-* **Acceso sin peajes.** El canon bibliográfico, los cuadernos de laboratorio, las canalizaciones en Julia y las guías docentes están a disposición de cualquiera con la disciplina necesaria para recorrerlos por su cuenta. No se expiden títulos ni se cobra matrícula.
-* **Neutralidad axiológica.** En el sentido de Weber: el mundo real exhibe límites biológicos innegociables, asimetrías de incentivos y tragedias de coordinación que operan con independencia de nuestras preferencias morales. Describirlos no es aprobarlos.
+* **El fin del mandarinato de cátedra.** Aquí la autoridad sale de la solidez deductiva y de un código que aguante microdatos administrativos en bruto, no de la jerarquía ni de la antigüedad en un claustro.
+* **Acceso sin peajes.** La bibliografía, los cuadernos de laboratorio, el código en Julia y las guías docentes están abiertos para cualquiera con la disciplina de recorrerlos por su cuenta. No se expiden títulos ni se cobra matrícula.
+* **Neutralidad axiológica.** En el sentido de Weber: el mundo real tiene límites biológicos, asimetrías de incentivos y problemas de coordinación que operan al margen de nuestras preferencias morales. Describirlos no es aprobarlos.
 
 ---
 
@@ -42,7 +42,7 @@ Ingenieros, matemáticos y científicos de datos que quieren abordar la demograf
 
 ### El analista cívico
 
-Quien entiende que la fiscalización democrática no se ejerce con manifiestos, sino procesando datos masivos, modelando grafos de adjudicación y exponiendo las relaciones institucionales con la frialdad de quien audita un circuito.
+Quien entiende que la fiscalización democrática se hace procesando datos masivos, trazando grafos de adjudicación y sacando a la luz relaciones institucionales con la frialdad de quien audita un circuito, no firmando manifiestos.
 
 ---
 
@@ -50,7 +50,7 @@ Quien entiende que la fiscalización democrática no se ejerce con manifiestos, 
 
 No se pide adhesión doctrinaria ni fe en el plan de estudios. Se exige lo que exige cualquier disciplina científica: que todo argumento declare sus supuestos, formalice el espacio de estados y someta sus conjeturas al compilador y al dato. Donde un modelo colapsa ante la evidencia se descarta; donde un teorema se sostiene, se integra.
 
-Eso vale también para este sitio. Las correcciones, refutaciones y erratas metodológicas se agradecen en el [repositorio del proyecto](https://github.com/nuevasomosaguas/nuevasomosaguas.github.io), y se agradecen especialmente cuando duelen.
+Eso vale también para este sitio. Las correcciones, refutaciones y erratas metodológicas se agradecen en el [repositorio del proyecto](https://github.com/nuevasomosaguas/nuevasomosaguas.github.io), sobre todo cuando duelen.
 
 ::: {.lead}
 *Una sociología que sustituye el arbitrio discursivo por las matemáticas y el contraste empírico de la biología.*
