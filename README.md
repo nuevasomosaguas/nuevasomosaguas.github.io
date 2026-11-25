@@ -16,9 +16,9 @@
 
 ## Qué es esto
 
-La **Nueva Somosaguas** es una facultad libre de ciencias sociales analíticas y cuantitativas: un plan de estudios completo, abierto y publicado en código, construido sobre el principio de **consiliencia** de E. O. Wilson —la compatibilidad vertical entre las matemáticas, la biología evolutiva, los micro-mecanismos de decisión y la historia cuantitativa de gran escala.
+La **Nueva Somosaguas** es una facultad abierta de ciencias sociales analíticas y cuantitativas: un plan de estudios completo y publicado en código. Se apoya en la **consiliencia** de E. O. Wilson: la continuidad entre las matemáticas, la biología evolutiva, los micro-mecanismos de decisión y la historia cuantitativa de gran escala.
 
-No es un borrador pedagógico. Son **cuatro cursos y 20 asignaturas**, cada una con pocos textos matriz, al menos uno de los cuales se lee entero, y un cuaderno reproducible, más un bootcamp propedéutico de doce semanas y un itinerario autodidacta con presupuesto de horas declarado.
+Son **cuatro cursos y 20 asignaturas**, cada una con pocos textos matriz (al menos uno se lee entero) y un cuaderno reproducible. El programa incluye además doce semanas de nivelación previa y un itinerario autodidacta con presupuesto de horas declarado.
 
 El criterio de admisión de cualquier contenido es el mismo en todo el sitio: si un modelo no se deriva en la pizarra y no compila en la terminal, no entra.
 
@@ -60,8 +60,8 @@ El sitio se compila con **Quarto** y una hoja de estilos propia de inspiración 
 nuevasomosaguas/
 ├── index.qmd               Portada: los cuatro pilares y el mapa del dominio
 ├── curriculo.qmd           Plan de estudios: 4 cursos, 20 asignaturas
-├── bootcamp.qmd            Bootcamp propedéutico: 3 fases, 12 semanas
-├── guia_autodidacta.qmd    Itinerario en solitario: 4 hitos con gates de validación
+├── bootcamp.qmd            Nivelación de verano: 3 fases, 12 semanas
+├── guia_autodidacta.qmd    Itinerario en solitario: 4 hitos con pruebas de paso
 ├── laboratorios.qmd        Cinco laboratorios ejecutables en Julia y SQL
 ├── entorno.qmd             La terminal, los entornos congelados y el estándar gráfico
 ├── politica_ia.qmd         Política de inteligencia artificial: los cuatro principios
@@ -79,7 +79,7 @@ nuevasomosaguas/
 └── .github/workflows/      Compilación y publicación en GitHub Pages
 ```
 
-La bibliografía vive en `biblioteca.bib`, que es a la vez la descarga para el lector y la fuente de las páginas: `refs.R` lo lee para componer las listas, las fichas y los recuentos que citan las demás páginas, y cada render deriva de él la versión en CSL-JSON. El archivo tiene dos capas. El **núcleo**, de 150 obras, se ordena por estratos, y cada obra lleva su nivel y su **modo de lectura** (completa con ejercicios, completa o consulta). El **área secundaria** no tiene tope, y cada una de sus obras cuelga de una del núcleo con un papel: profundización técnica, contraste y crítica, especialización aplicada, fuente original, historia y contexto, divulgación o introducción. `refs.R` detiene el render ante una línea ilegible, un papel o un modo desconocidos o una obra que cuelgue de otra que no esté en el núcleo.
+La bibliografía vive en `biblioteca.bib`, que sirve a la vez como descarga para el lector y como fuente de las páginas. `refs.R` lo lee para componer las listas, las fichas y los recuentos del sitio, y cada render genera la versión en CSL-JSON. El archivo tiene dos capas. El **núcleo**, de 150 obras, se ordena por estratos, y cada obra lleva su nivel y su **modo de lectura** (completa con ejercicios, completa o consulta). El **área secundaria** no tiene tope, y cada una de sus obras cuelga de una del núcleo con un papel: profundización técnica, contraste y crítica, especialización aplicada, fuente original, historia y contexto, divulgación o introducción. `refs.R` detiene el render ante una línea ilegible, un papel o un modo desconocidos o una obra que cuelgue de otra que no esté en el núcleo.
 
 Incorporar o retirar una obra es editar ese archivo. Cada revisión del núcleo lleva una etiqueta (`v1.0`, `v1.1`) y una entrada en `biblioteca-cambios.qmd` con lo que entra, lo que sale y por qué, y `git diff v1.0 v1.1 -- biblioteca.bib` da el detalle.
 
@@ -89,10 +89,10 @@ Incorporar o retirar una obra es editar ese archivo. Cada revisión del núcleo 
 
 Julia y R, cada uno en su terreno:
 
-* **Julia** — cálculo matricial, simulación basada en agentes, ecuaciones diferenciales y optimización. Es el lenguaje vehicular desde el primer curso.
-* **R** — estadística aplicada, econometría tabular, bioestadística y psicometría, donde están sus textos y su ecosistema. Los problemas interactivos también, porque webR los ejecuta en el navegador.
-* **SQL** — extracción relacional pura, funciones de ventana y agregación censal en PostgreSQL o SQLite.
-* **Bash, Git y Quarto o Typst** — consola de Unix, canalizaciones reproducibles y publicación determinista.
+* **Julia:** cálculo matricial, simulación basada en agentes, ecuaciones diferenciales y optimización. Es el lenguaje vehicular desde el primer curso.
+* **R:** estadística aplicada, econometría tabular, bioestadística y psicometría, donde están sus textos y su ecosistema. Los problemas interactivos también, porque webR los ejecuta en el navegador.
+* **SQL:** extracción relacional pura, funciones de ventana y agregación censal en PostgreSQL o SQLite.
+* **Bash, Git y Quarto o Typst:** consola de Unix, flujos reproducibles y publicación determinista.
 
 Python se conserva como herramienta auxiliar de ingesta y manipulación de datos tabulares.
 
@@ -102,7 +102,7 @@ Python se conserva como herramienta auxiliar de ingesta y manipulación de datos
 
 La IA no se prohíbe ni se padece: se gobierna. Cuatro principios, desarrollados en `politica_ia.qmd`:
 
-* **Principio socrático.** El modelo actúa como interlocutor dialéctico, no resuelve ejercicios ni redacta memorandos evaluables.
+* **Principio socrático.** El modelo discute con el alumno, no resuelve ejercicios ni redacta entregas evaluables.
 * **Asimetría epistemológica.** Los modelos de lenguaje manejan asociaciones, no estructuras generativas: tienen prohibido decidir la identificación causal.
 * **Trazabilidad.** Toda función de origen algorítmico entra con la traza del *prompt*, la semilla declarada y una prueba de regresión escrita por el estudiante.
 * **Prueba de la pizarra.** Los exámenes son a terminal abierta, con la IA asumida; ninguna calificación es firme hasta defenderla a mano alzada.
@@ -120,7 +120,7 @@ quarto preview    # servidor local con recarga automática
 
 Hace falta [Quarto](https://quarto.org/) y una instalación de R con `knitr` y `rmarkdown`: tres páginas evalúan fragmentos de R para leer el recuento de la biblioteca, y antes de cada render `biblioteca-secundaria/obras.R` genera el catálogo del área secundaria.
 
-Cada empuje a `master` compila y publica en GitHub Pages mediante el flujo de trabajo de `.github/workflows/`.
+Cada `push` a `master` compila y publica en GitHub Pages con el flujo de `.github/workflows/`.
 
 ---
 
