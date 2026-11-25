@@ -13,7 +13,7 @@ Una obra propuesta, por el responsable o por cualquiera, sigue estos pasos. El a
    - *Contraste y crítica* sostiene una posición opuesta a la de la obra de la que cuelga, o critica otra obra de su misma rama, aunque no la discuta directamente: Friedman (1953) bajo Hedström, o Sánchez-Villagra y van Schaik, que discuten a Wrangham, bajo Boehm. Una crítica a algo ajeno a la rama es *especialización aplicada*.
    - *Profundización técnica* cubre el mismo terreno con más aparato; *introducción*, con menos.
    - El idioma nunca decide el papel.
-4. **Motivo.** Una frase en castellano con la relación concreta, nombrando la obra del núcleo cuando aclara: «Gat explica por qué hay guerras, y Kalyvas, cómo se reparte la violencia dentro de ellas». Escribe solo texto plano: el lector de `refs.R` y BibTeX no admiten `{ } % $ # &` sueltos.
+4. **Motivo.** Una o dos frases cortas en castellano con la relación concreta, nombrando la obra del núcleo cuando aclara: «Gat explica por qué hay guerras, y Kalyvas, cómo se reparte la violencia dentro de ellas». Escribe solo texto plano: el lector de `refs.R` y BibTeX no admiten `{ } % $ # &` sueltos.
 5. **Edición e identificador.** La edición más reciente de la versión que se recomienda; comprueba si hay una posterior a la propuesta. Verifica cada identificador en la fuente, nunca de memoria:
    - doi en Crossref: `curl -s https://api.crossref.org/works/<doi>`, y que título, año y autores coincidan.
    - Si no hay doi, isbn en Open Library: `curl -sL https://openlibrary.org/isbn/<isbn>.json`.
